@@ -1,19 +1,11 @@
-package util;
+package jyotish.grahas;
 
-import jyotish.grahas.Budha;
-import jyotish.grahas.Chandra;
-import jyotish.grahas.Graha;
-import jyotish.grahas.Guru;
-import jyotish.grahas.Ketu;
-import jyotish.grahas.Mangal;
-import jyotish.grahas.Rahu;
-import jyotish.grahas.Shani;
-import jyotish.grahas.Shukra;
-import jyotish.grahas.Surya;
+import jyotish.nakshatras.NakshatraFactory;
 import jyotish.nakshatras.padas.Pada;
-import util.EnumUtil.Diety;
-import util.EnumUtil.Name_Of_Graha;
-import util.EnumUtil.Name_Of_Nakshatra;
+import util.JyotishEnumUtil;
+import util.JyotishEnumUtil.Diety;
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Name_Of_Nakshatra;
 ;
 
 

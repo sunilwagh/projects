@@ -10,11 +10,11 @@ import jyotish.bhavas.Bhava;
 import jyotish.nakshatras.Nakshatra;
 import jyotish.nakshatras.padas.Pada;
 import jyotish.rashis.Rashi;
-import util.EnumUtil.Name_Of_Bhava;
-import util.EnumUtil.Name_Of_Graha;
-import util.EnumUtil.Name_Of_Nakshatra;
-import util.EnumUtil.Name_Of_Rashi;
-import util.EnumUtil.Tattva;
+import util.JyotishEnumUtil.Name_Of_Bhava;
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Name_Of_Nakshatra;
+import util.JyotishEnumUtil.Name_Of_Rashi;
+import util.JyotishEnumUtil.Tattva;
 
 public class Guru implements Graha{
 	

@@ -1,36 +1,9 @@
-package util;
+package jyotish.nakshatras;
 
 import jyotish.grahas.Ketu;
-import jyotish.nakshatras.Anuradha;
-import jyotish.nakshatras.Arudra;
-import jyotish.nakshatras.Ashlesha;
-import jyotish.nakshatras.Ashwini;
-import jyotish.nakshatras.Bharani;
-import jyotish.nakshatras.Chitra;
-import jyotish.nakshatras.Dhanishta;
-import jyotish.nakshatras.Hasta;
-import jyotish.nakshatras.Jyestha;
-import jyotish.nakshatras.Krittika;
-import jyotish.nakshatras.Magha;
-import jyotish.nakshatras.Mrighashirsha;
-import jyotish.nakshatras.Mula;
-import jyotish.nakshatras.Nakshatra;
-import jyotish.nakshatras.Punarvasu;
-import jyotish.nakshatras.PurvaAshada;
-import jyotish.nakshatras.PurvaBhadrapada;
-import jyotish.nakshatras.PurvaPhalguni;
-import jyotish.nakshatras.Pushya;
-import jyotish.nakshatras.Revati;
-import jyotish.nakshatras.Rohini;
-import jyotish.nakshatras.Satabhija;
-import jyotish.nakshatras.Shravana;
-import jyotish.nakshatras.Swati;
-import jyotish.nakshatras.UttarAshada;
-import jyotish.nakshatras.UttarBhadrapada;
-import jyotish.nakshatras.UttarPhalguni;
-import jyotish.nakshatras.Vishaka;
-import util.EnumUtil.Diety;
-import util.EnumUtil.Name_Of_Nakshatra;
+import util.JyotishEnumUtil;
+import util.JyotishEnumUtil.Diety;
+import util.JyotishEnumUtil.Name_Of_Nakshatra;
 
 public final class NakshatraFactory {
 

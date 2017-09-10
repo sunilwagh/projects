@@ -1,6 +1,6 @@
 package util;
 
-public class EnumUtil {
+public class JyotishEnumUtil {
 
 	public enum Name_Of_Nakshatra {
 		ASHWINI(1), BHARANI(2), KRITTIKA(3), ROHINI(4), MRIGASHIRSHA(5), ARUDRA(6), PUNARVASU(7), PUSHYA(8), ASHLESHA(

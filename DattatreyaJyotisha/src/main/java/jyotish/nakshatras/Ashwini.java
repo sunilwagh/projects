@@ -1,8 +1,8 @@
 package jyotish.nakshatras;
 
 import jyotish.grahas.Graha;
-import util.EnumUtil.Diety;
-import util.EnumUtil.Tattva;
+import util.JyotishEnumUtil.Diety;
+import util.JyotishEnumUtil.Tattva;
 
 public class Ashwini implements Nakshatra{
 	

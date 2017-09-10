@@ -1,4 +1,4 @@
-package util;
+package jyotish;
 
 import java.util.*;
 import java.util.concurrent.*;

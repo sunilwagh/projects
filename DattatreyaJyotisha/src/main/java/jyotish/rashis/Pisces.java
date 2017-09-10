@@ -3,10 +3,10 @@ package jyotish.rashis;
 import java.util.ArrayList;
 
 import jyotish.grahas.Graha;
-import util.EnumUtil.Direction;
-import util.EnumUtil.Gender_Of_Rashi;
-import util.EnumUtil.Mobility_Of_Rashi;
-import util.EnumUtil.Tattva;
+import util.JyotishEnumUtil.Direction;
+import util.JyotishEnumUtil.Gender_Of_Rashi;
+import util.JyotishEnumUtil.Mobility_Of_Rashi;
+import util.JyotishEnumUtil.Tattva;
 
 public class Pisces implements Rashi{
 	Mobility_Of_Rashi mobility;

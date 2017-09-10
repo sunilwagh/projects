@@ -13,8 +13,8 @@ import jyotish.bhavas.Bhava7;
 import jyotish.bhavas.Bhava8;
 import jyotish.bhavas.Bhava9;
 import jyotish.horoscope.Horoscope;
-import util.EnumUtil.Name_Of_Graha;
-import util.RashiUtil;
+import jyotish.rashis.RashiUtil;
+import util.JyotishEnumUtil.Name_Of_Graha;
 
 public class AnalyzeBhava5 {
 

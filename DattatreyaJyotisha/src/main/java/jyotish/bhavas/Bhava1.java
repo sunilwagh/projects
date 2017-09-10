@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import jyotish.rashis.Rashi;
-import util.EnumUtil.Name_Of_Rashi;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 
 public class Bhava1 implements Bhava{
 	

@@ -1,17 +1,20 @@
-package util;
+package jyotish;
 
 
 import java.util.ArrayList;
+
+import jyotish.bhavas.BhavaFactory;
 import jyotish.grahas.Graha;
+import jyotish.grahas.GrahaFactory;
 import jyotish.horoscope.Horoscope;
 import jyotish.nakshatras.padas.Pada1;
 import jyotish.nakshatras.padas.Pada2;
 import jyotish.nakshatras.padas.Pada3;
 import jyotish.nakshatras.padas.Pada4;
-import util.EnumUtil.Name_Of_Bhava;
-import util.EnumUtil.Name_Of_Graha;
-import util.EnumUtil.Name_Of_Nakshatra;
-import util.EnumUtil.Name_Of_Rashi;
+import util.JyotishEnumUtil.Name_Of_Bhava;
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Name_Of_Nakshatra;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 
 public class App 
 {

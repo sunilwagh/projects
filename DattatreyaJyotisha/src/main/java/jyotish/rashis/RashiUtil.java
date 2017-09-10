@@ -1,4 +1,4 @@
-package util;
+package jyotish.rashis;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,21 +8,10 @@ import java.util.Map;
 import jyotish.bhavas.Bhava;
 import jyotish.bhavas.Bhava10;
 import jyotish.grahas.Graha;
-import jyotish.rashis.Acquarius;
-import jyotish.rashis.Aries;
-import jyotish.rashis.Cancer;
-import jyotish.rashis.Capricorn;
-import jyotish.rashis.Gemini;
-import jyotish.rashis.Leo;
-import jyotish.rashis.Libra;
-import jyotish.rashis.Pisces;
-import jyotish.rashis.Rashi;
-import jyotish.rashis.Sagittaurius;
-import jyotish.rashis.Scorpio;
-import jyotish.rashis.Taurus;
-import jyotish.rashis.Virgo;
-import util.EnumUtil.Name_Of_Graha;
-import util.EnumUtil.Name_Of_Rashi;
+import jyotish.grahas.util.GrahaUtil;
+import util.JyotishEnumUtil;
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 
 public class RashiUtil {
 

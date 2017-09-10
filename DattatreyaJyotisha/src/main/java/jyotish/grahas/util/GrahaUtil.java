@@ -1,4 +1,4 @@
-package util;
+package jyotish.grahas.util;
 
 import jyotish.grahas.Budha;
 import jyotish.grahas.Chandra;
@@ -10,7 +10,8 @@ import jyotish.grahas.Rahu;
 import jyotish.grahas.Shani;
 import jyotish.grahas.Shukra;
 import jyotish.grahas.Surya;
-import util.EnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil;
+import util.JyotishEnumUtil.Name_Of_Graha;
 
 public class GrahaUtil {
 	

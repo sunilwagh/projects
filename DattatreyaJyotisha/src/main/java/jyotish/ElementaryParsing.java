@@ -1,4 +1,4 @@
-package util;
+package jyotish;
 
 import jyotish.horoscope.Horoscope;
 

@@ -1,23 +1,12 @@
-package util;
+package jyotish.bhavas;
 
 import java.util.ArrayList;
 
-import jyotish.bhavas.Bhava;
-import jyotish.bhavas.Bhava1;
-import jyotish.bhavas.Bhava10;
-import jyotish.bhavas.Bhava11;
-import jyotish.bhavas.Bhava12;
-import jyotish.bhavas.Bhava2;
-import jyotish.bhavas.Bhava3;
-import jyotish.bhavas.Bhava4;
-import jyotish.bhavas.Bhava5;
-import jyotish.bhavas.Bhava6;
-import jyotish.bhavas.Bhava7;
-import jyotish.bhavas.Bhava8;
-import jyotish.bhavas.Bhava9;
 import jyotish.grahas.Graha;
-import util.EnumUtil.Name_Of_Bhava;
-import util.EnumUtil.Name_Of_Rashi;
+import jyotish.rashis.RashiFactory;
+import util.JyotishEnumUtil;
+import util.JyotishEnumUtil.Name_Of_Bhava;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 
 public final class BhavaFactory {
 
