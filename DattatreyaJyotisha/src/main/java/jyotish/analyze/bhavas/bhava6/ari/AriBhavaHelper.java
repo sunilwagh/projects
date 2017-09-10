@@ -166,25 +166,68 @@ public class AriBhavaHelper {
 	}
 
 	public static String CapricornInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Capricorn \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer capricornInBhava6 = new StringBuffer();
+		capricornInBhava6.append("\n");
+		capricornInBhava6.append("\n");
+		return capricornInBhava6.toString();
 	}
 
 	public static String AcquariusInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Acquarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer acquariusInBhava6 = new StringBuffer();
+		acquariusInBhava6.append("\n");
+		acquariusInBhava6.append("\n");
+		return acquariusInBhava6.toString();
 	}
 
 	public static String PiscesInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Pisces \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer piscesInBhava6 = new StringBuffer();
+		piscesInBhava6.append("\n");
+		piscesInBhava6.append("\n");
+		return piscesInBhava6.toString();
 	}
+	
+	public static String SuryaInBhava6() {
+		StringBuffer suryaInBhava6 = new StringBuffer();
+		suryaInBhava6.append("\n");
+		return suryaInBhava6.toString();
+	}
+	
+	public static String ChandraInBhava6() {
+		StringBuffer chandraInBhava6 = new StringBuffer();
+		chandraInBhava6.append("\n");
+		return chandraInBhava6.toString();
+	}
+	
+	public static String BudhInBhava7() {
+		StringBuffer budhInBhava6 = new StringBuffer();
+		budhInBhava6.append("\n");
+		return budhInBhava6.toString();
+	}
+	
+	public static String MangalInBhava6() {
+		StringBuffer mangalInBhava6 = new StringBuffer();
+		mangalInBhava6.append("\n");
+		return mangalInBhava6.toString();
+	}
+	
+	public static String GuruInBhava6() {
+		StringBuffer guruInBhava6 = new StringBuffer();
+		guruInBhava6.append("\n");
+		return guruInBhava6.toString();
+	}
+	
+	public static String ShukraInBhava6() {
+		StringBuffer shukraInBhava6 = new StringBuffer();
+		shukraInBhava6.append("\n");
+		return shukraInBhava6.toString();
+	}
+	
+	public static String ShaniInBhava6() {
+		StringBuffer shaniInBhava6 = new StringBuffer();
+		shaniInBhava6.append("\n");
+		return shaniInBhava6.toString();
+	}
+
 
 	
 	
