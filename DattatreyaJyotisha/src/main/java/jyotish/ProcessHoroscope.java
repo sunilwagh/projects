@@ -17,7 +17,7 @@ import jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
 import jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
 import jyotish.horoscope.Horoscope;
 
-public class ParallelOperations {
+public class ProcessHoroscope {
 
 	public static String processHoroscope(Horoscope horoscope) {
 
