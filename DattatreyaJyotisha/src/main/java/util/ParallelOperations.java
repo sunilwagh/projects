@@ -3,18 +3,18 @@ package util;
 import java.util.*;
 import java.util.concurrent.*;
 
-import jyotish.analyze.bhava.bhava10.karma.AnalyzeBhava10;
-import jyotish.analyze.bhava.bhava11.labha.AnalyzeBhava11;
-import jyotish.analyze.bhava.bhava12.vyaha.AnalyzeBhava12;
-import jyotish.analyze.bhava.bhava8.randhara.AnalyzeBhava8;
-import jyotish.analyze.bhava.bhava9.dharma.AnalyzeBhava9;
 import jyotish.analyze.bhavas.bhava1.lagna.AnalyzeBhava1;
+import jyotish.analyze.bhavas.bhava10.karma.AnalyzeBhava10;
+import jyotish.analyze.bhavas.bhava11.labha.AnalyzeBhava11;
+import jyotish.analyze.bhavas.bhava12.vyaha.AnalyzeBhava12;
 import jyotish.analyze.bhavas.bhava2.dhana.AnalyzeBhava2;
 import jyotish.analyze.bhavas.bhava3.sahaj.AnalyzeBhava3;
 import jyotish.analyze.bhavas.bhava4.sukha.AnalyzeBhava4;
 import jyotish.analyze.bhavas.bhava5.putra.AnalyzeBhava5;
 import jyotish.analyze.bhavas.bhava6.ari.AnalyzeBhava6;
 import jyotish.analyze.bhavas.bhava7.yuvati.AnalyzeBhava7;
+import jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
+import jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
 import jyotish.horoscope.Horoscope;
 
 public class ParallelOperations {

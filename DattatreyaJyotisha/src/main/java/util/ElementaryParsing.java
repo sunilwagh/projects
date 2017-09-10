@@ -5,8 +5,8 @@ import jyotish.horoscope.Horoscope;
 public class ElementaryParsing {
 	
 	
-	public static void processHoroscope(Horoscope horoscope)
+	public static String processHoroscope(Horoscope horoscope)
 	{
-		System.out.println(ParallelOperations.processHoroscope(horoscope));
+		return ParallelOperations.processHoroscope(horoscope);
 	}
 }

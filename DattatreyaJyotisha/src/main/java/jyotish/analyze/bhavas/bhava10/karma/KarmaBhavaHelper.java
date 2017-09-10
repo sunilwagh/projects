@@ -1,4 +1,4 @@
-package jyotish.analyze.bhava.bhava10.karma;
+package jyotish.analyze.bhavas.bhava10.karma;
 
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;

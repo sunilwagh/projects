@@ -1,7 +1,6 @@
-package jyotish.analyze.bhava.bhava10.karma;
+package jyotish.analyze.bhavas.bhava11.labha;
 
-
-import jyotish.bhavas.Bhava;
+import jyotish.analyze.bhavas.bhava11.labha.LabhaBhavaHelper;
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -18,11 +17,11 @@ import jyotish.horoscope.Horoscope;
 import util.EnumUtil.Name_Of_Graha;
 import util.RashiUtil;
 
-public class AnalyzeBhava10 {
+public class AnalyzeBhava11 {
 
-	public static String analyzeBhava10(Horoscope horoscope) {
+	public static String analyzeBhava11(Horoscope horoscope) {
 		
-		StringBuffer sbAnalyzeBhava10 = new StringBuffer();
+		StringBuffer sbAnalyzeBhava11 = new StringBuffer();
 		
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
 		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
@@ -37,85 +36,81 @@ public class AnalyzeBhava10 {
 		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
 		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
 
-		Name_Of_Graha lordOfRashi = getRashiLord(bhava10);
+		Name_Of_Graha lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava11.getRashi()));
 
 		if (RashiUtil.getGrahasInRashi(bhava1.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava1.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 1 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava1(bhava10,bhava1));
+			sbAnalyzeBhava11.append("Lord of 11 in 1 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava1(bhava11,bhava1));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava2.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava2.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 2 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava2(bhava10, bhava2));
+			sbAnalyzeBhava11.append("Lord of 11 in 2 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava2(bhava11, bhava2));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava3.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava3.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 3 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava3(bhava10, bhava3));
+			sbAnalyzeBhava11.append("Lord of 11 in 3 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava3(bhava11, bhava3));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava4.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava4.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 4 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava4(bhava10, bhava4));
+			sbAnalyzeBhava11.append("Lord of 11 in 4 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava4(bhava11, bhava4));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava5.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava5.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 5 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava5(bhava10, bhava5));
+			sbAnalyzeBhava11.append("Lord of 11 in 5 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava5(bhava11, bhava5));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava6.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava6.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 6 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava6(bhava10, bhava6));
+			sbAnalyzeBhava11.append("Lord of 11 in 6 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava6(bhava11, bhava6));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava7.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava7.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 7 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava7(bhava10, bhava7));
+			sbAnalyzeBhava11.append("Lord of 11 in 7 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava7(bhava11, bhava7));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava8.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava8.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 8 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava8(bhava10, bhava8));
+			sbAnalyzeBhava11.append("Lord of 11 in 8 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava8(bhava11, bhava8));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava9.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava9.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 9 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava9(bhava10, bhava9));
+			sbAnalyzeBhava11.append("Lord of 11 in 9 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava9(bhava11, bhava9));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava10.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava10.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 10 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava10(bhava10));
+			sbAnalyzeBhava11.append("Lord of 11 in 10 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava10(bhava11, bhava10));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava11.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava11.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 11 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava11(bhava10, bhava11));
+			sbAnalyzeBhava11.append("Lord of 11 in 11 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava11(bhava11));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava12.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava12.getRashi()).contains(lordOfRashi)) {
-			sbAnalyzeBhava10.append("Lord of 10 in 12 \n");
-			sbAnalyzeBhava10.append(KarmaBhavaHelper.infoAboutLordOfBhava10InBhava12(bhava10, bhava12));
+			sbAnalyzeBhava11.append("Lord of 11 in 12 \n");
+			sbAnalyzeBhava11.append(LabhaBhavaHelper.infoAboutLordOfBhava11InBhava12(bhava11, bhava12));
 		}
 
-		return sbAnalyzeBhava10.toString();
+		return sbAnalyzeBhava11.toString();
 
-	}
-
-	private static Name_Of_Graha getRashiLord(Bhava bhava) {
-		return RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava.getRashi()));
 	}
 }

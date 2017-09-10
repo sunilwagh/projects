@@ -19,7 +19,7 @@ public class App
     {
     	//Horoscope horoscope=createHoroscopeA();
     	Horoscope horoscope=createHoroscopeB();
-    	ElementaryParsing.processHoroscope(horoscope);	
+    	System.out.println(ElementaryParsing.processHoroscope(horoscope));	
     }
     
     public static Horoscope createHoroscopeB(){

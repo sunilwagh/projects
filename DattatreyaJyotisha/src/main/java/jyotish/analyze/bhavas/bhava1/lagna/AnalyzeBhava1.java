@@ -1,6 +1,6 @@
 package jyotish.analyze.bhavas.bhava1.lagna;
 
-import jyotish.analyze.bhava.bhava11.labha.LabhaBhavaHelper;
+import jyotish.analyze.bhavas.bhava11.labha.LabhaBhavaHelper;
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
