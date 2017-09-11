@@ -105,86 +105,86 @@ public class PutraBhavaHelper {
 	}
 
 	public static String AriesInBhava5() {
-		StringBuffer ariesInBhava1 = new StringBuffer();
-		ariesInBhava1.append("Ascendent is Aries \n");
-		ariesInBhava1.append("Maraka: Shukra => Lord of 2nd and 7th \n");
-		return ariesInBhava1.toString();
+		StringBuffer ariesInBhava5 = new StringBuffer();
+		ariesInBhava5.append("\n");
+		ariesInBhava5.append("\n");
+		return ariesInBhava5.toString();
 	}
 
 	public static String TaurusInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append(" \n");
-		taurusInBhava1.append(" \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String GeminiInBhava5() {
 		StringBuffer geminiInBhava1 = new StringBuffer();
-		geminiInBhava1.append("Ascendent: Gemini \n");
-		geminiInBhava1.append("Maraka: Mangal \n");
+		geminiInBhava1.append("\n");
+		geminiInBhava1.append("\n");
 		return geminiInBhava1.toString();
 	}
 
 	public static String CancerInBhava5() {
 		StringBuffer cancerInBhava1 = new StringBuffer();
-		cancerInBhava1.append("Ascendent: Cancer \n");
-		cancerInBhava1.append("Maraka: Mangal \n");
+		cancerInBhava1.append("\n");
+		cancerInBhava1.append("\n");
 		return cancerInBhava1.toString();
 	}
 
 	public static String LeoInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Leo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String VirgoInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Virgo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String LibraInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Libra \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String ScorpioInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Scorpio \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String SagittariusInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Sagittarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String CapricornInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Capricorn \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String AcquariusInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Acquarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
 	public static String PiscesInBhava5() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Pisces \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
