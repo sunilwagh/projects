@@ -54,14 +54,14 @@ public class YuvatiBhavaHelper {
 
 	public static String infoAboutLordOfBhava7InBhava6(Bhava7 bhava7, Bhava6 bhava6) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Enimical relationship with partners. Fights possible and obstacles in marriage");
+		infoBuffer.append("Inimical relationship with partners. Fights possible and obstacles in marriage");
 		return infoBuffer.toString();
 
 	}
 
 	public static String infoAboutLordOfBhava7InBhava7(Bhava7 bhava7) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Good placement");
+		infoBuffer.append("Good placement.Although planets are not considered to be good in the seventh house, the effect is nullified to some extent when it is the house ruler.");
 		return infoBuffer.toString();
 
 	}
