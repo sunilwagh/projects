@@ -33,35 +33,38 @@ public class AriBhavaHelper {
 
 	public static String infoAboutLordOfBhava6InBhava3(Bhava6 bhava6,Bhava3 bhava3) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("");
+		infoBuffer.append("It shows the ability to face up problems on a practical level. You will deal with issues through courage and self motivation. There can also be problems with your siblings.either through separation or argument. "
+				+ "The right ear,throat,neck and wind pipe can be weak or subject to injury.");
 		return infoBuffer.toString();
 		
 	}
 
 	public static String infoAboutLordOfBhava6InBhava4(Bhava6 bhava6,Bhava4 bhava4) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Problems in relationship with mother. Either separated from her or she has weak health.");
+		infoBuffer.append("Problems in relationship with mother. Either separated from her or she has weak health. The chest,lungs and breast would be the weak area.");
 		return infoBuffer.toString();
 		
 	}
 
 	public static String infoAboutLordOfBhava6InBhava5(Bhava6 bhava6,Bhava5 bhava5) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("");
+		infoBuffer.append("There can be testing time with children. Either they have health problems or you feel they are stopping you doing the things you want to do. Health wise, for women it can indicate difficulties with conception,even miscarriage or abortion. "
+				+ "Weak areas are heart, upper abdomen,stomach and liver.");
 		return infoBuffer.toString();
 		
 	}
 
 	public static String infoAboutLordOfBhava6InBhava6(Bhava6 bhava6) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Ability to fight off disease and fend off enemies. It results in to Harsha Yoga");
+		infoBuffer.append("Harsha Yoga: Ability to fight off disease and fend off enemies. It results in to Harsha Yoga");
 		return infoBuffer.toString();
 		
 	}
 
 	public static String infoAboutLordOfBhava6InBhava7(Bhava6 bhava6,Bhava7 bhava7) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("");
+		infoBuffer.append("It indicates that there would be tension in relationships. or that your partner is in poor health."
+				+ " In terms of your own health there could be weaknesses in the pelvis,lower urethra,prostrate or uterus.");
 		return infoBuffer.toString();
 		
 	}
@@ -82,7 +85,8 @@ public class AriBhavaHelper {
 	
 	public static String infoAboutLordOfBhava6InBhava10(Bhava6 bhava6,Bhava10 bhava10) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("");
+		infoBuffer.append("This is a good position for the sixth house ruler as hard work and dealing with obstacles will enhance the quality of the house. An Upachaya planet in another upachaya house gives growth over a period of time. Healthwise, the weak areas "
+				+ "will be knees, but you can improve your flexibility with time.");
 		return infoBuffer.toString();
 		
 		
@@ -103,65 +107,65 @@ public class AriBhavaHelper {
 	}
 	
 	public static String AriesInBhava6() {
-		StringBuffer ariesInBhava1 = new StringBuffer();
-		ariesInBhava1.append("Ascendent is Aries \n");
-		ariesInBhava1.append("Maraka: Shukra => Lord of 2nd and 7th \n");
-		return ariesInBhava1.toString();
+		StringBuffer ariesInBhava6 = new StringBuffer();
+		ariesInBhava6.append("\n");
+		ariesInBhava6.append("\n");
+		return ariesInBhava6.toString();
 	}
 
 	public static String TaurusInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Taurus \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer taurusInBhava6 = new StringBuffer();
+		taurusInBhava6.append("\n");
+		taurusInBhava6.append("\n");
+		return taurusInBhava6.toString();
 	}
 
 	public static String GeminiInBhava6() {
-		StringBuffer geminiInBhava1 = new StringBuffer();
-		geminiInBhava1.append("Ascendent: Gemini \n");
-		geminiInBhava1.append("Maraka: Mangal \n");
-		return geminiInBhava1.toString();
+		StringBuffer geminiInBhava6 = new StringBuffer();
+		geminiInBhava6.append("\n");
+		geminiInBhava6.append("\n");
+		return geminiInBhava6.toString();
 	}
 
 	public static String CancerInBhava6() {
-		StringBuffer cancerInBhava1 = new StringBuffer();
-		cancerInBhava1.append("Ascendent: Cancer \n");
-		cancerInBhava1.append("Maraka: Mangal \n");
-		return cancerInBhava1.toString();
+		StringBuffer cancerInBhava6 = new StringBuffer();
+		cancerInBhava6.append("\n");
+		cancerInBhava6.append(" \n");
+		return cancerInBhava6.toString();
 	}
 
 	public static String LeoInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Leo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer leoInBhava6 = new StringBuffer();
+		leoInBhava6.append("\n");
+		leoInBhava6.append("\n");
+		return leoInBhava6.toString();
 	}
 
 	public static String VirgoInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Virgo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer virgoInBhava6 = new StringBuffer();
+		virgoInBhava6.append("\n");
+		virgoInBhava6.append("\n");
+		return virgoInBhava6.toString();
 	}
 
 	public static String LibraInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Libra \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer libraInBhava6 = new StringBuffer();
+		libraInBhava6.append("\n");
+		libraInBhava6.append("\n");
+		return libraInBhava6.toString();
 	}
 
 	public static String ScorpioInBhava6() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Scorpio \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer scorpioInBhava6 = new StringBuffer();
+		scorpioInBhava6.append("\n");
+		scorpioInBhava6.append("\n");
+		return scorpioInBhava6.toString();
 	}
 
 	public static String SagittariusInBhava6() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Sagittarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
+		taurusInBhava1.append("\n");
+		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}
 
@@ -198,7 +202,7 @@ public class AriBhavaHelper {
 		return chandraInBhava6.toString();
 	}
 	
-	public static String BudhInBhava7() {
+	public static String BudhaInBhava6() {
 		StringBuffer budhInBhava6 = new StringBuffer();
 		budhInBhava6.append("\n");
 		return budhInBhava6.toString();
