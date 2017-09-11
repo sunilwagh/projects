@@ -15,177 +15,183 @@ import jyotish.bhavas.Bhava9;
 
 public class SukhaBhavaHelper {
 
-	public static String infoAboutLordOfBhava4InBhava1(Bhava4 bhava4,Bhava1 bhava1) {
+	public static String infoAboutLordOfBhava4InBhava1(Bhava4 bhava4, Bhava1 bhava1) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Some kind of health problems, weakness of constitution.Also can be a private person.It also shows somebody who has interest in politics.");
+		infoBuffer.append(
+				"You focus very much on your own needs and putting yourself first. This indicates that a comfortable home is high on your list of priorities.");
 		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava2(Bhava4 bhava4,Bhava2 bhava2) {
+	public static String infoAboutLordOfBhava4InBhava2(Bhava4 bhava4, Bhava2 bhava2) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("It causes problem with family life.It can create friction in childhood. From the second house the eight house ruler will aspect its own house thereby strenghtening longetivity.");
+		infoBuffer.append(
+				"Strong family connection. There is some gain or inheritance from mother- here the inheritance need not be in money terms only- it could be talent or wisdom");
 		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava3(Bhava4 bhava4,Bhava3 bhava3) {
+	public static String infoAboutLordOfBhava4InBhava3(Bhava4 bhava4, Bhava3 bhava3) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Probably no siblings. It also indicates problem with self-confidence.");
+		infoBuffer.append(
+				"In the third house it suggests that your hopes and dreams can be achieved through your own actions. This would create difficulty in the relationship with your mother as the fourth house ruler(mother) is places int he twelveth house(the house of loss) from itself.");
 		return infoBuffer.toString();
-		
+
 	}
 
 	public static String infoAboutLordOfBhava4InBhava4(Bhava4 bhava4) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Loss or separation from mother is possible. You may live in a foreign country The 4th and 8th house are connected with Moksha and so you may be aware of past life connections.");
+		infoBuffer.append(
+				"In the fourth house , it forms the Pancha Mahapurusha yoga. Malavya Yoga here is specially powerful as it is also the best location for Venus to be situted.");
 		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava5(Bhava4 bhava4,Bhava5 bhava5) {
+	public static String infoAboutLordOfBhava4InBhava5(Bhava4 bhava4, Bhava5 bhava5) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("");
+		infoBuffer.append(
+				"Creativity is highlighted and children will bring happiness. It indicates good relationship with the father as well as ability to gain from his good deeds.");
 		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava6(Bhava4 bhava4,Bhava6 bhava6) {
+	public static String infoAboutLordOfBhava4InBhava6(Bhava4 bhava4, Bhava6 bhava6) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Ability to combat disease,obstacles and difficulties");
+		infoBuffer.append(
+				"Difficult relationships with your mother, or that she has health problems. An unsettled home life is also indicated.");
 		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava7(Bhava4 bhava4,Bhava7 bhava7) {
+	public static String infoAboutLordOfBhava4InBhava7(Bhava4 bhava4, Bhava7 bhava7) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Problems in married life. Issue of power with partner, sudden end of things");
+		infoBuffer.append("An early marriage is likely. Relationships are important for your inner happiness.");
 		return infoBuffer.toString();
-		
-	}
-	
-	public static String infoAboutLordOfBhava4InBhava8(Bhava4 bhava4,Bhava8 bhava8) {
-		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Sarala Yoga: Power and Riches and long life");
-		return infoBuffer.toString();
-		
+
 	}
 
-	public static String infoAboutLordOfBhava4InBhava9(Bhava4 bhava4,Bhava9 bhava9) {
+	public static String infoAboutLordOfBhava4InBhava8(Bhava4 bhava4, Bhava8 bhava8) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Problems with father.There can be sudden separation or loss.");
+		infoBuffer.append(
+				"Separation from home, perhaps by living abroad. Definitely a difficult relationship with the mother.");
 		return infoBuffer.toString();
-		
+
 	}
-	
-	public static String infoAboutLordOfBhava4InBhava10(Bhava4 bhava4,Bhava10 bhava10) {
+
+	public static String infoAboutLordOfBhava4InBhava9(Bhava4 bhava4, Bhava9 bhava9) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Possibility of working abroad.Involved in office politics");
+		infoBuffer.append(
+				"This indicates luck from your mother. You may follow your fathers footstep. great confidence in dealing with learned and wise people.");
 		return infoBuffer.toString();
-		
-		
+
 	}
-	
-	public static String infoAboutLordOfBhava4InBhava11(Bhava4 bhava4,Bhava11 bhava11) {
+
+	public static String infoAboutLordOfBhava4InBhava10(Bhava4 bhava4, Bhava10 bhava10) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Sudden lose of money leading to change in long term earning.");
+		infoBuffer.append(
+				"Ability to achieve inner aspirations. This indicates a person who would be prominent in their field.");
 		return infoBuffer.toString();
-		
+
 	}
-	
-	public static String infoAboutLordOfBhava4InBhava12(Bhava4 bhava4,Bhava12 bhava12) {
+
+	public static String infoAboutLordOfBhava4InBhava11(Bhava4 bhava4, Bhava11 bhava11) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Suffer from insomnia or deliberately avoid comfortable bed and nice surroundings in the bedroom. Secret vices and desire. Deal with problems by doing meditations and retreat. Problems with feet.");
+		infoBuffer.append(
+				"The focus of ambitions in not neccesarily on career but on what you can earn from it. A difficult relatioship with mother is suggested as 11th is 8th from 4th.");
 		return infoBuffer.toString();
-		
+
 	}
-	
+
+	public static String infoAboutLordOfBhava4InBhava12(Bhava4 bhava4, Bhava12 bhava12) {
+		StringBuffer infoBuffer = new StringBuffer();
+		infoBuffer.append(
+				"Loss of mother through death or separation. This is another indication of living abroad. It can also show lack of peace of mind.");
+		return infoBuffer.toString();
+
+	}
+
 	public static String AriesInBhava4() {
-		StringBuffer ariesInBhava1 = new StringBuffer();
-		ariesInBhava1.append("Ascendent is Aries \n");
-		ariesInBhava1.append("Maraka: Shukra => Lord of 2nd and 7th \n");
-		return ariesInBhava1.toString();
+		StringBuffer ariesInBhava4 = new StringBuffer();
+		ariesInBhava4.append("\n");
+		ariesInBhava4.append("\n");
+		return ariesInBhava4.toString();
 	}
 
 	public static String TaurusInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Taurus \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer taurusInBhava4 = new StringBuffer();
+		taurusInBhava4.append("\n");
+		taurusInBhava4.append("\n");
+		return taurusInBhava4.toString();
 	}
 
 	public static String GeminiInBhava4() {
-		StringBuffer geminiInBhava1 = new StringBuffer();
-		geminiInBhava1.append("Ascendent: Gemini \n");
-		geminiInBhava1.append("Maraka: Mangal \n");
-		return geminiInBhava1.toString();
+		StringBuffer geminiInBhava4 = new StringBuffer();
+		geminiInBhava4.append("\n");
+		geminiInBhava4.append("\n");
+		return geminiInBhava4.toString();
 	}
 
 	public static String CancerInBhava4() {
-		StringBuffer cancerInBhava1 = new StringBuffer();
-		cancerInBhava1.append("Ascendent: Cancer \n");
-		cancerInBhava1.append("Maraka: Mangal \n");
-		return cancerInBhava1.toString();
+		StringBuffer cancerInBhava4 = new StringBuffer();
+		cancerInBhava4.append("\n");
+		cancerInBhava4.append("\n");
+		return cancerInBhava4.toString();
 	}
 
 	public static String LeoInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Leo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer leoInBhava4 = new StringBuffer();
+		leoInBhava4.append("\n");
+		leoInBhava4.append("\n");
+		return leoInBhava4.toString();
 	}
 
 	public static String VirgoInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Virgo \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer  virgoInBhava4 = new StringBuffer();
+		virgoInBhava4.append("\n");
+		virgoInBhava4.append("\n");
+		return  virgoInBhava4.toString();
 	}
 
 	public static String LibraInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Libra \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer libraInBhava4 = new StringBuffer();
+		libraInBhava4.append("\n");
+		libraInBhava4.append("\n");
+		return libraInBhava4.toString();
 	}
 
 	public static String ScorpioInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Scorpio \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer scorpioInBhava4 = new StringBuffer();
+		scorpioInBhava4.append("\n");
+		scorpioInBhava4.append("\n");
+		return scorpioInBhava4.toString();
 	}
 
 	public static String SagittariusInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Sagittarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer sagittariusInBhava4 = new StringBuffer();
+		sagittariusInBhava4.append("\n");
+		sagittariusInBhava4.append("\n");
+		return sagittariusInBhava4.toString();
 	}
 
 	public static String CapricornInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Capricorn \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer capricornInBhava4 = new StringBuffer();
+		capricornInBhava4.append("\n");
+		capricornInBhava4.append("\n");
+		return capricornInBhava4.toString();
 	}
 
 	public static String AcquariusInBhava4() {
-		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("Ascendent: Acquarius \n");
-		taurusInBhava1.append("Maraka: Mangal \n");
-		return taurusInBhava1.toString();
+		StringBuffer acquariusInBhava4 = new StringBuffer();
+		acquariusInBhava4.append("\n");
+		acquariusInBhava4.append("\n");
+		return acquariusInBhava4.toString();
 	}
 
 	public static String PiscesInBhava4() {
 		StringBuffer piscesInBhava4 = new StringBuffer();
-		piscesInBhava4.append("");
-		piscesInBhava4.append("Maraka: Mangal \n");
+		piscesInBhava4.append("\n");
+		piscesInBhava4.append("\n");
 		return piscesInBhava4.toString();
 	}
-
-	
-	
-	
 
 }
