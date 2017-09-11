@@ -18,7 +18,7 @@ public class LabhaBhavaHelper {
 	public static String infoAboutLordOfBhava11InBhava1(Bhava11 bhava11, Bhava1 bhava1) {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
-				"You profit from your own efforts and very concerned about the correct resulta of your efforts.");
+				"The 11th lord in 1st house indicates that you profit from your own efforts and very concerned about the correct results of your efforts.");
 		return infoBuffer.toString();
 
 	}
@@ -32,7 +32,7 @@ public class LabhaBhavaHelper {
 
 	public static String infoAboutLordOfBhava11InBhava3(Bhava11 bhava11, Bhava3 bhava3) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Make money from own efforts");
+		infoBuffer.append("The 11th lord in the 3rd house indicates that you make money from own efforts");
 		return infoBuffer.toString();
 
 	}
@@ -72,28 +72,28 @@ public class LabhaBhavaHelper {
 	public static String infoAboutLordOfBhava11InBhava8(Bhava11 bhava11, Bhava8 bhava8) {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
-				"Money can come from research,histroy,astrology or past life work. Secret manipulation of money or profits, or money used for control of power.");
+				"Money can come from research,history,astrology or past life work. Secret manipulation of money or profits, or money used for control of power.");
 		return infoBuffer.toString();
 
 	}
 
 	public static String infoAboutLordOfBhava11InBhava9(Bhava11 bhava11, Bhava9 bhava9) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Problems with father.There can be sudden separation or loss.");
+		infoBuffer.append("The 11th lord in the 9th house,indicates luck. It creates a Dhana Yoga. Those who have amazing capacity to make money and are extremely wealthy have a connection between the 11th and the 9th house. ");
 		return infoBuffer.toString();
 
 	}
 
 	public static String infoAboutLordOfBhava11InBhava10(Bhava11 bhava11, Bhava10 bhava10) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Possibility of working abroad.Involved in office politics");
+		infoBuffer.append("Your earnings are directly connected to your career.");
 		return infoBuffer.toString();
 
 	}
 
 	public static String infoAboutLordOfBhava11InBhava11(Bhava11 bhava11) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Sudden lose of money leading to change in long term earning.");
+		infoBuffer.append("Self made person who has knack of making money. It can also show a desire for spiritual progress.");
 		return infoBuffer.toString();
 
 	}
@@ -101,7 +101,7 @@ public class LabhaBhavaHelper {
 	public static String infoAboutLordOfBhava11InBhava12(Bhava11 bhava11, Bhava12 bhava12) {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
-				"Suffer from insomnia or deliberately avoid comfortable bed and nice surroundings in the bedroom. Secret vices and desire. Deal with problems by doing meditations and retreat. Problems with feet.");
+				"It shows how we spend money. You spend money as soon as you make it.");
 		return infoBuffer.toString();
 
 	}
