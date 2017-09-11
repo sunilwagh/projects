@@ -103,5 +103,52 @@ public static Horoscope createHoroscopeB(){
     	
     	return horoscope;
     }
+ 
+ 
+ public static Horoscope createHoroscopeC(){
+ 	
+ 	ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> geminiGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> cancerGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> leoGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> virgoGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> libraGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> scorpioGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> sagittariusGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> capricornGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> acquariusGrahas = new ArrayList<Graha>();
+ 	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
+ 	
+ 	
+ 	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, Name_Of_Nakshatra.CHITRA,new Pada4()));
+ 	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, Name_Of_Nakshatra.BHARANI, new Pada2()));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada3()));
+ 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, Name_Of_Nakshatra.CHITRA,new Pada3()));
+    cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, Name_Of_Nakshatra.JYESTHA,new Pada1()));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada2()));
+	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, Name_Of_Nakshatra.SWATI,new Pada2()));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, Name_Of_Nakshatra.MRIGASHIRSHA, new Pada1()));
+ 	piscesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, Name_Of_Nakshatra.JYESTHA,new Pada3()));
+ 	
+ 	
+ 	Horoscope horoscope = new Horoscope();
+ 	horoscope.setBhava1(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA1,Name_Of_Rashi.LEO,leoGrahas));
+ 	horoscope.setBhava2(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA2,Name_Of_Rashi.VIRGO,virgoGrahas));
+ 	horoscope.setBhava3(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA3,Name_Of_Rashi.LIBRA,libraGrahas));
+ 	horoscope.setBhava4(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA4,Name_Of_Rashi.SCORPIO,scorpioGrahas));
+ 	horoscope.setBhava5(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA5,Name_Of_Rashi.SAGITTAURIUS,sagittariusGrahas));
+ 	horoscope.setBhava6(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA6,Name_Of_Rashi.CAPRICORN,capricornGrahas));
+ 	horoscope.setBhava7(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA7,Name_Of_Rashi.ACQUARIUS,acquariusGrahas));
+ 	horoscope.setBhava8(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA8,Name_Of_Rashi.PISCES,piscesGrahas));
+ 	horoscope.setBhava9(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA9,Name_Of_Rashi.ARIES,ariesGrahas));
+ 	horoscope.setBhava10(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA10,Name_Of_Rashi.TAURUS,taurusGrahas));
+ 	horoscope.setBhava11(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA11,Name_Of_Rashi.GEMINI,geminiGrahas));
+ 	horoscope.setBhava12(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA12,Name_Of_Rashi.CANCER,cancerGrahas));
+ 	
+ 	
+ 	
+ 	return horoscope;
+ }
 
 }

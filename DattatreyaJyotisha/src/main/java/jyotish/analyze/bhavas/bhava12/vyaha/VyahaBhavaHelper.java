@@ -27,14 +27,14 @@ public class VyahaBhavaHelper {
 	public static String infoAboutLordOfBhava12InBhava2(Bhava12 bhava8, Bhava2 bhava2) {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
-				"Material loss. You can fritter away your inheritances,talents or inner abilities.");
+				"In the second house, it indicates material loss. You can fritter away your inheritances,talents or inner abilities.");
 		return infoBuffer.toString();
 
 	}
 
 	public static String infoAboutLordOfBhava12InBhava3(Bhava12 bhava8, Bhava3 bhava3) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("Probably no siblings. It also indicates problem with self-confidence.");
+		infoBuffer.append("The third house indicates self-motivation,courage,writing,short journeys and brothers. Some loss is indicated here.");
 		return infoBuffer.toString();
 
 	}
@@ -42,7 +42,7 @@ public class VyahaBhavaHelper {
 	public static String infoAboutLordOfBhava12InBhava4(Bhava12 bhava8, Bhava4 bhava4) {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
-				"Loss or separation from mother is possible. You may live in a foreign country The 4th and 8th house are connected with Moksha and so you may be aware of past life connections.");
+				"In the fourth house it indicates a change of residence. Also a difficult relationship with your mother,maybe through separation or loss.");
 		return infoBuffer.toString();
 
 	}
@@ -56,7 +56,7 @@ public class VyahaBhavaHelper {
 
 	public static String infoAboutLordOfBhava12InBhava6(Bhava12 bhava8, Bhava6 bhava6) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("You will work hard on your Karmic issues and have ability to face obstacles and enemies.");
+		infoBuffer.append("In the sixth house, you will work hard on your Karmic issues and have ability to face obstacles and enemies.");
 		return infoBuffer.toString();
 
 	}
