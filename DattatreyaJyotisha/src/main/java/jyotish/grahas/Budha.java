@@ -19,6 +19,7 @@ public class Budha implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
+	float degrees;
 	
     static Set<Name_Of_Rashi> lordOfRashis = new HashSet<Name_Of_Rashi>();
 	
@@ -129,6 +130,12 @@ public class Budha implements Graha{
 	}
 	public static Set<Name_Of_Graha> getNuetralToGraha() {
 		return NUETRAL_TO_GRAHA;
+	}
+	public float getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(float degrees) {
+		this.degrees = degrees;
 	}
 	
 	

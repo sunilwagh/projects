@@ -19,6 +19,7 @@ public class Ketu implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
+	float degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.KETU;
 	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.SCORPIO;

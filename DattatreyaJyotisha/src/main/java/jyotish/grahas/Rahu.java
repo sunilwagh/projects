@@ -19,6 +19,7 @@ public class Rahu implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
+	float degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.RAHU;
 	private final static Name_Of_Rashi MOOLTRIKONARASHI=Name_Of_Rashi.ARIES;

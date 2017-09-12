@@ -14,10 +14,12 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 public class Shani implements Graha{
+	
 	Rashi lagnaKundaliRashi;
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
+	float degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.SHANI;
 	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
