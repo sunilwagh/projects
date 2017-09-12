@@ -14,11 +14,12 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 public class Shukra implements Graha{
+	
 	Rashi lagnaKundaliRashi;
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
-	float degrees;
+	double degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.SHUKRA;
 	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
@@ -56,5 +57,13 @@ public class Shukra implements Graha{
 	public void setPada(Pada pada) {
 		this.pada = pada;
 	}
+	public double getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
+	
+	
 
 }

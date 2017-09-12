@@ -22,7 +22,7 @@ public class Guru implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
-	float degrees;
+	double degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.GURU;
 	//final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
@@ -64,5 +64,13 @@ public class Guru implements Graha{
 	public void setPada(Pada pada) {
 		this.pada = pada;
 	}
+	public double getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
+	
+	
 
 }

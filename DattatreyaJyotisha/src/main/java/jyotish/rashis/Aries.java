@@ -6,10 +6,12 @@ import jyotish.grahas.Graha;
 import util.JyotishEnumUtil.Direction;
 import util.JyotishEnumUtil.Gender_Of_Rashi;
 import util.JyotishEnumUtil.Mobility_Of_Rashi;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 public class Aries implements Rashi{
 	
+	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ARIES;
 	Mobility_Of_Rashi mobility;
 	Gender_Of_Rashi gender;
 	Tattva tattva;
@@ -46,6 +48,14 @@ public class Aries implements Rashi{
 	}
 	public void setGrahas(ArrayList<Graha> grahas) {
 		this.grahas = grahas;
+	}
+	
+	
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
+	public void setNameOfRashi(Name_Of_Rashi nameOfRashi) {
+		this.nameOfRashi = nameOfRashi;
 	}
 	@Override
 	public String toString() {

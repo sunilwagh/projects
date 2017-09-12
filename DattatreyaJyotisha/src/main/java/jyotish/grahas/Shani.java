@@ -19,7 +19,7 @@ public class Shani implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
-	float degrees;
+	double degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.SHANI;
 	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
@@ -90,6 +90,14 @@ public class Shani implements Graha{
 	public static Set<Name_Of_Graha> getNuetralToGraha() {
 		return NUETRAL_TO_GRAHA;
 	}
+	public double getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
+	
+	
 	
 	
 

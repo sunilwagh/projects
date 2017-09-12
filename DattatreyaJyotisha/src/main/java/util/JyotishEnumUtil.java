@@ -21,7 +21,7 @@ public class JyotishEnumUtil {
 	}
 
 	public enum Name_Of_Graha {
-		SURYA, CHANDRA, MANGAL, BUDHA, GURU, SHUKRA, SHANI, RAHU, KETU
+		LAGNA,SURYA,CHANDRA,MANGAL,BUDHA,GURU,SHUKRA,SHANI,RAHU,KETU
 	}
 
 	public enum Nakshatra_Type {
@@ -66,6 +66,10 @@ public class JyotishEnumUtil {
 	public enum Caste {
 
 		BRAHAMANA, KSHATRIYA, VAISHYA, SHUDRA
+	}
+	
+	public enum Guna{
+	SATTVIC,RAJASIC,TAMASIC
 	}
 	
 	public enum Positive_Strength_Of_Graha{

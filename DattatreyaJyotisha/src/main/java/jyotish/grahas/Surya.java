@@ -16,12 +16,12 @@ import util.JyotishEnumUtil.Tattva;
 public class Surya implements Graha {
 	
 	Rashi lagnaKundaliRashi;
-	Nakshatra nakshatra;
+    Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
-	float degrees;
+	double degrees;
 	
-	private final static Name_Of_Graha grahaName = Name_Of_Graha.SURYA;
+	private final Name_Of_Graha grahaName = Name_Of_Graha.SURYA;
 	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
 	private final static Name_Of_Rashi EXALTATION=Name_Of_Rashi.VIRGO;
 	private final static Name_Of_Rashi DEBILITATION=Name_Of_Rashi.PISCES;
@@ -58,5 +58,13 @@ public class Surya implements Graha {
 	public void setPada(Pada pada) {
 		this.pada = pada;
 	}
+	public double getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
+	
+	
 
 }

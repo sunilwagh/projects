@@ -19,7 +19,7 @@ public class Rahu implements Graha{
 	Nakshatra nakshatra;
 	Bhava bhava;
 	Pada pada;
-	float degrees;
+	double degrees;
 	
 	private final static Name_Of_Graha grahaName = Name_Of_Graha.RAHU;
 	private final static Name_Of_Rashi MOOLTRIKONARASHI=Name_Of_Rashi.ARIES;
@@ -93,6 +93,14 @@ public class Rahu implements Graha{
 	public static Set<Name_Of_Graha> getNuetralToGraha() {
 		return NUETRAL_TO_GRAHA;
 	}
+	public double getDegrees() {
+		return degrees;
+	}
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
+	
+	
 	
 	
 

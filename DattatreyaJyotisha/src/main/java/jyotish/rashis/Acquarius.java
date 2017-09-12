@@ -6,16 +6,26 @@ import jyotish.grahas.Graha;
 import util.JyotishEnumUtil.Direction;
 import util.JyotishEnumUtil.Gender_Of_Rashi;
 import util.JyotishEnumUtil.Mobility_Of_Rashi;
+import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 public class Acquarius implements Rashi{
 	
+	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ACQUARIUS;
 	Mobility_Of_Rashi mobility;
 	Gender_Of_Rashi gender;
 	Tattva tattva;
 	Direction direction;
 	ArrayList<Graha> grahas;
 	
+	
+	
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
+	public void setNameOfRashi(Name_Of_Rashi nameOfRashi) {
+		this.nameOfRashi = nameOfRashi;
+	}
 	public Mobility_Of_Rashi getMobility() {
 		return mobility;
 	}
@@ -46,6 +56,8 @@ public class Acquarius implements Rashi{
 	public void setGrahas(ArrayList<Graha> grahas) {
 		this.grahas = grahas;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "Acquarius [mobility=" + mobility + ", gender=" + gender + ", tattva=" + tattva + ", direction="
