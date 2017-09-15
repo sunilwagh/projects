@@ -16,7 +16,7 @@ public class SimpleStep implements Tasklet{
 	}
 	
 	private void workload() throws Exception{
-		Thread.sleep(5000);
+		Thread.sleep(1);
 	}
  
 }
