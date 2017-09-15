@@ -7,4 +7,10 @@ public class PiscesAscendant {
 	 public enum FUNCTIONAL_MALEFIC{SHUKRA,SURYA,RAHU,KETU};
 	
      public enum FUNCTIONAL_NUETRAL{BUDHA,GURU};
+     
+     
+     PiscesAscendant(){
+    	 
+    	 
+     }
 }
