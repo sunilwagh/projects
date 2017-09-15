@@ -92,8 +92,8 @@ public final class GrahaFactory {
 	
 	public static Graha createShaniGraha(Name_Of_Nakshatra nakshatra,Pada pada,double degrees) {
 		Shani shani = new Shani();
-		shani.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		shani.setPada(pada);
+		//shani.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
+		//shani.setPada(pada);
 		return shani;
 
 	}

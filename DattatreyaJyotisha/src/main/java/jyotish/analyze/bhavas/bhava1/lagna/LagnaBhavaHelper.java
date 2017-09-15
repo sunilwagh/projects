@@ -25,7 +25,7 @@ public class LagnaBhavaHelper {
 
 	public static String infoAboutLordOfBhava1InBhava2(Bhava1 bhava1, Bhava2 bhava2) {
 		StringBuffer infoBuffer = new StringBuffer();
-		infoBuffer.append("This placement shows interest in music, educationa dna family wealth");
+		infoBuffer.append("This placement shows interest in music, education amd family wealth");
 		return infoBuffer.toString();
 
 	}
