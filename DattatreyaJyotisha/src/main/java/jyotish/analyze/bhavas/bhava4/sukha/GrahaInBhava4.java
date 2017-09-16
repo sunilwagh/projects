@@ -4,6 +4,11 @@ import jyotish.analyze.bhavas.GrahaInBhava;
 
 public class GrahaInBhava4 implements GrahaInBhava{
 	
+
+
+
+	
+	
 	public String SuryaInBhava() {
 		StringBuilder suryaInBhava4 = new StringBuilder();
 		suryaInBhava4.append("\n");
@@ -12,7 +17,7 @@ public class GrahaInBhava4 implements GrahaInBhava{
 	
 	public String ChandraInBhava() {
 		StringBuilder chandraInBhava4 = new StringBuilder();
-		chandraInBhava4.append("\n");
+		chandraInBhava4.append("One of the child will settle abroad \n");
 		return chandraInBhava4.toString();
 	}
 	
@@ -30,7 +35,7 @@ public class GrahaInBhava4 implements GrahaInBhava{
 	
 	public String GuruInBhava() {
 		StringBuilder guruInBhava4 = new StringBuilder();
-		guruInBhava4.append("\n");
+		guruInBhava4.append("Have little knowledge but will advise everybody. \n");
 		return guruInBhava4.toString();
 	}
 	
@@ -42,7 +47,7 @@ public class GrahaInBhava4 implements GrahaInBhava{
 	
 	public String ShaniInBhava() {
 		StringBuilder shaniInBhava4 = new StringBuilder();
-		shaniInBhava4.append("\n");
+		shaniInBhava4.append("Any new thing bought will have scratches. Advisable to donate medicine when buying a car.\n");
 		return shaniInBhava4.toString();
 	}
 	

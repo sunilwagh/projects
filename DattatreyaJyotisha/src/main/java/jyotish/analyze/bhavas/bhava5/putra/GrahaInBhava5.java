@@ -30,7 +30,7 @@ public class GrahaInBhava5 implements GrahaInBhava{
 	
 	public String GuruInBhava() {
 		StringBuilder guruInBhava5 = new StringBuilder();
-		guruInBhava5.append("\n");
+		guruInBhava5.append("Less satisfaction from children. He thinks that the child will take care of him and the child gets transferred. \n");
 		return guruInBhava5.toString();
 	}
 	
@@ -42,7 +42,7 @@ public class GrahaInBhava5 implements GrahaInBhava{
 	
 	public String ShaniInBhava() {
 		StringBuilder shaniInBhava5 = new StringBuilder();
-		shaniInBhava5.append("\n");
+		shaniInBhava5.append("Suspicious Nature \n");
 		return shaniInBhava5.toString();
 	}
 	

@@ -30,7 +30,7 @@ public class GrahaInBhava11 implements GrahaInBhava{
 	
 	public String GuruInBhava() {
 		StringBuilder guruInBhava11 = new StringBuilder();
-		guruInBhava11.append("\n");
+		guruInBhava11.append("Good friend circle \n");
 		return guruInBhava11.toString();
 	}
 	
@@ -48,7 +48,7 @@ public class GrahaInBhava11 implements GrahaInBhava{
 	
 	public String RahuInBhava() {
 		StringBuilder rahuInBhava11 = new StringBuilder();
-		rahuInBhava11.append("\n");
+		rahuInBhava11.append("The friend circle would be big. Suppose he is from one religion, other religions will help him more. \n");
 		return rahuInBhava11.toString();
 	}
 	

@@ -30,7 +30,7 @@ public class GrahaInBhava7 implements GrahaInBhava{
 	
 	public String GuruInBhava() {
 		StringBuilder guruInBhava7 = new StringBuilder();
-		guruInBhava7.append("\n");
+		guruInBhava7.append("Will give advice but will not take it. Will be egoistic, will say 'look u shud have taken my advice, now you are in bad state' \n");
 		return guruInBhava7.toString();
 	}
 	
