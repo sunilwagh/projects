@@ -3,19 +3,23 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-import jyotish.grahas.Graha;
-import util.JyotishEnumUtil.Diety;
+
+import util.JyotishEnumUtil.Name_Of_Graha;
 import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAKSHATRA_DIETY;
+import util.NakshatraEnumUtil.NAKSHTRA_GANA;
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
-public class Ashwini implements Nakshatra {
+public final class Ashwini implements Nakshatra {
+	
+	private static final NAKSHATRA_DIETY Diety=NAKSHATRA_DIETY.ASHWINI_KUMARS;
+	private static final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
+	private static final Tattva TATTVA = Tattva.PRITHVI;
+	private static final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
+	private static final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.DEVA;
+	
 
-	private static Diety diety;
-
-	private static Tattva tattva;
-
-	private Graha graha;
-
-	private static List<String> features = new ArrayList<String>();
+		private static List<String> features = new ArrayList<String>();
 
 	static {
 
@@ -36,28 +40,6 @@ public class Ashwini implements Nakshatra {
 
 	}
 
-	public Diety getDiety() {
-		return diety;
-	}
-
-	public void setDiety(Diety diety) {
-		this.diety = diety;
-	}
-
-	public Tattva getTattva() {
-		return tattva;
-	}
-
-	public void setTattva(Tattva tattva) {
-		this.tattva = tattva;
-	}
-
-	public Graha getGraha() {
-		return graha;
-	}
-
-	public void setGraha(Graha graha) {
-		this.graha = graha;
-	}
+	
 
 }

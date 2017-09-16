@@ -15,8 +15,8 @@ import jyotish.nakshatras.padas.Pada3;
 import jyotish.nakshatras.padas.Pada4;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
 import util.JyotishEnumUtil.Name_Of_Rashi;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 public class HoroscopeFactory {
 	
@@ -36,15 +36,15 @@ public static Horoscope createHoroscopeB(){
     	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
     	
     	/*
-    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, Name_Of_Nakshatra.CHITRA,new Pada4()));
-    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, Name_Of_Nakshatra.CHITRA,new Pada3()));
-    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, Name_Of_Nakshatra.SWATI,new Pada2()));
-    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, Name_Of_Nakshatra.JYESTHA,new Pada1()));
-    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, Name_Of_Nakshatra.JYESTHA,new Pada3()));
-    	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, Name_Of_Nakshatra.BHARANI, new Pada2()));
-    	taurusGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, Name_Of_Nakshatra.MRIGASHIRSHA, new Pada1()));
-    	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada3()));
-    	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada2()));
+    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHATRA.CHITRA,new Pada4()));
+    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, NAME_OF_NAKSHATRA.CHITRA,new Pada3()));
+    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHATRA.SWATI,new Pada2()));
+    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, NAME_OF_NAKSHATRA.JYESTHA,new Pada1()));
+    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHATRA.JYESTHA,new Pada3()));
+    	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHATRA.BHARANI, new Pada2()));
+    	taurusGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHATRA.MRIGASHIRSHA, new Pada1()));
+    	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHATRA.PURVA_PHALGUNI,new Pada3()));
+    	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, NAME_OF_NAKSHATRA.PURVA_PHALGUNI,new Pada2()));
     	*/
     
     	
@@ -83,15 +83,15 @@ public static Horoscope createHoroscopeB(){
     	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
     	
     	
-    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, Name_Of_Nakshatra.JYESTHA,new Pada4(),23.35));
-    	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, Name_Of_Nakshatra.BHARANI, new Pada4(),24.38));
-    	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, Name_Of_Nakshatra.UTTAR_PHALGUNI,new Pada2(),3.12));
-    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, Name_Of_Nakshatra.JYESTHA,new Pada4(),22.52));
-    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, Name_Of_Nakshatra.SWATI,new Pada1(),8.45));
-    	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, Name_Of_Nakshatra.UTTAR_ASHADA,new Pada4(),6.43));
-    	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, Name_Of_Nakshatra.CHITRA,new Pada1(),26.18));
-    	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, Name_Of_Nakshatra.PUNARVASU,new Pada4(),0.48));
-    	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, Name_Of_Nakshatra.UTTAR_ASHADA,new Pada2(),0.48));
+    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHTRA.JYESTHA,new Pada4(),23.35));
+    	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHTRA.BHARANI, new Pada4(),24.38));
+    	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHTRA.UTTAR_PHALGUNI,new Pada2(),3.12));
+    	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, NAME_OF_NAKSHTRA.JYESTHA,new Pada4(),22.52));
+    	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, NAME_OF_NAKSHTRA.SWATI,new Pada1(),8.45));
+    	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, NAME_OF_NAKSHTRA.UTTAR_ASHADA,new Pada4(),6.43));
+    	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHTRA.CHITRA,new Pada1(),26.18));
+    	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHTRA.PUNARVASU,new Pada4(),0.48));
+    	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHTRA.UTTAR_ASHADA,new Pada2(),0.48));
     	
     	
     	Horoscope horoscope = new Horoscope();
@@ -140,15 +140,15 @@ public static Horoscope createHoroscopeB(){
  	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
  	
  	
- 	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, Name_Of_Nakshatra.CHITRA,new Pada4(),0.00));
- 	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, Name_Of_Nakshatra.BHARANI, new Pada2(),0.00));
- 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada3(),0.00));
- 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, Name_Of_Nakshatra.CHITRA,new Pada3(),0.00));
-    cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, Name_Of_Nakshatra.JYESTHA,new Pada1(),0.00));
- 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada2(),0.00));
-	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, Name_Of_Nakshatra.SWATI,new Pada2(),0.00));
- 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, Name_Of_Nakshatra.MRIGASHIRSHA, new Pada1(),0.00));
- 	piscesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, Name_Of_Nakshatra.JYESTHA,new Pada3(),0.00));
+ 	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHTRA.CHITRA,new Pada4(),0.00));
+ 	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHTRA.BHARANI, new Pada2(),0.00));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHTRA.PURVA_PHALGUNI,new Pada3(),0.00));
+ 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, NAME_OF_NAKSHTRA.CHITRA,new Pada3(),0.00));
+    cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, NAME_OF_NAKSHTRA.JYESTHA,new Pada1(),0.00));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, NAME_OF_NAKSHTRA.PURVA_PHALGUNI,new Pada2(),0.00));
+	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHTRA.SWATI,new Pada2(),0.00));
+ 	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHTRA.MRIGASHIRSHA, new Pada1(),0.00));
+ 	piscesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHTRA.JYESTHA,new Pada3(),0.00));
  	
  	
  	Horoscope horoscope = new Horoscope();
@@ -187,15 +187,15 @@ public static Horoscope createHoroscopeB(){
 	 	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
 	 	
 	 	
-	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, Name_Of_Nakshatra.CHITRA,new Pada4(),0.00));
-	 	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, Name_Of_Nakshatra.BHARANI, new Pada2(),0.00));
-	 	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada3(),0.00));
-	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, Name_Of_Nakshatra.CHITRA,new Pada3(),0.00));
-	    cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, Name_Of_Nakshatra.JYESTHA,new Pada1(),0.00));
-	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, Name_Of_Nakshatra.PURVA_PHALGUNI,new Pada2(),0.00));
-		piscesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, Name_Of_Nakshatra.SWATI,new Pada2(),0.00));
-	 	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, Name_Of_Nakshatra.MRIGASHIRSHA, new Pada1(),0.00));
-	 	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, Name_Of_Nakshatra.JYESTHA,new Pada3(),0.00));
+	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHTRA.CHITRA,new Pada4(),0.00));
+	 	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHTRA.BHARANI, new Pada2(),0.00));
+	 	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHTRA.PURVA_PHALGUNI,new Pada3(),0.00));
+	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, NAME_OF_NAKSHTRA.CHITRA,new Pada3(),0.00));
+	    cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, NAME_OF_NAKSHTRA.JYESTHA,new Pada1(),0.00));
+	 	leoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, NAME_OF_NAKSHTRA.PURVA_PHALGUNI,new Pada2(),0.00));
+		piscesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHTRA.SWATI,new Pada2(),0.00));
+	 	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHTRA.MRIGASHIRSHA, new Pada1(),0.00));
+	 	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHTRA.JYESTHA,new Pada3(),0.00));
 	 	
 	 	
 	 	Horoscope horoscope = new Horoscope();

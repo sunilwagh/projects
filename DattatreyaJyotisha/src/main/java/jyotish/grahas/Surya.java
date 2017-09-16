@@ -9,9 +9,9 @@ import jyotish.nakshatras.padas.Pada;
 import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 public class Surya implements Graha {
 	
@@ -27,7 +27,7 @@ public class Surya implements Graha {
 	private final static Name_Of_Rashi DEBILITATION=Name_Of_Rashi.PISCES;
 	private final static Name_Of_Rashi OWN=Name_Of_Rashi.GEMINI;
 	private final static Tattva tattva = Tattva.PRITHVI;
-	private final static Set<Name_Of_Nakshatra> LORDOFNAKSHATRA = new HashSet<Name_Of_Nakshatra>();
+	private final static Set<NAME_OF_NAKSHTRA> LORDOFNAKSHATRA = new HashSet<NAME_OF_NAKSHTRA>();
 	private final static Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
 	private final static Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
 	private final static Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();

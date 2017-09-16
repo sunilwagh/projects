@@ -10,9 +10,9 @@ import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Guna;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 public class Mangal implements Graha{
 	Rashi lagnaKundaliRashi;
@@ -21,24 +21,26 @@ public class Mangal implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private static final Set<Name_Of_Rashi> LORDOFRASHIS = new HashSet<Name_Of_Rashi>();
 	private static final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.MANGAL;
 	private static final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.ARIES;
 	private static final Name_Of_Rashi EXALTATION = Name_Of_Rashi.VIRGO;
 	private static final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.PISCES;
 	private static final Name_Of_Rashi OWN = Name_Of_Rashi.GEMINI;
 	private static final Tattva TATTVA = Tattva.PRITHVI;
-	private static final Set<Name_Of_Nakshatra> LORDOFNAKSHATRA = new HashSet<Name_Of_Nakshatra>();
+	private static final Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
+	private static final Guna GUNA = Guna.RAJASIC;
+	private static final Set<Name_Of_Rashi> LORD_OF_RASHIS = new HashSet<Name_Of_Rashi>();
 	private static final Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
 	private static final Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
 	private static final Set<Name_Of_Graha> NUETRAL_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private static final Guna GUNA = Guna.RAJASIC;
 	private static final Set<Name_Of_Bhava> STRONGEST = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Bhava> STRONG = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Bhava> NUETRAL = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Bhava> WEAK = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Bhava> WEAKEST = new HashSet<Name_Of_Bhava>();
+	
+	
 
 	static {
 		addFriendsToGraha();
@@ -55,14 +57,14 @@ public class Mangal implements Graha{
 	}
 
 	public static void addLordOfNakshatrasToGraha() {
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.ASHLESHA);
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.JYESTHA);
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.REVATI);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.ASHLESHA);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.JYESTHA);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.REVATI);
 	}
 
 	private static void addLordOfRashisToGraha() {
-		LORDOFRASHIS.add(Name_Of_Rashi.VIRGO);
-		LORDOFRASHIS.add(Name_Of_Rashi.GEMINI);
+		LORD_OF_RASHIS.add(Name_Of_Rashi.VIRGO);
+		LORD_OF_RASHIS.add(Name_Of_Rashi.GEMINI);
 
 	}
 

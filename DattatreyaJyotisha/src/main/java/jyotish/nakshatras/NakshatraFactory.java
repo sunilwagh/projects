@@ -2,13 +2,13 @@ package jyotish.nakshatras;
 
 import jyotish.grahas.Ketu;
 import util.JyotishEnumUtil;
-import util.JyotishEnumUtil.Diety;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+
 
 public final class NakshatraFactory {
 
 	// use getShape method to get object of type shape
-	public static Nakshatra getNakshatra(Name_Of_Nakshatra nakshatra) {
+	public static Nakshatra getNakshatra(NAME_OF_NAKSHTRA nakshatra) {
 
 		int nakshatraNumber = nakshatra.getNumber();
 		switch (nakshatraNumber) {
@@ -74,9 +74,6 @@ public final class NakshatraFactory {
 
 	public static Nakshatra createAshwiniNakshatra() {
 		Ashwini ashwini = new Ashwini();
-		ashwini.setDiety(Diety.ASHWINI_KUMARS);
-		ashwini.setGraha(new Ketu());
-		
 		return ashwini;
 
 	}

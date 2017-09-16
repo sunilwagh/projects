@@ -9,9 +9,9 @@ import jyotish.nakshatras.padas.Pada;
 import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 public class Rahu implements Graha{
 	
@@ -29,7 +29,7 @@ public class Rahu implements Graha{
 	private final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
 	private final static Name_Of_Rashi OWN=Name_Of_Rashi.GEMINI;
 	private final static Tattva tattva = Tattva.PRITHVI;
-	private final static Set<Name_Of_Nakshatra> LORDOFNAKSHATRA = new HashSet<Name_Of_Nakshatra>();
+	private final static Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
 	private final static Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
 	private final static Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
 	private final static Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
@@ -60,39 +60,7 @@ public class Rahu implements Graha{
 	public void setPada(Pada pada) {
 		this.pada = pada;
 	}
-	public static Name_Of_Graha getGrahaname() {
-		return grahaName;
-	}
-	public static Name_Of_Rashi getMooltrikonarashi() {
-		return moolTrikonaRashi;
-	}
-	public static Name_Of_Rashi getExaltation() {
-		return EXALTATION;
-	}
-	public static Name_Of_Rashi getDebilitation() {
-		return DEBILITATION;
-	}
-	public static Name_Of_Rashi getOwn() {
-		return OWN;
-	}
-	public static Tattva getTattva() {
-		return tattva;
-	}
-	public static Set<Name_Of_Nakshatra> getLordofnakshatra() {
-		return LORDOFNAKSHATRA;
-	}
-	public static Set<Name_Of_Bhava> getKaraka() {
-		return KARAKA;
-	}
-	public static Set<Name_Of_Graha> getEnemiesToGraha() {
-		return ENEMIES_TO_GRAHA;
-	}
-	public static Set<Name_Of_Graha> getFriendsToGraha() {
-		return FRIENDS_TO_GRAHA;
-	}
-	public static Set<Name_Of_Graha> getNuetralToGraha() {
-		return NUETRAL_TO_GRAHA;
-	}
+	
 	public double getDegrees() {
 		return degrees;
 	}

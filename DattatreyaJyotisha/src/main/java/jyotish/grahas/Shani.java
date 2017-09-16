@@ -10,7 +10,7 @@ import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Guna;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
@@ -23,7 +23,7 @@ public class Shani implements Graha{
 	private static final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.PISCES;
 	private static final Name_Of_Rashi OWN = Name_Of_Rashi.GEMINI;
 	private static final Tattva TATTVA = Tattva.VAYU;
-	private static final Set<Name_Of_Nakshatra> LORDOFNAKSHATRA = new HashSet<Name_Of_Nakshatra>();
+	private static final Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
 	private static final Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
 	private static final Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
 	private static final Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
@@ -51,9 +51,9 @@ public class Shani implements Graha{
 	
 	
 	public static void addLordOfNakshatrasToGraha() {
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.PUSHYA);
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.ANURADHA);
-		LORDOFNAKSHATRA.add(Name_Of_Nakshatra.UTTAR_BHADRAPADA);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.PUSHYA);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.ANURADHA);
+		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.UTTAR_BHADRAPADA);
 	}
 
 	private static void addLordOfRashisToGraha() {

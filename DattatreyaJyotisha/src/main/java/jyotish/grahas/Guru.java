@@ -12,7 +12,7 @@ import jyotish.nakshatras.padas.Pada;
 import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
+import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
@@ -24,20 +24,7 @@ public class Guru implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private final static Name_Of_Graha grahaName = Name_Of_Graha.GURU;
-	//final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
-	private final static Name_Of_Rashi EXALTATION=Name_Of_Rashi.VIRGO;
-	private final static Name_Of_Rashi DEBILITATION=Name_Of_Rashi.PISCES;
-	private final static Name_Of_Rashi OWN=Name_Of_Rashi.GEMINI;
-	private final static Tattva tattva = Tattva.PRITHVI;
-	private final static Set<Name_Of_Nakshatra> LORDOFNAKSHATRA = new HashSet<Name_Of_Nakshatra>();
-	private final static Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
-	private final static Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private final static Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private final static Set<Name_Of_Graha> NUETRAL_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	static Set<Name_Of_Rashi> lordOfRashis = new HashSet<Name_Of_Rashi>();
 	
-	final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.SAGITTAURIUS;
 	
 	
 	public Rashi getLagnaKundaliRashi() {

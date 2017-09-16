@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import util.JyotishEnumUtil.Name_Of_Nakshatra;
-
 public class Bharani implements Nakshatra,Serializable{
 	
 	private static List<String> features = new ArrayList<String>();
