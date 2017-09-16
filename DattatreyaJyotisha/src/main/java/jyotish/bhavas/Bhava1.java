@@ -3,11 +3,16 @@ package jyotish.bhavas;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 
+@Component("bhava1")
 public class Bhava1 implements Bhava{
 	
+	@Autowired
 	private Rashi rashi;
 	
 	private Name_Of_Rashi rashiName;
@@ -39,6 +44,8 @@ public class Bhava1 implements Bhava{
 	public void setRashi(Rashi rashi) {
 		this.rashi = rashi;
 	}
+	
+	
 	
 	
 

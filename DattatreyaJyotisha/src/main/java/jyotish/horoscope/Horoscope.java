@@ -1,28 +1,39 @@
 package jyotish.horoscope;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import jyotish.bhavas.Bhava;
 import jyotish.grahas.Graha;
 import jyotish.rashis.Rashi;
 
+@Component("horoscope")
 public class Horoscope {
 
+	@Autowired
 	Bhava bhava1;
+	@Autowired
 	Bhava bhava2;
+	@Autowired
 	Bhava bhava3;
+	@Autowired
 	Bhava bhava4;
+	@Autowired
 	Bhava bhava5;
+	@Autowired
 	Bhava bhava6;
+	@Autowired
 	Bhava bhava7;
+	@Autowired
 	Bhava bhava8;
+	@Autowired
 	Bhava bhava9;
+	@Autowired
 	Bhava bhava10;
+	@Autowired
 	Bhava bhava11;
+	@Autowired
 	Bhava bhava12;
-	
-	
-	
-	
-	
 	public Bhava getBhava1() {
 		return bhava1;
 	}
@@ -95,23 +106,6 @@ public class Horoscope {
 	public void setBhava12(Bhava bhava12) {
 		this.bhava12 = bhava12;
 	}
-	@Override
-	public String toString() {
-		return "Horoscope "
-				+ "[bhava1=" + bhava1 + ", bhava2=" + bhava2 + ", bhava3=" + bhava3 + ", bhava4=" + bhava4
-				+ ", bhava5=" + bhava5 + ", bhava6=" + bhava6 + ", bhava7=" + bhava7 + ", bhava8=" + bhava8
-				+ ", bhava9=" + bhava9 + ", bhava10=" + bhava10 + ", bhava11=" + bhava11 + ", bhava12=" + bhava12
-				+ ", getBhava1()=" + getBhava1() + ", getBhava2()=" + getBhava2() + ", getBhava3()=" + getBhava3()
-				+ ", getBhava4()=" + getBhava4() + ", getBhava5()=" + getBhava5() + ", getBhava6()=" + getBhava6()
-				+ ", getBhava7()=" + getBhava7() + ", getBhava8()=" + getBhava8() + ", getBhava9()=" + getBhava9()
-				+ ", getBhava10()=" + getBhava10() + ", getBhava11()=" + getBhava11() + ", getBhava12()=" + getBhava12()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
-	}
-	
-	
-	
-	
 	
 	
 	

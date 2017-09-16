@@ -4,6 +4,7 @@ package jyotish;
 import java.util.concurrent.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import jyotish.analyze.bhavas.bhava1.lagna.AnalyzeBhava1;
 import jyotish.analyze.bhavas.bhava10.karma.AnalyzeBhava10;
@@ -19,15 +20,11 @@ import jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
 import jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
 import jyotish.horoscope.Horoscope;
 
-public final class ProcessHoroscope {
+@Component("horoscopeProcessor")
+public final class HoroscopeProcessor {
 	
-	
+	@Autowired
 	Horoscope horoscope;
-	
-	ProcessHoroscope(Horoscope horoscope)
-	{
-	  this.horoscope=horoscope;	
-	}
 	
 	@Autowired
 	AnalyzeBhava1 analyzeBhava1;
@@ -288,8 +285,7 @@ public final class ProcessHoroscope {
 			readingForBhava12.append(analyzeBhava12.analyzeBhava12(horoscope));
 			return readingForBhava12.toString();
 		}
-		
-		
+
 		public Horoscope getHoroscope() {
 			return horoscope;
 		}
@@ -297,6 +293,11 @@ public final class ProcessHoroscope {
 		public void setHoroscope(Horoscope horoscope) {
 			this.horoscope = horoscope;
 		}
+		
+		
+		
 
 	}
+
+	
 }

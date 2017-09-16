@@ -1,7 +1,10 @@
 package jyotish.bhavas;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.rashis.Rashi;
 
+@Component("bhava4")
 public class Bhava4 implements Bhava{
 	
 	Rashi rashi;

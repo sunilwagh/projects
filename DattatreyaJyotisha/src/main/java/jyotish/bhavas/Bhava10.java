@@ -1,10 +1,15 @@
 package jyotish.bhavas;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import jyotish.rashis.Rashi;
 
+@Component("bhava10")
 public class Bhava10 implements Bhava{
 	
-    Rashi rashi;
+	@Autowired
+	Rashi rashi;
 
 	public Rashi getRashi() {
 		return rashi;

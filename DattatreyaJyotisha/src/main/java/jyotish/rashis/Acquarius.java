@@ -2,6 +2,8 @@ package jyotish.rashis;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.grahas.Graha;
 import util.JyotishEnumUtil.Direction;
 import util.JyotishEnumUtil.Gender_Of_Rashi;
@@ -9,6 +11,7 @@ import util.JyotishEnumUtil.Mobility_Of_Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
+@Component("acquarius")
 public class Acquarius implements Rashi{
 	
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ACQUARIUS;
