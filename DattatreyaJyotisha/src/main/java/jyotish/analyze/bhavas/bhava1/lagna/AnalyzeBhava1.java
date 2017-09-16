@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import jyotish.analyze.bhavas.AnalyzeBhava;
 import jyotish.analyze.bhavas.GrahaInBhava;
 import jyotish.analyze.bhavas.HouseLordPlacedInBhava;
 import jyotish.analyze.bhavas.RashiInBhava;
@@ -25,7 +26,7 @@ import jyotish.rashis.RashiUtil;
 import util.JyotishEnumUtil.Name_Of_Graha;
 
 @Component("analyzeBhava1")
-public class AnalyzeBhava1 {
+public class AnalyzeBhava1 implements AnalyzeBhava{
 	
 	@Autowired
 	@Qualifier("lagnaBhavaHelper")
@@ -39,7 +40,7 @@ public class AnalyzeBhava1 {
 	@Qualifier("rashiInBhava1")
 	RashiInBhava rashiInBhava;
 
-	public String analyzeBhava1(Horoscope horoscope) {
+	public String analyzeBhava(Horoscope horoscope) {
 		
 		
 		StringBuffer sbAnalyzeBhava1 = new StringBuffer();

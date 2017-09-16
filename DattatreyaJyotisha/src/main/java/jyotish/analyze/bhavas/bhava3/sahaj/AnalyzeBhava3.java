@@ -3,6 +3,7 @@ package jyotish.analyze.bhavas.bhava3.sahaj;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import jyotish.analyze.bhavas.AnalyzeBhava;
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -20,12 +21,12 @@ import jyotish.rashis.RashiUtil;
 import util.JyotishEnumUtil.Name_Of_Graha;
 
 @Component("analyzeBhava3")
-public class AnalyzeBhava3 {
+public class AnalyzeBhava3 implements AnalyzeBhava{
 
 	@Autowired
 	SahajBhavaHelper sahajBhavaHelper;
 	
-	public String analyzeBhava3(Horoscope horoscope) {
+	public String analyzeBhava(Horoscope horoscope) {
 		StringBuffer sbAnalyzeBhava3 = new StringBuffer();
 		
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();

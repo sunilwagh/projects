@@ -4,8 +4,10 @@ package jyotish;
 import java.util.concurrent.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import jyotish.analyze.bhavas.AnalyzeBhava;
 import jyotish.analyze.bhavas.bhava1.lagna.AnalyzeBhava1;
 import jyotish.analyze.bhavas.bhava10.karma.AnalyzeBhava10;
 import jyotish.analyze.bhavas.bhava11.labha.AnalyzeBhava11;
@@ -27,40 +29,52 @@ public final class HoroscopeProcessor {
 	Horoscope horoscope;
 	
 	@Autowired
-	AnalyzeBhava1 analyzeBhava1;
+	@Qualifier("analyzeBhava1")
+	AnalyzeBhava analyzeBhava1;
 	
 	@Autowired
+	@Qualifier("analyzeBhava2")
 	AnalyzeBhava2 analyzeBhava2;
 	
 	@Autowired
-	AnalyzeBhava3 analyzeBhava3;
+	@Qualifier("analyzeBhava3")
+	AnalyzeBhava analyzeBhava3;
 	
 	@Autowired
-	AnalyzeBhava4 analyzeBhava4;
+	@Qualifier("analyzeBhava4")
+	AnalyzeBhava analyzeBhava4;
 	
 	@Autowired
-	AnalyzeBhava5 analyzeBhava5;
+	@Qualifier("analyzeBhava5")
+	AnalyzeBhava analyzeBhava5;
 	
 	@Autowired
-	AnalyzeBhava6 analyzeBhava6;
+	@Qualifier("analyzeBhava6")
+	AnalyzeBhava analyzeBhava6;
 	
 	@Autowired
-	AnalyzeBhava7 analyzeBhava7;
+	@Qualifier("analyzeBhava7")
+	AnalyzeBhava analyzeBhava7;
 	
 	@Autowired
-	AnalyzeBhava8 analyzeBhava8;
+	@Qualifier("analyzeBhava8")
+	AnalyzeBhava analyzeBhava8;
 	
 	@Autowired
-	AnalyzeBhava9 analyzeBhava9;
+	@Qualifier("analyzeBhava9")
+	AnalyzeBhava analyzeBhava9;
 	
 	@Autowired
-	AnalyzeBhava10 analyzeBhava10;
+	@Qualifier("analyzeBhava10")
+	AnalyzeBhava analyzeBhava10;
 	
 	@Autowired
-	AnalyzeBhava11 analyzeBhava11;
+	@Qualifier("analyzeBhava11")
+	AnalyzeBhava analyzeBhava11;
 	
 	@Autowired
-	AnalyzeBhava12 analyzeBhava12;
+	@Qualifier("analyzeBhava12")
+	AnalyzeBhava analyzeBhava12;
 	
 	
 	public String processHoroscope() {
@@ -204,7 +218,7 @@ public final class HoroscopeProcessor {
 		private String parseBhava1(Horoscope horoscope) {
 
 			StringBuffer readingForBhava1 = new StringBuffer();
-			readingForBhava1.append(analyzeBhava1.analyzeBhava1(horoscope));
+			readingForBhava1.append(analyzeBhava1.analyzeBhava(horoscope));
 			return readingForBhava1.toString();
 
 		}
@@ -212,77 +226,77 @@ public final class HoroscopeProcessor {
 		private String parseBhava2(Horoscope horoscope) {
 
 			StringBuffer readingForBhava2 = new StringBuffer();
-			readingForBhava2.append(analyzeBhava2.analyzeBhava2(horoscope));
+			readingForBhava2.append(analyzeBhava2.analyzeBhava(horoscope));
 			return readingForBhava2.toString();
 		}
 
 		private String parseBhava3(Horoscope horoscope) {
 
 			StringBuffer readingForBhava3 = new StringBuffer();
-			readingForBhava3.append(analyzeBhava3.analyzeBhava3(horoscope));
+			readingForBhava3.append(analyzeBhava3.analyzeBhava(horoscope));
 			return readingForBhava3.toString();
 		}
 
 		private String parseBhava4(Horoscope horoscope) {
 
 			StringBuffer readingForBhava4 = new StringBuffer();
-			readingForBhava4.append(analyzeBhava4.analyzeBhava4(horoscope));
+			readingForBhava4.append(analyzeBhava4.analyzeBhava(horoscope));
 			return readingForBhava4.toString();
 		}
 
 		private String parseBhava5(Horoscope horoscope) {
 
 			StringBuffer readingForBhava5 = new StringBuffer();
-			readingForBhava5.append(analyzeBhava5.analyzeBhava5(horoscope));
+			readingForBhava5.append(analyzeBhava5.analyzeBhava(horoscope));
 			return readingForBhava5.toString();
 		}
 
 		private String parseBhava6(Horoscope horoscope) {
 
 			StringBuffer readingForBhava6 = new StringBuffer();
-			readingForBhava6.append(analyzeBhava6.analyzeBhava6(horoscope));
+			readingForBhava6.append(analyzeBhava6.analyzeBhava(horoscope));
 			return readingForBhava6.toString();
 		}
 
 		private String parseBhava7(Horoscope horoscope) {
 
 			StringBuffer readingForBhava7 = new StringBuffer();
-			readingForBhava7.append(analyzeBhava7.analyzeBhava7(horoscope));
+			readingForBhava7.append(analyzeBhava7.analyzeBhava(horoscope));
 			return readingForBhava7.toString();
 		}
 
 		private String parseBhava8(Horoscope horoscope) {
 
 			StringBuffer readingForBhava8 = new StringBuffer();
-			readingForBhava8.append(analyzeBhava8.analyzeBhava8(horoscope));
+			readingForBhava8.append(analyzeBhava8.analyzeBhava(horoscope));
 			return readingForBhava8.toString();
 		}
 
 		private String parseBhava9(Horoscope horoscope) {
 
 			StringBuffer readingForBhava9 = new StringBuffer();
-			readingForBhava9.append(analyzeBhava9.analyzeBhava9(horoscope));
+			readingForBhava9.append(analyzeBhava9.analyzeBhava(horoscope));
 			return readingForBhava9.toString();
 		}
 
 		private String parseBhava10(Horoscope horoscope) {
 
 			StringBuffer readingForBhava10 = new StringBuffer();
-			readingForBhava10.append(analyzeBhava10.analyzeBhava10(horoscope));
+			readingForBhava10.append(analyzeBhava10.analyzeBhava(horoscope));
 			return readingForBhava10.toString();
 		}
 
 		private String parseBhava11(Horoscope horoscope) {
 
 			StringBuffer readingForBhava11 = new StringBuffer();
-			readingForBhava11.append(analyzeBhava11.analyzeBhava11(horoscope));
+			readingForBhava11.append(analyzeBhava11.analyzeBhava(horoscope));
 			return readingForBhava11.toString();
 		}
 
 		private String parseBhava12(Horoscope horoscope) {
 
 			StringBuffer readingForBhava12 = new StringBuffer();
-			readingForBhava12.append(analyzeBhava12.analyzeBhava12(horoscope));
+			readingForBhava12.append(analyzeBhava12.analyzeBhava(horoscope));
 			return readingForBhava12.toString();
 		}
 
