@@ -6,16 +6,16 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface HoroscopeRepository extends CrudRepository<Horoscope, Long> {
+public interface HoroscopeRepository extends CrudRepository<HoroscopeReport, Long> {
 
-	Horoscope findOne(Long id);
+	HoroscopeReport findOne(Long id);
 
-	List<Horoscope> findAll();
+	List<HoroscopeReport> findAll();
 
 	void flush();
 
 	@SuppressWarnings("unchecked")
-	Horoscope save(Horoscope persisted);
+	HoroscopeReport save(HoroscopeReport persisted);
 
 	void delete(Long id);
 

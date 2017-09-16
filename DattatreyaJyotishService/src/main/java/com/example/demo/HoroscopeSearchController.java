@@ -28,20 +28,12 @@ final class HoroscopeSearchController {
         this.horoscopeService = horoscopeService;
     }
     
-    
-    /*
-     * 
-  {
-  "firstName":"ABC",
-  "lastName": "DEF",
-  "dob": "12/13/1991"
-  }
-     */
+   
     @RequestMapping(method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
-    Horoscope create(@RequestBody @Valid Horoscope newHoroscopeEntry) {
+    HoroscopeReport create(@RequestBody @Valid HoroscopeReport newHoroscopeEntry) {
         LOGGER.info("Creating a new horoscope entry by using information: {}", newHoroscopeEntry);
-        Horoscope created = horoscopeService.create(newHoroscopeEntry);
+        HoroscopeReport created = horoscopeService.create(newHoroscopeEntry);
         LOGGER.info("Created a new horoscope entry: {}", created);
 
         return created;
@@ -49,40 +41,36 @@ final class HoroscopeSearchController {
 
     
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
-    public Horoscope delete(@PathVariable("id") Long id) {
+    public HoroscopeReport delete(@PathVariable("id") Long id) {
         LOGGER.info("Deleting a todo entry with id: {}", id);
-
-        Horoscope deleted = horoscopeService.delete(id);
+        HoroscopeReport deleted = horoscopeService.delete(id);
         LOGGER.info("Deleted the todo entry: {}", deleted);
-
         return deleted;
     }
 
    
     @RequestMapping(method = RequestMethod.GET)
-    List<Horoscope> findAll() {
+    List<HoroscopeReport> findAll() {
         LOGGER.info("Finding all todo entries");
-        List<Horoscope> horoscopeEntries = horoscopeService.findAll();
+        List<HoroscopeReport> horoscopeEntries = horoscopeService.findAll();
         LOGGER.info("Found {} todo entries.", horoscopeEntries.size());
         return horoscopeEntries;
     }
 
    
     @RequestMapping(value = "{id}", method = RequestMethod.GET)
-    Horoscope findById(@PathVariable("id") Long id) {
+    HoroscopeReport findById(@PathVariable("id") Long id) {
         LOGGER.info("Finding todo entry by using id: {}", id);
-
-        Horoscope todoEntry = horoscopeService.findById(id);
+        HoroscopeReport todoEntry = horoscopeService.findById(id);
         LOGGER.info("Found todo entry: {}", todoEntry);
-
         return todoEntry;
     }
 
    
     @RequestMapping(value = "{id}", method = RequestMethod.PUT)
-    Horoscope update(@RequestBody @Valid Horoscope horoscope) {
+    HoroscopeReport update(@RequestBody @Valid HoroscopeReport horoscope) {
         LOGGER.info("Updating the information of a todo entry by using information: {}", horoscope);
-        Horoscope updated = horoscopeService.update(horoscope);
+        HoroscopeReport updated = horoscopeService.update(horoscope);
         LOGGER.info("Updated the information of the todo entrY: {}", updated);
         return updated;
     }

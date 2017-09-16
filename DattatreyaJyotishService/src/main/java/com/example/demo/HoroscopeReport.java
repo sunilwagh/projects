@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Horoscope {
+public class HoroscopeReport {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -23,9 +23,9 @@ public class Horoscope {
     @Column(name = "DOB")
     private String dob;
 
-    protected  Horoscope() {}
+    protected  HoroscopeReport() {}
 
-    public  Horoscope(String firstName, String lastName,String dob) {
+    public  HoroscopeReport(String firstName, String lastName,String dob) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dob=dob;

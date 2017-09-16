@@ -7,15 +7,15 @@ import java.util.List;
 
 public interface HoroscopeService {
 	
-    public Horoscope create(Horoscope horoscope);
+    public HoroscopeReport create(HoroscopeReport horoscope);
 	
-	public List<Horoscope> findAll();
+	public List<HoroscopeReport> findAll();
 	
-	public Horoscope findById(Long id);
+	public HoroscopeReport findById(Long id);
 	
-	public Horoscope update(Horoscope horoscope);
+	public HoroscopeReport update(HoroscopeReport horoscope);
 	
-	public Horoscope delete(Long id);
+	public HoroscopeReport delete(Long id);
 	
 	
 }

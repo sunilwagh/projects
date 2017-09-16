@@ -27,28 +27,28 @@ public class HoroscopeServiceImpl implements HoroscopeService {
 
 	@Transactional(readOnly = true)
 	@Override
-	public List<Horoscope> findAll() {
+	public List<HoroscopeReport> findAll() {
 		LOGGER.info("Finding all horoscopes");
-		List<Horoscope> horoscopes = repository.findAll();
-		LOGGER.info("Found horoscopes no: ", horoscopes.size());
-		return horoscopes;
+		List<HoroscopeReport> horoscopeReports = repository.findAll();
+		LOGGER.info("Found horoscopes no: ", horoscopeReports.size());
+		return horoscopeReports;
 	}
 
 	@Transactional
 	@Override
-	public Horoscope create(Horoscope horoscope) {
-		LOGGER.info("Creating a new todo entry by using information: {}", horoscope);
-		horoscope = repository.save(horoscope);
-		LOGGER.info("Created a new todo entry: {}", horoscope);
-		return horoscope;
+	public HoroscopeReport create(HoroscopeReport horoscopeReport) {
+		LOGGER.info("Creating a new todo entry by using information: {}", horoscopeReport);
+		horoscopeReport = repository.save(horoscopeReport);
+		LOGGER.info("Created a new todo entry: {}", horoscopeReport);
+		return horoscopeReport;
 	}
 
 	@Transactional
 	@Override
-	public Horoscope delete(Long id) {
+	public HoroscopeReport delete(Long id) {
 		LOGGER.info("Deleting a todo entry with id: {}", id);
 
-		Horoscope deleted = findTodoEntryById(id);
+		HoroscopeReport deleted = findTodoEntryById(id);
 		LOGGER.debug("Found todo entry: {}", deleted);
 
 		repository.delete(deleted);
@@ -59,21 +59,19 @@ public class HoroscopeServiceImpl implements HoroscopeService {
 
 	@Transactional(readOnly = true)
 	@Override
-	public Horoscope findById(Long id) {
+	public HoroscopeReport findById(Long id) {
 		LOGGER.info("Finding todo entry by using id: {}", id);
-
-		Horoscope horoscope = findTodoEntryById(id);
-		LOGGER.info("Found todo entry: {}", horoscope);
-
-		return horoscope;
+        HoroscopeReport horoscopeReport = findTodoEntryById(id);
+		LOGGER.info("Found todo entry: {}", horoscopeReport);
+        return horoscopeReport;
 	}
 
 	@Transactional
 	@Override
-	public Horoscope update(Horoscope updatedEntry) {
+	public HoroscopeReport update(HoroscopeReport updatedEntry) {
 		LOGGER.info("Updating the information of a todo entry by using information: {}", updatedEntry);
 
-		Horoscope updated = findTodoEntryById(updatedEntry.getId());
+		HoroscopeReport updated = findTodoEntryById(updatedEntry.getId());
 		updated.setFirstName(updatedEntry.getFirstName());
 
 		// We need to flush the changes or otherwise the returned object
@@ -85,8 +83,8 @@ public class HoroscopeServiceImpl implements HoroscopeService {
 		return updated;
 	}
 
-	private Horoscope findTodoEntryById(Long id) {
-		Horoscope horoscope = repository.findOne(id);
+	private HoroscopeReport findTodoEntryById(Long id) {
+		HoroscopeReport horoscope = repository.findOne(id);
 		return horoscope;
 	}
 
