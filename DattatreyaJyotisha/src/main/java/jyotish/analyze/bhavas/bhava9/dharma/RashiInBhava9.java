@@ -5,52 +5,52 @@ import jyotish.analyze.bhavas.RashiInBhava;
 public class RashiInBhava9 implements RashiInBhava{
 	
 	public  String AriesInBhava() {
-		StringBuilder ariesInBhava2 = new StringBuilder();
-		ariesInBhava2.append("\n");
-		return ariesInBhava2.toString();
+		StringBuilder ariesInBhava9 = new StringBuilder();
+		ariesInBhava9.append("\n");
+		return ariesInBhava9.toString();
 	}
 
 	public  String TaurusInBhava() {
-		StringBuilder taurusInBhava2 = new StringBuilder();
-		taurusInBhava2.append("\n");
-		return taurusInBhava2.toString();
+		StringBuilder taurusInBhava9 = new StringBuilder();
+		taurusInBhava9.append("\n");
+		return taurusInBhava9.toString();
 	}
 
 	public  String GeminiInBhava() {
-		StringBuilder geminiInBhava2 = new StringBuilder();
-	    geminiInBhava2.append("\n");
-		return geminiInBhava2.toString();
+		StringBuilder geminiInBhava9 = new StringBuilder();
+	    geminiInBhava9.append("\n");
+		return geminiInBhava9.toString();
 	}
 
 	public  String CancerInBhava() {
-		StringBuilder cancerInBhava2 = new StringBuilder();
-		cancerInBhava2.append("\n");
-		return cancerInBhava2.toString();
+		StringBuilder cancerInBhava9 = new StringBuilder();
+		cancerInBhava9.append("\n");
+		return cancerInBhava9.toString();
 	}
 
 	public  String LeoInBhava() {
-		StringBuilder leoInBhava2 = new StringBuilder();
-	    leoInBhava2.append("\n");
-		return leoInBhava2.toString();
+		StringBuilder leoInBhava9 = new StringBuilder();
+	    leoInBhava9.append("\n");
+		return leoInBhava9.toString();
 	}
 
 	public  String VirgoInBhava() {
-		StringBuilder virgoInBhava2 = new StringBuilder();
-	    virgoInBhava2.append("\n");
-		return virgoInBhava2.toString();
+		StringBuilder virgoInBhava9 = new StringBuilder();
+	    virgoInBhava9.append("\n");
+		return virgoInBhava9.toString();
 	}
 
 	public  String LibraInBhava() {
-		StringBuilder libraInBhava2 = new StringBuilder();
-		libraInBhava2.append("\n");
-		return libraInBhava2.toString();
+		StringBuilder libraInBhava9 = new StringBuilder();
+		libraInBhava9.append("\n");
+		return libraInBhava9.toString();
 	}
 
 	public  String ScorpioInBhava() {
-		StringBuilder scorpioInBhava2 = new StringBuilder();
-		scorpioInBhava2.append("\n");
-		scorpioInBhava2.append("\n");
-		return scorpioInBhava2.toString();
+		StringBuilder scorpioInBhava9 = new StringBuilder();
+		scorpioInBhava9.append("\n");
+		scorpioInBhava9.append("\n");
+		return scorpioInBhava9.toString();
 	}
 
 	public  String SagittariusInBhava() {
@@ -61,21 +61,21 @@ public class RashiInBhava9 implements RashiInBhava{
 	}
 
 	public  String CapricornInBhava() {
-		StringBuilder capricornInBhava2 = new StringBuilder();
-	    capricornInBhava2.append("\n");
-		return capricornInBhava2.toString();
+		StringBuilder capricornInBhava9 = new StringBuilder();
+	    capricornInBhava9.append("\n");
+		return capricornInBhava9.toString();
 	}
 
 	public  String AcquariusInBhava() {
-		StringBuilder acquariusInBhava2 = new StringBuilder();
-		acquariusInBhava2.append("\n");
-		return acquariusInBhava2.toString();
+		StringBuilder acquariusInBhava9 = new StringBuilder();
+		acquariusInBhava9.append("\n");
+		return acquariusInBhava9.toString();
 	}
 
 	public  String PiscesInBhava() {
-		StringBuilder piscesInBhava2 = new StringBuilder();
-		piscesInBhava2.append("\n");
-		return piscesInBhava2.toString();
+		StringBuilder piscesInBhava9 = new StringBuilder();
+		piscesInBhava9.append("\n");
+		return piscesInBhava9.toString();
 	}
 
 

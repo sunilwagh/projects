@@ -5,57 +5,57 @@ import jyotish.analyze.bhavas.GrahaInBhava;
 public class GrahaInBhava7 implements GrahaInBhava{
 	
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava2 = new StringBuilder();
-		suryaInBhava2.append("\n");
-		return suryaInBhava2.toString();
+		StringBuilder suryaInBhava7 = new StringBuilder();
+		suryaInBhava7.append("\n");
+		return suryaInBhava7.toString();
 	}
 	
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava2 = new StringBuilder();
-		chandraInBhava2.append("\n");
-		return chandraInBhava2.toString();
+		StringBuilder chandraInBhava7 = new StringBuilder();
+		chandraInBhava7.append("\n");
+		return chandraInBhava7.toString();
 	}
 	
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava2 = new StringBuilder();
-		budhInBhava2.append("\n");
-		return budhInBhava2.toString();
+		StringBuilder budhInBhava7 = new StringBuilder();
+		budhInBhava7.append("\n");
+		return budhInBhava7.toString();
 	}
 	
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava2 = new StringBuilder();
-		mangalInBhava2.append("\n");
-		return mangalInBhava2.toString();
+		StringBuilder mangalInBhava7 = new StringBuilder();
+		mangalInBhava7.append("\n");
+		return mangalInBhava7.toString();
 	}
 	
 	public String GuruInBhava() {
-		StringBuilder guruInBhava2 = new StringBuilder();
-		guruInBhava2.append("\n");
-		return guruInBhava2.toString();
+		StringBuilder guruInBhava7 = new StringBuilder();
+		guruInBhava7.append("\n");
+		return guruInBhava7.toString();
 	}
 	
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava2 = new StringBuilder();
-		shukraInBhava2.append("\n");
-		return shukraInBhava2.toString();
+		StringBuilder shukraInBhava7 = new StringBuilder();
+		shukraInBhava7.append("\n");
+		return shukraInBhava7.toString();
 	}
 	
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava2 = new StringBuilder();
-		shaniInBhava2.append("\n");
-		return shaniInBhava2.toString();
+		StringBuilder shaniInBhava7 = new StringBuilder();
+		shaniInBhava7.append("\n");
+		return shaniInBhava7.toString();
 	}
 	
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava2 = new StringBuilder();
-		rahuInBhava2.append("\n");
-		return rahuInBhava2.toString();
+		StringBuilder rahuInBhava7 = new StringBuilder();
+		rahuInBhava7.append("\n");
+		return rahuInBhava7.toString();
 	}
 	
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava2 = new StringBuilder();
-		ketuInBhava2.append("\n");
-		return ketuInBhava2.toString();
+		StringBuilder ketuInBhava7 = new StringBuilder();
+		ketuInBhava7.append("\n");
+		return ketuInBhava7.toString();
 	}
 
 }
