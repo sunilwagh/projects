@@ -12,7 +12,7 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 @Component("bhava1")
 public class Bhava1 implements Bhava{
 	
-	@Autowired
+	
 	private Rashi rashi;
 	
 	private Name_Of_Rashi rashiName;

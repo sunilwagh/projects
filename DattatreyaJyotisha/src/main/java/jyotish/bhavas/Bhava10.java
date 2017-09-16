@@ -8,7 +8,7 @@ import jyotish.rashis.Rashi;
 @Component("bhava10")
 public class Bhava10 implements Bhava{
 	
-	@Autowired
+	
 	Rashi rashi;
 
 	public Rashi getRashi() {

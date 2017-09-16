@@ -11,7 +11,7 @@ import util.JyotishEnumUtil.Mobility_Of_Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
-@Component("libra")
+@Component("libraRashi")
 public class Libra implements Rashi{
 	
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.LIBRA;

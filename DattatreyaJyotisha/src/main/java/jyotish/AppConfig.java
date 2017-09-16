@@ -8,10 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("jyotish")
 public class AppConfig {
 	
-	  @Bean(name = "horoscopeProcessor")
-	  public HoroscopeProcessor getHoroscopeProcessor() {
-	    return new HoroscopeProcessor();
-	  }
+	
+	 
 
 	 
 	

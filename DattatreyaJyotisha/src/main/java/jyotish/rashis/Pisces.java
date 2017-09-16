@@ -11,7 +11,7 @@ import util.JyotishEnumUtil.Mobility_Of_Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
-@Component("pisces")
+@Component("piscesRashi")
 public class Pisces implements Rashi{
 	
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.PISCES;
