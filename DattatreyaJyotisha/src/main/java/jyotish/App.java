@@ -66,7 +66,6 @@ public class App {
         	ariesRashi.setGrahas(ariesGrahas);
         	virgoRashi.setGrahas(virgoGrahas);
         	libraRashi.setGrahas(libraGrahas);
-        	
         	cancerRashi.setGrahas(cancerGrahas);
         	scorpioRashi.setGrahas(scorpioGrahas);
         	capricornRashi.setGrahas(capricornGrahas);
