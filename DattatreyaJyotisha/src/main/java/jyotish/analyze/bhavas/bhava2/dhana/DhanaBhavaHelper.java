@@ -100,16 +100,16 @@ public class DhanaBhavaHelper {
 		
 	}
 	
-	public static String AriesInBhava2() {
+	public String AriesInBhava() {
 		StringBuffer ariesInBhava1 = new StringBuffer();
-		ariesInBhava1.append("");
-		ariesInBhava1.append("");
+		ariesInBhava1.append("\n");
+		ariesInBhava1.append("\n");
 		return ariesInBhava1.toString();
 	}
 
 	public static String TaurusInBhava2() {
 		StringBuffer taurusInBhava1 = new StringBuffer();
-		taurusInBhava1.append("");
+		taurusInBhava1.append("\n");
 		taurusInBhava1.append("\n");
 		return taurusInBhava1.toString();
 	}

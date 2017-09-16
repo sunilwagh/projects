@@ -37,7 +37,7 @@ public class AnalyzeBhava1 {
 		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
 
 		Name_Of_Graha lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava1.getRashi()));
-        System.out.println(lordOfRashi+""+bhava4.getRashi());
+       
 		
 		if (RashiUtil.getGrahasInRashi(bhava1.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava1.getRashi()).contains(lordOfRashi)) {

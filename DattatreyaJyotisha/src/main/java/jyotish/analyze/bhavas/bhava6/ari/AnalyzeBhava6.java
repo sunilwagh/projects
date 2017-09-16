@@ -20,7 +20,7 @@ public class AnalyzeBhava6 {
 
 	public static String analyzeBhava6(Horoscope horoscope) {
 		
-		StringBuffer sbAnalyzeBhava6 = new StringBuffer();
+		StringBuilder sbAnalyzeBhava6 = new StringBuilder();
 		
 		
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
