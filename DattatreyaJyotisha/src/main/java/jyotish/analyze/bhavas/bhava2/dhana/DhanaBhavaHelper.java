@@ -1,5 +1,7 @@
 package jyotish.analyze.bhavas.bhava2.dhana;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -13,6 +15,7 @@ import jyotish.bhavas.Bhava7;
 import jyotish.bhavas.Bhava8;
 import jyotish.bhavas.Bhava9;
 
+@Component("dhanaBhavaHelper")
 public class DhanaBhavaHelper {
 
 	public static String infoAboutLordOfBhava2InBhava1(Bhava2 bhava2,Bhava1 bhava1) {

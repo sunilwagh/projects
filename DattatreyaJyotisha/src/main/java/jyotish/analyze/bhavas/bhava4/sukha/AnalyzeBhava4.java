@@ -1,5 +1,6 @@
 package jyotish.analyze.bhavas.bhava4.sukha;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import jyotish.bhavas.Bhava1;
@@ -20,6 +21,10 @@ import util.JyotishEnumUtil.Name_Of_Graha;
 
 @Component("analyzeBhava4")
 public class AnalyzeBhava4 {
+	
+	@Autowired
+	SukhaBhavaHelper sukhaBhavaHelper;
+	
 
 	public String analyzeBhava4(Horoscope horoscope) {
 		
@@ -43,73 +48,73 @@ public class AnalyzeBhava4 {
 		if (RashiUtil.getGrahasInRashi(bhava1.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava1.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 1 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava1(bhava4,bhava1));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava1(bhava4,bhava1));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava2.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava2.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 2 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava2(bhava4,bhava2));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava2(bhava4,bhava2));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava3.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava3.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 3 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava3(bhava4,bhava3));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava3(bhava4,bhava3));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava4.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava4.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 4 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava4(bhava4));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava4(bhava4));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava5.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava5.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 5 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava5(bhava4, bhava5));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava5(bhava4, bhava5));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava6.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava6.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 6 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava6(bhava4, bhava6));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava6(bhava4, bhava6));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava7.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava7.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 7 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava7(bhava4, bhava7));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava7(bhava4, bhava7));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava8.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava8.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 8 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava8(bhava4, bhava8));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava8(bhava4, bhava8));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava9.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava9.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 9 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava9(bhava4, bhava9));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava9(bhava4, bhava9));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava10.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava10.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 10 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava10(bhava4, bhava10));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava10(bhava4, bhava10));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava11.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava11.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 11 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava11(bhava4, bhava11));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava11(bhava4, bhava11));
 		}
 
 		if (RashiUtil.getGrahasInRashi(bhava12.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava12.getRashi()).contains(lordOfRashi)) {
 			sbAnalyzeBhava4.append("Lord of 4 in 12 \n");
-			sbAnalyzeBhava4.append(SukhaBhavaHelper.infoAboutLordOfBhava4InBhava12(bhava4, bhava12));
+			sbAnalyzeBhava4.append(sukhaBhavaHelper.infoAboutLordOfBhava4InBhava12(bhava4, bhava12));
 		}
 
 		return sbAnalyzeBhava4.toString();

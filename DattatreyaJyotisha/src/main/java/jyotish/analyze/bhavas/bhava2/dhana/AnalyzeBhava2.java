@@ -1,5 +1,6 @@
 package jyotish.analyze.bhavas.bhava2.dhana;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import jyotish.bhavas.Bhava1;
@@ -21,6 +22,9 @@ import util.JyotishEnumUtil.Name_Of_Graha;
 @Component("analyzeBhava2")
 public class AnalyzeBhava2 {
 
+	@Autowired
+	DhanaBhavaHelper dhanaBhavaHelper;
+	
 	public String analyzeBhava2(Horoscope horoscope) {
 		StringBuffer sbAnalyzeBhava2 = new StringBuffer();
 		
