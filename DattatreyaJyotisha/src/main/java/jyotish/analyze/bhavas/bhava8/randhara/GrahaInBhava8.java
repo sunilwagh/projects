@@ -1,7 +1,10 @@
 package jyotish.analyze.bhavas.bhava8.randhara;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.analyze.bhavas.GrahaInBhava;
 
+@Component("grahaInBhava9")
 public class GrahaInBhava8 implements GrahaInBhava{
 	
 	public String SuryaInBhava() {

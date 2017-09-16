@@ -1,7 +1,10 @@
 package jyotish.analyze.bhavas.bhava6.ari;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.analyze.bhavas.RashiInBhava;
 
+@Component("rashiInBhava4")
 public class RashiInBhava6 implements RashiInBhava{
 	
 	public  String AriesInBhava() {
