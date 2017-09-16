@@ -1,5 +1,7 @@
 package jyotish.analyze.bhavas.bhava5.putra;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -16,9 +18,10 @@ import jyotish.horoscope.Horoscope;
 import jyotish.rashis.RashiUtil;
 import util.JyotishEnumUtil.Name_Of_Graha;
 
+@Component("analyzeBhava5")
 public class AnalyzeBhava5 {
 
-	public static String analyzeBhava5(Horoscope horoscope) {
+	public String analyzeBhava5(Horoscope horoscope) {
 		
 		StringBuffer sbAnalyzeBhava5 = new StringBuffer();
 		

@@ -6,7 +6,8 @@ public class App
 {
     public static void main( String[] args )
     {
-    	System.out.println(ProcessHoroscope.processHoroscope(HoroscopeFactory.createHoroscopeD()));	
+    	ProcessHoroscope ps = new ProcessHoroscope(HoroscopeFactory.createHoroscopeA());
+    	
     }
     
     

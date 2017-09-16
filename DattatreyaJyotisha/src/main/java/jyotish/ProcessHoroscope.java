@@ -1,7 +1,9 @@
 package jyotish;
 
-import java.util.*;
+
 import java.util.concurrent.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import jyotish.analyze.bhavas.bhava1.lagna.AnalyzeBhava1;
 import jyotish.analyze.bhavas.bhava10.karma.AnalyzeBhava10;
@@ -17,9 +19,54 @@ import jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
 import jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
 import jyotish.horoscope.Horoscope;
 
-public class ProcessHoroscope {
-
-	public static String processHoroscope(Horoscope horoscope) {
+public final class ProcessHoroscope {
+	
+	
+	Horoscope horoscope;
+	
+	ProcessHoroscope(Horoscope horoscope)
+	{
+	  this.horoscope=horoscope;	
+	}
+	
+	@Autowired
+	AnalyzeBhava1 analyzeBhava1;
+	
+	@Autowired
+	AnalyzeBhava2 analyzeBhava2;
+	
+	@Autowired
+	AnalyzeBhava3 analyzeBhava3;
+	
+	@Autowired
+	AnalyzeBhava4 analyzeBhava4;
+	
+	@Autowired
+	AnalyzeBhava5 analyzeBhava5;
+	
+	@Autowired
+	AnalyzeBhava6 analyzeBhava6;
+	
+	@Autowired
+	AnalyzeBhava7 analyzeBhava7;
+	
+	@Autowired
+	AnalyzeBhava8 analyzeBhava8;
+	
+	@Autowired
+	AnalyzeBhava9 analyzeBhava9;
+	
+	@Autowired
+	AnalyzeBhava10 analyzeBhava10;
+	
+	@Autowired
+	AnalyzeBhava11 analyzeBhava11;
+	
+	@Autowired
+	AnalyzeBhava12 analyzeBhava12;
+	
+	
+	public String processHoroscope() {
 
 		String bhava1 = null;
 		String bhava2 = null;
@@ -97,7 +144,7 @@ public class ProcessHoroscope {
 
 	}
 
-	public static class BhavaProcessingCallable implements Callable {
+	public class BhavaProcessingCallable implements Callable {
 
 		int i;
 		Horoscope horoscope;
@@ -140,7 +187,7 @@ public class ProcessHoroscope {
 			}
 		}
 
-		public static void parseHoroscope(Horoscope horoscope) {
+		public void parseHoroscope(Horoscope horoscope) {
 			StringBuffer readingForHoroscope = new StringBuffer();
 
 			readingForHoroscope.append(parseBhava2(horoscope));
@@ -157,89 +204,98 @@ public class ProcessHoroscope {
 
 		}
 
-		private static String parseBhava1(Horoscope horoscope) {
+		private String parseBhava1(Horoscope horoscope) {
 
 			StringBuffer readingForBhava1 = new StringBuffer();
-			readingForBhava1.append(AnalyzeBhava1.analyzeBhava1(horoscope));
+			readingForBhava1.append(analyzeBhava1.analyzeBhava1(horoscope));
 			return readingForBhava1.toString();
 
 		}
 
-		private static String parseBhava2(Horoscope horoscope) {
+		private String parseBhava2(Horoscope horoscope) {
 
 			StringBuffer readingForBhava2 = new StringBuffer();
-			readingForBhava2.append(AnalyzeBhava2.analyzeBhava2(horoscope));
+			readingForBhava2.append(analyzeBhava2.analyzeBhava2(horoscope));
 			return readingForBhava2.toString();
 		}
 
-		private static String parseBhava3(Horoscope horoscope) {
+		private String parseBhava3(Horoscope horoscope) {
 
 			StringBuffer readingForBhava3 = new StringBuffer();
-			readingForBhava3.append(AnalyzeBhava3.analyzeBhava3(horoscope));
+			readingForBhava3.append(analyzeBhava3.analyzeBhava3(horoscope));
 			return readingForBhava3.toString();
 		}
 
-		private static String parseBhava4(Horoscope horoscope) {
+		private String parseBhava4(Horoscope horoscope) {
 
 			StringBuffer readingForBhava4 = new StringBuffer();
-			readingForBhava4.append(AnalyzeBhava4.analyzeBhava4(horoscope));
+			readingForBhava4.append(analyzeBhava4.analyzeBhava4(horoscope));
 			return readingForBhava4.toString();
 		}
 
-		private static String parseBhava5(Horoscope horoscope) {
+		private String parseBhava5(Horoscope horoscope) {
 
 			StringBuffer readingForBhava5 = new StringBuffer();
-			readingForBhava5.append(AnalyzeBhava5.analyzeBhava5(horoscope));
+			readingForBhava5.append(analyzeBhava5.analyzeBhava5(horoscope));
 			return readingForBhava5.toString();
 		}
 
-		private static String parseBhava6(Horoscope horoscope) {
+		private String parseBhava6(Horoscope horoscope) {
 
 			StringBuffer readingForBhava6 = new StringBuffer();
-			readingForBhava6.append(AnalyzeBhava6.analyzeBhava6(horoscope));
+			readingForBhava6.append(analyzeBhava6.analyzeBhava6(horoscope));
 			return readingForBhava6.toString();
 		}
 
-		private static String parseBhava7(Horoscope horoscope) {
+		private String parseBhava7(Horoscope horoscope) {
 
 			StringBuffer readingForBhava7 = new StringBuffer();
-			readingForBhava7.append(AnalyzeBhava7.analyzeBhava7(horoscope));
+			readingForBhava7.append(analyzeBhava7.analyzeBhava7(horoscope));
 			return readingForBhava7.toString();
 		}
 
-		private static String parseBhava8(Horoscope horoscope) {
+		private String parseBhava8(Horoscope horoscope) {
 
 			StringBuffer readingForBhava8 = new StringBuffer();
-			readingForBhava8.append(AnalyzeBhava8.analyzeBhava8(horoscope));
+			readingForBhava8.append(analyzeBhava8.analyzeBhava8(horoscope));
 			return readingForBhava8.toString();
 		}
 
-		private static String parseBhava9(Horoscope horoscope) {
+		private String parseBhava9(Horoscope horoscope) {
 
 			StringBuffer readingForBhava9 = new StringBuffer();
-			readingForBhava9.append(AnalyzeBhava9.analyzeBhava9(horoscope));
+			readingForBhava9.append(analyzeBhava9.analyzeBhava9(horoscope));
 			return readingForBhava9.toString();
 		}
 
-		private static String parseBhava10(Horoscope horoscope) {
+		private String parseBhava10(Horoscope horoscope) {
 
 			StringBuffer readingForBhava10 = new StringBuffer();
-			readingForBhava10.append(AnalyzeBhava10.analyzeBhava10(horoscope));
+			readingForBhava10.append(analyzeBhava10.analyzeBhava10(horoscope));
 			return readingForBhava10.toString();
 		}
 
-		private static String parseBhava11(Horoscope horoscope) {
+		private String parseBhava11(Horoscope horoscope) {
 
 			StringBuffer readingForBhava11 = new StringBuffer();
-			readingForBhava11.append(AnalyzeBhava11.analyzeBhava11(horoscope));
+			readingForBhava11.append(analyzeBhava11.analyzeBhava11(horoscope));
 			return readingForBhava11.toString();
 		}
 
-		private static String parseBhava12(Horoscope horoscope) {
+		private String parseBhava12(Horoscope horoscope) {
 
 			StringBuffer readingForBhava12 = new StringBuffer();
-			readingForBhava12.append(AnalyzeBhava12.analyzeBhava12(horoscope));
+			readingForBhava12.append(analyzeBhava12.analyzeBhava12(horoscope));
 			return readingForBhava12.toString();
+		}
+		
+		
+		public Horoscope getHoroscope() {
+			return horoscope;
+		}
+
+		public void setHoroscope(Horoscope horoscope) {
+			this.horoscope = horoscope;
 		}
 
 	}

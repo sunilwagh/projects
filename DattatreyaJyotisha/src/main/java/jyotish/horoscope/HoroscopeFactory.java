@@ -108,6 +108,7 @@ public static Horoscope createHoroscopeB(){
     	horoscope.setBhava11(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA11,Name_Of_Rashi.CAPRICORN,capricornGrahas));
     	horoscope.setBhava12(BhavaFactory.getBhava(Name_Of_Bhava.BHAVA12,Name_Of_Rashi.ACQUARIUS,acquariusGrahas));
     	
+    	
     	ObjectMapper mapper = new ObjectMapper();
     	mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
     	try {
