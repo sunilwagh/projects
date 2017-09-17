@@ -24,6 +24,7 @@ public class JobLauncherController {
  
 		Logger logger = LoggerFactory.getLogger(this.getClass());
 		try {
+			
 			JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis())
 					.toJobParameters();
 			jobLauncher.run(job, jobParameters);

@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 public class SpringBatchParallelStepApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Will start the batch ..");
 		SpringApplication.run(SpringBatchParallelStepApplication.class, args);
 	}
 }

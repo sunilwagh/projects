@@ -10,7 +10,7 @@ public class SimpleStep implements Tasklet{
 	@Override
 	public RepeatStatus execute(StepContribution contribution,
 			ChunkContext chunkContext) throws Exception {
-		workload();
+	    workload();
 		System.out.println("Done");
 		return RepeatStatus.FINISHED;
 	}
