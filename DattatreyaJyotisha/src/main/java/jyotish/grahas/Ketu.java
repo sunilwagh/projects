@@ -3,6 +3,8 @@ package jyotish.grahas;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.bhavas.Bhava;
 import jyotish.nakshatras.Nakshatra;
 import jyotish.nakshatras.padas.Pada;
@@ -13,33 +15,23 @@ import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
+@Component("ketu")
 public class Ketu implements Graha{
 	
-	Rashi lagnaKundaliRashi;
+	
 	Nakshatra nakshatra;
-	Bhava bhava;
 	Pada pada;
 	double degrees;
 	
 	
-	public Rashi getLagnaKundaliRashi() {
-		return lagnaKundaliRashi;
-	}
-	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
-		this.lagnaKundaliRashi = lagnaKundaliRashi;
-	}
+	
 	public Nakshatra getNakshatra() {
 		return nakshatra;
 	}
 	public void setNakshatra(Nakshatra nakshatra) {
 		this.nakshatra = nakshatra;
 	}
-	public Bhava getBhava() {
-		return bhava;
-	}
-	public void setBhava(Bhava bhava) {
-		this.bhava = bhava;
-	}
+	
 	public Pada getPada() {
 		return pada;
 	}

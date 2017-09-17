@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.stereotype.Component;
+
 import jyotish.bhavas.Bhava;
 import jyotish.nakshatras.Nakshatra;
 import jyotish.nakshatras.padas.Pada;
@@ -17,6 +19,7 @@ import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
+@Component("guru")
 public class Guru implements Graha {
 
 	//Male

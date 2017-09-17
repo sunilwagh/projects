@@ -28,6 +28,11 @@ public class JyotishEnumUtil {
 		MALE, FEMALE
 	}
 
+	public enum Gender_Of_Graha {
+
+		MALE, FEMALE, BOTH
+	}
+
 	public enum Direction {
 
 		EAST, SOUTH, WEST, NORTH

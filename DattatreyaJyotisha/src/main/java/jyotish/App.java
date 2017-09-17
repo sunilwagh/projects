@@ -1,9 +1,14 @@
 package jyotish;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import jyotish.grahas.Graha;
 import jyotish.grahas.GrahaFactory;
@@ -34,6 +39,17 @@ public class App {
             Rashi capricornRashi = (Rashi) context.getBean("capricornRashi");
             Rashi acquariusRashi = (Rashi) context.getBean("acquariusRashi");
             Rashi piscesRashi = (Rashi) context.getBean("piscesRashi");
+            Graha surya = (Graha) context.getBean("surya");
+            Graha chandra = (Graha) context.getBean("chandra");
+            Graha mangal = (Graha) context.getBean("mangal");
+            Graha budha = (Graha) context.getBean("budha");
+            Graha guru = (Graha) context.getBean("guru");
+            Graha shukra = (Graha) context.getBean("shukra");
+            Graha shani = (Graha) context.getBean("shani");
+            Graha rahu = (Graha) context.getBean("rahu");
+            Graha ketu = (Graha) context.getBean("ketu");
+            
+            
             
             
             
@@ -50,7 +66,7 @@ public class App {
         	ArrayList<Graha> acquariusGrahas = new ArrayList<Graha>();
         	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
         	
-        	
+        	/*
         	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHTRA.JYESTHA,new Pada4(),23.35));
         	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHTRA.BHARANI, new Pada4(),24.38));
         	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHTRA.UTTAR_PHALGUNI,new Pada2(),3.12));
@@ -60,9 +76,18 @@ public class App {
         	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHTRA.CHITRA,new Pada1(),26.18));
         	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHTRA.PUNARVASU,new Pada4(),0.48));
         	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHTRA.UTTAR_ASHADA,new Pada2(),0.48));
+        	*/
         	
         	
-        	
+        	ariesGrahas.add(chandra);
+        	cancerGrahas.add(rahu);
+        	virgoGrahas.add(shani);
+        	virgoGrahas.add(budha);
+        	libraGrahas.add(guru);
+        	scorpioGrahas.add(surya);
+        	scorpioGrahas.add(budha);
+        	capricornGrahas.add(shukra);
+        	capricornGrahas.add(ketu);
         	ariesRashi.setGrahas(ariesGrahas);
         	virgoRashi.setGrahas(virgoGrahas);
         	libraRashi.setGrahas(libraGrahas);
@@ -86,6 +111,20 @@ public class App {
             obj.horoscope.getBhava12().setRashi(acquariusRashi);
             
             System.out.println(obj.processHoroscope());
+            
+            ObjectMapper mapper = new ObjectMapper();
+        	mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+        	try {
+        		List<String> abc = new ArrayList<String>();
+        		abc.add("llkl");
+        		abc.add("yey");
+        		obj.horoscope.setEtc(abc);
+        		
+    			System.out.println(mapper.writeValueAsString(obj.horoscope));
+    		} catch (JsonProcessingException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
             
             
 	    

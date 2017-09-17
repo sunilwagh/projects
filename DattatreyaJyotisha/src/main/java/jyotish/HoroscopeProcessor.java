@@ -1,6 +1,8 @@
 package jyotish;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +27,10 @@ import jyotish.horoscope.Horoscope;
 @Component("horoscopeProcessor")
 public final class HoroscopeProcessor {
 	
+	
+	
 	@Autowired
+	public
 	Horoscope horoscope;
 	
 	@Autowired
@@ -78,6 +83,8 @@ public final class HoroscopeProcessor {
 	
 	
 	public String processHoroscope() {
+		
+		
 
 		String bhava1 = null;
 		String bhava2 = null;
@@ -300,13 +307,7 @@ public final class HoroscopeProcessor {
 			return readingForBhava12.toString();
 		}
 
-		public Horoscope getHoroscope() {
-			return horoscope;
-		}
-
-		public void setHoroscope(Horoscope horoscope) {
-			this.horoscope = horoscope;
-		}
+		
 		
 		
 		

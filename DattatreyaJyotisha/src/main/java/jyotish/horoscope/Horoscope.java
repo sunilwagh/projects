@@ -1,5 +1,8 @@
 package jyotish.horoscope;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,7 +12,17 @@ import jyotish.rashis.Rashi;
 
 @Component("horoscope")
 public class Horoscope {
+	
+	List<String> etc = new ArrayList<String>();
+	
+	
 
+	public List<String> getEtc() {
+		return etc;
+	}
+	public void setEtc(List<String> etc) {
+		this.etc = etc;
+	}
 	@Autowired
 	Bhava bhava1;
 	@Autowired

@@ -2,6 +2,7 @@ package jyotish.rashis;
 
 import java.util.ArrayList;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import jyotish.grahas.Graha;
@@ -15,7 +16,7 @@ import util.JyotishEnumUtil.Tattva;
 public class Acquarius implements Rashi{
 	
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ACQUARIUS;
-	Mobility_Of_Rashi mobility;
+	Mobility_Of_Rashi mobility = Mobility_Of_Rashi.STHIRA;
 	Gender_Of_Rashi gender;
 	Tattva tattva;
 	Direction direction;
