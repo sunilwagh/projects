@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/horoscope")
+@RequestMapping("/horoscopereport")
 final class HoroscopeSearchController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HoroscopeSearchController.class);
@@ -74,6 +74,8 @@ final class HoroscopeSearchController {
         LOGGER.info("Updated the information of the todo entrY: {}", updated);
         return updated;
     }
+    
+  
     
     
     

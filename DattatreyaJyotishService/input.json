@@ -1,0 +1,64 @@
+{"bhavaRecords": [
+    {
+        "bhavaName":"BHAVA1",
+        "rashiName":"PISCES",
+        "grahas": []
+    },
+    {
+        "bhavaName":"BHAVA2", 
+        "rashiName":"ARIES",
+        "grahas": ["CHANDRA"]
+    },
+	{
+        "bhavaName":"BHAVA3",
+        "rashiName":"TAURUS",
+        "grahas": []
+    },
+	{
+        "bhavaName":"BHAVA4",
+        "rashiName":"GEMINI",
+        "grahas": []
+    },
+	{
+        "bhavaName":"BHAVA5",
+        "rashiName":"CANCER",
+        "grahas": ["RAHU"]
+    },
+	{
+        "bhavaName":"BHAVA6",
+        "rashiName":"LEO",
+        "grahas": []
+    },
+	{
+        "bhavaName":"BHAVA7",
+        "rashiName":"VIRGO",
+        "grahas": ["SHANI","MANGAL"]
+    },
+	{
+        "bhavaName":"BHAVA8",
+        "rashiName":"LIBRA",
+        "grahas": ["GURU"]
+    },
+	{
+        "bhavaName":"BHAVA9",
+        "rashiName":"SCORPIO",
+        "grahas": ["SURYA","BUDHA"]
+    },
+	{
+        "bhavaName":"BHAVA10",
+        "rashiName":"SAGITTAURIUS",
+        "grahas": []
+    },
+	{
+        "bhavaName":"BHAVA11",
+        "rashiName":"CAPRICORN",
+        "grahas": ["SHUKRA","KETU"]
+    },
+	{
+        "bhavaName":"BHAVA12",
+        "rashiName":"ACQUARIUS",
+        "grahas": []
+    }
+	
+]
+}
