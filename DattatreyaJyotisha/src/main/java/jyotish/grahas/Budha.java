@@ -17,7 +17,7 @@ import util.JyotishEnumUtil.Tattva;
 public class Budha implements Graha {
 
 	private static final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.BUDHA;
-	private static final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.ARIES;
+	private static final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.VIRGO;
 	private static final Name_Of_Rashi EXALTATION = Name_Of_Rashi.VIRGO;
 	private static final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.PISCES;
 	private static final Name_Of_Rashi OWN = Name_Of_Rashi.GEMINI;

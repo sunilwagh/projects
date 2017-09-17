@@ -14,14 +14,14 @@ import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
-public class Shani implements Graha{
-	
+public class Shani implements Graha {
+
 	private static final Set<Name_Of_Rashi> LORDOFRASHIS = new HashSet<Name_Of_Rashi>();
 	private static final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.SHANI;
-	private static final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.ARIES;
-	private static final Name_Of_Rashi EXALTATION = Name_Of_Rashi.VIRGO;
-	private static final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.PISCES;
-	private static final Name_Of_Rashi OWN = Name_Of_Rashi.GEMINI;
+	private static final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.ACQUARIUS;
+	private static final Name_Of_Rashi EXALTATION = Name_Of_Rashi.LIBRA;
+	private static final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.ARIES;
+	private static final Name_Of_Rashi OWN = Name_Of_Rashi.CAPRICORN;
 	private static final Tattva TATTVA = Tattva.VAYU;
 	private static final Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
 	private static final Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
@@ -48,8 +48,7 @@ public class Shani implements Graha{
 		addBhavasToWeakest();
 
 	}
-	
-	
+
 	public static void addLordOfNakshatrasToGraha() {
 		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.PUSHYA);
 		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.ANURADHA);
@@ -69,21 +68,18 @@ public class Shani implements Graha{
 	}
 
 	public static void addEnemiesToGraha() {
+		ENEMIES_TO_GRAHA.add(Name_Of_Graha.SURYA);
 		ENEMIES_TO_GRAHA.add(Name_Of_Graha.CHANDRA);
-
+		ENEMIES_TO_GRAHA.add(Name_Of_Graha.MANGAL);
 	}
 
 	public static void addFriendsToGraha() {
-		FRIENDS_TO_GRAHA.add(Name_Of_Graha.SURYA);
+		FRIENDS_TO_GRAHA.add(Name_Of_Graha.BUDHA);
 		FRIENDS_TO_GRAHA.add(Name_Of_Graha.SHUKRA);
-
 	}
 
 	public static void addNuetralToGraha() {
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.MANGAL);
 		NUETRAL_TO_GRAHA.add(Name_Of_Graha.GURU);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.SHANI);
-
 	}
 
 	public static void addBhavasToStrongest() {
@@ -95,12 +91,10 @@ public class Shani implements Graha{
 		STRONG.add(Name_Of_Bhava.BHAVA6);
 		STRONG.add(Name_Of_Bhava.BHAVA10);
 		STRONG.add(Name_Of_Bhava.BHAVA11);
-		
 
 	}
 
 	public static void addBhavasToNuetral() {
-		
 
 	}
 
@@ -123,10 +117,44 @@ public class Shani implements Graha{
 	Bhava bhava;
 	Pada pada;
 	double degrees;
-	
-	
-	
-	
-	
+	public Rashi getLagnaKundaliRashi() {
+		return lagnaKundaliRashi;
+	}
+
+	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
+		this.lagnaKundaliRashi = lagnaKundaliRashi;
+	}
+
+	public Nakshatra getNakshatra() {
+		return nakshatra;
+	}
+
+	public void setNakshatra(Nakshatra nakshatra) {
+		this.nakshatra = nakshatra;
+	}
+
+	public Bhava getBhava() {
+		return bhava;
+	}
+
+	public void setBhava(Bhava bhava) {
+		this.bhava = bhava;
+	}
+
+	public Pada getPada() {
+		return pada;
+	}
+
+	public void setPada(Pada pada) {
+		this.pada = pada;
+	}
+
+	public double getDegrees() {
+		return degrees;
+	}
+
+	public void setDegrees(double degrees) {
+		this.degrees = degrees;
+	}
 
 }

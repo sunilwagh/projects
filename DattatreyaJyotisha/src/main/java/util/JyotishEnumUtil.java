@@ -7,7 +7,7 @@ public class JyotishEnumUtil {
 	}
 
 	public enum Tattva {
-		APA, AGNI, VAYU, PRITHVI
+		APA, AGNI, VAYU, PRITHVI, AKASH
 	}
 
 	public enum Name_Of_Rashi {
