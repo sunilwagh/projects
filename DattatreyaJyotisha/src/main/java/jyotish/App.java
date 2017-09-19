@@ -115,10 +115,8 @@ public class App {
             ObjectMapper mapper = new ObjectMapper();
         	mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         	try {
-        		List<String> abc = new ArrayList<String>();
-        		abc.add("llkl");
-        		abc.add("yey");
-        		obj.horoscope.setEtc(abc);
+        		
+        		
         		
     			System.out.println(mapper.writeValueAsString(obj.horoscope));
     		} catch (JsonProcessingException e) {
