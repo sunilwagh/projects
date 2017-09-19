@@ -28,7 +28,7 @@ import util.JyotishEnumUtil.Name_Of_Graha;
 public class AnalyzeBhava4 implements AnalyzeBhava{
 	
 	@Autowired
-	@Qualifier("sahajBhavaHelper")
+	@Qualifier("sukhaBhavaHelper")
 	HouseLordPlacedInBhava houseLordPlacedInBhava;
 	
 	@Autowired
