@@ -1,5 +1,11 @@
 package practice.projects;
 
+/**
+ * 
+ * For a given integer find the sum of all integers
+ *
+ */
+
 public class AddNumbers {
 
 	public static void main(String[] args) {

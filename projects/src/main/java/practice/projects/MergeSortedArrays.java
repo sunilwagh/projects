@@ -2,6 +2,12 @@ package practice.projects;
 
 import java.util.Arrays;
 
+/**
+ * 
+ * Merge two sorted arrays in to third.
+ *
+ */
+
 public class MergeSortedArrays {
 
 	public static void main(String[] args) {
