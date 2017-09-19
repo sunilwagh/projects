@@ -1,7 +1,12 @@
 package jyotish.analyze.bhavas.bhava4.sukha;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import jyotish.analyze.bhavas.GrahaInBhava;
+import jyotish.analyze.bhavas.HouseLordPlacedInBhava;
+import jyotish.analyze.bhavas.RashiInBhava;
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -17,6 +22,8 @@ import jyotish.bhavas.Bhava9;
 
 @Component("sukhaBhavaHelper")
 public class SukhaBhavaHelper {
+	
+	
 
 	public  String infoAboutLordOfBhava4InBhava1(Bhava4 bhava4, Bhava1 bhava1) {
 		StringBuffer infoBuffer = new StringBuffer();
