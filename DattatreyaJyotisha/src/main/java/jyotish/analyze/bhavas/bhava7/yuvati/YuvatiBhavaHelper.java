@@ -2,6 +2,7 @@ package jyotish.analyze.bhavas.bhava7.yuvati;
 
 import org.springframework.stereotype.Component;
 
+import jyotish.analyze.bhavas.HouseLordPlacedInBhava;
 import jyotish.bhavas.Bhava1;
 import jyotish.bhavas.Bhava10;
 import jyotish.bhavas.Bhava11;
@@ -16,9 +17,9 @@ import jyotish.bhavas.Bhava8;
 import jyotish.bhavas.Bhava9;
 
 @Component("yuvatiBhavaHelper")
-public class YuvatiBhavaHelper {
+public class YuvatiBhavaHelper implements HouseLordPlacedInBhava {
 
-	public  String infoAboutLordOfBhava7InBhava1(Bhava7 bhava7, Bhava1 bhava1) {
+	public  String infoAboutHouseLordPlacedInBhava1() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
 				"Relationships are very important. Your partner will be great influence in your life and the decisions you face");
@@ -26,7 +27,7 @@ public class YuvatiBhavaHelper {
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava2(Bhava7 bhava7, Bhava2 bhava2) {
+	public  String infoAboutHouseLordPlacedInBhava2() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
 				"Partner has great influence over you and they have some kind of family wealth.If the second house is mutable it indicates more than one marriage");
@@ -34,42 +35,42 @@ public class YuvatiBhavaHelper {
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava3(Bhava7 bhava7, Bhava3 bhava3) {
+	public  String infoAboutHouseLordPlacedInBhava3() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Partner works with you to achieve your ambition on material level");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava4(Bhava7 bhava7, Bhava4 bhava4) {
+	public  String infoAboutHouseLordPlacedInBhava4() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Happy married life, good relationship. Home is important part of marriage");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava5(Bhava7 bhava7, Bhava5 bhava5) {
+	public  String infoAboutHouseLordPlacedInBhava5() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Love Marriage.Romance is important. It can also mean more than one marriage");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava6(Bhava7 bhava7, Bhava6 bhava6) {
+	public  String infoAboutHouseLordPlacedInBhava6() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Inimical relationship with partners. Fights possible and obstacles in marriage");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava7(Bhava7 bhava7) {
+	public  String infoAboutHouseLordPlacedInBhava7() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Good placement.Although planets are not considered to be good in the seventh house, the effect is nullified to some extent when it is the house ruler.");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava8(Bhava7 bhava7, Bhava8 bhava8) {
+	public  String infoAboutHouseLordPlacedInBhava8() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
 				"You may lose your marriage partner through death or divorce.Issues of power can dominate your marital life.Partners may be secretive");
@@ -77,7 +78,7 @@ public class YuvatiBhavaHelper {
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava9(Bhava7 bhava7, Bhava9 bhava9) {
+	public  String infoAboutHouseLordPlacedInBhava9() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
 				"This is very beneficial.It indicates fame,success and happiness from children and wealth.Partner may be interested in religion and philosophy");
@@ -85,7 +86,7 @@ public class YuvatiBhavaHelper {
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava10(Bhava7 bhava7, Bhava10 bhava10) {
+	public  String infoAboutHouseLordPlacedInBhava10(){
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append(
 				"Your partner will be interested and support you in the career. Increase in prosperity after marriage");
@@ -93,14 +94,14 @@ public class YuvatiBhavaHelper {
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava11(Bhava7 bhava7, Bhava11 bhava11) {
+	public  String infoAboutHouseLordPlacedInBhava11() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Beneficial Position. Chance to make money through partnership.");
 		return infoBuffer.toString();
 
 	}
 
-	public  String infoAboutLordOfBhava7InBhava12(Bhava7 bhava7, Bhava12 bhava12) {
+	public  String infoAboutHouseLordPlacedInBhava12() {
 		StringBuffer infoBuffer = new StringBuffer();
 		infoBuffer.append("Marriage to foreign partner.Strong sexual energy");
 		return infoBuffer.toString();
