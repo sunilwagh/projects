@@ -4,8 +4,19 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAKSHATRA_DIETY;
+import util.NakshatraEnumUtil.NAKSHTRA_GANA;
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
 public class Bharani implements Nakshatra,Serializable{
 	
+	private static final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.YAMA;
+	private static final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.SHUKRA;
+	private static final Tattva TATTVA = Tattva.PRITHVI;
+	private static final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
+	private static final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.MANUSHYA;
 	private static List<String> features = new ArrayList<String>();
 
 	static {

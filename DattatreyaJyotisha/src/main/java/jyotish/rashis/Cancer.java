@@ -12,13 +12,13 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 @Component("cancerRashi")
-public class Cancer implements Rashi{
-	
+public final class Cancer implements Rashi{
+		
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.CANCER;
-	Mobility_Of_Rashi mobility;
-	Gender_Of_Rashi gender;
-	Tattva tattva;
-	Direction direction;
+	Mobility_Of_Rashi mobility=Mobility_Of_Rashi.CHARA;
+	Gender_Of_Rashi gender=Gender_Of_Rashi.FEMALE;
+	Tattva tattva=Tattva.APA;
+	Direction direction=Direction.NORTH;
 	ArrayList<Graha> grahas;
 	
 	public Mobility_Of_Rashi getMobility() {

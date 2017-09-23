@@ -1,77 +1,33 @@
 package jyotish.rashis;
 
 import java.util.ArrayList;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import jyotish.grahas.Graha;
 import util.JyotishEnumUtil.Direction;
 import util.JyotishEnumUtil.Gender_Of_Rashi;
 import util.JyotishEnumUtil.Mobility_Of_Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
+import util.JyotishEnumUtil.GOALS;
 
 @Component("acquariusRashi")
-public class Acquarius implements Rashi{
-	
-	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ACQUARIUS;
-	Mobility_Of_Rashi mobility = Mobility_Of_Rashi.STHIRA;
-	Gender_Of_Rashi gender;
-	Tattva tattva;
-	Direction direction;
+public final class Acquarius implements Rashi {
+
+	private final Name_Of_Rashi nameOfRashi = Name_Of_Rashi.ACQUARIUS;
+	private final Mobility_Of_Rashi mobility = Mobility_Of_Rashi.STHIRA;
+	private final Tattva tattva = Tattva.VAYU;
+	private final GOALS goals = GOALS.KAMA;
+	private final Direction direction = Direction.WEST;
+	private final Gender_Of_Rashi gender = Gender_Of_Rashi.MALE;
 	ArrayList<Graha> grahas;
-	
-	
-	
-	public Name_Of_Rashi getNameOfRashi() {
-		return nameOfRashi;
-	}
-	public void setNameOfRashi(Name_Of_Rashi nameOfRashi) {
-		this.nameOfRashi = nameOfRashi;
-	}
-	public Mobility_Of_Rashi getMobility() {
-		return mobility;
-	}
-	public void setMobility(Mobility_Of_Rashi mobility) {
-		this.mobility = mobility;
-	}
-	public Gender_Of_Rashi getGender() {
-		return gender;
-	}
-	public void setGender(Gender_Of_Rashi gender) {
-		this.gender = gender;
-	}
-	public Tattva getTattva() {
-		return tattva;
-	}
-	public void setTattva(Tattva tattva) {
-		this.tattva = tattva;
-	}
-	public Direction getDirection() {
-		return direction;
-	}
-	public void setDirection(Direction direction) {
-		this.direction = direction;
-	}
+
 	public ArrayList<Graha> getGrahas() {
 		return grahas;
 	}
+
 	public void setGrahas(ArrayList<Graha> grahas) {
 		this.grahas = grahas;
 	}
-	
-	
-	@Override
-	public String toString() {
-		return "Acquarius [mobility=" + mobility + ", gender=" + gender + ", tattva=" + tattva + ", direction="
-				+ direction + ", grahas=" + grahas + ", getMobility()=" + getMobility() + ", getGender()=" + getGender()
-				+ ", getTattva()=" + getTattva() + ", getDirection()=" + getDirection() + ", getGrahas()=" + getGrahas()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
-	}
-	
-	
 	
 	
 

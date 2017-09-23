@@ -3,7 +3,6 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import util.JyotishEnumUtil.Name_Of_Graha;
 import util.JyotishEnumUtil.Tattva;
 import util.NakshatraEnumUtil.NAKSHATRA_DIETY;
@@ -11,15 +10,14 @@ import util.NakshatraEnumUtil.NAKSHTRA_GANA;
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
 public final class Ashwini implements Nakshatra {
-	
-	private static final NAKSHATRA_DIETY Diety=NAKSHATRA_DIETY.ASHWINI_KUMARS;
+
+	private static final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.ASHWINI_KUMARS;
 	private static final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
 	private static final Tattva TATTVA = Tattva.PRITHVI;
 	private static final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
 	private static final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.DEVA;
-	
 
-		private static List<String> features = new ArrayList<String>();
+	private static List<String> features = new ArrayList<String>();
 
 	static {
 
@@ -39,7 +37,5 @@ public final class Ashwini implements Nakshatra {
 		features.add("While talking they like to look at themsleves in the mirror.");
 
 	}
-
-	
 
 }

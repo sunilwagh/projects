@@ -82,7 +82,7 @@ public class App {
         	ariesGrahas.add(chandra);
         	cancerGrahas.add(rahu);
         	virgoGrahas.add(shani);
-        	virgoGrahas.add(budha);
+        	virgoGrahas.add(mangal);
         	libraGrahas.add(guru);
         	scorpioGrahas.add(surya);
         	scorpioGrahas.add(budha);

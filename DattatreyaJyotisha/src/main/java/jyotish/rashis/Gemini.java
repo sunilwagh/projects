@@ -15,10 +15,10 @@ import util.JyotishEnumUtil.Tattva;
 public class Gemini implements Rashi{
 	
 	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.GEMINI;
-	Mobility_Of_Rashi mobility;
-	Gender_Of_Rashi gender;
-	Tattva tattva;
-	Direction direction;
+	Mobility_Of_Rashi mobility= Mobility_Of_Rashi.DWISVABHAVA;
+	Gender_Of_Rashi gender = Gender_Of_Rashi.MALE;
+	Tattva tattva=Tattva.VAYU;
+	Direction direction=Direction.WEST;
 	ArrayList<Graha> grahas;
 	
 	public Mobility_Of_Rashi getMobility() {

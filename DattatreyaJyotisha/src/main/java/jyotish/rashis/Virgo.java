@@ -10,64 +10,24 @@ import util.JyotishEnumUtil.Gender_Of_Rashi;
 import util.JyotishEnumUtil.Mobility_Of_Rashi;
 import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
+import util.JyotishEnumUtil.GOALS;
 
 @Component("virgoRashi")
-public class Virgo implements Rashi{
-	
-	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.VIRGO;
-	Mobility_Of_Rashi mobility;
-	Gender_Of_Rashi gender;
-	Tattva tattva;
-	Direction direction;
+public final class Virgo implements Rashi {
+
+	private final Name_Of_Rashi nameOfRashi = Name_Of_Rashi.VIRGO;
+	private final Mobility_Of_Rashi mobility = Mobility_Of_Rashi.DWISVABHAVA;
+	private final Gender_Of_Rashi gender = Gender_Of_Rashi.FEMALE;
+	private final Tattva tattva = Tattva.PRITHVI;
+	private final Direction direction = Direction.SOUTH;
 	ArrayList<Graha> grahas;
-	
-	public Mobility_Of_Rashi getMobility() {
-		return mobility;
-	}
-	public void setMobility(Mobility_Of_Rashi mobility) {
-		this.mobility = mobility;
-	}
-	public Gender_Of_Rashi getGender() {
-		return gender;
-	}
-	public void setGender(Gender_Of_Rashi gender) {
-		this.gender = gender;
-	}
-	public Tattva getTattva() {
-		return tattva;
-	}
-	public void setTattva(Tattva tattva) {
-		this.tattva = tattva;
-	}
-	public Direction getDirection() {
-		return direction;
-	}
-	public void setDirection(Direction direction) {
-		this.direction = direction;
-	}
+
 	public ArrayList<Graha> getGrahas() {
 		return grahas;
 	}
+
 	public void setGrahas(ArrayList<Graha> grahas) {
 		this.grahas = grahas;
 	}
-	
-	
-	public Name_Of_Rashi getNameOfRashi() {
-		return nameOfRashi;
-	}
-	public void setNameOfRashi(Name_Of_Rashi nameOfRashi) {
-		this.nameOfRashi = nameOfRashi;
-	}
-	@Override
-	public String toString() {
-		return "Virgo [mobility=" + mobility + ", gender=" + gender + ", tattva=" + tattva + ", direction=" + direction
-				+ ", grahas=" + grahas + ", getMobility()=" + getMobility() + ", getGender()=" + getGender()
-				+ ", getTattva()=" + getTattva() + ", getDirection()=" + getDirection() + ", getGrahas()=" + getGrahas()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
-	}
-	
-	
 
 }

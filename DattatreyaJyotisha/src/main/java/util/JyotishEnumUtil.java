@@ -33,6 +33,11 @@ public class JyotishEnumUtil {
 		MALE, FEMALE, BOTH
 	}
 
+	public enum EVEN_ODD {
+
+		EVEN, ODD
+	}
+
 	public enum Direction {
 
 		EAST, SOUTH, WEST, NORTH
@@ -45,6 +50,14 @@ public class JyotishEnumUtil {
 
 	public enum Guna {
 		SATTVIC, RAJASIC, TAMASIC
+	}
+
+	public enum GOALS {
+		DHARMA, ARTHA, KAMA, MOKSHA
+	}
+
+	public enum TREES {
+		PTEROCARPUS_SANTALINUS, ALSTONIA_SCOLARIS, WRIGHTIA_TINCTORIA, BUTIA_MONOSPERMA, ZIZIPHUS_MAURITIANA, MANGIFERA_INDICA, MIMUSOPS_ELENGI, ACACIA_CATECHU, FICUS_RELIGIOSA, DALBERGIA_SISSOO, PROSOPIS_CINERARIA, FICUS_BENGALENSIS
 	}
 
 	public enum Positive_Strength_Of_Graha {
