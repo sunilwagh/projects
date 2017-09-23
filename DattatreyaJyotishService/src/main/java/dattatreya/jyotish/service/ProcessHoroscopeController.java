@@ -1,4 +1,4 @@
-package com.example.demo;
+package dattatreya.jyotish.service;
 
 import java.util.ArrayList;
 import java.util.List;

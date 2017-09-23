@@ -1,4 +1,4 @@
-package com.example.demo;
+package dattatreya.jyotish.service;
 
 public class HoroscopeResponse {
 

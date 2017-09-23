@@ -1,4 +1,4 @@
-package com.example.demo;
+package dattatreya.jyotish.service;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
