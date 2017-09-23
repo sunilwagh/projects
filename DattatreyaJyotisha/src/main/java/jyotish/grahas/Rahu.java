@@ -3,6 +3,7 @@ package jyotish.grahas;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import jyotish.bhavas.Bhava;
@@ -16,6 +17,7 @@ import util.JyotishEnumUtil.Tattva;
 import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 @Component("rahu")
+@Order(value=8)
 public class Rahu implements Graha{
 	
 	Rashi lagnaKundaliRashi;

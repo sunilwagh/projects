@@ -3,8 +3,16 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
+@Component("vishaka")
+@Order(value=16)
 public final class Vishaka implements Nakshatra{
 	
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.MISHRA;
 	private static List<String> features = new ArrayList<String>();
 	
 	static {

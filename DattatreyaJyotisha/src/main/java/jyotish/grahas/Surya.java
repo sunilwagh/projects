@@ -2,21 +2,18 @@ package jyotish.grahas;
 
 import java.util.HashSet;
 import java.util.Set;
-
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
-import jyotish.bhavas.Bhava;
 import jyotish.nakshatras.Nakshatra;
 import jyotish.nakshatras.padas.Pada;
-import jyotish.rashis.Rashi;
 import util.JyotishEnumUtil.Guna;
 import util.JyotishEnumUtil.Name_Of_Bhava;
 import util.JyotishEnumUtil.Name_Of_Graha;
 import util.JyotishEnumUtil.Name_Of_Rashi;
-import util.JyotishEnumUtil.Tattva;
 import util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 @Component("surya")
+@Order(value=1)
 public class Surya implements Graha {
 
 	

@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import jyotish.bhavas.Bhava;
@@ -20,6 +21,7 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 @Component("guru")
+@Order(value=5)
 public class Guru implements Graha {
 
 	//Male

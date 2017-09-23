@@ -3,12 +3,18 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("purvaashada")
+@Order(value=20)
 public final class PurvaAshada implements Nakshatra{
 	
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.UGRA;
+	
 	private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.UGRA;
 
 	static {
 

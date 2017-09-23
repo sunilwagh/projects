@@ -3,6 +3,7 @@ package jyotish.grahas;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import jyotish.bhavas.Bhava;
@@ -17,6 +18,7 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 @Component("budha")
+@Order(value=4)
 public class Budha implements Graha {
 
 	private static final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.BUDHA;

@@ -3,9 +3,17 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
+@Component("punarvasu")
+@Order(value=7)
 public final class Punarvasu implements Nakshatra {
 
 	private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.CHARA;
 
 	static {
 

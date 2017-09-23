@@ -3,6 +3,11 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Component("uttarphalguni")
+@Order(value=12)
 public final class UttarPhalguni implements Nakshatra{
 	
 	private static List<String> features = new ArrayList<String>();

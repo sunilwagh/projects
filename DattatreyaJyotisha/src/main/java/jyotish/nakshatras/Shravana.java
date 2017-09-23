@@ -3,8 +3,13 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("shravana")
+@Order(value=22)
 public final class Shravana implements Nakshatra{
 	
 	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.CHARA;

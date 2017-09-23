@@ -2,6 +2,7 @@ package jyotish.rashis;
 
 import java.util.ArrayList;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import jyotish.grahas.Graha;
@@ -12,6 +13,7 @@ import util.JyotishEnumUtil.Name_Of_Rashi;
 import util.JyotishEnumUtil.Tattva;
 
 @Component("scorpioRashi")
+@Order(value=8)
 public final class Scorpio implements Rashi{
 	
 

@@ -3,12 +3,18 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("dhanishta")
+@Order(value=23)
 public final class Dhanishta implements Nakshatra{
 	
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.CHARA;
+	
 	private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.CHARA;
 
 	static {
 		

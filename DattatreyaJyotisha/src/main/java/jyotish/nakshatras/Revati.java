@@ -3,8 +3,11 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
 public final class Revati implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.MRUDU;
 
 	static {
 		

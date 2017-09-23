@@ -3,12 +3,18 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("jyestha")
+@Order(value=18)
 public final class Jyestha implements Nakshatra{
 	
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.TIKSHNA;
+	
 	private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.TIKSHNA;
 
 	static {
 	features.add("Sovereign and Senior Most");

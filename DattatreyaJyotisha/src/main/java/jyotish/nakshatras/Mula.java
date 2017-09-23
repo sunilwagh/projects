@@ -3,13 +3,19 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("mula")
+@Order(value=19)
 public final class Mula implements Nakshatra{
 	
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.TIKSHNA;
+	
 	private static List<String> features = new ArrayList<String>();
-
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.TIKSHNA;
+	
 	static {
 		
 		features.add("Total Destruction");

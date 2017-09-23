@@ -3,20 +3,26 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 import util.JyotishEnumUtil.Name_Of_Graha;
 import util.JyotishEnumUtil.Tattva;
 import util.NakshatraEnumUtil.NAKSHATRA_DIETY;
 import util.NakshatraEnumUtil.NAKSHTRA_GANA;
 import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
+@Component("ashwini")
+@Order(value=1)
 public final class Ashwini implements Nakshatra {
 
 	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.ASHWINI_KUMARS;
 	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
+
 	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.DEVA;
     private static List<String> features = new ArrayList<String>();
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
 
 	static {
 
