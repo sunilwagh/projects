@@ -15,7 +15,7 @@ import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 @Component("surya")
 @Order(value=1)
-public class Surya implements Graha {
+public final class Surya implements Graha {
 
 	
 	Nakshatra nakshatra;
