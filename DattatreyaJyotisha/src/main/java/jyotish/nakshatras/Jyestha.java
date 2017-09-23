@@ -3,8 +3,11 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Jyestha implements Nakshatra{
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
+public final class Jyestha implements Nakshatra{
 	
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.TIKSHNA;
 	private static List<String> features = new ArrayList<String>();
 
 	static {

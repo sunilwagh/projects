@@ -3,8 +3,11 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PurvaPhalguni implements Nakshatra{
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+
+public final class PurvaPhalguni implements Nakshatra{
 	
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.UGRA;
 	private static List<String> features = new ArrayList<String>();
 
 	static {

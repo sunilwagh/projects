@@ -3,9 +3,20 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Rohini implements Nakshatra {
+import util.JyotishEnumUtil.Name_Of_Graha;
+import util.JyotishEnumUtil.Tattva;
+import util.NakshatraEnumUtil.NAKSHATRA_DIETY;
+import util.NakshatraEnumUtil.NAKSHTRA_GANA;
+import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
-	private static List<String> features = new ArrayList<String>();
+public final class Rohini implements Nakshatra {
+	
+	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.AGNI;
+	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.CHANDRA;
+	private final Tattva TATTVA = Tattva.PRITHVI;
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.STHIRA;
+	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.MANUSHYA;
+    private static List<String> features = new ArrayList<String>();
 
 	static {
 
@@ -24,7 +35,7 @@ public class Rohini implements Nakshatra {
 		features.add("Separate early from parents");
 		features.add("Father in law curse is dangerous for Rohini");
 		features.add(
-				"Wealthy powerfula and well placed but there weakness is rage. Once therir temper flares they lose it. They should chanting 'Om' and 'Gayatri'");
+				"Wealthy powerfull and well placed but there weakness is rage. Once their temper flares they lose it. They should chanting 'Om' and 'Gayatri'");
 
 	}
 

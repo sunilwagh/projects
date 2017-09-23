@@ -3,7 +3,7 @@ package jyotish.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UttarAshada implements Nakshatra{
+public final class UttarAshada implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 
 	static {

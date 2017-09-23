@@ -11,13 +11,12 @@ import util.NakshatraEnumUtil.NAKSHTRA_TYPE;
 
 public final class Ashwini implements Nakshatra {
 
-	private static final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.ASHWINI_KUMARS;
-	private static final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
-	private static final Tattva TATTVA = Tattva.PRITHVI;
-	private static final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
-	private static final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.DEVA;
-
-	private static List<String> features = new ArrayList<String>();
+	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.ASHWINI_KUMARS;
+	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
+	private final Tattva TATTVA = Tattva.PRITHVI;
+	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.KSHIPRA;
+	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.DEVA;
+    private static List<String> features = new ArrayList<String>();
 
 	static {
 
