@@ -15,15 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import dattatreya.jyotish.AppConfig;
+import dattatreya.jyotish.HoroscopeProcessor;
+import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.rashis.Rashi;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-
-import jyotish.AppConfig;
-import jyotish.HoroscopeProcessor;
-import jyotish.grahas.Graha;
-import jyotish.rashis.Rashi;
 
 @RestController
 @RequestMapping("/process")

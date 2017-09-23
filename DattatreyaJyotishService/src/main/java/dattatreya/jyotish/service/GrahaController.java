@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import jyotish.grahas.Graha;
+
+import dattatreya.jyotish.grahas.Graha;
 
 
 @RestController
@@ -32,6 +33,7 @@ final class GrahaController {
    
    @RequestMapping(value = "{id}", method = RequestMethod.GET)
    Graha getGraha(@PathVariable("id") int id) {
+	   
         LOGGER.info("Finding todo entry by using id: {}", id);
         Graha graha = grahaService.getGraha(id);
         LOGGER.info("Found todo entry: {}", graha);

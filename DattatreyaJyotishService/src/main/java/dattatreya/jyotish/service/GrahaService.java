@@ -1,6 +1,6 @@
 package dattatreya.jyotish.service;
 
-import jyotish.grahas.Graha;
+import dattatreya.jyotish.grahas.Graha;
 
 public interface GrahaService {
 	
