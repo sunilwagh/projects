@@ -1,5 +1,15 @@
 package dattatreya.jyotish.bhavas.grahas.ketu;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Component("ketuInBhava2")
+@Order(value=2)
 public class KetuInBhava2 implements KetuInBhava {
+
+	public String getInfoAboutKetuInBhava() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
