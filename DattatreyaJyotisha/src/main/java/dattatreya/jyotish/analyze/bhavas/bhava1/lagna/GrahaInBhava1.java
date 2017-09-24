@@ -56,27 +56,19 @@ public class GrahaInBhava1 implements GrahaInBhava {
 	KetuInBhava ketuInBhava;
 
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava1 = new StringBuilder();
-		suryaInBhava1.append("\n");
-		return suryaInBhava1.toString();
+		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
 
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava3 = new StringBuilder();
-		chandraInBhava3.append("\n");
-		return chandraInBhava3.toString();
+		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
 
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava3 = new StringBuilder();
-		budhInBhava3.append("\n");
-		return budhInBhava3.toString();
+		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
 
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava3 = new StringBuilder();
-		mangalInBhava3.append("\n");
-		return mangalInBhava3.toString();
+		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
 
 	public String GuruInBhava() {
@@ -85,27 +77,19 @@ public class GrahaInBhava1 implements GrahaInBhava {
 	}
 
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava3 = new StringBuilder();
-		shukraInBhava3.append("\n");
-		return shukraInBhava3.toString();
+		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
 
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava3 = new StringBuilder();
-		shaniInBhava3.append("\n");
-		return shaniInBhava3.toString();
+		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
 
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava3 = new StringBuilder();
-		rahuInBhava3.append("\n");
-		return rahuInBhava3.toString();
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
 
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava3 = new StringBuilder();
-		ketuInBhava3.append("\n");
-		return ketuInBhava3.toString();
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
 
 }

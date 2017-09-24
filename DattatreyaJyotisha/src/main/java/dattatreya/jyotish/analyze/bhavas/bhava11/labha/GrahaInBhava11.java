@@ -1,64 +1,94 @@
 package dattatreya.jyotish.analyze.bhavas.bhava11.labha;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
+import dattatreya.jyotish.bhavas.grahas.budha.BudhaInBhava;
+import dattatreya.jyotish.bhavas.grahas.chandra.ChandraInBhava;
+import dattatreya.jyotish.bhavas.grahas.guru.GuruInBhava;
+import dattatreya.jyotish.bhavas.grahas.ketu.KetuInBhava;
+import dattatreya.jyotish.bhavas.grahas.mangal.MangalInBhava;
+import dattatreya.jyotish.bhavas.grahas.rahu.RahuInBhava;
+import dattatreya.jyotish.bhavas.grahas.shani.ShaniInBhava;
+import dattatreya.jyotish.bhavas.grahas.shukra.ShukraInBhava;
+import dattatreya.jyotish.bhavas.grahas.surya.SuryaInBhava;
 
 @Component("grahaInBhava11")
-public class GrahaInBhava11 implements GrahaInBhava{
-	
+public class GrahaInBhava11 implements GrahaInBhava {
+
+	@Autowired
+	@Qualifier("suryaInBhava11")
+	SuryaInBhava suryaInBhava;
+
+	@Autowired
+	@Qualifier("chandraInBhava11")
+	ChandraInBhava chandraInBhava;
+
+	@Autowired
+	@Qualifier("budhaInBhava11")
+	BudhaInBhava budhaInBhava;
+
+	@Autowired
+	@Qualifier("mangalInBhava11")
+	MangalInBhava mangalInBhava;
+
+	@Autowired
+	@Qualifier("guruInBhava11")
+	GuruInBhava guruInBhava;
+
+	@Autowired
+	@Qualifier("shukraInBhava11")
+	ShukraInBhava shukraInBhava;
+
+	@Autowired
+	@Qualifier("shaniInBhava11")
+	ShaniInBhava shaniInBhava;
+
+	@Autowired
+	@Qualifier("rahuInBhava11")
+	RahuInBhava rahuInBhava;
+
+	@Autowired
+	@Qualifier("ketuInBhava11")
+	KetuInBhava ketuInBhava;
+
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava11 = new StringBuilder();
-		suryaInBhava11.append("\n");
-		return suryaInBhava11.toString();
+		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
-	
+
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava11 = new StringBuilder();
-		chandraInBhava11.append("\n");
-		return chandraInBhava11.toString();
+		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
-	
+
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava11 = new StringBuilder();
-		budhInBhava11.append("\n");
-		return budhInBhava11.toString();
+		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
-	
+
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava11 = new StringBuilder();
-		mangalInBhava11.append("\n");
-		return mangalInBhava11.toString();
+		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
-	
+
 	public String GuruInBhava() {
-		StringBuilder guruInBhava11 = new StringBuilder();
-		guruInBhava11.append("Good friend circle \n");
-		return guruInBhava11.toString();
+		return guruInBhava.getInfoAboutGuruInBhava();
+
 	}
-	
+
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava11 = new StringBuilder();
-		shukraInBhava11.append("\n");
-		return shukraInBhava11.toString();
+		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
-	
+
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava11 = new StringBuilder();
-		shaniInBhava11.append("\n");
-		return shaniInBhava11.toString();
+		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
-	
+
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava11 = new StringBuilder();
-		rahuInBhava11.append("The friend circle would be big. Suppose he is from one religion, other religions will help him more. \n");
-		return rahuInBhava11.toString();
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
-	
+
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava11 = new StringBuilder();
-		ketuInBhava11.append("\n");
-		return ketuInBhava11.toString();
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
 
 }
