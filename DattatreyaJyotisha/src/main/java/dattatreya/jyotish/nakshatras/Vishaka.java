@@ -6,13 +6,13 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("vishaka")
 @Order(value=16)
 public final class Vishaka implements Nakshatra{
 	
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.MISHRA;
+	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MISHRA;
 	private static List<String> features = new ArrayList<String>();
 	
 	static {

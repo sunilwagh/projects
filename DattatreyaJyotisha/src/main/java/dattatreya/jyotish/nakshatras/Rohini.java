@@ -6,21 +6,21 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHATRA_DIETY;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_GANA;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+import dattatreya.jyotish.util.NakshtraDiety;
+import dattatreya.jyotish.util.NakshatraTypes;
+import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("rohini")
 @Order(value=4)
 public final class Rohini implements Nakshatra {
 	
-	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.AGNI;
-	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.CHANDRA;
+	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
+	private final GrahaNames NAKSHATRA_LORD = GrahaNames.CHANDRA;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.STHIRA;
-	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.MANUSHYA;
+	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
+	private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
     private static List<String> features = new ArrayList<String>();
 
 	static {

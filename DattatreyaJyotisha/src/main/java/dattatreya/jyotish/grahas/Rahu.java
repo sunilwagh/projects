@@ -10,11 +10,11 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.nakshatras.Nakshatra;
 import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Bhava;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.RashiNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("rahu")
 @Order(value=8)
@@ -26,19 +26,19 @@ public class Rahu implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private final static Name_Of_Graha grahaName = Name_Of_Graha.RAHU;
-	private final static Name_Of_Rashi MOOLTRIKONARASHI=Name_Of_Rashi.ARIES;
-	private final static Name_Of_Rashi EXALTATION=Name_Of_Rashi.CAPRICORN;
-	private final static Name_Of_Rashi DEBILITATION=Name_Of_Rashi.CANCER;
+	private final static GrahaNames grahaName = GrahaNames.RAHU;
+	private final static RashiNames MOOLTRIKONARASHI=RashiNames.ARIES;
+	private final static RashiNames EXALTATION=RashiNames.CAPRICORN;
+	private final static RashiNames DEBILITATION=RashiNames.CANCER;
 	private final static Tattva tatva = Tattva.AGNI;
-	private final static Name_Of_Rashi moolTrikonaRashi=Name_Of_Rashi.CANCER;
-	private final static Name_Of_Rashi OWN=Name_Of_Rashi.GEMINI;
+	private final static RashiNames moolTrikonaRashi=RashiNames.CANCER;
+	private final static RashiNames OWN=RashiNames.GEMINI;
 	private final static Tattva tattva = Tattva.PRITHVI;
-	private final static Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
-	private final static Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
-	private final static Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private final static Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private final static Set<Name_Of_Graha> NUETRAL_TO_GRAHA = new HashSet<Name_Of_Graha>();
+	private final static Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
+	private final static Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
+	private final static Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private final static Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
+	private final static Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
 	
 	
 	public Rashi getLagnaKundaliRashi() {

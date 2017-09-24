@@ -3,20 +3,15 @@ package dattatreya.jyotish.rashis;
 import java.util.ArrayList;
 
 import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil;
-import dattatreya.jyotish.util.JyotishEnumUtil.Direction;
-import dattatreya.jyotish.util.JyotishEnumUtil.Gender_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Mobility_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-;
+import dattatreya.jyotish.util.RashiNames;
+
 
 /** http://vaidikasamhita.com/2015/09/25/characteristics-of-the-rashi-or-signs-in-astrology/**/
 
 public final class RashiFactory {
 
 	// use getShape method to get object of type shape
-	public static Rashi getRashi(Name_Of_Rashi rashi,ArrayList<Graha> grahas) {
+	public static Rashi getRashi(RashiNames rashi,ArrayList<Graha> grahas) {
 
 		
 		switch (rashi) {

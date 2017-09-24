@@ -10,12 +10,12 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.nakshatras.Nakshatra;
 import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Guna;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Bhava;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.RashiNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("chandra")
 @Order(value=2)
@@ -29,24 +29,24 @@ public final class Chandra implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private  final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.CHANDRA;
-	private  final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.TAURUS;
-	private  final Name_Of_Rashi EXALTATION = Name_Of_Rashi.TAURUS;
-	private  final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.SCORPIO;
-	private  final Name_Of_Rashi OWN = Name_Of_Rashi.CANCER;
+	private  final GrahaNames GRAHA_NAME = GrahaNames.CHANDRA;
+	private  final RashiNames MOOLTRIKONARASHI = RashiNames.TAURUS;
+	private  final RashiNames EXALTATION = RashiNames.TAURUS;
+	private  final RashiNames DEBILITATION = RashiNames.SCORPIO;
+	private  final RashiNames OWN = RashiNames.CANCER;
 	private  final Tattva TATTVA = Tattva.APA;
-	private  final Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
+	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Guna GUNA = Guna.SATTVIC;
-	private  final Set<Name_Of_Rashi> LORD_OF_RASHIS = new HashSet<Name_Of_Rashi>();
-	private  final Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Graha> NUETRAL_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Bhava> STRONGEST_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> STRONG_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> NUETRAL_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> WEAK_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> WEAKEST_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
+	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
+	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
+	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<BhavaNames> STRONGEST_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> STRONG_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> NUETRAL_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> WEAK_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> WEAKEST_IN_BHAVAS = new HashSet<BhavaNames>();
 
 	public Chandra() 
 	{
@@ -64,13 +64,13 @@ public final class Chandra implements Graha{
 	}
 
 	public  void addLordOfNakshatrasToGraha() {
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.ROHINI);
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.HASTA);
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.SHRAVANA);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.ROHINI);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.HASTA);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.SHRAVANA);
 	}
 
 	private  void addLordOfRashisToGraha() {
-		LORD_OF_RASHIS.add(Name_Of_Rashi.CANCER);
+		LORD_OF_RASHIS.add(RashiNames.CANCER);
 		
 
 	}
@@ -86,46 +86,46 @@ public final class Chandra implements Graha{
 	}
 
 	public  void addFriendsToGraha() {
-		FRIENDS_TO_GRAHA.add(Name_Of_Graha.SURYA);
-		FRIENDS_TO_GRAHA.add(Name_Of_Graha.BUDHA);
+		FRIENDS_TO_GRAHA.add(GrahaNames.SURYA);
+		FRIENDS_TO_GRAHA.add(GrahaNames.BUDHA);
 
 	}
 
 	public  void addNuetralToGraha() {
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.MANGAL);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.GURU);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.SHANI);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.SHUKRA);
+		NUETRAL_TO_GRAHA.add(GrahaNames.MANGAL);
+		NUETRAL_TO_GRAHA.add(GrahaNames.GURU);
+		NUETRAL_TO_GRAHA.add(GrahaNames.SHANI);
+		NUETRAL_TO_GRAHA.add(GrahaNames.SHUKRA);
 
 	}
 
 	public  void addBhavasToStrongest() {
-		STRONGEST_IN_BHAVAS.add(Name_Of_Bhava.BHAVA4);
+		STRONGEST_IN_BHAVAS.add(BhavaNames.BHAVA4);
 	}
 
 	public  void addBhavasToStrong() {
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA5);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA9);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA11);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA5);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA9);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA11);
 		
 	}
 
 	public  void addBhavasToNuetral() {
-		NUETRAL_IN_BHAVAS.add(Name_Of_Bhava.BHAVA1);
-		NUETRAL_IN_BHAVAS.add(Name_Of_Bhava.BHAVA2);
-		NUETRAL_IN_BHAVAS.add(Name_Of_Bhava.BHAVA3);
+		NUETRAL_IN_BHAVAS.add(BhavaNames.BHAVA1);
+		NUETRAL_IN_BHAVAS.add(BhavaNames.BHAVA2);
+		NUETRAL_IN_BHAVAS.add(BhavaNames.BHAVA3);
 
 	}
 
 	public  void addBhavasToWeak() {
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA6);
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA8);
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA12);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA6);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA8);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA12);
 
 	}
 
 	public  void addBhavasToWeakest() {
-		WEAKEST_IN_BHAVAS.add(Name_Of_Bhava.BHAVA10);
+		WEAKEST_IN_BHAVAS.add(BhavaNames.BHAVA10);
 
 	}
 
@@ -161,23 +161,23 @@ public final class Chandra implements Graha{
 		this.degrees = degrees;
 	}
 
-	public Name_Of_Graha getGRAHA_NAME() {
+	public GrahaNames getGRAHA_NAME() {
 		return GRAHA_NAME;
 	}
 
-	public Name_Of_Rashi getMOOLTRIKONARASHI() {
+	public RashiNames getMOOLTRIKONARASHI() {
 		return MOOLTRIKONARASHI;
 	}
 
-	public Name_Of_Rashi getEXALTATION() {
+	public RashiNames getEXALTATION() {
 		return EXALTATION;
 	}
 
-	public Name_Of_Rashi getDEBILITATION() {
+	public RashiNames getDEBILITATION() {
 		return DEBILITATION;
 	}
 
-	public Name_Of_Rashi getOWN() {
+	public RashiNames getOWN() {
 		return OWN;
 	}
 
@@ -185,7 +185,7 @@ public final class Chandra implements Graha{
 		return TATTVA;
 	}
 
-	public Set<NAME_OF_NAKSHTRA> getLORD_OF_NAKSHATRAS() {
+	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
 		return LORD_OF_NAKSHATRAS;
 	}
 
@@ -193,43 +193,43 @@ public final class Chandra implements Graha{
 		return GUNA;
 	}
 
-	public Set<Name_Of_Rashi> getLORD_OF_RASHIS() {
+	public Set<RashiNames> getLORD_OF_RASHIS() {
 		return LORD_OF_RASHIS;
 	}
 
-	public Set<Name_Of_Bhava> getKARAKA() {
+	public Set<BhavaNames> getKARAKA() {
 		return KARAKA;
 	}
 
-	public Set<Name_Of_Graha> getENEMIES_TO_GRAHA() {
+	public Set<GrahaNames> getENEMIES_TO_GRAHA() {
 		return ENEMIES_TO_GRAHA;
 	}
 
-	public Set<Name_Of_Graha> getFRIENDS_TO_GRAHA() {
+	public Set<GrahaNames> getFRIENDS_TO_GRAHA() {
 		return FRIENDS_TO_GRAHA;
 	}
 
-	public Set<Name_Of_Graha> getNUETRAL_TO_GRAHA() {
+	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
 		return NUETRAL_TO_GRAHA;
 	}
 
-	public Set<Name_Of_Bhava> getSTRONGEST_IN_BHAVAS() {
+	public Set<BhavaNames> getSTRONGEST_IN_BHAVAS() {
 		return STRONGEST_IN_BHAVAS;
 	}
 
-	public Set<Name_Of_Bhava> getSTRONG_IN_BHAVAS() {
+	public Set<BhavaNames> getSTRONG_IN_BHAVAS() {
 		return STRONG_IN_BHAVAS;
 	}
 
-	public Set<Name_Of_Bhava> getNUETRAL_IN_BHAVAS() {
+	public Set<BhavaNames> getNUETRAL_IN_BHAVAS() {
 		return NUETRAL_IN_BHAVAS;
 	}
 
-	public Set<Name_Of_Bhava> getWEAK_IN_BHAVAS() {
+	public Set<BhavaNames> getWEAK_IN_BHAVAS() {
 		return WEAK_IN_BHAVAS;
 	}
 
-	public Set<Name_Of_Bhava> getWEAKEST_IN_BHAVAS() {
+	public Set<BhavaNames> getWEAKEST_IN_BHAVAS() {
 		return WEAKEST_IN_BHAVAS;
 	}
 	

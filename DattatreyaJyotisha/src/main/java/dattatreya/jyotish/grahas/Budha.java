@@ -10,35 +10,35 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.nakshatras.Nakshatra;
 import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Guna;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Bhava;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.RashiNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("budha")
 @Order(value=4)
 public final class Budha implements Graha {
 
-	private  final Name_Of_Graha GRAHA_NAME = Name_Of_Graha.BUDHA;
-	private  final Name_Of_Rashi MOOLTRIKONARASHI = Name_Of_Rashi.VIRGO;
-	private  final Name_Of_Rashi EXALTATION = Name_Of_Rashi.VIRGO;
-	private  final Name_Of_Rashi DEBILITATION = Name_Of_Rashi.PISCES;
-	private  final Name_Of_Rashi OWN = Name_Of_Rashi.GEMINI;
+	private  final GrahaNames GRAHA_NAME = GrahaNames.BUDHA;
+	private  final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO;
+	private  final RashiNames EXALTATION = RashiNames.VIRGO;
+	private  final RashiNames DEBILITATION = RashiNames.PISCES;
+	private  final RashiNames OWN = RashiNames.GEMINI;
 	private  final Tattva TATTVA = Tattva.PRITHVI;
-	private  final Set<NAME_OF_NAKSHTRA> LORD_OF_NAKSHATRAS = new HashSet<NAME_OF_NAKSHTRA>();
+	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Guna GUNA = Guna.RAJASIC;
-	private  final Set<Name_Of_Rashi> LORD_OF_RASHIS = new HashSet<Name_Of_Rashi>();
-	private  final Set<Name_Of_Bhava> KARAKA = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Graha> ENEMIES_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Graha> FRIENDS_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Graha> NUETRAL_TO_GRAHA = new HashSet<Name_Of_Graha>();
-	private  final Set<Name_Of_Bhava> STRONGEST_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> STRONG_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> NUETRAL_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> WEAK_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
-	private  final Set<Name_Of_Bhava> WEAKEST_IN_BHAVAS = new HashSet<Name_Of_Bhava>();
+	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
+	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
+	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<BhavaNames> STRONGEST_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> STRONG_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> NUETRAL_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> WEAK_IN_BHAVAS = new HashSet<BhavaNames>();
+	private  final Set<BhavaNames> WEAKEST_IN_BHAVAS = new HashSet<BhavaNames>();
 
 	public Budha() 
 	{
@@ -56,69 +56,69 @@ public final class Budha implements Graha {
 	}
 
 	public  void addLordOfNakshatrasToGraha() {
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.ASHLESHA);
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.JYESTHA);
-		LORD_OF_NAKSHATRAS.add(NAME_OF_NAKSHTRA.REVATI);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.ASHLESHA);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.JYESTHA);
+		LORD_OF_NAKSHATRAS.add(NakshatraNames.REVATI);
 	}
 
 	private  void addLordOfRashisToGraha() {
-		LORD_OF_RASHIS.add(Name_Of_Rashi.VIRGO);
-		LORD_OF_RASHIS.add(Name_Of_Rashi.GEMINI);
+		LORD_OF_RASHIS.add(RashiNames.VIRGO);
+		LORD_OF_RASHIS.add(RashiNames.GEMINI);
 
 	}
 
 	public  void addKarakasToGraha() {
-		KARAKA.add(Name_Of_Bhava.BHAVA4);
-		KARAKA.add(Name_Of_Bhava.BHAVA10);
+		KARAKA.add(BhavaNames.BHAVA4);
+		KARAKA.add(BhavaNames.BHAVA10);
 
 	}
 
 	public  void addEnemiesToGraha() {
-		ENEMIES_TO_GRAHA.add(Name_Of_Graha.CHANDRA);
+		ENEMIES_TO_GRAHA.add(GrahaNames.CHANDRA);
 
 	}
 
 	public  void addFriendsToGraha() {
-		FRIENDS_TO_GRAHA.add(Name_Of_Graha.SURYA);
-		FRIENDS_TO_GRAHA.add(Name_Of_Graha.SHUKRA);
+		FRIENDS_TO_GRAHA.add(GrahaNames.SURYA);
+		FRIENDS_TO_GRAHA.add(GrahaNames.SHUKRA);
 
 	}
 
 	public  void addNuetralToGraha() {
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.MANGAL);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.GURU);
-		NUETRAL_TO_GRAHA.add(Name_Of_Graha.SHANI);
+		NUETRAL_TO_GRAHA.add(GrahaNames.MANGAL);
+		NUETRAL_TO_GRAHA.add(GrahaNames.GURU);
+		NUETRAL_TO_GRAHA.add(GrahaNames.SHANI);
 
 	}
 
 	public  void addBhavasToStrongest() {
-		STRONGEST_IN_BHAVAS.add(Name_Of_Bhava.BHAVA1);
+		STRONGEST_IN_BHAVAS.add(BhavaNames.BHAVA1);
 	}
 
 	public  void addBhavasToStrong() {
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA2);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA4);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA5);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA9);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA10);
-		STRONG_IN_BHAVAS.add(Name_Of_Bhava.BHAVA11);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA2);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA4);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA5);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA9);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA10);
+		STRONG_IN_BHAVAS.add(BhavaNames.BHAVA11);
 
 	}
 
 	public  void addBhavasToNuetral() {
-		NUETRAL_IN_BHAVAS.add(Name_Of_Bhava.BHAVA3);
+		NUETRAL_IN_BHAVAS.add(BhavaNames.BHAVA3);
 
 	}
 
 	public  void addBhavasToWeak() {
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA6);
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA8);
-		WEAK_IN_BHAVAS.add(Name_Of_Bhava.BHAVA12);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA6);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA8);
+		WEAK_IN_BHAVAS.add(BhavaNames.BHAVA12);
 
 	}
 
 	public  void addBhavasToWeakest() {
-		WEAKEST_IN_BHAVAS.add(Name_Of_Bhava.BHAVA7);
+		WEAKEST_IN_BHAVAS.add(BhavaNames.BHAVA7);
 
 	}
 
@@ -168,27 +168,27 @@ public final class Budha implements Graha {
 		this.degrees = degrees;
 	}
 
-	public  Set<Name_Of_Rashi> getLORD_OF_RASHIS() {
+	public  Set<RashiNames> getLORD_OF_RASHIS() {
 		return LORD_OF_RASHIS;
 	}
 
-	public  Name_Of_Graha getGrahaName() {
+	public  GrahaNames getGrahaName() {
 		return GRAHA_NAME;
 	}
 
-	public  Name_Of_Rashi getMooltrikonarashi() {
+	public  RashiNames getMooltrikonarashi() {
 		return MOOLTRIKONARASHI;
 	}
 
-	public  Name_Of_Rashi getExaltation() {
+	public  RashiNames getExaltation() {
 		return EXALTATION;
 	}
 
-	public  Name_Of_Rashi getDebilitation() {
+	public  RashiNames getDebilitation() {
 		return DEBILITATION;
 	}
 
-	public  Name_Of_Rashi getOwn() {
+	public  RashiNames getOwn() {
 		return OWN;
 	}
 
@@ -196,19 +196,19 @@ public final class Budha implements Graha {
 		return TATTVA;
 	}
 
-	public  Set<Name_Of_Bhava> getKaraka() {
+	public  Set<BhavaNames> getKaraka() {
 		return KARAKA;
 	}
 
-	public  Set<Name_Of_Graha> getEnemiesToGraha() {
+	public  Set<GrahaNames> getEnemiesToGraha() {
 		return ENEMIES_TO_GRAHA;
 	}
 
-	public  Set<Name_Of_Graha> getFriendsToGraha() {
+	public  Set<GrahaNames> getFriendsToGraha() {
 		return FRIENDS_TO_GRAHA;
 	}
 
-	public  Set<Name_Of_Graha> getNuetralToGraha() {
+	public  Set<GrahaNames> getNuetralToGraha() {
 		return NUETRAL_TO_GRAHA;
 	}
 
@@ -216,19 +216,19 @@ public final class Budha implements Graha {
 		return GUNA;
 	}
 
-	public  Set<Name_Of_Bhava> getStrongest() {
+	public  Set<BhavaNames> getStrongest() {
 		return STRONGEST_IN_BHAVAS;
 	}
 
-	public  Set<Name_Of_Bhava> getStrong() {
+	public  Set<BhavaNames> getStrong() {
 		return STRONG_IN_BHAVAS;
 	}
 
-	public  Set<Name_Of_Bhava> getWeak() {
+	public  Set<BhavaNames> getWeak() {
 		return WEAK_IN_BHAVAS;
 	}
 
-	public  Set<Name_Of_Bhava> getWeakest() {
+	public  Set<BhavaNames> getWeakest() {
 		return WEAKEST_IN_BHAVAS;
 	}
 

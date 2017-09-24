@@ -6,23 +6,23 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHATRA_DIETY;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_GANA;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+import dattatreya.jyotish.util.NakshtraDiety;
+import dattatreya.jyotish.util.NakshatraTypes;
+import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("magha")
 @Order(value=10)
 public final class Magha implements Nakshatra{
 	
-	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.PITRI;
-	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.KETU;
+	private final NakshtraDiety Diety = NakshtraDiety.PITRI;
+	private final GrahaNames NAKSHATRA_LORD = GrahaNames.KETU;
 	private final Tattva TATTVA = Tattva.PRITHVI;
 
-	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.RAKSHASHA;
+	private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
 	private static List<String> features = new ArrayList<String>();
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.UGRA;
+	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
 	static {
 	features.add("Magnificient");	

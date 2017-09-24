@@ -2,9 +2,8 @@ package dattatreya.jyotish.grahas;
 
 import dattatreya.jyotish.nakshatras.NakshatraFactory;
 import dattatreya.jyotish.nakshatras.padas.Pada;
-import dattatreya.jyotish.util.JyotishEnumUtil;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.util.GrahaNames;
 
 
 
@@ -12,7 +11,7 @@ import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 public final class GrahaFactory {
 
 	// use getShape method to get object of type shape
-	public static Graha getGraha(Name_Of_Graha graha,NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha getGraha(GrahaNames graha,NakshatraNames nakshatra,Pada pada,double degrees) {
 
 		
 		switch (graha) {
@@ -41,7 +40,7 @@ public final class GrahaFactory {
 		}
 	}
 
-	public static Graha createSuryaGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createSuryaGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Surya surya = new Surya();
 		surya.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		surya.setPada(pada);
@@ -49,7 +48,7 @@ public final class GrahaFactory {
 
 	}
 
-	public static Graha createChandraGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createChandraGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		
 		Chandra chandra = new Chandra();
 		chandra.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
@@ -58,7 +57,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createMangalGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createMangalGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Mangal mangal = new Mangal();
 		mangal.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		mangal.setPada(pada);
@@ -66,7 +65,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createBudhaGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createBudhaGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Budha budha = new Budha();
 		budha.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		budha.setPada(pada);
@@ -74,7 +73,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createGuruGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createGuruGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Guru guru = new Guru();
 		guru.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		guru.setPada(pada);
@@ -82,7 +81,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createShukraGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createShukraGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Shukra shukra = new Shukra();
 		shukra.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		shukra.setPada(pada);
@@ -90,7 +89,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createShaniGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createShaniGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Shani shani = new Shani();
 		//shani.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		//shani.setPada(pada);
@@ -98,7 +97,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createRahuGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createRahuGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Rahu rahu = new Rahu();
 		rahu.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		rahu.setPada(pada);
@@ -106,7 +105,7 @@ public final class GrahaFactory {
 
 	}
 	
-	public static Graha createKetuGraha(NAME_OF_NAKSHTRA nakshatra,Pada pada,double degrees) {
+	public static Graha createKetuGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Ketu ketu = new Ketu();
 		ketu.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
 		ketu.setPada(pada);

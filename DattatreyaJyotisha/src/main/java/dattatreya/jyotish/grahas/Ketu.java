@@ -10,11 +10,6 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.nakshatras.Nakshatra;
 import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Bhava;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 @Component("ketu")
 @Order(value=9)

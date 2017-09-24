@@ -1,14 +1,13 @@
 package dattatreya.jyotish.nakshatras;
 
 import dattatreya.jyotish.grahas.Ketu;
-import dattatreya.jyotish.util.JyotishEnumUtil;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
+import dattatreya.jyotish.util.NakshatraNames;
 
 
 public final class NakshatraFactory {
 
 	// use getShape method to get object of type shape
-	public static Nakshatra getNakshatra(NAME_OF_NAKSHTRA nakshatra) {
+	public static Nakshatra getNakshatra(NakshatraNames nakshatra) {
 
 		int nakshatraNumber = nakshatra.getNumber();
 		switch (nakshatraNumber) {

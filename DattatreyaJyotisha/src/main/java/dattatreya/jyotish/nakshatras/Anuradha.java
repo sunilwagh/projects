@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("anuradha")
 @Order(value=17)
@@ -14,7 +14,7 @@ public final class Anuradha implements Nakshatra {
 	
 	
 	private static List<String> features = new ArrayList<String>();
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.MRUDU;
+	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 
 	static {
 

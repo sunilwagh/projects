@@ -7,20 +7,19 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Direction;
-import dattatreya.jyotish.util.JyotishEnumUtil.GOALS;
-import dattatreya.jyotish.util.JyotishEnumUtil.Gender_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Mobility_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
+import dattatreya.jyotish.util.Direction;
+import dattatreya.jyotish.util.GenderOfRashi;
+import dattatreya.jyotish.util.MobilityOfRashi;
+import dattatreya.jyotish.util.RashiNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("virgoRashi")
 @Order(value=6)
 public final class Virgo implements Rashi {
 
-	private final Name_Of_Rashi nameOfRashi = Name_Of_Rashi.VIRGO;
-	private final Mobility_Of_Rashi mobility = Mobility_Of_Rashi.DWISVABHAVA;
-	private final Gender_Of_Rashi gender = Gender_Of_Rashi.FEMALE;
+	private final RashiNames nameOfRashi = RashiNames.VIRGO;
+	private final MobilityOfRashi mobility = MobilityOfRashi.DWISVABHAVA;
+	private final GenderOfRashi gender = GenderOfRashi.FEMALE;
 	private final Tattva tattva = Tattva.PRITHVI;
 	private final Direction direction = Direction.SOUTH;
 	private List<Graha> grahas;
@@ -31,13 +30,13 @@ public final class Virgo implements Rashi {
 	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
-	public Name_Of_Rashi getNameOfRashi() {
+	public RashiNames getNameOfRashi() {
 		return nameOfRashi;
 	}
-	public Mobility_Of_Rashi getMobility() {
+	public MobilityOfRashi getMobility() {
 		return mobility;
 	}
-	public Gender_Of_Rashi getGender() {
+	public GenderOfRashi getGender() {
 		return gender;
 	}
 	public Tattva getTattva() {

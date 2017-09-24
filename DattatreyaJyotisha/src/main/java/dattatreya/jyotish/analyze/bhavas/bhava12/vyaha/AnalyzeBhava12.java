@@ -18,7 +18,7 @@ import dattatreya.jyotish.bhavas.Bhava8;
 import dattatreya.jyotish.bhavas.Bhava9;
 import dattatreya.jyotish.horoscope.Horoscope;
 import dattatreya.jyotish.rashis.RashiUtil;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
+import dattatreya.jyotish.util.GrahaNames;
 
 @Component("analyzeBhava12")
 public class AnalyzeBhava12 implements AnalyzeBhava {
@@ -43,7 +43,7 @@ public class AnalyzeBhava12 implements AnalyzeBhava {
 		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
 		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
 
-		Name_Of_Graha lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava12.getRashi()));
+		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava12.getRashi()));
 
 		if (RashiUtil.getGrahasInRashi(bhava1.getRashi()) != null
 				&& RashiUtil.getGrahasInRashi(bhava1.getRashi()).contains(lordOfRashi)) {

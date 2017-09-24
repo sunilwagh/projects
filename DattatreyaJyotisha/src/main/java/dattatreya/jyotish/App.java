@@ -17,9 +17,6 @@ import dattatreya.jyotish.nakshatras.padas.Pada2;
 import dattatreya.jyotish.nakshatras.padas.Pada4;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.rashis.RashiFactory;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAME_OF_NAKSHTRA;
 
 public class App {
 	public static void main(String[] args) {

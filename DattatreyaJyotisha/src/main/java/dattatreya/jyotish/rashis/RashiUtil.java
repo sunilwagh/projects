@@ -9,93 +9,92 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.bhavas.Bhava10;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
-import dattatreya.jyotish.util.JyotishEnumUtil;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.RashiNames;
 
 public class RashiUtil {
 
-	private static Map<Name_Of_Rashi, Name_Of_Graha> rashiLordMap
+	private static Map<RashiNames, GrahaNames> rashiLordMap
 
-			= new HashMap<Name_Of_Rashi, Name_Of_Graha>();
+			= new HashMap<RashiNames, GrahaNames>();
 
 	static {
-		rashiLordMap.put(Name_Of_Rashi.ARIES, Name_Of_Graha.MANGAL);
-		rashiLordMap.put(Name_Of_Rashi.TAURUS, Name_Of_Graha.SHUKRA);
-		rashiLordMap.put(Name_Of_Rashi.GEMINI, Name_Of_Graha.BUDHA);
-		rashiLordMap.put(Name_Of_Rashi.CANCER, Name_Of_Graha.CHANDRA);
-		rashiLordMap.put(Name_Of_Rashi.LEO, Name_Of_Graha.SURYA);
-		rashiLordMap.put(Name_Of_Rashi.VIRGO, Name_Of_Graha.BUDHA);
-		rashiLordMap.put(Name_Of_Rashi.LIBRA, Name_Of_Graha.SHUKRA);
-		rashiLordMap.put(Name_Of_Rashi.SCORPIO, Name_Of_Graha.MANGAL);
-		rashiLordMap.put(Name_Of_Rashi.SAGITTAURIUS, Name_Of_Graha.GURU);
-		rashiLordMap.put(Name_Of_Rashi.CAPRICORN, Name_Of_Graha.SHANI);
-		rashiLordMap.put(Name_Of_Rashi.ACQUARIUS, Name_Of_Graha.SHANI);
-		rashiLordMap.put(Name_Of_Rashi.PISCES, Name_Of_Graha.GURU);
+		rashiLordMap.put(RashiNames.ARIES, GrahaNames.MANGAL);
+		rashiLordMap.put(RashiNames.TAURUS, GrahaNames.SHUKRA);
+		rashiLordMap.put(RashiNames.GEMINI, GrahaNames.BUDHA);
+		rashiLordMap.put(RashiNames.CANCER, GrahaNames.CHANDRA);
+		rashiLordMap.put(RashiNames.LEO, GrahaNames.SURYA);
+		rashiLordMap.put(RashiNames.VIRGO, GrahaNames.BUDHA);
+		rashiLordMap.put(RashiNames.LIBRA, GrahaNames.SHUKRA);
+		rashiLordMap.put(RashiNames.SCORPIO, GrahaNames.MANGAL);
+		rashiLordMap.put(RashiNames.SAGITTAURIUS, GrahaNames.GURU);
+		rashiLordMap.put(RashiNames.CAPRICORN, GrahaNames.SHANI);
+		rashiLordMap.put(RashiNames.ACQUARIUS, GrahaNames.SHANI);
+		rashiLordMap.put(RashiNames.PISCES, GrahaNames.GURU);
 	}
 
-	public static Map<Name_Of_Rashi, Name_Of_Graha> getRashiLordMap() {
+	public static Map<RashiNames, GrahaNames> getRashiLordMap() {
 		return rashiLordMap;
 	}
 
-	public static void setRashiLordMap(Map<Name_Of_Rashi, Name_Of_Graha> rashiLordMap) {
+	public static void setRashiLordMap(Map<RashiNames, GrahaNames> rashiLordMap) {
 		RashiUtil.rashiLordMap = rashiLordMap;
 	}
 
-	public static Name_Of_Rashi findRashiInBhava(Rashi rashi) {
+	public static RashiNames findRashiInBhava(Rashi rashi) {
 		if (rashi instanceof Aries) {
-			return Name_Of_Rashi.ARIES;
+			return RashiNames.ARIES;
 		}
 
 		if (rashi instanceof Taurus) {
-			return Name_Of_Rashi.TAURUS;
+			return RashiNames.TAURUS;
 		}
 
 		if (rashi instanceof Gemini) {
-			return Name_Of_Rashi.GEMINI;
+			return RashiNames.GEMINI;
 		}
 
 		if (rashi instanceof Cancer) {
-			return Name_Of_Rashi.CANCER;
+			return RashiNames.CANCER;
 		}
 
 		if (rashi instanceof Leo) {
-			return Name_Of_Rashi.LEO;
+			return RashiNames.LEO;
 		}
 
 		if (rashi instanceof Virgo) {
-			return Name_Of_Rashi.VIRGO;
+			return RashiNames.VIRGO;
 		}
 		
 		if (rashi instanceof Libra) {
-			return Name_Of_Rashi.LIBRA;
+			return RashiNames.LIBRA;
 
 		}
 
 		if (rashi instanceof Scorpio) {
-			return Name_Of_Rashi.SCORPIO;
+			return RashiNames.SCORPIO;
 		}
 
 		if (rashi instanceof Sagittaurius) {
-			return Name_Of_Rashi.SAGITTAURIUS;
+			return RashiNames.SAGITTAURIUS;
 		}
 
 		if (rashi instanceof Capricorn) {
-			return Name_Of_Rashi.CAPRICORN;
+			return RashiNames.CAPRICORN;
 		}
 
 		if (rashi instanceof Acquarius) {
-			return Name_Of_Rashi.ACQUARIUS;
+			return RashiNames.ACQUARIUS;
 		}
 
 		if (rashi instanceof Pisces) {
-			return Name_Of_Rashi.PISCES;
+			return RashiNames.PISCES;
 		}
 		return null;
 	}
 
-	public static List<Name_Of_Graha> getGrahasInRashi(Rashi rashi) {
-		List<Name_Of_Graha> grahaNameList = new ArrayList<Name_Of_Graha>();
+	public static List<GrahaNames> getGrahasInRashi(Rashi rashi) {
+		List<GrahaNames> grahaNameList = new ArrayList<GrahaNames>();
 		if (rashi instanceof Aries) {
 		
 			Aries ariesRashi = (Aries) rashi;
@@ -189,7 +188,7 @@ public class RashiUtil {
 		return null;
 	}
 
-	private static void addGrahasToList(List<Name_Of_Graha> grahaNameList, ArrayList<Graha> grahaList) {
+	private static void addGrahasToList(List<GrahaNames> grahaNameList, ArrayList<Graha> grahaList) {
 
 		if (grahaList != null && grahaList.size() > 0) {
 			for (int i = 0; i < grahaList.size(); i++) {

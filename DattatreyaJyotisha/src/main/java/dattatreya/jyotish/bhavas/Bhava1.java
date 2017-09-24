@@ -8,7 +8,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
+import dattatreya.jyotish.util.RashiNames;
 
 @Component("bhava1")
 @Order(value=1)
@@ -17,25 +17,28 @@ public class Bhava1 implements Bhava{
 	
 	private Rashi rashi;
 	
-	private Name_Of_Rashi rashiName;
+	private RashiNames rashiName;
 	
-	private final static Set<String> significators = new HashSet<String>();
+	private final Set<String> significators = new HashSet<String>();
 
+	Bhava1()
+	{
+		addSignificators();
+	}
 	
 	
-	
-	public static void addSignificators()
+	public void addSignificators()
 	{
 		significators.add("SELF");
 		significators.add("APPEARANCE");
 		significators.add("BODY");
 	}
 	
-	public Name_Of_Rashi getRashiName() {
+	public RashiNames getRashiName() {
 		return rashiName;
 	}
 
-	public void setRashiName(Name_Of_Rashi rashiName) {
+	public void setRashiName(RashiNames rashiName) {
 		this.rashiName = rashiName;
 	}
 	

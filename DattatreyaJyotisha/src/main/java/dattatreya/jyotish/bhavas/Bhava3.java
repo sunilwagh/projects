@@ -8,7 +8,8 @@ import dattatreya.jyotish.rashis.Rashi;
 @Component("bhava3")
 @Order(value=3)
 public class Bhava3 implements Bhava{
-	Rashi rashi;
+	
+	private Rashi rashi;
 
 	public Rashi getRashi() {
 		return rashi;

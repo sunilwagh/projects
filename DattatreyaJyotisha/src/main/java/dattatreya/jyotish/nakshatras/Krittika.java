@@ -6,23 +6,23 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Graha;
-import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHATRA_DIETY;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_GANA;
-import dattatreya.jyotish.util.NakshatraEnumUtil.NAKSHTRA_TYPE;
+import dattatreya.jyotish.util.NakshtraDiety;
+import dattatreya.jyotish.util.NakshatraTypes;
+import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.Tattva;
 
 @Component("kritikka")
 @Order(value=3)
 public class Krittika implements Nakshatra{
 	
-	private final NAKSHATRA_DIETY Diety = NAKSHATRA_DIETY.AGNI;
-	private final Name_Of_Graha NAKSHATRA_LORD = Name_Of_Graha.SURYA;
+	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
+	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SURYA;
 	private final Tattva TATTVA = Tattva.PRITHVI;
 
-	private final NAKSHTRA_GANA GANA = NAKSHTRA_GANA.RAKSHASHA;
+	private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
     private static List<String> features = new ArrayList<String>();
-	private final NAKSHTRA_TYPE NAKSHATRA_TYPE = NAKSHTRA_TYPE.MISHRA;
+	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MISHRA;
 
 
 	static {

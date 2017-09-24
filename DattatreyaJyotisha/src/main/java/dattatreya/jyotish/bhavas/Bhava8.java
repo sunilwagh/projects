@@ -9,7 +9,7 @@ import dattatreya.jyotish.rashis.Rashi;
 @Order(value=8)
 public class Bhava8 implements Bhava {
 	
-	Rashi rashi;
+	private Rashi rashi;
 
 	public Rashi getRashi() {
 		return rashi;

@@ -11,7 +11,7 @@ import dattatreya.jyotish.rashis.Rashi;
 public class Bhava11 implements Bhava{
 	
 	
-	Rashi rashi;
+	private Rashi rashi;
 
 	public Rashi getRashi() {
 		return rashi;
