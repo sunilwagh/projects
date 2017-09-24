@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service.panchang.tithi;
+package dattatreya.jyotish.service.panchang.vaar;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -14,33 +14,32 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.panchang.karana.Karana;
-import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
-import dattatreya.jyotish.panchang.tithis.Tithi;
+import dattatreya.jyotish.panchang.vaar.Vaar;
+
+
 
 
 @RestController
-@RequestMapping("/tithi")
-final class TithiController {
+@RequestMapping("/vaar")
+final class VaarController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(TithiController.class);
-    private TithiService tithiService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(VaarController.class);
+    private VaarService vaarService;
 
     
     @Autowired
-    public TithiController(TithiService tithiService) {
-        this.tithiService = tithiService;
+    public VaarController(VaarService vaarService) {
+        this.vaarService = vaarService;
     }
     
    
    @RequestMapping(value = "{id}", method = RequestMethod.GET)
-   Tithi getNakshtra(@PathVariable("id") int id) {
+   Vaar getVaar(@PathVariable("id") int id) {
 	   
         LOGGER.info("Finding todo entry by using id: {}", id);
-        Tithi tithi = tithiService.getTithi(id);
-        LOGGER.info("Found todo entry: {}", tithi);
-        return tithi;
+        Vaar vaar = vaarService.getVaar(id);
+        LOGGER.info("Found todo entry: {}", vaar);
+        return vaar;
     }
 
    

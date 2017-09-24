@@ -13,16 +13,16 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("dattatreya.jyotish")
-public class DemoApplication {
+public class DattaJyotishApplication {
 	
-	private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(DattaJyotishApplication.class);
 	
 	
 
 	public static void main(String[] args) {
 		
 		try {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DattaJyotishApplication.class, args);
 		System.out.println("Server started");
 		}
 		catch(Exception e)
