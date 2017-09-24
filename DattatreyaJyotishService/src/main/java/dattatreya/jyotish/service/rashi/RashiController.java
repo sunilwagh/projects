@@ -1,7 +1,6 @@
 package dattatreya.jyotish.service.rashi;
 
-import java.util.List;
-import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -34,7 +33,7 @@ final class RashiController {
     
    
    @RequestMapping(value = "{id}", method = RequestMethod.GET)
-   Rashi getNakshtra(@PathVariable("id") int id) {
+   Rashi getRashi(@PathVariable("id") int id) {
 	   
         LOGGER.info("Finding todo entry by using id: {}", id);
         Rashi rashi = rashiService.getRashi(id);

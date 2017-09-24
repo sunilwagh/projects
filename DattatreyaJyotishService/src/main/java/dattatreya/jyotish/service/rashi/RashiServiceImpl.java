@@ -13,13 +13,6 @@ import dattatreya.jyotish.nakshatras.Nakshatra;
 import dattatreya.jyotish.rashis.Rashi;
 
 
-
-
-
-/**
- * https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/query-methods/src/main/java/net/petrikainulainen/springdata/jpa/todo/TodoCrudService.java
- */
-
 @Service
 public class RashiServiceImpl implements RashiService {
 
