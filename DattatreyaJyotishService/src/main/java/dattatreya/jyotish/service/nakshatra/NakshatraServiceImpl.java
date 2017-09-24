@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import dattatreya.jyotish.nakshatras.Nakshatra;
+import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 
 
 

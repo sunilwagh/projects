@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.nakshatras.Nakshatra;
+import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 import dattatreya.jyotish.rashis.Rashi;
 
 
