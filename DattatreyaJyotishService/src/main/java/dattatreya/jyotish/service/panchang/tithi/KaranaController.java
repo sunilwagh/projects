@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service.panchang.nakshatra;
+package dattatreya.jyotish.service.panchang.tithi;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -15,30 +15,32 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.panchang.karana.Karana;
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
+import dattatreya.jyotish.panchang.tithis.Tithi;
 
 
 @RestController
-@RequestMapping("/nakshatra")
-final class NakshatraController {
+@RequestMapping("/tithi")
+final class TithiController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(NakshatraController.class);
-    private NakshatraService nakshatraService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(TithiController.class);
+    private TithiService tithiService;
 
     
     @Autowired
-    public NakshatraController(NakshatraService nakshatraService) {
-        this.nakshatraService = nakshatraService;
+    public TithiController(TithiService tithiService) {
+        this.tithiService = tithiService;
     }
     
    
    @RequestMapping(value = "{id}", method = RequestMethod.GET)
-   Nakshatra getNakshtra(@PathVariable("id") int id) {
+   Tithi getNakshtra(@PathVariable("id") int id) {
 	   
         LOGGER.info("Finding todo entry by using id: {}", id);
-        Nakshatra nakshtra = nakshatraService.getNakshatra(id);
-        LOGGER.info("Found todo entry: {}", nakshtra);
-        return nakshtra;
+        Tithi tithi = tithiService.getTithi(id);
+        LOGGER.info("Found todo entry: {}", tithi);
+        return tithi;
     }
 
    

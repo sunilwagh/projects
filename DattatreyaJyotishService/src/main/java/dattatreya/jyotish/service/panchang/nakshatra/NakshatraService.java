@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service.nakshatra;
+package dattatreya.jyotish.service.panchang.nakshatra;
 
 
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;

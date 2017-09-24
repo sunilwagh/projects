@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service.panchang.nakshatra;
+package dattatreya.jyotish.service.panchang.karana;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -15,30 +15,31 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.panchang.karana.Karana;
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 
 
 @RestController
-@RequestMapping("/nakshatra")
-final class NakshatraController {
+@RequestMapping("/karana")
+final class KaranaController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(NakshatraController.class);
-    private NakshatraService nakshatraService;
+    private static final Logger LOGGER = LoggerFactory.getLogger(KaranaController.class);
+    private KaranaService karanaService;
 
     
     @Autowired
-    public NakshatraController(NakshatraService nakshatraService) {
-        this.nakshatraService = nakshatraService;
+    public KaranaController(KaranaService nakshatraService) {
+        this.karanaService = karanaService;
     }
     
    
    @RequestMapping(value = "{id}", method = RequestMethod.GET)
-   Nakshatra getNakshtra(@PathVariable("id") int id) {
+   Karana getNakshtra(@PathVariable("id") int id) {
 	   
         LOGGER.info("Finding todo entry by using id: {}", id);
-        Nakshatra nakshtra = nakshatraService.getNakshatra(id);
-        LOGGER.info("Found todo entry: {}", nakshtra);
-        return nakshtra;
+        Karana karana = karanaService.getKarana(id);
+        LOGGER.info("Found todo entry: {}", karana);
+        return karana;
     }
 
    

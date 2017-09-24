@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service.panchang.nakshatra;
+package dattatreya.jyotish.service.panchang.karana;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import dattatreya.jyotish.panchang.karana.Karana;
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 
 
@@ -20,20 +21,20 @@ import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
  */
 
 @Service
-public class NakshatraServiceImpl implements NakshatraService {
+public class KaranaServiceImpl implements KaranaService {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(NakshatraServiceImpl.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(KaranaServiceImpl.class);
 
 	@Autowired
-	List<Nakshatra> nakshatras;
+	List<Karana> karanas;
 
 	@Transactional(readOnly = true)
 	@Override
-	public Nakshatra getNakshatra(int id) {
+	public Karana getKarana(int id) {
 		LOGGER.info("Finding todo entry by using id: {}", id);
-        Nakshatra nakshatra= nakshatras.get(id-1);
-		LOGGER.info("Found todo entry: {}",nakshatra);
-        return nakshatra;
+        Karana karana= karanas.get(id-1);
+		LOGGER.info("Found todo entry: {}",karana);
+        return karana;
 	}
 
 	
