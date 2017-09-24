@@ -1,6 +1,7 @@
 package dattatreya.jyotish.rashis;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -16,50 +17,40 @@ import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
 @Order(value=4)
 public final class Cancer implements Rashi{
 		
-	Name_Of_Rashi nameOfRashi = Name_Of_Rashi.CANCER;
-	Mobility_Of_Rashi mobility=Mobility_Of_Rashi.CHARA;
-	Gender_Of_Rashi gender=Gender_Of_Rashi.FEMALE;
-	Tattva tattva=Tattva.APA;
-	Direction direction=Direction.NORTH;
-	ArrayList<Graha> grahas;
+	private final Name_Of_Rashi nameOfRashi = Name_Of_Rashi.CANCER;
+	private final Mobility_Of_Rashi mobility=Mobility_Of_Rashi.CHARA;
+	private final Gender_Of_Rashi gender=Gender_Of_Rashi.FEMALE;
+	private final Tattva tattva=Tattva.APA;
+	private final Direction direction=Direction.NORTH;
+	private List<Graha> grahas;
 	
+	
+
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
 	public Mobility_Of_Rashi getMobility() {
 		return mobility;
-	}
-	public void setMobility(Mobility_Of_Rashi mobility) {
-		this.mobility = mobility;
 	}
 	public Gender_Of_Rashi getGender() {
 		return gender;
 	}
-	public void setGender(Gender_Of_Rashi gender) {
-		this.gender = gender;
-	}
 	public Tattva getTattva() {
 		return tattva;
-	}
-	public void setTattva(Tattva tattva) {
-		this.tattva = tattva;
 	}
 	public Direction getDirection() {
 		return direction;
 	}
-	public void setDirection(Direction direction) {
-		this.direction = direction;
-	}
-	public ArrayList<Graha> getGrahas() {
+	public List<Graha> getGrahas() {
 		return grahas;
 	}
-	public void setGrahas(ArrayList<Graha> grahas) {
+	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
 	
-	public Name_Of_Rashi getNameOfRashi() {
-		return nameOfRashi;
-	}
-	public void setNameOfRashi(Name_Of_Rashi nameOfRashi) {
-		this.nameOfRashi = nameOfRashi;
-	}
+	
+	
+	
 	
 	
 

@@ -1,6 +1,7 @@
 package dattatreya.jyotish.rashis;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -14,21 +15,38 @@ import dattatreya.jyotish.util.JyotishEnumUtil.Tattva;
 
 @Component("libraRashi")
 @Order(value=7)
-public final class  Libra implements Rashi{
+public final class Libra implements Rashi{
 	
     private final Name_Of_Rashi nameOfRashi = Name_Of_Rashi.LIBRA;
     private final Mobility_Of_Rashi mobility=Mobility_Of_Rashi.CHARA;
     private final Gender_Of_Rashi gender=Gender_Of_Rashi.MALE;
     private final Tattva tattva=Tattva.VAYU;
     private final Direction direction=Direction.WEST;
-	private ArrayList<Graha> grahas;
+	private List<Graha> grahas;
 	
-	public ArrayList<Graha> getGrahas() {
+	public List<Graha> getGrahas() {
 		return grahas;
 	}
-	public void setGrahas(ArrayList<Graha> grahas) {
+	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
+	public Mobility_Of_Rashi getMobility() {
+		return mobility;
+	}
+	public Gender_Of_Rashi getGender() {
+		return gender;
+	}
+	public Tattva getTattva() {
+		return tattva;
+	}
+	public Direction getDirection() {
+		return direction;
+	}
+	
+	
 	
 	
 	

@@ -1,6 +1,7 @@
 package dattatreya.jyotish.rashis;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -23,14 +24,35 @@ public final class Taurus implements Rashi{
 	private final GOALS goals = GOALS.ARTHA;
 	private final Tattva tattva= Tattva.PRITHVI;
 	private final Direction direction = Direction.SOUTH;
-	private ArrayList<Graha> grahas;
-	
-	
-	public ArrayList<Graha> getGrahas() {
+	private List<Graha> grahas;
+	public List<Graha> getGrahas() {
 		return grahas;
 	}
-	public void setGrahas(ArrayList<Graha> grahas) {
+	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
+	public Mobility_Of_Rashi getMobility() {
+		return mobility;
+	}
+	public Gender_Of_Rashi getGender() {
+		return gender;
+	}
+	public GOALS getGoals() {
+		return goals;
+	}
+	public Tattva getTattva() {
+		return tattva;
+	}
+	public Direction getDirection() {
+		return direction;
+	}
+	
+	
+	
+	
+	
 	
 }

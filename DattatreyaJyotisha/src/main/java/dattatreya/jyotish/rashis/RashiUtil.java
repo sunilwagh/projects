@@ -99,21 +99,21 @@ public class RashiUtil {
 		if (rashi instanceof Aries) {
 		
 			Aries ariesRashi = (Aries) rashi;
-			ArrayList<Graha> grahaList = ariesRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) ariesRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
 		}
 
 		if (rashi instanceof Taurus) {
 			Taurus taurusRashi = (Taurus) rashi;
-			ArrayList<Graha> grahaList = taurusRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) taurusRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
 		}
 
 		if (rashi instanceof Gemini) {
 			Gemini geminiRashi = (Gemini) rashi;
-			ArrayList<Graha> grahaList = geminiRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) geminiRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
 
@@ -121,7 +121,7 @@ public class RashiUtil {
 
 		if (rashi instanceof Cancer) {
 			Cancer cancerRashi = (Cancer) rashi;
-			ArrayList<Graha> grahaList = cancerRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) cancerRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
 
@@ -129,7 +129,7 @@ public class RashiUtil {
 
 		if (rashi instanceof Leo) {
 			Leo leoRashi = (Leo) rashi;
-			ArrayList<Graha> grahaList = leoRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) leoRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 
@@ -137,14 +137,14 @@ public class RashiUtil {
 
 		if (rashi instanceof Virgo) {
 			Virgo virgoRashi = (Virgo) rashi;
-			ArrayList<Graha> grahaList = virgoRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) virgoRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 		}
 
 		if (rashi instanceof Libra) {
 			Libra libraRashi = (Libra) rashi;
-			ArrayList<Graha> grahaList = libraRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) libraRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 
@@ -152,7 +152,7 @@ public class RashiUtil {
 
 		if (rashi instanceof Scorpio) {
 			Scorpio scorpioRashi = (Scorpio) rashi;
-			ArrayList<Graha> grahaList = scorpioRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) scorpioRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 
@@ -160,28 +160,28 @@ public class RashiUtil {
 
 		if (rashi instanceof Sagittaurius) {
 			Sagittaurius sagittariusRashi = (Sagittaurius) rashi;
-			ArrayList<Graha> grahaList = sagittariusRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) sagittariusRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 		}
 
 		if (rashi instanceof Capricorn) {
 			Capricorn capricornRashi = (Capricorn) rashi;
-			ArrayList<Graha> grahaList = capricornRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) capricornRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 		}
 
 		if (rashi instanceof Acquarius) {
 			Acquarius acquariusRashi = (Acquarius) rashi;
-			ArrayList<Graha> grahaList = acquariusRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) acquariusRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
 		}
 
 		if (rashi instanceof Pisces) {
 			Pisces piscesRashi = (Pisces) rashi;
-			ArrayList<Graha> grahaList = piscesRashi.getGrahas();
+			ArrayList<Graha> grahaList = (ArrayList<Graha>) piscesRashi.getGrahas();
             addGrahasToList(grahaNameList, grahaList);
             return grahaNameList;
 		}

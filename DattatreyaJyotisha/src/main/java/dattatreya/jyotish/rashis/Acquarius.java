@@ -1,6 +1,7 @@
 package dattatreya.jyotish.rashis;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -23,15 +24,35 @@ public final class Acquarius implements Rashi {
 	private final GOALS goals = GOALS.KAMA;
 	private final Direction direction = Direction.WEST;
 	private final Gender_Of_Rashi gender = Gender_Of_Rashi.MALE;
-	ArrayList<Graha> grahas;
-
-	public ArrayList<Graha> getGrahas() {
+	private List<Graha> grahas;
+	public List<Graha> getGrahas() {
 		return grahas;
 	}
-
-	public void setGrahas(ArrayList<Graha> grahas) {
+	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
+	public Name_Of_Rashi getNameOfRashi() {
+		return nameOfRashi;
+	}
+	public Mobility_Of_Rashi getMobility() {
+		return mobility;
+	}
+	public Tattva getTattva() {
+		return tattva;
+	}
+	public GOALS getGoals() {
+		return goals;
+	}
+	public Direction getDirection() {
+		return direction;
+	}
+	public Gender_Of_Rashi getGender() {
+		return gender;
+	}
+	
+	
+
+	
 	
 	
 
