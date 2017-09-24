@@ -3,8 +3,8 @@ package dattatreya.jyotish.panchang.yoga;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Component("atigand")
-@Order(value=6)
-public class Atigand implements Yoga {
+@Component("siddhi")
+@Order(value=16)
+public class Siddhi implements Yoga {
 
 }

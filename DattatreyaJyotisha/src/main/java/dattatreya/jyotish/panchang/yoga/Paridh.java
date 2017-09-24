@@ -1,5 +1,10 @@
 package dattatreya.jyotish.panchang.yoga;
 
-public class Paridh {
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
+@Component("paridh")
+@Order(value=19)
+public class Paridh implements Yoga{
 
 }
