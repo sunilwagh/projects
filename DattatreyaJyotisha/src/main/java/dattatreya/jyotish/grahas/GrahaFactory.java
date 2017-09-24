@@ -1,8 +1,8 @@
 package dattatreya.jyotish.grahas;
 
-import dattatreya.jyotish.nakshatras.NakshatraFactory;
-import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.panchang.nakshatras.NakshatraFactory;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.util.GrahaNames;
 
 

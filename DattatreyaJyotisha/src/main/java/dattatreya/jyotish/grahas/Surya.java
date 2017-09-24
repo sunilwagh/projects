@@ -5,10 +5,10 @@ import java.util.Set;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import dattatreya.jyotish.nakshatras.Nakshatra;
-import dattatreya.jyotish.nakshatras.padas.Pada;
 import dattatreya.jyotish.util.Guna;
 import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;

@@ -10,8 +10,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.bhavas.Bhava;
-import dattatreya.jyotish.nakshatras.Nakshatra;
-import dattatreya.jyotish.nakshatras.padas.Pada;
+import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
 import dattatreya.jyotish.util.NakshatraNames;

@@ -12,9 +12,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.GrahaFactory;
-import dattatreya.jyotish.nakshatras.padas.Pada1;
-import dattatreya.jyotish.nakshatras.padas.Pada2;
-import dattatreya.jyotish.nakshatras.padas.Pada4;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada1;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada2;
+import dattatreya.jyotish.panchang.nakshatras.padas.Pada4;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.rashis.RashiFactory;
 
