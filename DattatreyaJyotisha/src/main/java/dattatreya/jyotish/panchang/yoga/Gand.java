@@ -7,4 +7,9 @@ import org.springframework.stereotype.Component;
 @Order(value=10)
 public class Gand implements Yoga {
 
+	public String getFeature() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

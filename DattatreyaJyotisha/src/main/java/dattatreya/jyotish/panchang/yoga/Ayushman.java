@@ -7,4 +7,9 @@ import org.springframework.stereotype.Component;
 @Order(value=3)
 public class Ayushman implements Yoga {
 
+	public String getFeature() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -7,4 +7,11 @@ import org.springframework.stereotype.Component;
 @Order(value=6)
 public class Atigand implements Yoga {
 
+	public String getFeature() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
 }
