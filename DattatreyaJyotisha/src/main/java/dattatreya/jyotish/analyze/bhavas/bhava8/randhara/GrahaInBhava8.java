@@ -2,6 +2,7 @@ package dattatreya.jyotish.analyze.bhavas.bhava8.randhara;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
@@ -16,6 +17,7 @@ import dattatreya.jyotish.bhavas.grahas.shukra.ShukraInBhava;
 import dattatreya.jyotish.bhavas.grahas.surya.SuryaInBhava;
 
 @Component("grahaInBhava8")
+@Order(value=8)
 public class GrahaInBhava8 implements GrahaInBhava{
 	
 	@Autowired

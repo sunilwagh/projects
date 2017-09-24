@@ -25,6 +25,7 @@ import dattatreya.jyotish.rashis.RashiUtil;
 import dattatreya.jyotish.util.GrahaNames;
 
 @Component("analyzeBhava2")
+
 public class AnalyzeBhava2 implements AnalyzeBhava{
 
 	@Autowired
