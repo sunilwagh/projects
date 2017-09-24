@@ -1,64 +1,96 @@
 package dattatreya.jyotish.analyze.bhavas.bhava8.randhara;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
+import dattatreya.jyotish.bhavas.grahas.budha.BudhaInBhava;
+import dattatreya.jyotish.bhavas.grahas.chandra.ChandraInBhava;
+import dattatreya.jyotish.bhavas.grahas.guru.GuruInBhava;
+import dattatreya.jyotish.bhavas.grahas.ketu.KetuInBhava;
+import dattatreya.jyotish.bhavas.grahas.mangal.MangalInBhava;
+import dattatreya.jyotish.bhavas.grahas.rahu.RahuInBhava;
+import dattatreya.jyotish.bhavas.grahas.shani.ShaniInBhava;
+import dattatreya.jyotish.bhavas.grahas.shukra.ShukraInBhava;
+import dattatreya.jyotish.bhavas.grahas.surya.SuryaInBhava;
 
 @Component("grahaInBhava8")
 public class GrahaInBhava8 implements GrahaInBhava{
 	
+	@Autowired
+	@Qualifier("suryaInBhava8")
+	SuryaInBhava suryaInBhava;
+
+	@Autowired
+	@Qualifier("chandraInBhava8")
+	ChandraInBhava chandraInBhava;
+
+	@Autowired
+	@Qualifier("budhaInBhava8")
+	BudhaInBhava budhaInBhava;
+
+	@Autowired
+	@Qualifier("mangalInBhava8")
+	MangalInBhava mangalInBhava;
+
+	@Autowired
+	@Qualifier("guruInBhava8")
+	GuruInBhava guruInBhava;
+
+	@Autowired
+	@Qualifier("shukraInBhava8")
+	ShukraInBhava shukraInBhava;
+
+	@Autowired
+	@Qualifier("shaniInBhava8")
+	ShaniInBhava shaniInBhava;
+
+
+	@Autowired
+	@Qualifier("rahuInBhava8")
+	RahuInBhava rahuInBhava;
+	
+	@Autowired
+	@Qualifier("ketuInBhava8")
+	KetuInBhava ketuInBhava;
+
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava8 = new StringBuilder();
-		suryaInBhava8.append("\n");
-		return suryaInBhava8.toString();
+		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
-	
+
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava8 = new StringBuilder();
-		chandraInBhava8.append("\n");
-		return chandraInBhava8.toString();
+		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
-	
+
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava8 = new StringBuilder();
-		budhInBhava8.append("\n");
-		return budhInBhava8.toString();
+		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
-	
+
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava8 = new StringBuilder();
-		mangalInBhava8.append("\n");
-		return mangalInBhava8.toString();
+		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
-	
+
 	public String GuruInBhava() {
-		StringBuilder guruInBhava8 = new StringBuilder();
-		guruInBhava8.append("Will have blessings of departed. May get everything but the children would be away.	Jupiter in 8th protects a person from accidents and gives longevity since it is a jeevakaraka planet. It gives all material pleasures in 8th except that it can affect the relations with the children i.e. one might not get the support from kids as one would have expected in the old age. \n");
-		return guruInBhava8.toString();
+		return guruInBhava.getInfoAboutGuruInBhava();
+
 	}
-	
+
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava8 = new StringBuilder();
-		shukraInBhava8.append("\n");
-		return shukraInBhava8.toString();
+		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
-	
+
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava8 = new StringBuilder();
-		shaniInBhava8.append("\n");
-		return shaniInBhava8.toString();
+		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
-	
+
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava8 = new StringBuilder();
-		rahuInBhava8.append("\n");
-		return rahuInBhava8.toString();
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
-	
+
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava8 = new StringBuilder();
-		ketuInBhava8.append("\n");
-		return ketuInBhava8.toString();
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
+
 
 }

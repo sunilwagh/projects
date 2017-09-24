@@ -1,66 +1,97 @@
 package dattatreya.jyotish.analyze.bhavas.bhava6.ari;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
+import dattatreya.jyotish.bhavas.grahas.budha.BudhaInBhava;
+import dattatreya.jyotish.bhavas.grahas.chandra.ChandraInBhava;
+import dattatreya.jyotish.bhavas.grahas.guru.GuruInBhava;
+import dattatreya.jyotish.bhavas.grahas.ketu.KetuInBhava;
+import dattatreya.jyotish.bhavas.grahas.mangal.MangalInBhava;
+import dattatreya.jyotish.bhavas.grahas.rahu.RahuInBhava;
+import dattatreya.jyotish.bhavas.grahas.shani.ShaniInBhava;
+import dattatreya.jyotish.bhavas.grahas.shukra.ShukraInBhava;
+import dattatreya.jyotish.bhavas.grahas.surya.SuryaInBhava;
 
 @Component("grahaInBhava6")
 public class GrahaInBhava6 implements GrahaInBhava{
 	
+	@Autowired
+	@Qualifier("suryaInBhava6")
+	SuryaInBhava suryaInBhava;
+
+	@Autowired
+	@Qualifier("chandraInBhava6")
+	ChandraInBhava chandraInBhava;
+
+	@Autowired
+	@Qualifier("budhaInBhava6")
+	BudhaInBhava budhaInBhava;
+
+	@Autowired
+	@Qualifier("mangalInBhava6")
+	MangalInBhava mangalInBhava;
+
+	@Autowired
+	@Qualifier("guruInBhava6")
+	GuruInBhava guruInBhava;
+
+	@Autowired
+	@Qualifier("shukraInBhava6")
+	ShukraInBhava shukraInBhava;
+
+	@Autowired
+	@Qualifier("shaniInBhava6")
+	ShaniInBhava shaniInBhava;
+
+
+	@Autowired
+	@Qualifier("rahuInBhava6")
+	RahuInBhava rahuInBhava;
+	
+	@Autowired
+	@Qualifier("ketuInBhava6")
+	KetuInBhava ketuInBhava;
+
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava6 = new StringBuilder();
-		suryaInBhava6.append("\n");
-		return suryaInBhava6.toString();
+		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
 
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava6 = new StringBuilder();
-		chandraInBhava6.append("\n");
-		return chandraInBhava6.toString();
+		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
 
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava6 = new StringBuilder();
-		budhInBhava6.append("\n");
-		return budhInBhava6.toString();
+		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
 
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava6 = new StringBuilder();
-		mangalInBhava6.append("\n");
-		return mangalInBhava6.toString();
+		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
 
 	public String GuruInBhava() {
-		StringBuilder guruInBhava6 = new StringBuilder();
-		guruInBhava6.append(
-				"Jupiter in 6th suppresses the disease factor, protects from debt and also enemies. It can give some difference of opinion with the children. Important point to remember is that Jupiter can suppress the house where it sits but its aspect is more powerful. Hence being in 6th, it aspects 10th house and can give power and position in the workplace. \n");																			
-		return guruInBhava6.toString();
+		return guruInBhava.getInfoAboutGuruInBhava();
+
 	}
-	
+
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava6 = new StringBuilder();
-		shukraInBhava6.append("\n");
-		return shukraInBhava6.toString();
+		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
 
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava6 = new StringBuilder();
-		shaniInBhava6.append("\n");
-		return shaniInBhava6.toString();
+		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
-	
+
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava6 = new StringBuilder();
-		rahuInBhava6.append("\n");
-		return rahuInBhava6.toString();
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
-	
+
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava6 = new StringBuilder();
-		ketuInBhava6.append("\n");
-		return ketuInBhava6.toString();
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
+
 
 	
 

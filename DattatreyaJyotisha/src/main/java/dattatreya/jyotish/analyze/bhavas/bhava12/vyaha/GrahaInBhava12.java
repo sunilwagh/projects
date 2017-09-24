@@ -1,64 +1,95 @@
 package dattatreya.jyotish.analyze.bhavas.bhava12.vyaha;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
+import dattatreya.jyotish.bhavas.grahas.budha.BudhaInBhava;
+import dattatreya.jyotish.bhavas.grahas.chandra.ChandraInBhava;
+import dattatreya.jyotish.bhavas.grahas.guru.GuruInBhava;
+import dattatreya.jyotish.bhavas.grahas.ketu.KetuInBhava;
+import dattatreya.jyotish.bhavas.grahas.mangal.MangalInBhava;
+import dattatreya.jyotish.bhavas.grahas.rahu.RahuInBhava;
+import dattatreya.jyotish.bhavas.grahas.shani.ShaniInBhava;
+import dattatreya.jyotish.bhavas.grahas.shukra.ShukraInBhava;
+import dattatreya.jyotish.bhavas.grahas.surya.SuryaInBhava;
 
 @Component("grahaInBhava12")
 public class GrahaInBhava12 implements GrahaInBhava{
 	
+	@Autowired
+	@Qualifier("suryaInBhava12")
+	SuryaInBhava suryaInBhava;
+
+	@Autowired
+	@Qualifier("chandraInBhava12")
+	ChandraInBhava chandraInBhava;
+
+	@Autowired
+	@Qualifier("budhaInBhava12")
+	BudhaInBhava budhaInBhava;
+
+	@Autowired
+	@Qualifier("mangalInBhava12")
+	MangalInBhava mangalInBhava;
+
+	@Autowired
+	@Qualifier("guruInBhava12")
+	GuruInBhava guruInBhava;
+
+	@Autowired
+	@Qualifier("shukraInBhava12")
+	ShukraInBhava shukraInBhava;
+
+	@Autowired
+	@Qualifier("shaniInBhava12")
+	ShaniInBhava shaniInBhava;
+
+	@Autowired
+	@Qualifier("rahuInBhava12")
+	RahuInBhava rahuInBhava;
+	
+	@Autowired
+	@Qualifier("ketuInBhava12")
+	KetuInBhava ketuInBhava;
+
 	public String SuryaInBhava() {
-		StringBuilder suryaInBhava12 = new StringBuilder();
-		suryaInBhava12.append("\n");
-		return suryaInBhava12.toString();
+		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
-	
+
 	public String ChandraInBhava() {
-		StringBuilder chandraInBhava12 = new StringBuilder();
-		chandraInBhava12.append("\n");
-		return chandraInBhava12.toString();
+		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
-	
+
 	public String BudhaInBhava() {
-		StringBuilder budhInBhava12 = new StringBuilder();
-		budhInBhava12.append("\n");
-		return budhInBhava12.toString();
+		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
-	
+
 	public String MangalInBhava() {
-		StringBuilder mangalInBhava12 = new StringBuilder();
-		mangalInBhava12.append("Brothers early death or relation with brother will be spolied. \n");
-		return mangalInBhava12.toString();
+		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
-	
+
 	public String GuruInBhava() {
-		StringBuilder guruInBhava12 = new StringBuilder();
-		guruInBhava12.append("Jupiter in 12th can give a residence abroad since it aspects 4th house. Children can go to far away places or travel abroad.\n");
-		return guruInBhava12.toString();
+		return guruInBhava.getInfoAboutGuruInBhava();
+
 	}
-	
+
 	public String ShukraInBhava() {
-		StringBuilder shukraInBhava12 = new StringBuilder();
-		shukraInBhava12.append("Sudden Gains \n");
-		return shukraInBhava12.toString();
+		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
-	
+
 	public String ShaniInBhava() {
-		StringBuilder shaniInBhava12 = new StringBuilder();
-		shaniInBhava12.append("Delay in all the work \n");
-		return shaniInBhava12.toString();
+		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
-	
+
 	public String RahuInBhava() {
-		StringBuilder rahuInBhava12 = new StringBuilder();
-		rahuInBhava12.append("Ups and Downs \n");
-		return rahuInBhava12.toString();
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
-	
+
 	public String KetuInBhava() {
-		StringBuilder ketuInBhava12 = new StringBuilder();
-		ketuInBhava12.append("Gives religious tendencies \n");
-		return ketuInBhava12.toString();
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
+
 
 }
