@@ -164,4 +164,78 @@ public final class Shani implements Graha {
 		this.degrees = degrees;
 	}
 
+	public Set<Name_Of_Rashi> getLORDOFRASHIS() {
+		return LORDOFRASHIS;
+	}
+
+	public Name_Of_Graha getGRAHA_NAME() {
+		return GRAHA_NAME;
+	}
+
+	public Name_Of_Rashi getMOOLTRIKONARASHI() {
+		return MOOLTRIKONARASHI;
+	}
+
+	public Name_Of_Rashi getEXALTATION() {
+		return EXALTATION;
+	}
+
+	public Name_Of_Rashi getDEBILITATION() {
+		return DEBILITATION;
+	}
+
+	public Name_Of_Rashi getOWN() {
+		return OWN;
+	}
+
+	public Tattva getTATTVA() {
+		return TATTVA;
+	}
+
+	public Set<NAME_OF_NAKSHTRA> getLORD_OF_NAKSHATRAS() {
+		return LORD_OF_NAKSHATRAS;
+	}
+
+	public Set<Name_Of_Bhava> getKARAKA() {
+		return KARAKA;
+	}
+
+	public Set<Name_Of_Graha> getENEMIES_TO_GRAHA() {
+		return ENEMIES_TO_GRAHA;
+	}
+
+	public Set<Name_Of_Graha> getFRIENDS_TO_GRAHA() {
+		return FRIENDS_TO_GRAHA;
+	}
+
+	public Set<Name_Of_Graha> getNUETRAL_TO_GRAHA() {
+		return NUETRAL_TO_GRAHA;
+	}
+
+	public Guna getGUNA() {
+		return GUNA;
+	}
+
+	public Set<Name_Of_Bhava> getSTRONGEST() {
+		return STRONGEST;
+	}
+
+	public Set<Name_Of_Bhava> getSTRONG() {
+		return STRONG;
+	}
+
+	public Set<Name_Of_Bhava> getNUETRAL() {
+		return NUETRAL;
+	}
+
+	public Set<Name_Of_Bhava> getWEAK() {
+		return WEAK;
+	}
+
+	public Set<Name_Of_Bhava> getWEAKEST() {
+		return WEAKEST;
+	}
+	
+	
+
 }

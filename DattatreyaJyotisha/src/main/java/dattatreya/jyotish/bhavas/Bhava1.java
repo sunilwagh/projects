@@ -4,12 +4,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.JyotishEnumUtil.Name_Of_Rashi;
 
 @Component("bhava1")
+@Order(value=1)
 public class Bhava1 implements Bhava{
 	
 	

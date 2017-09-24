@@ -1,11 +1,13 @@
 package dattatreya.jyotish.bhavas;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.rashis.Rashi;
 
 @Component("bhava11")
+@Order(value=11)
 public class Bhava11 implements Bhava{
 	
 	
