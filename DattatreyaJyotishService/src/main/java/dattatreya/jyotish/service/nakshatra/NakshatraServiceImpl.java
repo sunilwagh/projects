@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service;
+package dattatreya.jyotish.service.nakshatra;
 
 import java.util.List;
 
@@ -9,7 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.nakshatras.Nakshatra;
+
+
 
 
 
@@ -18,20 +20,20 @@ import dattatreya.jyotish.grahas.Graha;
  */
 
 @Service
-public class GrahaServiceImpl implements GrahaService {
+public class NakshatraServiceImpl implements NakshatraService {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(GrahaServiceImpl.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(NakshatraServiceImpl.class);
 
 	@Autowired
-	List<Graha> grahas;
+	List<Nakshatra> nakshatras;
 
 	@Transactional(readOnly = true)
 	@Override
-	public Graha getGraha(int id) {
+	public Nakshatra getNakshatra(int id) {
 		LOGGER.info("Finding todo entry by using id: {}", id);
-        Graha graha = grahas.get(id-1);
-		LOGGER.info("Found todo entry: {}", graha);
-        return graha;
+        Nakshatra nakshatra= nakshatras.get(id-1);
+		LOGGER.info("Found todo entry: {}",nakshatra);
+        return nakshatra;
 	}
 
 	

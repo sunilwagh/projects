@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service;
+package dattatreya.jyotish.service.graha;
 
 import java.util.List;
 import javax.validation.Valid;

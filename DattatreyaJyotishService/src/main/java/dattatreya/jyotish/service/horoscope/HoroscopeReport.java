@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service;
+package dattatreya.jyotish.service.horoscope;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

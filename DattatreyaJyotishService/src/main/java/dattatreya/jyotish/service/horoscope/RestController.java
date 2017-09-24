@@ -1,4 +1,4 @@
-package dattatreya.jyotish.service;
+package dattatreya.jyotish.service.horoscope;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
