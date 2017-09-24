@@ -26,52 +26,27 @@ public class Rahu implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private final static GrahaNames grahaName = GrahaNames.RAHU;
-	private final static RashiNames MOOLTRIKONARASHI=RashiNames.ARIES;
-	private final static RashiNames EXALTATION=RashiNames.CAPRICORN;
-	private final static RashiNames DEBILITATION=RashiNames.CANCER;
-	private final static Tattva tatva = Tattva.AGNI;
-	private final static RashiNames moolTrikonaRashi=RashiNames.CANCER;
-	private final static RashiNames OWN=RashiNames.GEMINI;
-	private final static Tattva tattva = Tattva.PRITHVI;
-	private final static Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	private final static Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private final static Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
-	private final static Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
-	private final static Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	private final  GrahaNames grahaName = GrahaNames.RAHU;
+	private final  RashiNames MOOLTRIKONARASHI=RashiNames.ARIES;
+	private final  RashiNames EXALTATION=RashiNames.GEMINI;
+	private final  RashiNames DEBILITATION=RashiNames.CANCER;
+	private final  Tattva tatva = Tattva.AGNI;
+	private final  RashiNames moolTrikonaRashi=RashiNames.CANCER;
+	private final  RashiNames OWN=RashiNames.GEMINI;
+	private final  Tattva tattva = Tattva.PRITHVI;
+	private final  Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
+	private final  Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
+	private final  Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private final  Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
+	private final  Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	
+	public Rahu()
+	{
+		
+	}
 	
 	
-	public Rashi getLagnaKundaliRashi() {
-		return lagnaKundaliRashi;
-	}
-	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
-		this.lagnaKundaliRashi = lagnaKundaliRashi;
-	}
-	public Nakshatra getNakshatra() {
-		return nakshatra;
-	}
-	public void setNakshatra(Nakshatra nakshatra) {
-		this.nakshatra = nakshatra;
-	}
-	public Bhava getBhava() {
-		return bhava;
-	}
-	public void setBhava(Bhava bhava) {
-		this.bhava = bhava;
-	}
-	public Pada getPada() {
-		return pada;
-	}
-	public void setPada(Pada pada) {
-		this.pada = pada;
-	}
 	
-	public double getDegrees() {
-		return degrees;
-	}
-	public void setDegrees(double degrees) {
-		this.degrees = degrees;
-	}
 	
 	
 	

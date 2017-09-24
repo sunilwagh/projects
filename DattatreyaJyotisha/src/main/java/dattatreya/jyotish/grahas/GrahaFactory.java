@@ -99,16 +99,12 @@ public final class GrahaFactory {
 	
 	public static Graha createRahuGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Rahu rahu = new Rahu();
-		rahu.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		rahu.setPada(pada);
 		return rahu;
 
 	}
 	
 	public static Graha createKetuGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Ketu ketu = new Ketu();
-		ketu.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		ketu.setPada(pada);
 		return ketu;
 
 	}
