@@ -3,7 +3,7 @@ package dattatreya.jyotish.rashis.grahas.shani;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Component("shanilInLibra")
+@Component("shaniInLibra")
 @Order(value=7)
 public final class ShaniInLibra implements ShaniInRashi{
 

@@ -1,4 +1,4 @@
-package dattatreya.jyotish.rashis.sagittaurius;
+package dattatreya.jyotish.rashis.sagittarius;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,39 +21,39 @@ import dattatreya.jyotish.rashis.grahas.ketu.KetuInRashi;
 public class GrahasInSagittarius implements GrahaInRashi{
 	
 	@Autowired
-	@Qualifier("suryaInSagittaurius")
+	@Qualifier("suryaInSagittarius")
 	SuryaInRashi suryaInRashi;
 	
 	@Autowired
-	@Qualifier("chandraInSagittaurius")
+	@Qualifier("chandraInSagittarius")
 	ChandraInRashi chandraInRashi;
 	
 	@Autowired
-	@Qualifier("mangalInSagittaurius")
+	@Qualifier("mangalInSagittarius")
 	MangalInRashi mangalInRashi;
 	
 	@Autowired
-	@Qualifier("budhaInSagittaurius")
+	@Qualifier("budhaInSagittarius")
 	BudhaInRashi budhaInRashi;
 	
 	@Autowired
-	@Qualifier("guruInSagittaurius")
+	@Qualifier("guruInSagittarius")
 	GuruInRashi guruInRashi;
 	
 	@Autowired
-	@Qualifier("shukraInSagittaurius")
+	@Qualifier("shukraInSagittarius")
 	ShukraInRashi shukraInRashi;
 	
 	@Autowired
-	@Qualifier("shaniInSagittaurius")
+	@Qualifier("shaniInSagittarius")
 	ShaniInRashi shaniInRashi;
 	
 	@Autowired
-	@Qualifier("rahuInSagittaurius")
+	@Qualifier("rahuInSagittarius")
 	RahuInRashi rahuInRashi;
 	
 	@Autowired
-	@Qualifier("ketuInSagittaurius")
+	@Qualifier("ketuInSagittarius")
     KetuInRashi ketuInRashi;
 	
 

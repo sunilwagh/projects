@@ -3,7 +3,7 @@ package dattatreya.jyotish.rashis.grahas.mangal;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Component("ketuInAries")
+@Component("mangalInAries")
 @Order(value=1)
 public final class MangalInAries implements MangalInRashi {
 

@@ -1,4 +1,4 @@
-package dattatreya.jyotish.rashis.sagittaurius;
+package dattatreya.jyotish.rashis.sagittarius;
 
 import java.util.ArrayList;
 import java.util.List;

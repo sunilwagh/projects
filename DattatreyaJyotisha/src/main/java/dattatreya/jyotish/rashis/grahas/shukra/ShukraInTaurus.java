@@ -3,7 +3,7 @@ package dattatreya.jyotish.rashis.grahas.shukra;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Component("shukralInTaurus")
+@Component("shukraInTaurus")
 @Order(value=2)
 public final class ShukraInTaurus implements ShukraInRashi {
 

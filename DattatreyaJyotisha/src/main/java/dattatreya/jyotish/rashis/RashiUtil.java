@@ -17,7 +17,7 @@ import dattatreya.jyotish.rashis.gemini.Gemini;
 import dattatreya.jyotish.rashis.leo.Leo;
 import dattatreya.jyotish.rashis.libra.Libra;
 import dattatreya.jyotish.rashis.pisces.Pisces;
-import dattatreya.jyotish.rashis.sagittaurius.Sagittaurius;
+import dattatreya.jyotish.rashis.sagittarius.Sagittaurius;
 import dattatreya.jyotish.rashis.scorpio.Scorpio;
 import dattatreya.jyotish.rashis.taurus.Taurus;
 import dattatreya.jyotish.rashis.virgo.Virgo;
