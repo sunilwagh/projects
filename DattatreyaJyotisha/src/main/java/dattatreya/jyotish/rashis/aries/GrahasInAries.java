@@ -1,4 +1,4 @@
-package dattatreya.jyotish.rashis.aquarius;
+package dattatreya.jyotish.rashis.aries;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -16,44 +16,44 @@ import dattatreya.jyotish.rashis.grahas.shani.ShaniInRashi;
 import dattatreya.jyotish.rashis.grahas.rahu.RahuInRashi;
 import dattatreya.jyotish.rashis.grahas.ketu.KetuInRashi;
 
-@Component("grahasInAquarius")
-@Order(value=11)
-public class GrahasInAquarius implements GrahaInRashi{
+@Component("grahasInAries")
+@Order(value=1)
+public class GrahasInAries implements GrahaInRashi{
 	
 	@Autowired
-	@Qualifier("suryaInAquarius")
+	@Qualifier("suryaInAries")
 	SuryaInRashi suryaInRashi;
 	
 	@Autowired
-	@Qualifier("chandraInAquarius")
+	@Qualifier("chandraInAries")
 	ChandraInRashi chandraInRashi;
 	
 	@Autowired
-	@Qualifier("mangalInAquarius")
+	@Qualifier("mangalInAries")
 	MangalInRashi mangalInRashi;
 	
 	@Autowired
-	@Qualifier("budhaInAquarius")
+	@Qualifier("budhaInAries")
 	BudhaInRashi budhaInRashi;
 	
 	@Autowired
-	@Qualifier("guruInAquarius")
+	@Qualifier("guruInAries")
 	GuruInRashi guruInRashi;
 	
 	@Autowired
-	@Qualifier("shukraInAquarius")
+	@Qualifier("shukraInAries")
 	ShukraInRashi shukraInRashi;
 	
 	@Autowired
-	@Qualifier("shaniInAquarius")
+	@Qualifier("shaniInAries")
 	ShaniInRashi shaniInRashi;
 	
 	@Autowired
-	@Qualifier("rahuInAquarius")
+	@Qualifier("rahuInAries")
 	RahuInRashi rahuInRashi;
 	
 	@Autowired
-	@Qualifier("ketuInAquarius")
+	@Qualifier("ketuInAries")
     KetuInRashi ketuInRashi;
 	
 

@@ -1,7 +1,6 @@
 package dattatreya.jyotish;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -11,12 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.grahas.GrahaFactory;
-import dattatreya.jyotish.panchang.nakshatras.padas.Pada1;
-import dattatreya.jyotish.panchang.nakshatras.padas.Pada2;
-import dattatreya.jyotish.panchang.nakshatras.padas.Pada4;
 import dattatreya.jyotish.rashis.Rashi;
-import dattatreya.jyotish.rashis.RashiFactory;
 
 public class App {
 	public static void main(String[] args) {
