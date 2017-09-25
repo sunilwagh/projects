@@ -268,6 +268,86 @@ public final class Surya implements Graha {
 	public static Set<BhavaNames> getNuetral() {
 		return NUETRAL;
 	}
+
+	public RashiNames getMOOLTRIKONARASHI() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getEXALTATION() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getDEBILITATION() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getOWN() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Tattva getTATTVA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Guna getGUNA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getKARAKA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getENEMIES_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getFRIENDS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONGEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONG() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getNUETRAL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAK() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAKEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

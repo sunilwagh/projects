@@ -9,6 +9,7 @@ import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -34,39 +35,43 @@ public interface Graha {
 
 	public void setDegrees(double degrees);
 
-	public Set<RashiNames> getLORD_OF_RASHIS();
-
 	public GrahaNames getGrahaName();
 
-	public RashiNames getMooltrikonarashi();
+	public RashiNames getMOOLTRIKONARASHI();
 
-	public RashiNames getExaltation();
+	public RashiNames getEXALTATION();
 
-	public RashiNames getDebilitation();
+	public RashiNames getDEBILITATION();
 
-	public RashiNames getOwn();
+	public RashiNames getOWN();
 
-	public Tattva getTattva();
-
-	public Set<BhavaNames> getKaraka();
-
-	public Set<GrahaNames> getEnemiesToGraha();
-
-	public Set<GrahaNames> getFriendsToGraha();
-
-	public Guna getGuna();
-
-	public Set<BhavaNames> getStrongest();
-
-	public Set<BhavaNames> getStrong();
-
-	public Set<GrahaNames> getNuetralToGraha();
-
-	public Set<BhavaNames> getWeak();
-
-	public Set<BhavaNames> getWeakest();
-	
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA();
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA();
+
+	public Tattva getTATTVA();
+
+	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS();
+
+	public Guna getGUNA();
+
+	public Set<RashiNames> getLORD_OF_RASHIS();
+
+	public Set<BhavaNames> getKARAKA();
+
+	public Set<GrahaNames> getENEMIES_TO_GRAHA();
+
+	public Set<GrahaNames> getFRIENDS_TO_GRAHA();
+
+	public Set<GrahaNames> getNUETRAL_TO_GRAHA();
+
+	public Set<BhavaNames> getSTRONGEST();
+
+	public Set<BhavaNames> getSTRONG();
+
+	public Set<BhavaNames> getNUETRAL();
+
+	public Set<BhavaNames> getWEAK();
+
+	public Set<BhavaNames> getWEAKEST();
 }

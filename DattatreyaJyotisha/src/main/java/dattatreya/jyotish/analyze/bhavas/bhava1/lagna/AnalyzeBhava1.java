@@ -270,28 +270,31 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 			}
 		}
 
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getExaltation())) {
-			sbAnalyzeBhava1.append("Lord is Exalted");
+		if(grahaToBeAnalyzed != null)
+		{
+		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getEXALTATION())) {
+			sbAnalyzeBhava1.append("\n Lord is Exalted");
 		}
 
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getMooltrikonarashi())) {
-			sbAnalyzeBhava1.append("Lord is in it's Mooltrikona");
+		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getMOOLTRIKONARASHI())) {
+			sbAnalyzeBhava1.append("\n Lord is in it's Mooltrikona");
 		}
 
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getOwn())) {
-			sbAnalyzeBhava1.append("Lord is in it's Own Rashi");
+		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getOWN())) {
+			sbAnalyzeBhava1.append("\n Lord is in it's Own Rashi");
 		}
 
 		if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-			sbAnalyzeBhava1.append("Lord is in friendly sign");
+			sbAnalyzeBhava1.append("\n Lord is in friendly sign");
 		}
 
 		if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-			sbAnalyzeBhava1.append("Lord is in enemy sign");
+			sbAnalyzeBhava1.append("\n Lord is in enemy sign");
 		}
 
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getDebilitation())) {
-			sbAnalyzeBhava1.append("Lord is debilitated");
+		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getDEBILITATION())) {
+			sbAnalyzeBhava1.append("\n Lord is debilitated");
+		}
 		}
 
 	}

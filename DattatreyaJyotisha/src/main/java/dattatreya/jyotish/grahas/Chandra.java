@@ -317,6 +317,31 @@ public final class Chandra implements Graha{
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
 		return ENEMY_SIGNS_TO_GRAHA;
 	}
+
+	public Set<BhavaNames> getSTRONGEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONG() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getNUETRAL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAK() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAKEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

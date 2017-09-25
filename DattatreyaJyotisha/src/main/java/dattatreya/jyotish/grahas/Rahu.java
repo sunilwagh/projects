@@ -231,6 +231,41 @@ public class Rahu implements Graha{
 	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
 		return NUETRAL_TO_GRAHA;
 	}
+
+	public Tattva getTATTVA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Guna getGUNA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONGEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONG() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getNUETRAL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAK() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAKEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

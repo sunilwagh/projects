@@ -309,6 +309,31 @@ public final class Budha implements Graha {
 	public Set<BhavaNames> getWEAKEST_IN_BHAVAS() {
 		return WEAKEST_IN_BHAVAS;
 	}
+
+	public Set<BhavaNames> getSTRONGEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getSTRONG() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getNUETRAL() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAK() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWEAKEST() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
