@@ -14,9 +14,9 @@ public class RashiInBhava9 implements RashiInBhava{
 	}
 
 	public  String TaurusInBhava() {
-		StringBuilder taurusInBhava9 = new StringBuilder();
-		taurusInBhava9.append("\n");
-		return taurusInBhava9.toString();
+		StringBuilder taurusInBhava = new StringBuilder();
+		taurusInBhava.append("\n");
+		return taurusInBhava.toString();
 	}
 
 	public  String GeminiInBhava() {

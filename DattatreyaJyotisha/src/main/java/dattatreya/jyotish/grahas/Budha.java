@@ -26,6 +26,8 @@ public final class Budha implements Graha {
 	private  final RashiNames EXALTATION = RashiNames.VIRGO;
 	private  final RashiNames DEBILITATION = RashiNames.PISCES;
 	private  final RashiNames OWN = RashiNames.GEMINI;
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private  final Tattva TATTVA = Tattva.PRITHVI;
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Guna GUNA = Guna.RAJASIC;
@@ -231,5 +233,83 @@ public final class Budha implements Graha {
 	public  Set<BhavaNames> getWeakest() {
 		return WEAKEST_IN_BHAVAS;
 	}
+
+	public GrahaNames getGRAHA_NAME() {
+		return GRAHA_NAME;
+	}
+
+	public RashiNames getMOOLTRIKONARASHI() {
+		return MOOLTRIKONARASHI;
+	}
+
+	public RashiNames getEXALTATION() {
+		return EXALTATION;
+	}
+
+	public RashiNames getDEBILITATION() {
+		return DEBILITATION;
+	}
+
+	public RashiNames getOWN() {
+		return OWN;
+	}
+
+	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+		return FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+		return ENEMY_SIGNS_TO_GRAHA;
+	}
+
+	public Tattva getTATTVA() {
+		return TATTVA;
+	}
+
+	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
+		return LORD_OF_NAKSHATRAS;
+	}
+
+	public Guna getGUNA() {
+		return GUNA;
+	}
+
+	public Set<BhavaNames> getKARAKA() {
+		return KARAKA;
+	}
+
+	public Set<GrahaNames> getENEMIES_TO_GRAHA() {
+		return ENEMIES_TO_GRAHA;
+	}
+
+	public Set<GrahaNames> getFRIENDS_TO_GRAHA() {
+		return FRIENDS_TO_GRAHA;
+	}
+
+	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
+		return NUETRAL_TO_GRAHA;
+	}
+
+	public Set<BhavaNames> getSTRONGEST_IN_BHAVAS() {
+		return STRONGEST_IN_BHAVAS;
+	}
+
+	public Set<BhavaNames> getSTRONG_IN_BHAVAS() {
+		return STRONG_IN_BHAVAS;
+	}
+
+	public Set<BhavaNames> getNUETRAL_IN_BHAVAS() {
+		return NUETRAL_IN_BHAVAS;
+	}
+
+	public Set<BhavaNames> getWEAK_IN_BHAVAS() {
+		return WEAK_IN_BHAVAS;
+	}
+
+	public Set<BhavaNames> getWEAKEST_IN_BHAVAS() {
+		return WEAKEST_IN_BHAVAS;
+	}
+	
+	
 
 }

@@ -28,6 +28,10 @@ public final class Shani implements Graha {
 	private final RashiNames EXALTATION = RashiNames.LIBRA;
 	private final RashiNames DEBILITATION = RashiNames.ARIES;
 	private final RashiNames OWN = RashiNames.CAPRICORN;
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	
+
 	private final Tattva TATTVA = Tattva.VAYU;
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
@@ -234,6 +238,94 @@ public final class Shani implements Graha {
 
 	public Set<BhavaNames> getWEAKEST() {
 		return WEAKEST;
+	}
+
+	public Set<RashiNames> getLORD_OF_RASHIS() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public GrahaNames getGrahaName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getMooltrikonarashi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getExaltation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getDebilitation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public RashiNames getOwn() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Tattva getTattva() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getKaraka() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getEnemiesToGraha() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getFriendsToGraha() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Guna getGuna() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getStrongest() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getStrong() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<GrahaNames> getNuetralToGraha() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWeak() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Set<BhavaNames> getWeakest() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+		return FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+		return ENEMY_SIGNS_TO_GRAHA;
 	}
 	
 	

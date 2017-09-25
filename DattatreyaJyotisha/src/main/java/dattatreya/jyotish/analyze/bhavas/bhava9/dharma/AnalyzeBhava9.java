@@ -33,11 +33,11 @@ public class AnalyzeBhava9 implements AnalyzeBhava{
 	HouseLordPlacedInBhava houseLordPlacedInBhava;
 	
 	@Autowired
-	@Qualifier("grahaInBhava3")
+	@Qualifier("grahaInBhava9")
 	GrahaInBhava grahaInBhava;
 	
 	@Autowired
-	@Qualifier("rashiInBhava3")
+	@Qualifier("rashiInBhava9")
 	RashiInBhava rashiInBhava;
 	
 	public String analyzeBhava(Horoscope horoscope) {
