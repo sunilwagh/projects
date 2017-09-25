@@ -9,6 +9,18 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.bhavas.Bhava10;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
+import dattatreya.jyotish.rashis.aquarius.Acquarius;
+import dattatreya.jyotish.rashis.aries.Aries;
+import dattatreya.jyotish.rashis.cancer.Cancer;
+import dattatreya.jyotish.rashis.capricorn.Capricorn;
+import dattatreya.jyotish.rashis.gemini.Gemini;
+import dattatreya.jyotish.rashis.leo.Leo;
+import dattatreya.jyotish.rashis.libra.Libra;
+import dattatreya.jyotish.rashis.pisces.Pisces;
+import dattatreya.jyotish.rashis.sagittaurius.Sagittaurius;
+import dattatreya.jyotish.rashis.scorpio.Scorpio;
+import dattatreya.jyotish.rashis.taurus.Taurus;
+import dattatreya.jyotish.rashis.virgo.Virgo;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 

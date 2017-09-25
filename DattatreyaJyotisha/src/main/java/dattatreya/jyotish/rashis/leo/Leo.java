@@ -1,4 +1,4 @@
-package dattatreya.jyotish.rashis;
+package dattatreya.jyotish.rashis.leo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;

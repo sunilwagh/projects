@@ -1,4 +1,4 @@
-package dattatreya.jyotish.rashis;
+package dattatreya.jyotish.rashis.libra;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,24 +7,24 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
-import dattatreya.jyotish.util.Goals;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
 
-@Component("taurusRashi")
-@Order(value=2)
-public final class Taurus implements Rashi{
+@Component("libraRashi")
+@Order(value=7)
+public final class Libra implements Rashi{
 	
-	private final RashiNames nameOfRashi = RashiNames.TAURUS;
-	private final MobilityOfRashi mobility=MobilityOfRashi.STHIRA;
-	private final GenderOfRashi gender=GenderOfRashi.FEMALE;
-	private final Goals goals = Goals.ARTHA;
-	private final Tattva tattva= Tattva.PRITHVI;
-	private final Direction direction = Direction.SOUTH;
+    private final RashiNames nameOfRashi = RashiNames.LIBRA;
+    private final MobilityOfRashi mobility=MobilityOfRashi.CHARA;
+    private final GenderOfRashi gender=GenderOfRashi.MALE;
+    private final Tattva tattva=Tattva.VAYU;
+    private final Direction direction=Direction.WEST;
 	private List<Graha> grahas;
+	
 	public List<Graha> getGrahas() {
 		return grahas;
 	}
@@ -40,9 +40,6 @@ public final class Taurus implements Rashi{
 	public GenderOfRashi getGender() {
 		return gender;
 	}
-	public Goals getGoals() {
-		return goals;
-	}
 	public Tattva getTattva() {
 		return tattva;
 	}
@@ -55,4 +52,5 @@ public final class Taurus implements Rashi{
 	
 	
 	
+
 }
