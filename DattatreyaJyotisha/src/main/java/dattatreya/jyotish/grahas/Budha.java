@@ -26,21 +26,27 @@ public final class Budha implements Graha {
 	private  final RashiNames EXALTATION = RashiNames.VIRGO;
 	private  final RashiNames DEBILITATION = RashiNames.PISCES;
 	private  final RashiNames OWN = RashiNames.GEMINI;
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	
 	private  final Tattva TATTVA = Tattva.PRITHVI;
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Guna GUNA = Guna.RAJASIC;
 	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
+	
 	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
+	
+	private  final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private  final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private  final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
 	private  final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	
 	private  final Set<BhavaNames> STRONGEST_IN_BHAVAS = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> STRONG_IN_BHAVAS = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> NUETRAL_IN_BHAVAS = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> WEAK_IN_BHAVAS = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> WEAKEST_IN_BHAVAS = new HashSet<BhavaNames>();
+	
 
 	public Budha() 
 	{
@@ -54,6 +60,15 @@ public final class Budha implements Graha {
 		addBhavasToNuetral();
 		addBhavasToWeak();
 		addBhavasToWeakest();
+		addKarakasInLifeForGraha();
+
+	}
+	
+	public void addKarakasInLifeForGraha() {
+		KARAKA_IN_LIFE.add("Intellect");
+		KARAKA_IN_LIFE.add("Childhood");
+		KARAKA_IN_LIFE.add("Speech");
+		
 
 	}
 

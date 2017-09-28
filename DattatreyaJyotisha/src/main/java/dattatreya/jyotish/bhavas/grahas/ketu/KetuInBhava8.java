@@ -4,12 +4,15 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component("ketuInBhava8")
-@Order(value=8)
+@Order(value = 8)
 public final class KetuInBhava8 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+
+		StringBuilder sb = new StringBuilder();
+		sb.append(" Reason of death is unknown");
+		return sb.toString();
+
 	}
 
 }

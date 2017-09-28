@@ -13,43 +13,51 @@ import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.GenderOfGraha;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
 
 @Component("mangal")
-@Order(value=3)
+@Order(value = 3)
 public final class Mangal implements Graha {
 
 	// Male
-	
+
 	Nakshatra nakshatra;
 	Pada pada;
 	double degrees;
 
-	private  final GrahaNames GRAHA_NAME = GrahaNames.MANGAL;
-	private  final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES;
-	private  final RashiNames EXALTATION = RashiNames.CAPRICORN;
-	private  final RashiNames DEBILITATION = RashiNames.PISCES;
-	private  final RashiNames OWN = RashiNames.SCORPIO;
+	private final GrahaNames GRAHA_NAME = GrahaNames.MANGAL;
+	private final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES;
+	private final RashiNames EXALTATION = RashiNames.CAPRICORN;
+	private final RashiNames DEBILITATION = RashiNames.PISCES;
+	private final RashiNames OWN = RashiNames.SCORPIO;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private  final Tattva TATTVA = Tattva.AGNI;
-	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	private  final Guna GUNA = Guna.TAMASIC;
-	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
-	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
-	private  final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
-	private  final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
-	private  final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
-	private  final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
-	private  final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
-	private  final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
-	private  final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
+	
+	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
+	
+	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
 
-	public Mangal()
-	{
+	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
+	private final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
+
+	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+
+	private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
+	
+	private final Guna GUNA = Guna.TAMASIC;
+	private final Tattva TATTVA = Tattva.AGNI;
+	private final GenderOfGraha GENDER_OF_GRAHA = GenderOfGraha.MALE; 
+
+	public Mangal() {
 		addFriendsToGraha();
 		addEnemiesToGraha();
 		addLordOfNakshatrasToGraha();
@@ -60,57 +68,63 @@ public final class Mangal implements Graha {
 		addBhavasToNuetral();
 		addBhavasToWeak();
 		addBhavasToWeakest();
+		addKarakasInLifeForGraha();
 
 	}
 
-	public  void addLordOfNakshatrasToGraha() {
+	public void addKarakasInLifeForGraha() {
+		KARAKA_IN_LIFE.add("Brothers");
+		KARAKA_IN_LIFE.add("Courage");
+	}
+
+	public void addLordOfNakshatrasToGraha() {
 		LORD_OF_NAKSHATRAS.add(NakshatraNames.MRIGASHIRSHA);
 		LORD_OF_NAKSHATRAS.add(NakshatraNames.CHITRA);
 		LORD_OF_NAKSHATRAS.add(NakshatraNames.DHANISHTA);
 	}
 
-	private  void addLordOfRashisToGraha() {
+	private void addLordOfRashisToGraha() {
 		LORD_OF_RASHIS.add(RashiNames.ARIES);
 		LORD_OF_RASHIS.add(RashiNames.SCORPIO);
 
 	}
 
-	public  void addKarakasToGraha() {
+	public void addKarakasToGraha() {
 		KARAKA.add(BhavaNames.BHAVA4);
 		KARAKA.add(BhavaNames.BHAVA10);
 
 	}
 
-	public  void addEnemiesToGraha() {
+	public void addEnemiesToGraha() {
 		ENEMIES_TO_GRAHA.add(GrahaNames.BUDHA);
 
 	}
 
-	public  void addFriendsToGraha() {
+	public void addFriendsToGraha() {
 		FRIENDS_TO_GRAHA.add(GrahaNames.SURYA);
 		FRIENDS_TO_GRAHA.add(GrahaNames.CHANDRA);
 		FRIENDS_TO_GRAHA.add(GrahaNames.GURU);
 
 	}
 
-	public  void addNuetralToGraha() {
+	public void addNuetralToGraha() {
 		NUETRAL_TO_GRAHA.add(GrahaNames.SHUKRA);
 		NUETRAL_TO_GRAHA.add(GrahaNames.SHANI);
 
 	}
 
-	public  void addBhavasToStrongest() {
+	public void addBhavasToStrongest() {
 		STRONGEST.add(BhavaNames.BHAVA10);
 	}
 
-	public  void addBhavasToStrong() {
+	public void addBhavasToStrong() {
 		STRONG.add(BhavaNames.BHAVA3);
 		STRONG.add(BhavaNames.BHAVA6);
 		STRONG.add(BhavaNames.BHAVA11);
 
 	}
 
-	public  void addBhavasToNuetral() {
+	public void addBhavasToNuetral() {
 		NUETRAL.add(BhavaNames.BHAVA1);
 		NUETRAL.add(BhavaNames.BHAVA2);
 		NUETRAL.add(BhavaNames.BHAVA5);
@@ -121,15 +135,14 @@ public final class Mangal implements Graha {
 
 	}
 
-	public  void addBhavasToWeak() {
+	public void addBhavasToWeak() {
 
 	}
 
-	public  void addBhavasToWeakest() {
+	public void addBhavasToWeakest() {
 
 	}
 
-	
 	public Nakshatra getNakshatra() {
 		return nakshatra;
 	}
@@ -137,7 +150,6 @@ public final class Mangal implements Graha {
 	public void setNakshatra(Nakshatra nakshatra) {
 		this.nakshatra = nakshatra;
 	}
-
 
 	public Pada getPada() {
 		return pada;
@@ -234,7 +246,7 @@ public final class Mangal implements Graha {
 
 	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public Bhava getBhava() {
@@ -244,7 +256,7 @@ public final class Mangal implements Graha {
 
 	public void setBhava(Bhava bhava) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public GrahaNames getGrahaName() {
@@ -329,8 +341,5 @@ public final class Mangal implements Graha {
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
 		return ENEMY_SIGNS_TO_GRAHA;
 	}
-	
-	
-	
 
 }
