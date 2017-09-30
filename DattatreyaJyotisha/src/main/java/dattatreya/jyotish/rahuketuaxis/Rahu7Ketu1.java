@@ -21,13 +21,13 @@ public class Rahu7Ketu1 implements RahuKetuAxis {
 	KetuInBhava ketuInBhava;
 	
 	public String getRahuInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
 
 	public String getKetuInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
 
 }

@@ -9,25 +9,25 @@ import dattatreya.jyotish.bhavas.grahas.ketu.KetuInBhava;
 import dattatreya.jyotish.bhavas.grahas.rahu.RahuInBhava;
 
 @Component("rahu5ketu11")
-@Order(value=5)
-public class Rahu5Ketu11 implements RahuKetuAxis{
+@Order(value = 5)
+public class Rahu5Ketu11 implements RahuKetuAxis {
 
 	@Autowired
 	@Qualifier("rahuInBhava5")
 	RahuInBhava rahuInBhava;
-	
+
 	@Autowired
 	@Qualifier("ketuInBhava11")
 	KetuInBhava ketuInBhava;
-	
+
 	public String getRahuInfo() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
 
 	public String getKetuInfo() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
 
 }
