@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class KetuInBhava2 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"Ketu in the second house can symbolize a difficult childhood. Because the area is linked to speech the area will indicate speech problems, for example people with speech defects. ");
+		return sb.toString();
 	}
 
 }

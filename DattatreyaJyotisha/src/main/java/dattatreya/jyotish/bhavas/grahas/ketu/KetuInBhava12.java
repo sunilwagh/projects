@@ -4,12 +4,14 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component("ketuInBhava12")
-@Order(value=12)
+@Order(value = 12)
 public final class KetuInBhava12 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"Ketu is a moksha karaka in his own house and we can get spiritual fulfillment and higher understanding. You are introspective and need to be alone a great deal. It represnts the knowledge gained as a part of karma from the continuing cycles of life and death which will be useful. ");
+		return sb.toString();
 	}
 
 }

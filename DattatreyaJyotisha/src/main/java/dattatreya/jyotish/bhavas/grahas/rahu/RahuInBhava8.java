@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public final class RahuInBhava8 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"Urge to explore the dark recess of the society. Urge to dive in to the still dark recess of human knowledge is strong.");
+		return sb.toString();
 	}
 
 }

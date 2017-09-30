@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class KetuInBhava9 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"Ketu in the ninth house shows a strong need to follow the path of enlightment. Difficult rleationship with parents.");
+		return sb.toString();
 	}
 
 }
