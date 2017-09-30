@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public final class RahuInBhava11 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Best position for Rahu. It can bring much material success.");
+		return sb.toString();
 	}
 
 }

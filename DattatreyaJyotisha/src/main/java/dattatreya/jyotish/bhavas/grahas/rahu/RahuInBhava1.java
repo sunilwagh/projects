@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public final class RahuInBhava1 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Rahu in 1st house can make a person intensely materialistic and ambition. Desire to get wealth and power is strong. The native wants to leave a personal mark on the society.");
+		return sb.toString();
 	}
 
 }
