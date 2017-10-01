@@ -9,11 +9,13 @@ import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 @Component("guru")
 @Order(value = 5)
@@ -36,6 +38,10 @@ public class Guru implements Graha {
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 
 	private final Tattva TATTVA = Tattva.AKASH;
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.VAMANA;
+	private final Mahavidya mahaVidya = Mahavidya.UGRATARA_NEELATARA;
+	
+	
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private final Guna GUNA = Guna.SATTVIC;
 	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();

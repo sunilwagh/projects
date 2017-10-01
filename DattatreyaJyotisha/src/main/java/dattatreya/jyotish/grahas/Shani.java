@@ -11,11 +11,13 @@ import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 
 @Component("shani")
@@ -28,18 +30,21 @@ public final class Shani implements Graha {
 	private final RashiNames EXALTATION = RashiNames.LIBRA;
 	private final RashiNames DEBILITATION = RashiNames.ARIES;
 	private final RashiNames OWN = RashiNames.CAPRICORN;
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	
 
 	private final Tattva TATTVA = Tattva.VAYU;
+	private final Guna GUNA = Guna.TAMASIC;
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.KURMA;
+	private final Mahavidya mahaVidya = Mahavidya.DAKSHINAKALI;
+	
+	
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
 	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Guna GUNA = Guna.TAMASIC;
-	private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
+    private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();

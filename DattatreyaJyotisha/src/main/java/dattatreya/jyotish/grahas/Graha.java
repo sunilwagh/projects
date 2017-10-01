@@ -15,9 +15,7 @@ import dattatreya.jyotish.util.Tattva;
 
 public interface Graha {
 
-	public Rashi getLagnaKundaliRashi();
-
-	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi);
+	
 
 	public Nakshatra getNakshatra();
 

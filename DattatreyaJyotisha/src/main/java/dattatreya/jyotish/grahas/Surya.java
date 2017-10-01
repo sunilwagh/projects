@@ -6,6 +6,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
@@ -15,16 +16,18 @@ import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 @Component("surya")
-@Order(value=1)
+@Order(value = 1)
 public final class Surya implements Graha {
 
-	
 	Nakshatra nakshatra;
 	Pada pada;
 	double degrees;
 
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.RAAMA;
+	private final Mahavidya mahaVidya = Mahavidya.MATANGI;
 	private final GrahaNames GRAHA_NAME = GrahaNames.SURYA;
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.LEO;
 	private final RashiNames EXALTATION = RashiNames.ARIES;
@@ -36,23 +39,19 @@ public final class Surya implements Graha {
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private final Guna GUNA = Guna.SATTVIC;
 	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
-	
+
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
 	private final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
-	
-	
 	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
-	
-	
 	private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
 
-	Surya() {
+	public Surya() {
 		addFriendsToGraha();
 		addEnemiesToGraha();
 		addLordOfNakshatrasToGraha();
@@ -83,7 +82,7 @@ public final class Surya implements Graha {
 		KARAKA.add(BhavaNames.BHAVA10);
 
 	}
-	
+
 	public void addKarakasInLifeForGraha() {
 		KARAKA_IN_LIFE.add("Father");
 		KARAKA_IN_LIFE.add("Government");
@@ -175,7 +174,7 @@ public final class Surya implements Graha {
 
 	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public Bhava getBhava() {
@@ -185,7 +184,7 @@ public final class Surya implements Graha {
 
 	public void setBhava(Bhava bhava) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public Set<RashiNames> getLORD_OF_RASHIS() {
@@ -367,9 +366,5 @@ public final class Surya implements Graha {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
-	
-	
 
 }

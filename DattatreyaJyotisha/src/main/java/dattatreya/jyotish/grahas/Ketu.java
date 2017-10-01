@@ -13,26 +13,25 @@ import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 @Component("ketu")
 @Order(value = 9)
 public class Ketu implements Graha {
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
-	}
-
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
-	}
+	
 
 	Nakshatra nakshatra;
 	Pada pada;
 	double degrees;
 	private StringBuilder notes;
+	
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.KALKI;
+	private final Mahavidya mahaVidya = Mahavidya.BHAIRAVI;
 
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
@@ -288,6 +287,14 @@ public class Ketu implements Graha {
 	public Set<BhavaNames> getWEAKEST() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+		return FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+		return ENEMY_SIGNS_TO_GRAHA;
 	}
 
 }

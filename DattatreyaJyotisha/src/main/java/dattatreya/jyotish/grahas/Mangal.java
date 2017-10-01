@@ -11,22 +11,18 @@ import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GenderOfGraha;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 @Component("mangal")
 @Order(value = 3)
 public final class Mangal implements Graha {
-
-	// Male
-
-	Nakshatra nakshatra;
-	Pada pada;
-	double degrees;
 
 	private final GrahaNames GRAHA_NAME = GrahaNames.MANGAL;
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES;
@@ -35,9 +31,9 @@ public final class Mangal implements Graha {
 	private final RashiNames OWN = RashiNames.SCORPIO;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	
+
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	
+
 	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
 
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
@@ -52,10 +48,17 @@ public final class Mangal implements Graha {
 	private final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
-	
+
 	private final Guna GUNA = Guna.TAMASIC;
 	private final Tattva TATTVA = Tattva.AGNI;
-	private final GenderOfGraha GENDER_OF_GRAHA = GenderOfGraha.MALE; 
+	private final GenderOfGraha GENDER_OF_GRAHA = GenderOfGraha.MALE;
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.NARASIMHA;
+	private final Mahavidya mahaVidya = Mahavidya.BAGALAMUKHI;
+	// Male
+
+	Nakshatra nakshatra;
+	Pada pada;
+	double degrees;
 
 	public Mangal() {
 		addFriendsToGraha();

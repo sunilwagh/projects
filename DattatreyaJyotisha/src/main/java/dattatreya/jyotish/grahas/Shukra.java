@@ -11,32 +11,32 @@ import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
+import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
+import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 @Component("shukra")
 @Order(value=6)
 public final class Shukra implements Graha {
 
-	Rashi lagnaKundaliRashi;
-	Nakshatra nakshatra;
-	Bhava bhava;
-	Pada pada;
-	double degrees;
+	private final GrahaNames GRAHA_NAME = GrahaNames.SHUKRA;
+	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.PARASHURAMA;
+	private final Mahavidya mahaVidya = Mahavidya.KAMALATMIKA;
+	private  final Tattva TATTVA = Tattva.AKASH;
+	private  final Guna GUNA = Guna.RAJASIC;
 
-	private  final GrahaNames GRAHA_NAME = GrahaNames.SHUKRA;
+	
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.LIBRA;
 	private  final RashiNames EXALTATION = RashiNames.PISCES;
 	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private  final RashiNames OWN = RashiNames.LIBRA;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private  final Tattva TATTVA = Tattva.AKASH;
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	private  final Guna GUNA = Guna.RAJASIC;
 	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
 	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
 	private  final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
@@ -47,6 +47,12 @@ public final class Shukra implements Graha {
 	private  final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
 	private  final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
+	
+	Rashi lagnaKundaliRashi;
+	Nakshatra nakshatra;
+	Bhava bhava;
+	Pada pada;
+	double degrees;
 
 	public Shukra() 
 	{
@@ -128,13 +134,7 @@ public final class Shukra implements Graha {
 
 	}
 
-	public Rashi getLagnaKundaliRashi() {
-		return lagnaKundaliRashi;
-	}
-
-	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
-		this.lagnaKundaliRashi = lagnaKundaliRashi;
-	}
+	
 
 	public Nakshatra getNakshatra() {
 		return nakshatra;
@@ -144,13 +144,7 @@ public final class Shukra implements Graha {
 		this.nakshatra = nakshatra;
 	}
 
-	public Bhava getBhava() {
-		return bhava;
-	}
-
-	public void setBhava(Bhava bhava) {
-		this.bhava = bhava;
-	}
+	
 
 	public Pada getPada() {
 		return pada;
@@ -321,6 +315,16 @@ public final class Shukra implements Graha {
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
 		return ENEMY_SIGNS_TO_GRAHA;
+	}
+
+	public Bhava getBhava() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setBhava(Bhava bhava) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
