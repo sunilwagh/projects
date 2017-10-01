@@ -26,14 +26,14 @@ public final class Shukra implements Graha {
 	private final GrahaNames GRAHA_NAME = GrahaNames.SHUKRA;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.PARASHURAMA;
 	private final Mahavidya mahaVidya = Mahavidya.KAMALATMIKA;
-	private  final Tattva TATTVA = Tattva.AKASH;
 	private  final Guna GUNA = Guna.RAJASIC;
+	private  final Tattva TATTVA = Tattva.AKASH;
 
 	
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.LIBRA;
 	private  final RashiNames EXALTATION = RashiNames.PISCES;
-	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private  final RashiNames OWN = RashiNames.LIBRA;
+	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
