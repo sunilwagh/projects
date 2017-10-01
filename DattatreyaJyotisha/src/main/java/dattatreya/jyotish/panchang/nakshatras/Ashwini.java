@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshtraDiety;
 import dattatreya.jyotish.util.NakshatraTypes;
 import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -16,16 +17,20 @@ import dattatreya.jyotish.util.Tattva;
 @Order(value=1)
 public final class Ashwini implements Nakshatra {
 
+	private final NakshatraNames nakshatraName = NakshatraNames.ASHWINI;
 	private final NakshtraDiety Diety = NakshtraDiety.ASHWINI_KUMARS;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.KETU;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-
-	private final NakshatraGana GANA = NakshatraGana.DEVA;
-    private static List<String> features = new ArrayList<String>();
+    private final NakshatraGana GANA = NakshatraGana.DEVA;
+    private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.KSHIPRA;
 
-	static {
+	public Ashwini() {
+		addFeatures();
 
+	}
+
+	public void addFeatures() {
 		features.add("Fast and swift");
 		features.add("Helpful");
 		features.add("Travelers");

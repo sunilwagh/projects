@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshtraDiety;
 import dattatreya.jyotish.util.NakshatraTypes;
 import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -17,6 +18,7 @@ import dattatreya.jyotish.util.Tattva;
 @Order(value=2)
 public class Bharani implements Nakshatra,Serializable{
 	
+	private final NakshatraNames nakshatraName = NakshatraNames.BHARANI;
 	private final NakshtraDiety Diety = NakshtraDiety.YAMA;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SHUKRA;
 	private final Tattva TATTVA = Tattva.PRITHVI;

@@ -6,18 +6,23 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("anuradha")
-@Order(value=17)
+@Order(value = 17)
 public final class Anuradha implements Nakshatra {
-	
-	
-	private static List<String> features = new ArrayList<String>();
+
+	private final NakshatraNames nakshatraName = NakshatraNames.ANURADHA;
+	private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 
-	static {
+	public Anuradha() {
+		addFeatures();
 
+	}
+
+	public void addFeatures() {
 		features.add("Promoter of congenial relationship");
 		features.add("Success");
 		features.add("Krishna Devotee");
