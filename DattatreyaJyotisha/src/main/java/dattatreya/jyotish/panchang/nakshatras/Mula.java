@@ -6,17 +6,20 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("mula")
 @Order(value=19)
 public final class Mula implements Nakshatra{
 	
-	
-	private static List<String> features = new ArrayList<String>();
+	private final NakshatraNames nakshatraName = NakshatraNames.MULA;
+	private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
 	
-	
+	public Mula() {
+		addFeatures();
+	}
 	
 	public void addFeatures() {
 		features.add("Total Destruction");

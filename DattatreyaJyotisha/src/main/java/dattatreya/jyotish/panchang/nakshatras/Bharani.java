@@ -15,26 +15,25 @@ import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
 @Component("bharani")
-@Order(value=2)
-public class Bharani implements Nakshatra,Serializable{
-	
+@Order(value = 2)
+public class Bharani implements Nakshatra {
+
 	private final NakshatraNames nakshatraName = NakshatraNames.BHARANI;
 	private final NakshtraDiety Diety = NakshtraDiety.YAMA;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SHUKRA;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-    private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
+	private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
 	private static final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
-	public Bharani()
-	{
+	public Bharani() {
 		addFeatures();
 	}
-	
+
 	public void addFeatures() {
 		features.add("Fast and swift");
 		features.add("Constrained");
-	    features.add("Mature");
+		features.add("Mature");
 		features.add("Secretive");
 		features.add("Sustenance");
 		features.add("Generous");
@@ -45,9 +44,8 @@ public class Bharani implements Nakshatra,Serializable{
 		features.add("Many transformation are seen");
 		features.add("Desire to have a large family");
 		features.add("Have a large appetite");
-        features.add("Wealth");
+		features.add("Wealth");
 
 	}
-	
-	
+
 }

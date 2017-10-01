@@ -6,12 +6,14 @@ import java.util.List;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("mrighashirsha")
 @Order(value=5)
 public final class Mrighashirsha implements Nakshatra {
 
+	private final NakshatraNames nakshatraName = NakshatraNames.MRIGASHIRSHA;
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 

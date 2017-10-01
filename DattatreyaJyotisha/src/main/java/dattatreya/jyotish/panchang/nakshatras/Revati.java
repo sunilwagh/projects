@@ -3,10 +3,13 @@ package dattatreya.jyotish.panchang.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 public final class Revati implements Nakshatra {
-	private static List<String> features = new ArrayList<String>();
+	
+	private final NakshatraNames nakshatraName = NakshatraNames.REVATI;
+	private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 
 	public Revati() {

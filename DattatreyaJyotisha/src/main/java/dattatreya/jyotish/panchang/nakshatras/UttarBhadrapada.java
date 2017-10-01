@@ -3,9 +3,12 @@ package dattatreya.jyotish.panchang.nakshatras;
 import java.util.ArrayList;
 import java.util.List;
 
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 public final class UttarBhadrapada implements Nakshatra{
+	
+	private final NakshatraNames nakshatraName = NakshatraNames.UTTAR_BHADRAPADA;
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
 

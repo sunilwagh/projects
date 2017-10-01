@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshtraDiety;
 import dattatreya.jyotish.util.NakshatraTypes;
 import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -16,6 +17,7 @@ import dattatreya.jyotish.util.Tattva;
 @Order(value=4)
 public final class Rohini implements Nakshatra {
 	
+	private final NakshatraNames nakshatraName = NakshatraNames.ROHINI;
 	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.CHANDRA;
 	private final Tattva TATTVA = Tattva.PRITHVI;

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshtraDiety;
 import dattatreya.jyotish.util.NakshatraTypes;
 import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -16,16 +17,16 @@ import dattatreya.jyotish.util.Tattva;
 @Order(value=10)
 public final class Magha implements Nakshatra{
 	
+	private final NakshatraNames nakshatraName = NakshatraNames.MAGHA;
 	private final NakshtraDiety Diety = NakshtraDiety.PITRI;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.KETU;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-
-	private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
+    private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
-	static {
-	
+	public Magha() {
+		addFeatures();
 	}
 	
 	public void addFeatures() {
