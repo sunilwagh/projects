@@ -23,8 +23,12 @@ public final class Rohini implements Nakshatra {
 	private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
     private static List<String> features = new ArrayList<String>();
 
-	static {
-
+	public Rohini()
+	{
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Passion");
 		features.add("Growth and fertitlity");
 		features.add("Abundance");
@@ -41,7 +45,6 @@ public final class Rohini implements Nakshatra {
 		features.add("Father in law curse is dangerous for Rohini");
 		features.add(
 				"Wealthy powerfull and well placed but there weakness is rage. Once their temper flares they lose it. They should chanting 'Om' and 'Gayatri'");
-
 	}
 
 }

@@ -12,9 +12,12 @@ public final class Pushya implements Nakshatra{
 	
 	private static List<String> features = new ArrayList<String>();
 
-	static {
-
-        features.add("Nourishing and caring or giving");
+	public Pushya(){
+		addFeatures();
+	}
+	
+	public void addFeatures() {
+		features.add("Nourishing and caring or giving");
 		features.add("Spiritual, Divine Knowledge or Powers");
 	    features.add("Prosperous");
 		features.add("Benevelonce or Generous");

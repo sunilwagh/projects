@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshtraDiety;
 import dattatreya.jyotish.util.NakshatraTypes;
 import dattatreya.jyotish.util.NakshatraGana;
+import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.Tattva;
 
@@ -16,17 +17,21 @@ import dattatreya.jyotish.util.Tattva;
 @Order(value=3)
 public class Krittika implements Nakshatra{
 	
+	private final NakshatraNames nakshatraName = NakshatraNames.KRITTIKA;
 	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
 	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SURYA;
 	private final Tattva TATTVA = Tattva.PRITHVI;
-
-	private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
-    private static List<String> features = new ArrayList<String>();
+    private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
+    private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MISHRA;
 
 
-	static {
-		
+	public Krittika()
+	{
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Cleansing or cutting");
 		features.add("Fostering and encouraging");
 		features.add("Bravery");
@@ -41,6 +46,5 @@ public class Krittika implements Nakshatra{
 				"Express displeasure by stomping their foot.");
 		features.add("Very sharp long term memory and very good at rememebering faces.");
 		features.add("Fasting on six consequtive kritikka nakshatra days can give progeny.");
-
 	}
 }

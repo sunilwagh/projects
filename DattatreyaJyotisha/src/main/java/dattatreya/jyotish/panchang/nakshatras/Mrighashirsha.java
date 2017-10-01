@@ -15,8 +15,12 @@ public final class Mrighashirsha implements Nakshatra {
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 
-	static {
-
+	public Mrighashirsha(){
+         addFeatures();
+		
+	}
+	
+	public void addFeatures() {
 		features.add("Joyous");
 		features.add("Soft,Mild and Gentle");
 		features.add("Inquisitive");
@@ -31,5 +35,6 @@ public final class Mrighashirsha implements Nakshatra {
 		features.add("Very good at track and field events.");
 		features.add("Hardworkers and research could be scientist.");
 	}
+
 
 }

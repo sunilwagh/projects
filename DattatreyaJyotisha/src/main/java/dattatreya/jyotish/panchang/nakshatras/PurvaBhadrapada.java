@@ -15,8 +15,12 @@ public final class PurvaBhadrapada implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
-	static {
-		
+    public PurvaBhadrapada() {
+    	
+    	addFeatures();
+    }
+	
+	public void addFeatures() {
 		features.add("Ability to be futuristic in thoughts and actions");
 		features.add("Ability to lend support to all who need it");
 		features.add("Extremely active with trials and tribulations");
@@ -31,9 +35,6 @@ public final class PurvaBhadrapada implements Nakshatra{
 		features.add("They have tempest like anger which is beyond their own control");
 		features.add("They like using Ottomon or foot stool");
 		features.add("They make excellent dancers");
-
-		
-
 	}
 
 

@@ -15,7 +15,12 @@ public final class PurvaPhalguni implements Nakshatra{
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 	private static List<String> features = new ArrayList<String>();
 
-	static {
+	public PurvaPhalguni()
+	{
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Union or Procreation");	
 		features.add("Renewal or Relaxation or Comfort");	
 		features.add("Sexual Passion");	

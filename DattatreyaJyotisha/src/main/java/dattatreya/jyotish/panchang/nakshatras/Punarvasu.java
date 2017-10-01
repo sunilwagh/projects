@@ -15,8 +15,12 @@ public final class Punarvasu implements Nakshatra {
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
 
-	static {
-
+	public Punarvasu()
+	{
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Wealthy");
 		features.add("Material Instincts");
 		features.add("Repeated Events");
@@ -32,6 +36,5 @@ public final class Punarvasu implements Nakshatra {
 		features.add("Changing health fetish, moving from one diet to another.");
 		features.add(
 				"Is Jupiters abode, often noticed to drink a lot of water. They are very obedient to their parents.");
-
 	}
 }

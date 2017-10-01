@@ -10,9 +10,13 @@ import org.springframework.stereotype.Component;
 @Order(value=12)
 public final class UttarPhalguni implements Nakshatra{
 	
-	private static List<String> features = new ArrayList<String>();
+	private final List<String> features = new ArrayList<String>();
 
-	static {
+	public UttarPhalguni() {
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Prosperity through Marriage");				
 		features.add("Chivalry or Honor");				
 		features.add("Protective or Popular");				
@@ -25,7 +29,7 @@ public final class UttarPhalguni implements Nakshatra{
 		features.add("Victory");				
 		features.add("They are perfectionists. They have every 'i' dotted and every 't' crossed. They have eye for detail.");				
 		features.add( "They have strong sense of smell and dislike perfume.");				
-		features.add("They are aggressive and unpredictable.");		
+		features.add("They are aggressive and unpredictable.");	
 	}
 
 }

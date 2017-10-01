@@ -26,8 +26,12 @@ public class Bharani implements Nakshatra,Serializable{
 	private static final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
-	static {
-
+	public Bharani()
+	{
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Fast and swift");
 		features.add("Constrained");
 	    features.add("Mature");
@@ -42,6 +46,7 @@ public class Bharani implements Nakshatra,Serializable{
 		features.add("Desire to have a large family");
 		features.add("Have a large appetite");
         features.add("Wealth");
+
 	}
 	
 	

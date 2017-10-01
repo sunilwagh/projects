@@ -10,15 +10,19 @@ import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("ashlesha")
-@Order(value=9)
+@Order(value = 9)
 public final class Ashlesha implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.ASHLESHA;
-	private static List<String> features = new ArrayList<String>();
+	private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
 
-	static {
+	public Ashlesha() {
 
+		addFeatures();
+	}
+
+	public void addFeatures() {
 		features.add("Clinging");
 		features.add("Dangerous or Devious");
 		features.add("Deceptive");
@@ -33,6 +37,7 @@ public final class Ashlesha implements Nakshatra {
 		features.add("They could be very keen on activating their Kundalini");
 		features.add(
 				"They are willing to go any extent for their own folks. 1st part is good for politics and social work.");
+
 	}
 
 }

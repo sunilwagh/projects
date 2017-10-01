@@ -9,8 +9,11 @@ public final class UttarBhadrapada implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
 
-	static {
-
+	public UttarBhadrapada() {
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Ability to provide stability");
 		features.add("Wisdom");
 		features.add("Acts rather than react");
@@ -25,7 +28,6 @@ public final class UttarBhadrapada implements Nakshatra{
 		features.add("They are generous in sharing this knowledge");
 		features.add("They may have a slow gait");
 		features.add("Ahirbudhnya is connected with Ketu. Ketu's placement is important.");
-
 	}
 
 

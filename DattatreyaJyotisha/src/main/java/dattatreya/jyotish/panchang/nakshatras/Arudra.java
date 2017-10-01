@@ -17,8 +17,11 @@ public final class Arudra implements Nakshatra {
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
 
-	static {
-
+	public Arudra() {
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Fierce and Sharp");
 		features.add("Achiever");
 		features.add("Addictions");
@@ -33,6 +36,8 @@ public final class Arudra implements Nakshatra {
 		features.add(
 				"Women with prominent Ardra may show symptoms of preganancy even when not pregnant. (Psuedosysis)");
 		features.add("Patience is their forte, specially Ardra 4th are highly reputed and wealthy.");
+
 	}
+
 
 }

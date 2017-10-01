@@ -15,7 +15,11 @@ public final class Shravana implements Nakshatra{
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
 	private static List<String> features = new ArrayList<String>();
 
-	static {
+	public Shravana() {
+		addFeatures();
+	}
+
+	public void addFeatures() {
 		features.add("Power of listening");
 		features.add("Divine Guidance (given to gossip if afflicted)");
 		features.add("Penship or orators or dancing");
@@ -30,9 +34,6 @@ public final class Shravana implements Nakshatra{
 		features.add("Good administrators");
 		features.add("May limp when connected to 12H/6H");
 		features.add("May listen to Guru/teacher");
-		
-
 	}
-
 
 }

@@ -9,15 +9,18 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("dhanishta")
-@Order(value=23)
-public final class Dhanishta implements Nakshatra{
-	
-	
+@Order(value = 23)
+public final class Dhanishta implements Nakshatra {
+
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
 
-	static {
-		
+	public Dhanishta() {
+		addFeatures();
+
+	}
+
+	public void addFeatures() {
 		features.add("Wealthy (Greedy if afflicted)");
 		features.add("Famous");
 		features.add("Love for music");
@@ -32,8 +35,6 @@ public final class Dhanishta implements Nakshatra{
 		features.add("This despite they have bad marriage karma, difficult or delayed marriage");
 		features.add("True to their word");
 		features.add("They are youthful looking - Avitam is the root of Sedge Root used for making Chawanprash");
-
-		
 
 	}
 

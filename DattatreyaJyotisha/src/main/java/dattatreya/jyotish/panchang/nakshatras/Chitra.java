@@ -14,7 +14,7 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Chitra implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.CHITRA;
-	private static List<String> features = new ArrayList<String>();
+	private final List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
 
 

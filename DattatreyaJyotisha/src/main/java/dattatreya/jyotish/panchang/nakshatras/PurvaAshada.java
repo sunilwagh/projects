@@ -16,8 +16,13 @@ public final class PurvaAshada implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
 
-	static {
-
+	public PurvaAshada()
+	{
+		addFeatures();
+	}
+	
+	
+	public void addFeatures() {
 		features.add("Purification");
 		features.add("Energetic");
 		features.add("Victorius");
@@ -31,7 +36,6 @@ public final class PurvaAshada implements Nakshatra{
 		features.add("Men have mustaches");
 		features.add("Women have to use electrolysis to get rid of moustache");
 		features.add("More than others floss their teeth");
-
 	}
 
 

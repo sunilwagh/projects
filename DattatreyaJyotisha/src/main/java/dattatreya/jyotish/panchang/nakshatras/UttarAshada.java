@@ -9,8 +9,11 @@ public final class UttarAshada implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
 
-	static {
-
+	public UttarAshada() {
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Unchallenged Victory");
 		features.add("Strong Willpower");
 		features.add("Forbearance");
@@ -24,7 +27,6 @@ public final class UttarAshada implements Nakshatra{
 		features.add("Trouble with getting along Rohini and Ashlesha");
 		features.add("Swift in their actions");
 		features.add("Good boxers and good at sport with quick reflexes");
-
 	}
 
 

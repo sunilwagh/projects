@@ -16,8 +16,9 @@ public final class Mula implements Nakshatra{
 	private static List<String> features = new ArrayList<String>();
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
 	
-	static {
-		
+	
+	
+	public void addFeatures() {
 		features.add("Total Destruction");
 		features.add("Transformation");
 		features.add("Painful experiences");;
@@ -30,9 +31,6 @@ public final class Mula implements Nakshatra{
 		features.add("Emotional Swings");
 		features.add("Good at balancing and might have interest in tight rope walking");
 		features.add("Like to use bookmark or curtain/dapery with tassles");
-
-		
-
 	}
 
 

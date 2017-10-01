@@ -15,8 +15,11 @@ public final class Satabhija implements Nakshatra{
 	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
 	private static List<String> features = new ArrayList<String>();
 
-	static {
-		
+	public Satabhija() {
+		addFeatures();
+	}
+	
+	public void addFeatures() {
 		features.add("Ruthless");
 		features.add("Steadfast(obstinate if afflicated)");
 		features.add("Healer");
@@ -30,9 +33,6 @@ public final class Satabhija implements Nakshatra{
 		features.add("Illnesses due to hormonal imbalance");
 		features.add("They may be snake oil salesman (fraud)");
 		features.add("If Rahu is connected to Purva/Uttar Phalguni then the term confine to the bed may be applicable situationally.");
-
-		
-
 	}
 
 
