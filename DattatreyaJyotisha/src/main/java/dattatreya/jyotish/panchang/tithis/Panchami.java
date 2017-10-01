@@ -11,7 +11,8 @@ import dattatreya.jyotish.util.TithiGroup;
 public class Panchami implements Tithi{
 	
 	public final GrahaNames ruler = GrahaNames.GURU;
-	public final TithiGroup tithiGroup = TithiGroup.Purna;
+	public final TithiGroup tithiGroup = TithiGroup.PURNA;
+	public final GrahaNames tithiGroupRuler = GrahaNames.GURU;
 	
 
 }

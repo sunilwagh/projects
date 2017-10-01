@@ -11,5 +11,6 @@ import dattatreya.jyotish.util.TithiGroup;
 public class Trayodashi implements Tithi {
 
 	public final GrahaNames ruler = GrahaNames.GURU;
-	public final TithiGroup tithiGroup = TithiGroup.Jaya;
+	public final TithiGroup tithiGroup = TithiGroup.JAYA;
+	public final GrahaNames tithiGroupRuler = GrahaNames.MANGAL;
 }

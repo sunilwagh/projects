@@ -11,7 +11,8 @@ import dattatreya.jyotish.util.TithiGroup;
 public class Chaturthi implements Tithi{
 	
 	public final GrahaNames ruler = GrahaNames.BUDHA;
-	public final TithiGroup tithiGroup = TithiGroup.Rikta;
+	public final TithiGroup tithiGroup = TithiGroup.RIKTA;
+	public final GrahaNames tithiGroupRuler = GrahaNames.SHANI;
 	
 
 }
