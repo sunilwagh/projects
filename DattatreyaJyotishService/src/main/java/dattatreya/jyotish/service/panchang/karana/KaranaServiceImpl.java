@@ -10,10 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import dattatreya.jyotish.panchang.karana.Karana;
-import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
-
-
-
 
 
 /**

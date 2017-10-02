@@ -12,13 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import dattatreya.jyotish.panchang.nakshatras.Nakshatra;
 
 
-
-
-
-/**
- * https://github.com/pkainulainen/spring-data-jpa-examples/blob/master/query-methods/src/main/java/net/petrikainulainen/springdata/jpa/todo/TodoCrudService.java
- */
-
 @Service
 public class NakshatraServiceImpl implements NakshatraService {
 
