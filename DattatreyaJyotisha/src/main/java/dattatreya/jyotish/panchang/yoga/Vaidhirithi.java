@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Vaidhirithi implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"(Poor Support) — critical, scheming nature; powerful and overwhelming mentally or physically.");
+		return sb.toString();
 	}
 
 }

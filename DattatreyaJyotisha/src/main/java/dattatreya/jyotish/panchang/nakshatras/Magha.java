@@ -18,12 +18,12 @@ import dattatreya.jyotish.util.Tattva;
 public final class Magha implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.MAGHA;
-	private final NakshtraDiety Diety = NakshtraDiety.PITRI;
-	private final GrahaNames NAKSHATRA_LORD = GrahaNames.KETU;
-	private final Tattva TATTVA = Tattva.PRITHVI;
-    private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
+	private final NakshtraDiety diety = NakshtraDiety.PITRI;
+	private final GrahaNames nakshatraLord = GrahaNames.KETU;
+	private final Tattva tattva = Tattva.PRITHVI;
+    private final NakshatraGana gana = NakshatraGana.RAKSHASHA;
 	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.UGRA;
 
 	public Magha() {
 		addFeatures();
@@ -44,5 +44,39 @@ public final class Magha implements Nakshatra{
 		features.add("They may speak in very low tones");
 		features.add("They may have bruxism or grinding their teeth while asleep.");
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		Magha.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshtraDiety getDiety() {
+		return diety;
+	}
+
+	public GrahaNames getNakshatraLord() {
+		return nakshatraLord;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public NakshatraGana getGana() {
+		return gana;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

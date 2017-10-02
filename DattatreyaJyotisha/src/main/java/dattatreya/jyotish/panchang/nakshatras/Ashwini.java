@@ -18,12 +18,12 @@ import dattatreya.jyotish.util.Tattva;
 public final class Ashwini implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.ASHWINI;
-	private final NakshtraDiety Diety = NakshtraDiety.ASHWINI_KUMARS;
-	private final GrahaNames NAKSHATRA_LORD = GrahaNames.KETU;
-	private final Tattva TATTVA = Tattva.PRITHVI;
-    private final NakshatraGana GANA = NakshatraGana.DEVA;
+	private final NakshtraDiety diety = NakshtraDiety.ASHWINI_KUMARS;
+	private final GrahaNames nakshatraLord = GrahaNames.KETU;
+	private final Tattva tattva = Tattva.PRITHVI;
+    private final NakshatraGana gana = NakshatraGana.DEVA;
     private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.KSHIPRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.KSHIPRA;
 
 	public Ashwini() {
 		addFeatures();
@@ -47,5 +47,37 @@ public final class Ashwini implements Nakshatra {
 		features.add("While talking they like to look at themsleves in the mirror.");
 
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshtraDiety getDiety() {
+		return diety;
+	}
+
+	public GrahaNames getNakshatraLord() {
+		return nakshatraLord;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public NakshatraGana getGana() {
+		return gana;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	
+	
+	
 
 }

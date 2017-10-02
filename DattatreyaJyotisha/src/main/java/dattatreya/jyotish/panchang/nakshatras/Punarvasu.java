@@ -15,7 +15,7 @@ public final class Punarvasu implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.PUNARVASU;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.CHARA;
 
 	public Punarvasu()
 	{
@@ -39,4 +39,18 @@ public final class Punarvasu implements Nakshatra {
 		features.add(
 				"Is Jupiters abode, often noticed to drink a lot of water. They are very obedient to their parents.");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 }

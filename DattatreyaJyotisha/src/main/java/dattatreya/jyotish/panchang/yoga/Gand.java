@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public class Gand implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Danger or obstacles) — flawed morals or ethics, troublesome personality.");
+		return sb.toString();
 	}
 
 }

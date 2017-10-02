@@ -14,8 +14,8 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class PurvaAshada implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.PURVA_ASHADA;
-	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
+	private final List<String> features = new ArrayList<String>();
+	private final NakshatraTypes nakshatraType = NakshatraTypes.UGRA;
 
 	public PurvaAshada()
 	{
@@ -38,6 +38,25 @@ public final class PurvaAshada implements Nakshatra{
 		features.add("Women have to use electrolysis to get rid of moustache");
 		features.add("More than others floss their teeth");
 	}
+
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
+	
+	
 
 
 }

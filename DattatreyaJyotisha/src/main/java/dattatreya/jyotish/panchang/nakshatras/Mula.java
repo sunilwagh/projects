@@ -15,7 +15,7 @@ public final class Mula implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.MULA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
+	private final NakshatraTypes nakshhatraType = NakshatraTypes.TIKSHNA;
 	
 	public Mula() {
 		addFeatures();

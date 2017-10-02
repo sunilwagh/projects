@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public class Brahma implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Priest, God) — trustworthy and confidential, ambitious, good discernment and judgment.");
+		return sb.toString();
 	}
 
 }

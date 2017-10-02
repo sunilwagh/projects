@@ -15,7 +15,7 @@ public final class Jyestha implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.JYESTHA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.TIKSHNA;
 
 	public Jyestha() {
 		addFeatures();
@@ -36,5 +36,19 @@ public final class Jyestha implements Nakshatra{
 		features.add("They do well when it doesnt involve being part of a team. They fail to acknowledge the contribution of others - haughty");
 		features.add("Change their jobs or professions frequently -uncertain about their goals.");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

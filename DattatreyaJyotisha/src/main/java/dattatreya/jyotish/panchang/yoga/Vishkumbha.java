@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Vishkumbha implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Supported) — prevails over others, victorious over enemies, obtains property, wealthy.");
+		return sb.toString();
 	}
 
 }

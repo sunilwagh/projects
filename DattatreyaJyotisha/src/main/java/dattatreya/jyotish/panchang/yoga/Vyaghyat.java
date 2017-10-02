@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public class Vyaghyat implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Beating) — cruel, intent on harming others.");
+		return sb.toString();
 	}
 
 }

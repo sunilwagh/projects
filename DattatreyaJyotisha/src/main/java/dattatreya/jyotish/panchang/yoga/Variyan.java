@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Variyan implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"(Comfort) — loves ease and luxury, lazy, lascivious.");
+		return sb.toString();
 	}
 
 }

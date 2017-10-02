@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public class Drithi implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Determination — enjoys the wealth, goods and spouses of others; indulges in the hospitality of others.");
+		return sb.toString();
 	}
 
 }

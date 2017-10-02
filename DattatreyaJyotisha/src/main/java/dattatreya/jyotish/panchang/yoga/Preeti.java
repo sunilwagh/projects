@@ -7,9 +7,11 @@ import org.springframework.stereotype.Component;
 @Order(value=2)
 public class Preeti implements Yoga {
 
-	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+public String getFeature() {
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Fondness) — well-liked, attracted to the opposite sex, enjoys life with contentment.");
+		return sb.toString();
 	}
 
 }

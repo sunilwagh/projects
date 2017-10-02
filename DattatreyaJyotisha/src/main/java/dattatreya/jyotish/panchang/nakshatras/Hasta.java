@@ -15,7 +15,7 @@ public final class Hasta implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.HASTA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.KSHIPRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.KSHIPRA;
 	
 	 public Hasta() {
 			addFeatures();
@@ -38,6 +38,23 @@ public final class Hasta implements Nakshatra{
 		features.add("Benefit from Bhastrika Pranayama");
 		features.add("Very Punctual");
 	}
+
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
     
     
    

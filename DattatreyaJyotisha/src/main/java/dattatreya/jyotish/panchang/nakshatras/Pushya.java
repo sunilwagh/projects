@@ -7,13 +7,15 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.util.NakshatraNames;
+import dattatreya.jyotish.util.NakshatraTypes;
 
 @Component("pushya")
 @Order(value=8)
 public final class Pushya implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.PUSHYA;
-	private static List<String> features = new ArrayList<String>();
+	private final List<String> features = new ArrayList<String>();
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MRUDU;
 
 	public Pushya(){
 		addFeatures();
@@ -35,6 +37,20 @@ public final class Pushya implements Nakshatra{
 		features.add("Have a large appetite");
         features.add("Flamboyant");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 	
 	
 	

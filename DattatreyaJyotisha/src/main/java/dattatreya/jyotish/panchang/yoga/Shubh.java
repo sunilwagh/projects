@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Shubh implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Auspicious) — lustrous body and personality, but problems with health; wealthy, irritable.");
+		return sb.toString();
 	}
 
 }

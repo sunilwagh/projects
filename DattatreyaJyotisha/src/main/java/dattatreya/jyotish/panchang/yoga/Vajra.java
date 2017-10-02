@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Vajra implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"(Diamond, Thunderbolt) — well-off, lecherous, unpredictable, forceful.");
+		return sb.toString();
 	}
 
 }

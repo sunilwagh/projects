@@ -18,12 +18,12 @@ import dattatreya.jyotish.util.Tattva;
 public class Krittika implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.KRITTIKA;
-	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
-	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SURYA;
-	private final Tattva TATTVA = Tattva.PRITHVI;
-    private final NakshatraGana GANA = NakshatraGana.RAKSHASHA;
+	private final NakshtraDiety diety = NakshtraDiety.AGNI;
+	private final GrahaNames nakshatraLord = GrahaNames.SURYA;
+	private final Tattva tattva = Tattva.PRITHVI;
+    private final NakshatraGana gana = NakshatraGana.RAKSHASHA;
     private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MISHRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MISHRA;
 
 
 	public Krittika()
@@ -47,4 +47,34 @@ public class Krittika implements Nakshatra{
 		features.add("Very sharp long term memory and very good at rememebering faces.");
 		features.add("Fasting on six consequtive kritikka nakshatra days can give progeny.");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshtraDiety getDiety() {
+		return diety;
+	}
+
+	public GrahaNames getNakshatraLord() {
+		return nakshatraLord;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public NakshatraGana getGana() {
+		return gana;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 }

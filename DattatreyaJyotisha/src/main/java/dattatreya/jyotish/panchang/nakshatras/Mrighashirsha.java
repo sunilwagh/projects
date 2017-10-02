@@ -14,8 +14,8 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Mrighashirsha implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.MRIGASHIRSHA;
-	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
+	private final List<String> features = new ArrayList<String>();
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MRUDU;
 
 	public Mrighashirsha(){
          addFeatures();
@@ -37,6 +37,20 @@ public final class Mrighashirsha implements Nakshatra {
 		features.add("Very good at track and field events.");
 		features.add("Hardworkers and research could be scientist.");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 
 }

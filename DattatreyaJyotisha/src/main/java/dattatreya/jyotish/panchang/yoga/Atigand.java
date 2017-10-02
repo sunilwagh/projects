@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public class Atigand implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Danger or obstacles) — difficult life due to numerous obstacles and accidents; revengeful and angry.");
+		return sb.toString();
 	}
 	
 	

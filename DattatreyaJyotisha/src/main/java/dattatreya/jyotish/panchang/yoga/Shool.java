@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Shool implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("(Spear, Pain) — confrontational and contrary, quarrelsome, angry.");
+		return sb.toString();
 	}
 
 }

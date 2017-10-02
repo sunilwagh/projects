@@ -7,11 +7,13 @@ import org.springframework.stereotype.Component;
 @Order(value=17)
 public class Vyatipat implements Yoga {
 	
-	private final String feature ="According to Vedic Astrology, a person born in Vyatipat Yoga faces many problems in his childhood. As he grows all his sorrows turn into happiness. "
-			+ "In adolescence he enjoys a blissful life and gains fame.";
+	
 	
 	public String getFeature() {
-		return feature;
+		StringBuilder sb = new StringBuilder();
+		sb.append(" (Calamity) — prone to sudden mishaps and reversals, fickle and unreliable.According to Vedic Astrology, a person born in Vyatipat Yoga faces many problems in his childhood. As he grows all his sorrows turn into happiness." + 
+				"In adolescence he enjoys a blissful life and gains fame.");
+		return sb.toString();
 	}
 
 }

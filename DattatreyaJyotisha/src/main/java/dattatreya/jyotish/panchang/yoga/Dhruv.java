@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Dhruv implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Constant — steady character, able to concentrate and persist, wealthy.");
+		return sb.toString();
 	}
+
 
 }

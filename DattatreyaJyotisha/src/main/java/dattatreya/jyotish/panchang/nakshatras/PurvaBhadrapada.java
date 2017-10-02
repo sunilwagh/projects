@@ -15,7 +15,7 @@ public final class PurvaBhadrapada implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.PURVA_BHADRAPADA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.UGRA;
 
     public PurvaBhadrapada() {
     	
@@ -38,6 +38,22 @@ public final class PurvaBhadrapada implements Nakshatra{
 		features.add("They like using Ottomon or foot stool");
 		features.add("They make excellent dancers");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	
+	
+	
 
 
 }

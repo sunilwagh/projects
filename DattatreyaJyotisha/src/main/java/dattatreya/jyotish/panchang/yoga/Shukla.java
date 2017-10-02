@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public class Shukla implements Yoga {
 
 	public String getFeature() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
+		StringBuilder sb = new StringBuilder();
+		sb.append(" (Bright White) — garrulous and flighty, impatient and impulsive; unsteady and changeable mind.");
+		return sb.toString();
+
+}
 }
