@@ -1,10 +1,16 @@
 package dattatreya.jyotish.panchang.karana;
 
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
+
 /**
  * http://astrobix.com/articles/Parts-of-Panchang-Karana.aspx
  * @author Sunil Sneha
  *
  */
+
+@Component("bav")
+@Order(value = 1)
 public class Bav implements Karana {
 	
 	

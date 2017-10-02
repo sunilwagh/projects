@@ -28,7 +28,8 @@ public class Ketu implements Graha {
 	Nakshatra nakshatra;
 	Pada pada;
 	double degrees;
-	private StringBuilder notes;
+	private StringBuilder notes = new StringBuilder();
+	
 	
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.KALKI;
 	private final Mahavidya mahaVidya = Mahavidya.BHAIRAVI;
@@ -54,6 +55,7 @@ public class Ketu implements Graha {
 	}
 
 	private void addNotes() {
+		
 		notes.append("Ketu is the keeper of the knowledge of past lives.");
 		notes.append("The aim of Ketu is renunciation.");
 		notes.append(
