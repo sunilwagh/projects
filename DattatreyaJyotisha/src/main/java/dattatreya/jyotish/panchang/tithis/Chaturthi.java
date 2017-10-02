@@ -16,5 +16,10 @@ public class Chaturthi implements Tithi{
 	public final TithiGroup tithiGroup = TithiGroup.RIKTA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.SHANI;
 	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 }

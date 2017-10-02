@@ -15,4 +15,9 @@ public class Trayodashi implements Tithi {
 	public final GrahaNames ruler = GrahaNames.GURU;
 	public final TithiGroup tithiGroup = TithiGroup.JAYA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.MANGAL;
+	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

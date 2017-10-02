@@ -15,5 +15,10 @@ public class Ekadashi implements Tithi {
 	public final GrahaNames ruler = GrahaNames.MANGAL;
 	public final TithiGroup tithiGroup = TithiGroup.NANDA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.SHUKRA;
+	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

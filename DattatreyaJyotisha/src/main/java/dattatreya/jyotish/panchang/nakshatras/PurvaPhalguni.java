@@ -14,8 +14,8 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class PurvaPhalguni implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.PURVA_PHALGUNI;
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
-	private static List<String> features = new ArrayList<String>();
+	private final NakshatraTypes nakshatraType = NakshatraTypes.UGRA;
+	private final List<String> features = new ArrayList<String>();
 
 	public PurvaPhalguni()
 	{
@@ -38,5 +38,21 @@ public final class PurvaPhalguni implements Nakshatra{
 		features.add("They have mark or scar near the eye.");
 		features.add("Fashionistas");	
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+	
+	
+	
+	
 
 }

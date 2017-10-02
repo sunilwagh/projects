@@ -14,7 +14,7 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Vishaka implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.VISHAKA;
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MISHRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MISHRA;
 	private final List<String> features = new ArrayList<String>();
 	
 	public Vishaka() {
@@ -36,5 +36,19 @@ public final class Vishaka implements Nakshatra{
 		features.add("The diety is Indragni, who are binary. Indra is zero and Agni is one. There is internal conflict between opposing desires.");				
 		features.add("Always in state of readiness. Always focussed like Arjuna focussed on the eye on the fish.");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+	
+	
 
 }

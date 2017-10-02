@@ -16,5 +16,10 @@ public class Pratipada implements Tithi{
 	public final TithiGroup tithiGroup = TithiGroup.NANDA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.SHUKRA;
 	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 }

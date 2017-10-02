@@ -10,7 +10,7 @@ public final class UttarAshada implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.UTTAR_ASHADA;
 	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.STHIRA;
 
 	public UttarAshada() {
 		addFeatures();
@@ -31,6 +31,24 @@ public final class UttarAshada implements Nakshatra{
 		features.add("Swift in their actions");
 		features.add("Good boxers and good at sport with quick reflexes");
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		UttarAshada.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 
 }

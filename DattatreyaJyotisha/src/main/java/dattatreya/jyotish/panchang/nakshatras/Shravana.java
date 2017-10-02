@@ -14,7 +14,7 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Shravana implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.SHRAVANA;
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.CHARA;
 	private static List<String> features = new ArrayList<String>();
 
 	public Shravana() {
@@ -37,5 +37,25 @@ public final class Shravana implements Nakshatra{
 		features.add("May limp when connected to 12H/6H");
 		features.add("May listen to Guru/teacher");
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		Shravana.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
+	
+	
 
 }

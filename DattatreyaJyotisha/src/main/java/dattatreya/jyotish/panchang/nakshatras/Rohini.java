@@ -18,12 +18,12 @@ import dattatreya.jyotish.util.Tattva;
 public final class Rohini implements Nakshatra {
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.ROHINI;
-	private final NakshtraDiety Diety = NakshtraDiety.AGNI;
-	private final GrahaNames NAKSHATRA_LORD = GrahaNames.CHANDRA;
-	private final Tattva TATTVA = Tattva.PRITHVI;
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
-	private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
-    private static List<String> features = new ArrayList<String>();
+	private final NakshtraDiety diety = NakshtraDiety.AGNI;
+	private final GrahaNames nakshatraLord = GrahaNames.CHANDRA;
+	private final Tattva tattva = Tattva.PRITHVI;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.STHIRA;
+	private final NakshatraGana gana = NakshatraGana.MANUSHYA;
+    private final List<String> features = new ArrayList<String>();
 
 	public Rohini()
 	{
@@ -48,5 +48,35 @@ public final class Rohini implements Nakshatra {
 		features.add(
 				"Wealthy powerfull and well placed but there weakness is rage. Once their temper flares they lose it. They should chanting 'Om' and 'Gayatri'");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshtraDiety getDiety() {
+		return diety;
+	}
+
+	public GrahaNames getNakshatraLord() {
+		return nakshatraLord;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	public NakshatraGana getGana() {
+		return gana;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+	
+	
 
 }

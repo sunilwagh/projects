@@ -15,7 +15,7 @@ public final class Ashlesha implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.ASHLESHA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.TIKSHNA;
 
 	public Ashlesha() {
 
@@ -39,5 +39,19 @@ public final class Ashlesha implements Nakshatra {
 				"They are willing to go any extent for their own folks. 1st part is good for politics and social work.");
 
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

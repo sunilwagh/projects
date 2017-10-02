@@ -15,7 +15,7 @@ public final class Arudra implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.ARUDRA;
 	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.TIKSHNA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.TIKSHNA;
 
 	public Arudra() {
 		addFeatures();
@@ -38,6 +38,26 @@ public final class Arudra implements Nakshatra {
 		features.add("Patience is their forte, specially Ardra 4th are highly reputed and wealthy.");
 
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		Arudra.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	
+	
+	
 
 
 }

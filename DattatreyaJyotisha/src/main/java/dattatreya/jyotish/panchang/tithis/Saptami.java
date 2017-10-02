@@ -15,5 +15,10 @@ public class Saptami implements Tithi{
 	public final GrahaNames ruler = GrahaNames.SHANI;
 	public final TithiGroup tithiGroup = TithiGroup.BHADRA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.BUDHA;
+	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

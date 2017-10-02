@@ -7,4 +7,9 @@ import org.springframework.stereotype.Component;
 @Order(value=3)
 public class MangalaVaar implements Vaar {
 
+	public String getInfoOnVaar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

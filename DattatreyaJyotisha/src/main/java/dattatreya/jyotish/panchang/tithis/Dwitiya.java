@@ -16,4 +16,8 @@ public class Dwitiya implements Tithi{
 	public final TithiGroup tithiGroup = TithiGroup.BHADRA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.BUDHA;
 
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

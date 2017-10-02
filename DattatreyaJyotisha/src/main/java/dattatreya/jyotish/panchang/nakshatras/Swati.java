@@ -14,7 +14,7 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Swati implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.SWATI;
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.CHARA;
 	private static List<String> features = new ArrayList<String>();
 
 	public Swati() {
@@ -37,5 +37,23 @@ public final class Swati implements Nakshatra {
 		features.add("Very good with multiple musical instruments");
 		features.add("Could have a medicinal herb garden");
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		Swati.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

@@ -7,4 +7,9 @@ import org.springframework.stereotype.Component;
 @Order(value=4)
 public class BudhaVaar implements Vaar {
 
+	public String getInfoOnVaar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

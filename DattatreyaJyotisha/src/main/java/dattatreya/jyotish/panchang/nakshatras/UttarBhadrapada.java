@@ -10,7 +10,7 @@ public final class UttarBhadrapada implements Nakshatra{
 	
 	private final NakshatraNames nakshatraName = NakshatraNames.UTTAR_BHADRAPADA;
 	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.STHIRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.STHIRA;
 
 	public UttarBhadrapada() {
 		addFeatures();
@@ -32,6 +32,24 @@ public final class UttarBhadrapada implements Nakshatra{
 		features.add("They may have a slow gait");
 		features.add("Ahirbudhnya is connected with Ketu. Ketu's placement is important.");
 	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public static void setFeatures(List<String> features) {
+		UttarBhadrapada.features = features;
+	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 
 }

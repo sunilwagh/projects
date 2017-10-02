@@ -16,4 +16,9 @@ public class Tritiya implements Tithi{
 	public final TithiGroup tithiGroup = TithiGroup.JAYA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.MANGAL;
 	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 }

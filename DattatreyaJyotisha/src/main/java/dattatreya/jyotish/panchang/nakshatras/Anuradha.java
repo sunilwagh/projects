@@ -15,7 +15,7 @@ public final class Anuradha implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.ANURADHA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MRUDU;
 
 	public Anuradha() {
 		addFeatures();
@@ -38,5 +38,21 @@ public final class Anuradha implements Nakshatra {
 		features.add(
 				"Saddam Hussain had his moon/mars/ rahu in anuradha and on being asked why did he attack kuwait. he said ' when i get something in my head i act'");
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+
+	
+	
+	
 
 }

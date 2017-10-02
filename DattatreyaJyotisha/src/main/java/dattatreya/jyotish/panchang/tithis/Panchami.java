@@ -16,5 +16,10 @@ public class Panchami implements Tithi{
 	public final TithiGroup tithiGroup = TithiGroup.PURNA;
 	public final GrahaNames tithiGroupRuler = GrahaNames.GURU;
 	
+	public String getInfoOnTithi() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 }
