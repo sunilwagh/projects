@@ -8,7 +8,7 @@ import dattatreya.jyotish.util.TithiGroup;
 import dattatreya.jyotish.util.TithiNames;
 
 @Component("dwitiya")
-@Order(value=1)
+@Order(value=2)
 public class Dwitiya implements Tithi{
 	
 	public final TithiNames tithiName = TithiNames.DWITIYA;
