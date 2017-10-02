@@ -19,12 +19,12 @@ import dattatreya.jyotish.util.Tattva;
 public class Bharani implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.BHARANI;
-	private final NakshtraDiety Diety = NakshtraDiety.YAMA;
-	private final GrahaNames NAKSHATRA_LORD = GrahaNames.SHUKRA;
-	private final Tattva TATTVA = Tattva.PRITHVI;
-	private final NakshatraGana GANA = NakshatraGana.MANUSHYA;
+	private final NakshtraDiety diety = NakshtraDiety.YAMA;
+	private final GrahaNames nakshatraLord = GrahaNames.SHUKRA;
+	private final Tattva tattva = Tattva.PRITHVI;
+	private final NakshatraGana gana = NakshatraGana.MANUSHYA;
 	private static final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.UGRA;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.UGRA;
 
 	public Bharani() {
 		addFeatures();
@@ -47,5 +47,35 @@ public class Bharani implements Nakshatra {
 		features.add("Wealth");
 
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public NakshtraDiety getDiety() {
+		return diety;
+	}
+
+	public GrahaNames getNakshatraLord() {
+		return nakshatraLord;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public NakshatraGana getGana() {
+		return gana;
+	}
+
+	public static List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

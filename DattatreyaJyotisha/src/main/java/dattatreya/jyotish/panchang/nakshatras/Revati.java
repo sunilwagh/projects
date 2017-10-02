@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.NakshatraTypes;
 
-@Component("pushya")
+@Component("revati")
 @Order(value=27)
 public final class Revati implements Nakshatra {
 	

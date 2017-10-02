@@ -14,8 +14,8 @@ import dattatreya.jyotish.util.NakshatraTypes;
 public final class Dhanishta implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.DHANISHTA;
-	private static List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.CHARA;
+	private final List<String> features = new ArrayList<String>();
+	private final NakshatraTypes nakshatraType = NakshatraTypes.CHARA;
 
 	public Dhanishta() {
 		addFeatures();
@@ -39,5 +39,19 @@ public final class Dhanishta implements Nakshatra {
 		features.add("They are youthful looking - Avitam is the root of Sedge Root used for making Chawanprash");
 
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 }

@@ -15,7 +15,7 @@ public final class Chitra implements Nakshatra {
 
 	private final NakshatraNames nakshatraName = NakshatraNames.CHITRA;
 	private final List<String> features = new ArrayList<String>();
-	private final NakshatraTypes NAKSHATRA_TYPE = NakshatraTypes.MRUDU;
+	private final NakshatraTypes nakshatraType = NakshatraTypes.MRUDU;
 
 
     public Chitra() {
@@ -39,6 +39,20 @@ public final class Chitra implements Nakshatra {
 		features.add("They may be good mimics");
 
 	}
+
+	public NakshatraNames getNakshatraName() {
+		return nakshatraName;
+	}
+
+	public List<String> getFeatures() {
+		return features;
+	}
+
+	public NakshatraTypes getNakshatraType() {
+		return nakshatraType;
+	}
+	
+	
 
 
 }
