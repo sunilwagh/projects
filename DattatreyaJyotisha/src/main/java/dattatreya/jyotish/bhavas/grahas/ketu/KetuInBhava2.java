@@ -10,7 +10,7 @@ public class KetuInBhava2 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the second house can symbolize a difficult childhood. Because the area is linked to speech the area will indicate speech problems, for example people with speech defects. ");
+				"Ketu in the 2nd house can symbolize a difficult childhood. Because the area is linked to speech the area will indicate speech problems, for example people with speech defects. ");
 		return sb.toString();
 	}
 

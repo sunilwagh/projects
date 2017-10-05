@@ -9,7 +9,7 @@ public final class KetuInBhava1 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Ability to hold memories. let go of the past or there would be health problems.");
+		sb.append("Ketu in the lagna then there is ability to hold memories. Let go of the past or there would be health problems.");
 		return sb.toString();
 	}
 

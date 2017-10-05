@@ -10,7 +10,7 @@ public final class KetuInBhava3 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the third house symbolizes that you live life in an unusual way. There is past life connections with siblings.");
+				"Ketu in the 3rd house symbolizes that you live life in an unusual way. There is past life connections with siblings.");
 		return sb.toString();
 	}
 

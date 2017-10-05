@@ -10,7 +10,7 @@ public final class KetuInBhava5 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the fifth house of children/creativity will cause problems with children or creativity.");
+				"Ketu in the 5th house of children/creativity will cause problems with children or creativity.");
 		return sb.toString();
 	}
 

@@ -10,7 +10,7 @@ public class KetuInBhava9 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the ninth house shows a strong need to follow the path of enlightment. Difficult rleationship with parents.");
+				"Ketu in the 9th house shows a strong need to follow the path of enlightment. Difficult rleationship with parents.");
 		return sb.toString();
 	}
 

@@ -10,7 +10,7 @@ public final class KetuInBhava4 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the fourth house is very strong. Emotional problems and difficult relationship with mother.");
+				"Ketu in the 4th house is very strong. Emotional problems and difficult relationship with mother.");
 		return sb.toString();
 	}
 

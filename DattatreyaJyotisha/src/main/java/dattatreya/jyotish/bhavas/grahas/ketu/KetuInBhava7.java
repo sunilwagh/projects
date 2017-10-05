@@ -10,7 +10,7 @@ public final class KetuInBhava7 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"As you feel internally dissatisfied with the relationship you may create problems which may cause your partner to leave.");
+				"Ketu in the 7th house makes you feel internally dissatisfied with the relationship you may create problems which may cause your partner to leave.");
 		return sb.toString();
 	}
 
