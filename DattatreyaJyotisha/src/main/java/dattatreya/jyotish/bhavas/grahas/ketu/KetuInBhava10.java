@@ -8,8 +8,10 @@ import org.springframework.stereotype.Component;
 public final class KetuInBhava10 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append(
+				"Ketu in the 10th house gives you alternate career or a career in history,astrology or antiques. ");
+		return sb.toString();
 	}
 
 }

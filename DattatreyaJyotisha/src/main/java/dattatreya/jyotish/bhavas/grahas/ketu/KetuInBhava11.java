@@ -10,7 +10,7 @@ public final class KetuInBhava11 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(
-				"Ketu in the 11th house ives you little pleasure in financial success. However it can give spiritual wealth. Wealth can come suddenly. ");
+				"Ketu in the 11th house gives you little pleasure in financial success. However it can give spiritual wealth. Wealth can come suddenly. ");
 		return sb.toString();
 	}
 

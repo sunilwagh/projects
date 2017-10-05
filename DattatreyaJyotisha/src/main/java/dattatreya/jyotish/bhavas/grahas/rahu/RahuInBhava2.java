@@ -9,7 +9,7 @@ public final class RahuInBhava2 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("");
+		sb.append("Harsh Speech. Family,inheritance and wealth.");
 		return sb.toString();
 	}
 
