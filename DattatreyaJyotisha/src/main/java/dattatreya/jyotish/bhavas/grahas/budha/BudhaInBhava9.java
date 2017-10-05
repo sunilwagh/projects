@@ -8,8 +8,9 @@ import org.springframework.stereotype.Component;
 public final class BudhaInBhava9 implements BudhaInBhava {
 
 	public String getInfoAboutBudhaInBhava() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("");
+		return sb.toString();
 	}
 
 }
