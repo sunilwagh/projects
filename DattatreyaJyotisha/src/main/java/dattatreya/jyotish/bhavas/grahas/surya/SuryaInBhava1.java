@@ -9,8 +9,9 @@ public final class SuryaInBhava1 implements SuryaInBhava{
 
 	public String getInfoAboutSuryaInBhava() {
 		
-		String report="";
-		return report;
+		StringBuilder sb = new StringBuilder();
+		sb.append("");
+		return sb.toString();
 	}
 
 }
