@@ -7,10 +7,13 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.rashis.Rashi;
+import dattatreya.jyotish.util.BhavaNames;
 
 @Component("bhava6")
 @Order(value=6)
 public class Bhava6 implements Bhava {
+	
+	private final BhavaNames name = BhavaNames.BHAVA6;
 	
 	private Rashi rashi;
 	

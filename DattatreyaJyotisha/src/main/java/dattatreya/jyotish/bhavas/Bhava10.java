@@ -5,11 +5,13 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.rashis.Rashi;
+import dattatreya.jyotish.util.BhavaNames;
 
 @Component("bhava10")
 @Order(value=10)
 public class Bhava10 implements Bhava{
 	
+	private final BhavaNames name = BhavaNames.BHAVA10;
 	
 	private Rashi rashi;
 
