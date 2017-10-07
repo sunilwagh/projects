@@ -18,6 +18,10 @@ public class Bhava4 implements Bhava{
 	private Rashi rashi;
 	
     private final Set<String> significators = new HashSet<String>();
+    
+    Bhava4() {
+		addSignificators();
+	}
 	
 	public void addSignificators()
 	{

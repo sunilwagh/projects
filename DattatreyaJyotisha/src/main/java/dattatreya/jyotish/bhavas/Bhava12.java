@@ -18,12 +18,18 @@ public class Bhava12 implements Bhava {
 	private Rashi rashi;
 
 	private final Set<String> significators = new HashSet<String>();
-
+	
+	Bhava12()
+	{
+		addSignificators();
+	}
+	
+	
 	public void addSignificators() {
-		significators.add("GAINS");
-		significators.add("NETWORK");
-		significators.add("FRIENDS");
-		significators.add("OLDER SIBLINGS");
+		significators.add("LOSSES");
+		significators.add("");
+		significators.add("");
+		significators.add("");
 
 	}
 
@@ -34,4 +40,16 @@ public class Bhava12 implements Bhava {
 	public void setRashi(Rashi rashi) {
 		this.rashi = rashi;
 	}
+
+
+	public BhavaNames getName() {
+		return name;
+	}
+
+
+	public Set<String> getSignificators() {
+		return significators;
+	}
+	
+	
 }

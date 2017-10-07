@@ -1,5 +1,8 @@
 package dattatreya.jyotish.bhavas;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +16,20 @@ public class Bhava8 implements Bhava {
 	private final BhavaNames name = BhavaNames.BHAVA8;
 	
 	private Rashi rashi;
+	
+	private final Set<String> significators = new HashSet<String>();
+	
+	 Bhava8() {
+			addSignificators();
+		}
+	 
+	 public void addSignificators()
+		{
+			significators.add("");
+			significators.add("");
+			significators.add("");
+			significators.add("");
+		}
 
 	public Rashi getRashi() {
 		return rashi;

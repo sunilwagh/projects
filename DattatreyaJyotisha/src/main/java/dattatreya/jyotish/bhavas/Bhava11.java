@@ -18,7 +18,14 @@ public class Bhava11 implements Bhava{
 	
 	private Rashi rashi;
 	
-	private final Set<String> significators = new HashSet<String>();
+    private final Set<String> significators = new HashSet<String>();
+	
+	Bhava11()
+	{
+		addSignificators();
+	}
+	
+	
 	
 	public void addSignificators()
 		{
@@ -37,6 +44,20 @@ public class Bhava11 implements Bhava{
 	public void setRashi(Rashi rashi) {
 		this.rashi = rashi;
 	}
+	
+	
+
+	public BhavaNames getName() {
+		return name;
+	}
+
+
+
+	public Set<String> getSignificators() {
+		return significators;
+	}
+
+
 
 	@Override
 	public String toString() {
