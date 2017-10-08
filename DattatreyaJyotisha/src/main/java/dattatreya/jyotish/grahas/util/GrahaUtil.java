@@ -19,7 +19,7 @@ import dattatreya.jyotish.rashis.RashiUtil;
 import dattatreya.jyotish.util.GrahaNames;
 
 public class GrahaUtil {
-	
+
 	public static GrahaNames displayGrahaDetails(Graha graha) {
 		if (graha instanceof Surya) {
 			return GrahaNames.SURYA;
@@ -60,8 +60,8 @@ public class GrahaUtil {
 		return null;
 
 	}
-	
-	public static String infoAboutGrahasInHouse(GrahaInBhava grahaInBhava,Bhava bhava) {
+
+	public static String infoAboutGrahasInHouse(GrahaInBhava grahaInBhava, Bhava bhava) {
 
 		ArrayList<GrahaNames> grahas = (ArrayList<GrahaNames>) RashiUtil.getGrahasInRashi(bhava.getRashi());
 		StringBuilder strBuilder = new StringBuilder();
@@ -108,50 +108,53 @@ public class GrahaUtil {
 		}
 
 	}
-	
-	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava1) {
 
+	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava) {
+
+		System.out.println(lordOfRashi+"--"+bhava.getRashi().getNameOfRashi().toString());
 		Rashi rashi = bhava.getRashi();
 		Graha grahaToBeAnalyzed = null;
 
 		ArrayList<Graha> grahas = (ArrayList<Graha>) rashi.getGrahas();
 
-		for (int i = 0; i < grahas.size(); i++) {
-			if (lordOfRashi.equals(grahas.get(i).getGrahaName())) {
-				grahaToBeAnalyzed = grahas.get(i);
-				break;
+		if (grahas != null & grahas.size() > 0) {
+			for (int i = 0; i < grahas.size(); i++) {
+				if (lordOfRashi.equals(grahas.get(i).getGrahaName())) {
+					grahaToBeAnalyzed = grahas.get(i);
+					break;
+				}
 			}
 		}
 
-		if(grahaToBeAnalyzed != null)
-		{
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getEXALTATION())) {
-			sbAnalyzeBhava1.append("\n Lord is Exalted");
+		if (grahaToBeAnalyzed != null) {
+
+			sbAnalyzeBhava.append("Graha to be analyzed: " + grahaToBeAnalyzed.getGrahaName());
+			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getEXALTATION())) {
+				sbAnalyzeBhava.append("\n Lord is Exalted");
+			}
+
+			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getMOOLTRIKONARASHI())) {
+				sbAnalyzeBhava.append("\n Lord is in it's Mooltrikona");
+			}
+
+			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getOWN())) {
+				sbAnalyzeBhava.append("\n Lord is in it's Own Rashi");
+			}
+
+			if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in friendly sign");
+			}
+
+			if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in enemy sign");
+			}
+
+			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getDEBILITATION())) {
+				sbAnalyzeBhava.append("\n Lord is debilitated");
+			}
 		}
 
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getMOOLTRIKONARASHI())) {
-			sbAnalyzeBhava1.append("\n Lord is in it's Mooltrikona");
-		}
-
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getOWN())) {
-			sbAnalyzeBhava1.append("\n Lord is in it's Own Rashi");
-		}
-
-		if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-			sbAnalyzeBhava1.append("\n Lord is in friendly sign");
-		}
-
-		if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-			sbAnalyzeBhava1.append("\n Lord is in enemy sign");
-		}
-
-		if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getDEBILITATION())) {
-			sbAnalyzeBhava1.append("\n Lord is debilitated");
-		}
-		}
-
-		 return sbAnalyzeBhava1;
+		return sbAnalyzeBhava;
 	}
-
 
 }
