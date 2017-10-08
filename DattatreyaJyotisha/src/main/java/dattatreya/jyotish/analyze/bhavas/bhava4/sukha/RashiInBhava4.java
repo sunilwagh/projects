@@ -33,7 +33,7 @@ public class RashiInBhava4 implements RashiInBhava{
 
 	public  String LeoInBhava() {
 		StringBuilder leoInBhava4 = new StringBuilder();
-	    leoInBhava4.append("\n");
+	    leoInBhava4.append("A strong-willed mother (Sun’s influence) and the potential for good success in real estate if the Sun is well placed. \n");
 		return leoInBhava4.toString();
 	}
 

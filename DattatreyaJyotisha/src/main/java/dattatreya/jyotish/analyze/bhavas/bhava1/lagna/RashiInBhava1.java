@@ -1,86 +1,110 @@
 package dattatreya.jyotish.analyze.bhavas.bhava1.lagna;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
-
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.AquariusAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.AriesAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.CancerAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.CapricornAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.GeminiAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.LeoAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.LibraAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.PiscesAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.SagittariusAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.ScorpioAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.TaurusAscendant;
+import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.ascendant.VirgoAscendant;
 
 @Component("rashiInBhava1")
-public class RashiInBhava1 implements RashiInBhava{
+public class RashiInBhava1 implements RashiInBhava {
+
+	@Autowired
+	AriesAscendant ariesAscendant;
+
+	@Autowired
+	TaurusAscendant taurusAscendant;
+
+	@Autowired
+	GeminiAscendant geminiAscendant;
+
+	@Autowired
+	CancerAscendant cancerAscendant;
+
+	@Autowired
+	LeoAscendant leoAscendant;
+
+	@Autowired
+	VirgoAscendant virgoAscendant;
+
+	@Autowired
+	LibraAscendant libraAscendant;
+
+	@Autowired
+    ScorpioAscendant scorpioAscendant;
+
+	@Autowired
+	SagittariusAscendant sagittariusAscendant;
 	
-	public  String AriesInBhava() {
-		StringBuilder ariesInBhava3 = new StringBuilder();
-		ariesInBhava3.append("\n");
-		return ariesInBhava3.toString();
+	@Autowired
+	CapricornAscendant capricornAscendant;
+	
+	@Autowired
+	AquariusAscendant aquariusAscendant;
+	
+	@Autowired
+	PiscesAscendant piscesAscendant;
+	
+	
+
+	public String AriesInBhava() {
+		return ariesAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String TaurusInBhava() {
-		StringBuilder taurusInBhava3 = new StringBuilder();
-		taurusInBhava3.append("\n");
-		return taurusInBhava3.toString();
+	public String TaurusInBhava() {
+		return taurusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String GeminiInBhava() {
-		StringBuilder geminiInBhava3 = new StringBuilder();
-	    geminiInBhava3.append("\n");
-		return geminiInBhava3.toString();
+	public String GeminiInBhava() {
+		return geminiAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String CancerInBhava() {
-		StringBuilder cancerInBhava3 = new StringBuilder();
-		cancerInBhava3.append("\n");
-		return cancerInBhava3.toString();
+	public String CancerInBhava() {
+		return cancerAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String LeoInBhava() {
-		StringBuilder leoInBhava3 = new StringBuilder();
-	    leoInBhava3.append("\n");
-		return leoInBhava3.toString();
+	public String LeoInBhava() {
+		return leoAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String VirgoInBhava() {
-		StringBuilder virgoInBhava3 = new StringBuilder();
-	    virgoInBhava3.append("\n");
-		return virgoInBhava3.toString();
+	public String VirgoInBhava() {
+		return virgoAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String LibraInBhava() {
-		StringBuilder libraInBhava3 = new StringBuilder();
-		libraInBhava3.append("\n");
-		return libraInBhava3.toString();
+	public String LibraInBhava() {
+		return libraAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String ScorpioInBhava() {
-		StringBuilder scorpioInBhava3 = new StringBuilder();
-		scorpioInBhava3.append("\n");
-		scorpioInBhava3.append("\n");
-		return scorpioInBhava3.toString();
+	public String ScorpioInBhava() {
+		return scorpioAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String SagittariusInBhava() {
-		StringBuilder sagittariusInBhava = new StringBuilder();
-		sagittariusInBhava.append("\n");
-		sagittariusInBhava.append("\n");
-		return sagittariusInBhava.toString();
+	public String SagittariusInBhava() {
+		return sagittariusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String CapricornInBhava() {
-		StringBuilder capricornInBhava3 = new StringBuilder();
-	    capricornInBhava3.append("\n");
-		return capricornInBhava3.toString();
+	public String CapricornInBhava() {
+		return capricornAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String AcquariusInBhava() {
-		StringBuilder acquariusInBhava3 = new StringBuilder();
-		acquariusInBhava3.append("\n");
-		return acquariusInBhava3.toString();
+	public String AcquariusInBhava() {
+		return aquariusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public  String PiscesInBhava() {
-		StringBuilder piscesInBhava3 = new StringBuilder();
-		piscesInBhava3.append("\n");
-		return piscesInBhava3.toString();
+	public String PiscesInBhava() {
+		return piscesAscendant.getInfoOnLagnaRashi();
 	}
-
 
 }

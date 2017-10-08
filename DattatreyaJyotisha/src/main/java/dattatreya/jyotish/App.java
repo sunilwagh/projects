@@ -103,6 +103,7 @@ public class App {
             
             System.out.println(obj.processHoroscope());
             
+            /**
             ObjectMapper mapper = new ObjectMapper();
         	mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
         	try {
@@ -114,6 +115,7 @@ public class App {
     			// TODO Auto-generated catch block
     			e.printStackTrace();
     		}
+    		**/
             
             
 	    

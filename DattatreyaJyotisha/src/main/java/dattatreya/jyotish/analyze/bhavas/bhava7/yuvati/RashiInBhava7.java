@@ -33,19 +33,19 @@ public class RashiInBhava7 implements RashiInBhava{
 
 	public  String LeoInBhava() {
 		StringBuilder leoInBhava7 = new StringBuilder();
-	    leoInBhava7.append("\n");
+	    leoInBhava7.append("Powerful and succesful spouse. The spouse can be overbearing. \n");
 		return leoInBhava7.toString();
 	}
 
 	public  String VirgoInBhava() {
 		StringBuilder virgoInBhava7 = new StringBuilder();
-	    virgoInBhava7.append("\n");
+	    virgoInBhava7.append("There is a desire for intelligent, conversant spouse. \n");
 		return virgoInBhava7.toString();
 	}
 
 	public  String LibraInBhava() {
 		StringBuilder libraInBhava7 = new StringBuilder();
-		libraInBhava7.append("\n");
+		libraInBhava7.append("There would be financial and status gains through marriage. \n");
 		return libraInBhava7.toString();
 	}
 
@@ -58,7 +58,7 @@ public class RashiInBhava7 implements RashiInBhava{
 
 	public  String SagittariusInBhava() {
 		StringBuilder sagittariusInBhava = new StringBuilder();
-		sagittariusInBhava.append("\n");
+		sagittariusInBhava.append("Marriage can give power and prestige.\n");
 		sagittariusInBhava.append("\n");
 		return sagittariusInBhava.toString();
 	}

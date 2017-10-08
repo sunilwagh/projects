@@ -25,9 +25,9 @@ public class Bhava9 implements Bhava{
 	 
 	 public void addSignificators()
 		{
-			significators.add("");
-			significators.add("");
-			significators.add("");
+			significators.add("VISIT TO HOLY PLACES");
+			significators.add("LONG JOURNEY");
+			significators.add("HIGHER EDUCATION");
 			significators.add("");
 		}
 	

@@ -25,10 +25,10 @@ public class Bhava8 implements Bhava {
 	 
 	 public void addSignificators()
 		{
-			significators.add("");
-			significators.add("");
-			significators.add("");
-			significators.add("");
+			significators.add("HIDDEN WEALTH");
+			significators.add("UNEARNED WEALTH SUCH AS LOTTERIES,INHERITANCES AND GAINS/LOSSES FROM STOCK MARKET");
+			significators.add("RESEARCH AND DEVELOPMENT");
+			significators.add("TRANSFORMATION");
 		}
 
 	public Rashi getRashi() {

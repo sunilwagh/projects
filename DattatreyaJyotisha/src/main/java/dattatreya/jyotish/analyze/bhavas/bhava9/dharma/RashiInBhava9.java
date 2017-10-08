@@ -51,7 +51,7 @@ public class RashiInBhava9 implements RashiInBhava{
 
 	public  String ScorpioInBhava() {
 		StringBuilder scorpioInBhava9 = new StringBuilder();
-		scorpioInBhava9.append("\n");
+		scorpioInBhava9.append(" Driven to speak the truth. Money gains can come involving long distance travel. \n");
 		scorpioInBhava9.append("\n");
 		return scorpioInBhava9.toString();
 	}

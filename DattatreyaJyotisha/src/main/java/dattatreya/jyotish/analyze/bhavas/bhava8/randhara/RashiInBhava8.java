@@ -45,7 +45,7 @@ public class RashiInBhava8 implements RashiInBhava{
 
 	public  String LibraInBhava() {
 		StringBuilder libraInBhava8 = new StringBuilder();
-		libraInBhava8.append("\n");
+		libraInBhava8.append("Purification and transformation of desires. \n");
 		return libraInBhava8.toString();
 	}
 
