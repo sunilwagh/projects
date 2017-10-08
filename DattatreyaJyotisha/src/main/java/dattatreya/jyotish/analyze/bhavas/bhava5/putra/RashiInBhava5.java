@@ -1,7 +1,10 @@
 package dattatreya.jyotish.analyze.bhavas.bhava5.putra;
 
+import org.springframework.stereotype.Component;
+
 import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
 
+@Component("rashiInBhava5")
 public class RashiInBhava5 implements RashiInBhava{
 	
 	public  String ariesInBhava() {
