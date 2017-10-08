@@ -9,7 +9,8 @@ public final class RahuInBhava10 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("A belief that you should make a name for yourself.");
+		sb.append("\n Rahu in 10th House: \n");
+		sb.append("\n A belief that you should make a name for yourself. \n");
 		return sb.toString();
 	}
 

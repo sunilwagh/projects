@@ -9,6 +9,7 @@ public class KetuInBhava6 implements KetuInBhava {
 
 	public String getInfoAboutKetuInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Ketu in 6th House: \n");
 		sb.append(
 				"Ketu in the 6th house creates powerful enemies (real and imagined) and certain disenchantment with work. Sudden illness can happen. Unhappy with day to day life. ");
 		return sb.toString();

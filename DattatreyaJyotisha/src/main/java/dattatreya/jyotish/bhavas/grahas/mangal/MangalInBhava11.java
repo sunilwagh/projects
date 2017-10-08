@@ -9,7 +9,8 @@ public class MangalInBhava11 implements MangalInBhava {
 
 	public String getInfoAboutMangalInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("");
+		sb.append("\n Mangal in 11th House: \n");
+		sb.append("\n \n");
 		return sb.toString();
 	}
 

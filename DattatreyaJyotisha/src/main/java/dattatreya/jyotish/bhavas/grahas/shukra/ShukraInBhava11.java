@@ -9,6 +9,7 @@ public final class ShukraInBhava11 implements ShukraInBhava {
 
 	public String getInfoAboutShukraInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Shukra in 11th House: \n");
 		sb.append("");
 		return sb.toString();
 	}

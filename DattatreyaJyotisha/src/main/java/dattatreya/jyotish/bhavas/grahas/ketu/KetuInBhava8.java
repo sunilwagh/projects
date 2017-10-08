@@ -10,6 +10,7 @@ public final class KetuInBhava8 implements KetuInBhava {
 	public String getInfoAboutKetuInBhava() {
 
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Ketu in 8th House: \n");
 		sb.append(" Reason of death is unknown");
 		return sb.toString();
 

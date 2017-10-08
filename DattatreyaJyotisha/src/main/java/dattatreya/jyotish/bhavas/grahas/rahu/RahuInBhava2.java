@@ -9,6 +9,7 @@ public final class RahuInBhava2 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Rahu in 2nd House: \n");
 		sb.append("Harsh Speech. Family,inheritance and wealth.");
 		return sb.toString();
 	}

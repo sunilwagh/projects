@@ -9,6 +9,7 @@ public class SuryaInBhava7 implements SuryaInBhava {
 
 	public String getInfoAboutSuryaInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Surya in 7th House: \n");
 		sb.append("");
 		return sb.toString();
 	}

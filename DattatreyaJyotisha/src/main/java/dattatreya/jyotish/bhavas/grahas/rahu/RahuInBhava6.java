@@ -9,6 +9,7 @@ public final class RahuInBhava6 implements RahuInBhava {
 
 	public String getInfoAboutRahuInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Rahu in 6th House: \n");
 		sb.append("");
 		return sb.toString();
 	}

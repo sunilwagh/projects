@@ -9,6 +9,7 @@ public final class SuryaInBhava2 implements SuryaInBhava {
 
 	public String getInfoAboutSuryaInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Surya in 2nd House: \n");
 		sb.append("");
 		return sb.toString();
 	}

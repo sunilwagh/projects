@@ -9,6 +9,7 @@ public final class ShaniInBhava1 implements ShaniInBhava {
 
 	public String getInfoAboutShaniInBhava() {
 		StringBuilder sb = new StringBuilder();
+		sb.append("\n Shani in 1st House: \n");
 		sb.append("");
 		return sb.toString();
 	}
