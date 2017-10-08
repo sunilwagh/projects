@@ -59,51 +59,51 @@ public class RashiInBhava1 implements RashiInBhava {
 	
 	
 
-	public String AriesInBhava() {
+	public String ariesInBhava() {
 		return ariesAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String TaurusInBhava() {
+	public String taurusInBhava() {
 		return taurusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String GeminiInBhava() {
+	public String geminiInBhava() {
 		return geminiAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String CancerInBhava() {
+	public String cancerInBhava() {
 		return cancerAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String LeoInBhava() {
+	public String leoInBhava() {
 		return leoAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String VirgoInBhava() {
+	public String virgoInBhava() {
 		return virgoAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String LibraInBhava() {
+	public String libraInBhava() {
 		return libraAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String ScorpioInBhava() {
+	public String scorpioInBhava() {
 		return scorpioAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String SagittariusInBhava() {
+	public String sagittariusInBhava() {
 		return sagittariusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String CapricornInBhava() {
+	public String capricornInBhava() {
 		return capricornAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String AcquariusInBhava() {
+	public String aquariusInBhava() {
 		return aquariusAscendant.getInfoOnLagnaRashi();
 	}
 
-	public String PiscesInBhava() {
+	public String piscesInBhava() {
 		return piscesAscendant.getInfoOnLagnaRashi();
 	}
 

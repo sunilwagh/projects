@@ -59,40 +59,40 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 		StringBuilder strBuilder = new StringBuilder();
 		switch (rashi.getNameOfRashi()) {
 		case ARIES:
-			strBuilder.append(rashiInBhava.AriesInBhava());
+			strBuilder.append(rashiInBhava.ariesInBhava());
 			break;
 		case TAURUS:
-			strBuilder.append(rashiInBhava.TaurusInBhava());
+			strBuilder.append(rashiInBhava.taurusInBhava());
 			break;
 		case GEMINI:
-			strBuilder.append(rashiInBhava.GeminiInBhava());
+			strBuilder.append(rashiInBhava.geminiInBhava());
 			break;
 		case CANCER:
-			strBuilder.append(rashiInBhava.CancerInBhava());
+			strBuilder.append(rashiInBhava.cancerInBhava());
 			break;
 		case LEO:
-			strBuilder.append(rashiInBhava.LeoInBhava());
+			strBuilder.append(rashiInBhava.leoInBhava());
 			break;
 		case VIRGO:
-			strBuilder.append(rashiInBhava.VirgoInBhava());
+			strBuilder.append(rashiInBhava.virgoInBhava());
 			break;
 		case LIBRA:
-			strBuilder.append(rashiInBhava.LibraInBhava());
+			strBuilder.append(rashiInBhava.libraInBhava());
 			break;
 		case SCORPIO:
-			strBuilder.append(rashiInBhava.ScorpioInBhava());
+			strBuilder.append(rashiInBhava.scorpioInBhava());
 			break;
 		case SAGITTAURIUS:
-			strBuilder.append(rashiInBhava.SagittariusInBhava());
+			strBuilder.append(rashiInBhava.sagittariusInBhava());
 			break;
 		case CAPRICORN:
-			strBuilder.append(rashiInBhava.CapricornInBhava());
+			strBuilder.append(rashiInBhava.capricornInBhava());
 			break;
 		case ACQUARIUS:
-			strBuilder.append(rashiInBhava.AcquariusInBhava());
+			strBuilder.append(rashiInBhava.aquariusInBhava());
 			break;
 		case PISCES:
-			strBuilder.append(rashiInBhava.PiscesInBhava());
+			strBuilder.append(rashiInBhava.piscesInBhava());
 			break;
 		default:
 			strBuilder.append("");
@@ -112,31 +112,31 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 			for (int i = 0; i < grahas.size(); i++) {
 				switch (grahas.get(i)) {
 				case SURYA:
-					strBuilder.append(grahaInBhava.SuryaInBhava());
+					strBuilder.append(grahaInBhava.suryaInBhava());
 					break;
 				case CHANDRA:
-					strBuilder.append(grahaInBhava.ChandraInBhava());
+					strBuilder.append(grahaInBhava.chandraInBhava());
 					break;
 				case MANGAL:
-					strBuilder.append(grahaInBhava.MangalInBhava());
+					strBuilder.append(grahaInBhava.mangalInBhava());
 					break;
 				case BUDHA:
-					strBuilder.append(grahaInBhava.BudhaInBhava());
+					strBuilder.append(grahaInBhava.budhaInBhava());
 					break;
 				case GURU:
-					strBuilder.append(grahaInBhava.GuruInBhava());
+					strBuilder.append(grahaInBhava.guruInBhava());
 					break;
 				case SHUKRA:
-					strBuilder.append(grahaInBhava.ShukraInBhava());
+					strBuilder.append(grahaInBhava.shukraInBhava());
 					break;
 				case SHANI:
-					strBuilder.append(grahaInBhava.ShaniInBhava());
+					strBuilder.append(grahaInBhava.shaniInBhava());
 					break;
 				case RAHU:
-					strBuilder.append(grahaInBhava.RahuInBhava());
+					strBuilder.append(grahaInBhava.rahuInBhava());
 					break;
 				case KETU:
-					strBuilder.append(grahaInBhava.KetuInBhava());
+					strBuilder.append(grahaInBhava.ketuInBhava());
 					break;
 				default:
 					strBuilder.append("");

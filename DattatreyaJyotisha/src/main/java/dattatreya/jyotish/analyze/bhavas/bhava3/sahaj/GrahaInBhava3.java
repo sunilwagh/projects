@@ -57,40 +57,40 @@ public class GrahaInBhava3 implements GrahaInBhava{
 	@Qualifier("ketuInBhava3")
 	KetuInBhava ketuInBhava;
 
-	public String SuryaInBhava() {
+	public String suryaInBhava() {
 		return suryaInBhava.getInfoAboutSuryaInBhava();
 	}
 
-	public String ChandraInBhava() {
+	public String chandraInBhava() {
 		return chandraInBhava.getInfoAboutChandraInBhava();
 	}
 
-	public String BudhaInBhava() {
+	public String budhaInBhava() {
 		return budhaInBhava.getInfoAboutBudhaInBhava();
 	}
 
-	public String MangalInBhava() {
+	public String mangalInBhava() {
 		return mangalInBhava.getInfoAboutMangalInBhava();
 	}
 
-	public String GuruInBhava() {
+	public String guruInBhava() {
 		return guruInBhava.getInfoAboutGuruInBhava();
 
 	}
 
-	public String ShukraInBhava() {
+	public String shukraInBhava() {
 		return shukraInBhava.getInfoAboutShukraInBhava();
 	}
 
-	public String ShaniInBhava() {
+	public String shaniInBhava() {
 		return shaniInBhava.getInfoAboutShaniInBhava();
 	}
 
-	public String RahuInBhava() {
+	public String rahuInBhava() {
 		return rahuInBhava.getInfoAboutRahuInBhava();
 	}
 
-	public String KetuInBhava() {
+	public String ketuInBhava() {
 		return ketuInBhava.getInfoAboutKetuInBhava();
 	}
 

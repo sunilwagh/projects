@@ -57,40 +57,40 @@ public class GrahasInCapricorn implements GrahaInRashi{
     KetuInRashi ketuInRashi;
 	
 
-	public String SuryaInRashi() {
+	public String suryaInRashi() {
 		
 		return suryaInRashi.infoAboutSuryaInRashi();
 	}
 
-	public String ChandraInRashi() {
+	public String chandraInRashi() {
 		return chandraInRashi.infoAboutChandraInRashi();
 	}
 
-	public String BudhaInRashi() {
+	public String budhaInRashi() {
 		return budhaInRashi.infoAboutBudhaInRashi();
 	}
 
-	public String MangalInRashi() {
+	public String mangalInRashi() {
 		return mangalInRashi.infoAboutMangalInRashi();
 	}
 
-	public String GuruInRashi() {
+	public String guruInRashi() {
 		return guruInRashi.infoAboutGuruInRashi();
 	}
 
-	public String ShukraInRashi() {
+	public String shukraInRashi() {
 		return shukraInRashi.infoAboutShukraInRashi();
 	}
 
-	public String ShaniInRashi() {
+	public String shaniInRashi() {
 		return shaniInRashi.infoAboutShaniInRashi();
 	}
 
-	public String RahuInRashi() {
+	public String rahuInRashi() {
 		return rahuInRashi.infoAboutRahuInRashi();
 	}
 
-	public String KetuInRashi() {
+	public String ketuInRashi() {
 		return ketuInRashi.infoAboutKetuInRashi();
 	}
 

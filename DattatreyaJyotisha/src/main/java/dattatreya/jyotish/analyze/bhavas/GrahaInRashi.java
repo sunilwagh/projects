@@ -2,22 +2,22 @@ package dattatreya.jyotish.analyze.bhavas;
 
 public interface GrahaInRashi {
 	
-	public String SuryaInRashi();
+	public String suryaInRashi();
 
-	public String ChandraInRashi();
+	public String chandraInRashi();
 
-	public String BudhaInRashi();
+	public String budhaInRashi();
 
-	public String MangalInRashi();
+	public String mangalInRashi();
 
-	public String GuruInRashi();
+	public String guruInRashi();
 
-	public String ShukraInRashi();
+	public String shukraInRashi();
 
-	public String ShaniInRashi();
+	public String shaniInRashi();
 
-	public String RahuInRashi();
+	public String rahuInRashi();
 
-	public String KetuInRashi();
+	public String ketuInRashi();
 
 }

@@ -2,28 +2,28 @@ package dattatreya.jyotish.analyze.bhavas;
 
 public interface RashiInBhava {
 
-	public String AriesInBhava();
+	public String ariesInBhava();
 
-	public String TaurusInBhava();
+	public String taurusInBhava();
 
-	public String GeminiInBhava();
+	public String geminiInBhava();
 
-	public String CancerInBhava();
+	public String cancerInBhava();
 
-	public String LeoInBhava();
+	public String leoInBhava();
 
-	public String VirgoInBhava();
+	public String virgoInBhava();
 
-	public String LibraInBhava();
+	public String libraInBhava();
 
-	public String ScorpioInBhava();
+	public String scorpioInBhava();
 
-	public String SagittariusInBhava();
+	public String sagittariusInBhava();
 
-	public String CapricornInBhava();
+	public String capricornInBhava();
 
-	public String AcquariusInBhava();
+	public String aquariusInBhava();
 
-	public String PiscesInBhava();
+	public String piscesInBhava();
 
 }

@@ -7,75 +7,75 @@ import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
 @Component("rashiInBhava3")
 public class RashiInBhava3 implements RashiInBhava{
 	
-	public  String AriesInBhava() {
+	public  String ariesInBhava() {
 		StringBuilder ariesInBhava3 = new StringBuilder();
 		ariesInBhava3.append("\n");
 		return ariesInBhava3.toString();
 	}
 
-	public  String TaurusInBhava() {
+	public  String taurusInBhava() {
 		StringBuilder taurusInBhava3 = new StringBuilder();
 		taurusInBhava3.append("\n");
 		return taurusInBhava3.toString();
 	}
 
-	public  String GeminiInBhava() {
+	public  String geminiInBhava() {
 		StringBuilder geminiInBhava3 = new StringBuilder();
 	    geminiInBhava3.append("\n");
 		return geminiInBhava3.toString();
 	}
 
-	public  String CancerInBhava() {
+	public  String cancerInBhava() {
 		StringBuilder cancerInBhava3 = new StringBuilder();
 		cancerInBhava3.append("\n");
 		return cancerInBhava3.toString();
 	}
 
-	public  String LeoInBhava() {
+	public  String leoInBhava() {
 		StringBuilder leoInBhava3 = new StringBuilder();
 	    leoInBhava3.append("\n");
 		return leoInBhava3.toString();
 	}
 
-	public  String VirgoInBhava() {
+	public  String virgoInBhava() {
 		StringBuilder virgoInBhava3 = new StringBuilder();
 	    virgoInBhava3.append("\n");
 		return virgoInBhava3.toString();
 	}
 
-	public  String LibraInBhava() {
+	public  String libraInBhava() {
 		StringBuilder libraInBhava3 = new StringBuilder();
 		libraInBhava3.append("\n");
 		return libraInBhava3.toString();
 	}
 
-	public  String ScorpioInBhava() {
+	public  String scorpioInBhava() {
 		StringBuilder scorpioInBhava3 = new StringBuilder();
 		scorpioInBhava3.append("\n");
 		scorpioInBhava3.append("\n");
 		return scorpioInBhava3.toString();
 	}
 
-	public  String SagittariusInBhava() {
+	public  String sagittariusInBhava() {
 		StringBuilder sagittariusInBhava = new StringBuilder();
 		sagittariusInBhava.append("\n");
 		sagittariusInBhava.append("\n");
 		return sagittariusInBhava.toString();
 	}
 
-	public  String CapricornInBhava() {
+	public  String capricornInBhava() {
 		StringBuilder capricornInBhava3 = new StringBuilder();
 	    capricornInBhava3.append("\n");
 		return capricornInBhava3.toString();
 	}
 
-	public  String AcquariusInBhava() {
+	public  String aquariusInBhava() {
 		StringBuilder acquariusInBhava3 = new StringBuilder();
 		acquariusInBhava3.append("\n");
 		return acquariusInBhava3.toString();
 	}
 
-	public  String PiscesInBhava() {
+	public  String piscesInBhava() {
 		StringBuilder piscesInBhava3 = new StringBuilder();
 		piscesInBhava3.append("\n");
 		return piscesInBhava3.toString();
