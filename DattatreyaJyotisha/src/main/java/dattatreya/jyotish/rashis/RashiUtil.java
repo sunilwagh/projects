@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
 import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.bhavas.Bhava10;
 import dattatreya.jyotish.grahas.Graha;
@@ -208,6 +209,55 @@ public class RashiUtil {
 				grahaNameList.add(GrahaUtil.displayGrahaDetails(graha));
 			}
 		}
+	}
+	
+	public static String infoAboutRashiInHouse(RashiInBhava rashiInBhava,Bhava bhava) {
+		Rashi rashi = bhava.getRashi();
+		StringBuilder strBuilder = new StringBuilder();
+		switch (rashi.getNameOfRashi()) {
+		case ARIES:
+			strBuilder.append(rashiInBhava.ariesInBhava());
+			break;
+		case TAURUS:
+			strBuilder.append(rashiInBhava.taurusInBhava());
+			break;
+		case GEMINI:
+			strBuilder.append(rashiInBhava.geminiInBhava());
+			break;
+		case CANCER:
+			strBuilder.append(rashiInBhava.cancerInBhava());
+			break;
+		case LEO:
+			strBuilder.append(rashiInBhava.leoInBhava());
+			break;
+		case VIRGO:
+			strBuilder.append(rashiInBhava.virgoInBhava());
+			break;
+		case LIBRA:
+			strBuilder.append(rashiInBhava.libraInBhava());
+			break;
+		case SCORPIO:
+			strBuilder.append(rashiInBhava.scorpioInBhava());
+			break;
+		case SAGITTAURIUS:
+			strBuilder.append(rashiInBhava.sagittariusInBhava());
+			break;
+		case CAPRICORN:
+			strBuilder.append(rashiInBhava.capricornInBhava());
+			break;
+		case ACQUARIUS:
+			strBuilder.append(rashiInBhava.aquariusInBhava());
+			break;
+		case PISCES:
+			strBuilder.append(rashiInBhava.piscesInBhava());
+			break;
+		default:
+			strBuilder.append("");
+			break;
+		}
+
+		return strBuilder.toString();
+
 	}
 	
 	
