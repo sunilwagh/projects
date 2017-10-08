@@ -9,7 +9,8 @@ public final class BudhaInBhava2 implements BudhaInBhava {
 
 	public String getInfoAboutBudhaInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("");
+		sb.append("\n Budha in 2nd House: \n");
+		sb.append("\n \n");
 		return sb.toString();
 	}
 

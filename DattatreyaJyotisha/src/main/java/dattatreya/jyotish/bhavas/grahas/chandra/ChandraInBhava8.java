@@ -9,7 +9,8 @@ public class ChandraInBhava8 implements ChandraInBhava {
 
 	public String getInfoAboutChandraInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("");
+		sb.append("\n Chandra in 8th House: \n");
+		sb.append("\n \n");
 		return sb.toString();
 	}
 

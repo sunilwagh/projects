@@ -9,7 +9,8 @@ public final class ChandraInBhava1 implements ChandraInBhava {
 
 	public String getInfoAboutChandraInBhava() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("");
+		sb.append("\n Chandra in 1st House: \n");
+		sb.append("\n \n");
 		return sb.toString();
 	}
 
