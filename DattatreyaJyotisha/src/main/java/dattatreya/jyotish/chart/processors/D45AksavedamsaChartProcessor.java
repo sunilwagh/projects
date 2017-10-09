@@ -9,7 +9,7 @@ import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
-@Component("d45AksavedamsaChart")
+@Component("d45AksavedamsaChartProcessor")
 @Order(value=15)
 public class D45AksavedamsaChartProcessor implements ChartProcessor{
 	

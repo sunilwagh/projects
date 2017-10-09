@@ -9,12 +9,12 @@ import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
-@Component("d40DasamsaChartProcessor")
+@Component("d40KhavedamsaCharttProcessor")
 @Order(value=14)
 public class D40KhavedamsaChartProcessor2 implements ChartProcessor{
 	
 	@Autowired
-	@Qualifier("d40DasamsaChart") 
+	@Qualifier("d40KhavedamsaChart") 
 	Chart horoscope;
 
 	public Chart getHoroscope() {

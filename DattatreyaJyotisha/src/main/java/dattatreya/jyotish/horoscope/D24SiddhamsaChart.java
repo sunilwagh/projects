@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.bhavas.Bhava;
 
-@Component("d24Siddhamsa")
+@Component("d24SiddhamsaChart")
 @Order(value=11)
 public class D24SiddhamsaChart implements Chart{
 	
