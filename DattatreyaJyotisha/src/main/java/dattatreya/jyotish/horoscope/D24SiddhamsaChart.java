@@ -9,7 +9,7 @@ import dattatreya.jyotish.bhavas.Bhava;
 
 @Component("d24Siddhamsa")
 @Order(value=11)
-public class D24Siddhamsa implements Chart{
+public class D24SiddhamsaChart implements Chart{
 	
 	@Autowired
 	Bhava bhava1;

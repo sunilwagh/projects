@@ -20,7 +20,9 @@ public class App {
 	public static void main(String[] args) {
 
             ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-            D1RashiChartProcessor obj = (D1RashiChartProcessor) context.getBean("d1RashiChartProcessor");
+            D1RashiChartProcessor d1RashiChartProcessor = (D1RashiChartProcessor) context.getBean("d1RashiChartProcessor");
+            
+         
             
             Rashi ariesRashi = (Rashi) context.getBean("ariesRashi");
             Rashi taurusRashi = (Rashi) context.getBean("taurusRashi");
@@ -90,23 +92,27 @@ public class App {
         	scorpioRashi.setGrahas(scorpioGrahas);
         	capricornRashi.setGrahas(capricornGrahas);
         	
+        	
+        	
+        	
+        	
+        	d1RashiChartProcessor.getHoroscope().getBhava1().setRashi(piscesRashi);
+        	d1RashiChartProcessor.getHoroscope().getBhava2().setRashi(ariesRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava3().setRashi(taurusRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava4().setRashi(geminiRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava5().setRashi(cancerRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava6().setRashi(leoRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava7().setRashi(virgoRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava8().setRashi(libraRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava9().setRashi(scorpioRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava10().setRashi(sagittariusRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava11().setRashi(capricornRashi);
+            d1RashiChartProcessor.getHoroscope().getBhava12().setRashi(acquariusRashi);
         	/*
-        	obj.
-        	obj..getBhava1().setRashi(piscesRashi);
-        	obj.horoscope.getBhava2().setRashi(ariesRashi);
-            obj.horoscope.getBhava3().setRashi(taurusRashi);
-            obj.horoscope.getBhava4().setRashi(geminiRashi);
-            obj.horoscope.getBhava5().setRashi(cancerRashi);
-            obj.horoscope.getBhava6().setRashi(leoRashi);
-            obj.horoscope.getBhava7().setRashi(virgoRashi);
-            obj.horoscope.getBhava8().setRashi(libraRashi);
-            obj.horoscope.getBhava9().setRashi(scorpioRashi);
-            obj.horoscope.getBhava10().setRashi(sagittariusRashi);
-            obj.horoscope.getBhava11().setRashi(capricornRashi);
-            obj.horoscope.getBhava12().setRashi(acquariusRashi);
+
             */
             
-            System.out.println(obj.processHoroscope());
+            System.out.println(d1RashiChartProcessor.processHoroscope());
             
             /**
             ObjectMapper mapper = new ObjectMapper();

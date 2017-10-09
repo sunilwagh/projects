@@ -296,20 +296,25 @@ public final class D1RashiChartProcessor implements ChartProcessor{
 			return readingForBhava12.toString();
 		}
 
-		public Chart getHoroscope() {
-			return horoscope;
-		}
-
-		public void setHoroscope(Chart horoscope) {
-			this.horoscope = horoscope;
-		}
-
+		
+		
 		
 		
 		
 		
 
 	}
+	
+	public Chart getHoroscope() {
+		return horoscope;
+	}
+
+	public void setHoroscope(Chart horoscope) {
+		this.horoscope = horoscope;
+		
+	}
+
+	
 
 	
 }
