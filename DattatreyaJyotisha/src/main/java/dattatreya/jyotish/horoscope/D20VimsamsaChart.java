@@ -1,28 +1,16 @@
 package dattatreya.jyotish.horoscope;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.bhavas.Bhava;
-import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.rashis.Rashi;
 
-@Component("horoscope")
-public class Horoscope {
+@Component("d20VimsamsaChart")
+@Order(value=10)
+public class D20VimsamsaChart implements Chart{
 	
-	List<String> etc = new ArrayList<String>();
-	
-	
-
-	public List<String> getEtc() {
-		return etc;
-	}
-	public void setEtc(List<String> etc) {
-		this.etc = etc;
-	}
 	@Autowired
 	Bhava bhava1;
 	@Autowired
@@ -119,9 +107,5 @@ public class Horoscope {
 	public void setBhava12(Bhava bhava12) {
 		this.bhava12 = bhava12;
 	}
-	
-	
-	
-	
-	
+
 }

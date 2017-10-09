@@ -1,9 +1,9 @@
 package dattatreya.jyotish.analyze.bhavas;
 
-import dattatreya.jyotish.horoscope.Horoscope;
+import dattatreya.jyotish.horoscope.D1RashiChart;
 
 public interface AnalyzeBhava {
 	
-	public String analyzeBhava(Horoscope horoscope);
+	public String analyzeBhava(D1RashiChart horoscope);
 
 }

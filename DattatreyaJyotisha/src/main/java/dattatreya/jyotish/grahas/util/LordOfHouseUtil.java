@@ -13,13 +13,13 @@ import dattatreya.jyotish.bhavas.Bhava6;
 import dattatreya.jyotish.bhavas.Bhava7;
 import dattatreya.jyotish.bhavas.Bhava8;
 import dattatreya.jyotish.bhavas.Bhava9;
-import dattatreya.jyotish.horoscope.Horoscope;
+import dattatreya.jyotish.horoscope.D1RashiChart;
 import dattatreya.jyotish.rashis.RashiUtil;
 import dattatreya.jyotish.util.GrahaNames;
 
 public class LordOfHouseUtil {
 
-	public static String infoOnLordofFirstHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofFirstHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava1 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -124,7 +124,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava1.toString();
 	}
 
-	public static String infoOnLordofSecondHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofSecondHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
         StringBuilder sbAnalyzeBhava2 = new StringBuilder();
 		
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -229,7 +229,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava2.toString();
 	}
 
-	public static String infoOnLordofThirdHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofThirdHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava3 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -335,7 +335,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava3.toString();
 	}
 
-	public static String infoOnLordofFourthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofFourthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava4 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -440,7 +440,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava4.toString();
 	}
 
-	public static String infoOnLordofFifthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofFifthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava5 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -547,7 +547,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava5.toString();
 	}
 
-	public static String infoOnLordofSixthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofSixthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava6 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -652,7 +652,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava6.toString();
 	}
 
-	public static String infoOnLordofSeventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofSeventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava7 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -760,7 +760,7 @@ public class LordOfHouseUtil {
 
 	}
 
-	public static String infoOnLordofEightHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofEightHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava8 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -865,7 +865,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava8.toString();
 	}
 
-	public static String infoOnLordofNinthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofNinthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava9 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -971,7 +971,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava9.toString();
 	}
 
-	public static String infoOnLordofTenthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofTenthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava10 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -1078,7 +1078,7 @@ public class LordOfHouseUtil {
 		return sbAnalyzeBhava10.toString();
 	}
 
-	public static String infoOnLordofEleventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofEleventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava11 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
@@ -1184,7 +1184,7 @@ public class LordOfHouseUtil {
 
 	}
 
-	public static String infoOnLordofTwelvethHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Horoscope horoscope) {
+	public static String infoOnLordofTwelvethHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, D1RashiChart horoscope) {
 		StringBuilder sbAnalyzeBhava12 = new StringBuilder();
 
 		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();

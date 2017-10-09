@@ -24,7 +24,7 @@ import dattatreya.jyotish.bhavas.Bhava8;
 import dattatreya.jyotish.bhavas.Bhava9;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
 import dattatreya.jyotish.grahas.util.LordOfHouseUtil;
-import dattatreya.jyotish.horoscope.Horoscope;
+import dattatreya.jyotish.horoscope.D1RashiChart;
 import dattatreya.jyotish.rashis.RashiUtil;
 import dattatreya.jyotish.util.GrahaNames;
 
@@ -43,7 +43,7 @@ public class AnalyzeBhava10 implements AnalyzeBhava{
 	@Qualifier("rashiInBhava10")
 	RashiInBhava rashiInBhava;
 	
-	public String analyzeBhava(Horoscope horoscope) {
+	public String analyzeBhava(D1RashiChart horoscope) {
 
 		String infoAboutHouseLord = infoAboutHouseLord(horoscope);
 		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhava1());
@@ -52,7 +52,7 @@ public class AnalyzeBhava10 implements AnalyzeBhava{
 
 	}
 	
-	private String infoAboutHouseLord(Horoscope horoscope) {
+	private String infoAboutHouseLord(D1RashiChart horoscope) {
 		 return LordOfHouseUtil.infoOnLordofTenthHouse(houseLordPlacedInBhava,horoscope);
 	}
 

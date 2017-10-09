@@ -22,7 +22,7 @@ import dattatreya.jyotish.analyze.bhavas.bhava6.ari.AnalyzeBhava6;
 import dattatreya.jyotish.analyze.bhavas.bhava7.yuvati.AnalyzeBhava7;
 import dattatreya.jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
 import dattatreya.jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
-import dattatreya.jyotish.horoscope.Horoscope;
+import dattatreya.jyotish.horoscope.D1RashiChart;
 
 @Component("horoscopeProcessor")
 public final class HoroscopeProcessor {
@@ -31,7 +31,7 @@ public final class HoroscopeProcessor {
 	
 	@Autowired
 	public
-	Horoscope horoscope;
+	D1RashiChart horoscope;
 	
 	@Autowired
 	@Qualifier("analyzeBhava1")
@@ -165,9 +165,9 @@ public final class HoroscopeProcessor {
 	public class BhavaProcessingCallable implements Callable {
 
 		int i;
-		Horoscope horoscope;
+		D1RashiChart horoscope;
 
-		public BhavaProcessingCallable(Horoscope horoscope, int i) {
+		public BhavaProcessingCallable(D1RashiChart horoscope, int i) {
 			this.horoscope = horoscope;
 			this.i = i;
 		}
@@ -205,7 +205,7 @@ public final class HoroscopeProcessor {
 			}
 		}
 
-		public void parseHoroscope(Horoscope horoscope) {
+		public void parseHoroscope(D1RashiChart horoscope) {
 			StringBuffer readingForHoroscope = new StringBuffer();
 
 			readingForHoroscope.append(parseBhava2(horoscope));
@@ -222,7 +222,7 @@ public final class HoroscopeProcessor {
 
 		}
 
-		private String parseBhava1(Horoscope horoscope) {
+		private String parseBhava1(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava1 = new StringBuffer();
 			readingForBhava1.append(analyzeBhava1.analyzeBhava(horoscope));
@@ -230,77 +230,77 @@ public final class HoroscopeProcessor {
 
 		}
 
-		private String parseBhava2(Horoscope horoscope) {
+		private String parseBhava2(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava2 = new StringBuffer();
 			readingForBhava2.append(analyzeBhava2.analyzeBhava(horoscope));
 			return readingForBhava2.toString();
 		}
 
-		private String parseBhava3(Horoscope horoscope) {
+		private String parseBhava3(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava3 = new StringBuffer();
 			readingForBhava3.append(analyzeBhava3.analyzeBhava(horoscope));
 			return readingForBhava3.toString();
 		}
 
-		private String parseBhava4(Horoscope horoscope) {
+		private String parseBhava4(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava4 = new StringBuffer();
 			readingForBhava4.append(analyzeBhava4.analyzeBhava(horoscope));
 			return readingForBhava4.toString();
 		}
 
-		private String parseBhava5(Horoscope horoscope) {
+		private String parseBhava5(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava5 = new StringBuffer();
 			readingForBhava5.append(analyzeBhava5.analyzeBhava(horoscope));
 			return readingForBhava5.toString();
 		}
 
-		private String parseBhava6(Horoscope horoscope) {
+		private String parseBhava6(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava6 = new StringBuffer();
 			readingForBhava6.append(analyzeBhava6.analyzeBhava(horoscope));
 			return readingForBhava6.toString();
 		}
 
-		private String parseBhava7(Horoscope horoscope) {
+		private String parseBhava7(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava7 = new StringBuffer();
 			readingForBhava7.append(analyzeBhava7.analyzeBhava(horoscope));
 			return readingForBhava7.toString();
 		}
 
-		private String parseBhava8(Horoscope horoscope) {
+		private String parseBhava8(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava8 = new StringBuffer();
 			readingForBhava8.append(analyzeBhava8.analyzeBhava(horoscope));
 			return readingForBhava8.toString();
 		}
 
-		private String parseBhava9(Horoscope horoscope) {
+		private String parseBhava9(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava9 = new StringBuffer();
 			readingForBhava9.append(analyzeBhava9.analyzeBhava(horoscope));
 			return readingForBhava9.toString();
 		}
 
-		private String parseBhava10(Horoscope horoscope) {
+		private String parseBhava10(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava10 = new StringBuffer();
 			readingForBhava10.append(analyzeBhava10.analyzeBhava(horoscope));
 			return readingForBhava10.toString();
 		}
 
-		private String parseBhava11(Horoscope horoscope) {
+		private String parseBhava11(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava11 = new StringBuffer();
 			readingForBhava11.append(analyzeBhava11.analyzeBhava(horoscope));
 			return readingForBhava11.toString();
 		}
 
-		private String parseBhava12(Horoscope horoscope) {
+		private String parseBhava12(D1RashiChart horoscope) {
 
 			StringBuffer readingForBhava12 = new StringBuffer();
 			readingForBhava12.append(analyzeBhava12.analyzeBhava(horoscope));

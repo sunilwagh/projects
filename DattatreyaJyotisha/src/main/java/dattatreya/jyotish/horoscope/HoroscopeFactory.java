@@ -20,7 +20,7 @@ import dattatreya.jyotish.util.RashiNames;
 
 public class HoroscopeFactory {
 	
-public static Horoscope createHoroscopeB(){
+public static D1RashiChart createHoroscopeB(){
     	
     	ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
     	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
@@ -48,7 +48,7 @@ public static Horoscope createHoroscopeB(){
     	*/
     
     	
-    	Horoscope horoscope = new Horoscope();
+    	D1RashiChart horoscope = new D1RashiChart();
     	horoscope.setBhava1(BhavaFactory.getBhava(BhavaNames.BHAVA1,RashiNames.LIBRA,libraGrahas));
     	horoscope.setBhava2(BhavaFactory.getBhava(BhavaNames.BHAVA2,RashiNames.SCORPIO,scorpioGrahas));
     	horoscope.setBhava3(BhavaFactory.getBhava(BhavaNames.BHAVA3,RashiNames.SAGITTAURIUS,sagittariusGrahas));
@@ -67,7 +67,7 @@ public static Horoscope createHoroscopeB(){
     }
     
     
- public static Horoscope createHoroscopeA(){
+ public static D1RashiChart createHoroscopeA(){
     	
     	ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
     	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
@@ -94,7 +94,7 @@ public static Horoscope createHoroscopeB(){
     	capricornGrahas.add(GrahaFactory.getGraha(GrahaNames.KETU, NakshatraNames.UTTAR_ASHADA,new Pada2(),0.48));
     	
     	
-    	Horoscope horoscope = new Horoscope();
+    	D1RashiChart horoscope = new D1RashiChart();
     	horoscope.setBhava1(BhavaFactory.getBhava(BhavaNames.BHAVA1,RashiNames.PISCES,piscesGrahas));
     	horoscope.setBhava2(BhavaFactory.getBhava(BhavaNames.BHAVA2,RashiNames.ARIES,ariesGrahas));
     	horoscope.setBhava3(BhavaFactory.getBhava(BhavaNames.BHAVA3,RashiNames.TAURUS,taurusGrahas));
@@ -125,7 +125,7 @@ public static Horoscope createHoroscopeB(){
     }
  
  
- public static Horoscope createHoroscopeC(){
+ public static D1RashiChart createHoroscopeC(){
  	
  	ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
  	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
@@ -152,7 +152,7 @@ public static Horoscope createHoroscopeB(){
  	piscesGrahas.add(GrahaFactory.getGraha(GrahaNames.KETU, NakshatraNames.JYESTHA,new Pada3(),0.00));
  	
  	
- 	Horoscope horoscope = new Horoscope();
+ 	D1RashiChart horoscope = new D1RashiChart();
  	horoscope.setBhava1(BhavaFactory.getBhava(BhavaNames.BHAVA1,RashiNames.LEO,leoGrahas));
  	horoscope.setBhava2(BhavaFactory.getBhava(BhavaNames.BHAVA2,RashiNames.VIRGO,virgoGrahas));
  	horoscope.setBhava3(BhavaFactory.getBhava(BhavaNames.BHAVA3,RashiNames.LIBRA,libraGrahas));
@@ -172,7 +172,7 @@ public static Horoscope createHoroscopeB(){
  }
  
  
- public static Horoscope createHoroscopeD(){
+ public static D1RashiChart createHoroscopeD(){
 	 	
 	 	ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
 	 	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
@@ -199,7 +199,7 @@ public static Horoscope createHoroscopeB(){
 	 	libraGrahas.add(GrahaFactory.getGraha(GrahaNames.KETU, NakshatraNames.JYESTHA,new Pada3(),0.00));
 	 	
 	 	
-	 	Horoscope horoscope = new Horoscope();
+	 	D1RashiChart horoscope = new D1RashiChart();
 	 	horoscope.setBhava1(BhavaFactory.getBhava(BhavaNames.BHAVA1,RashiNames.ACQUARIUS,acquariusGrahas));
 	 	horoscope.setBhava2(BhavaFactory.getBhava(BhavaNames.BHAVA2,RashiNames.PISCES,piscesGrahas));
 	 	horoscope.setBhava3(BhavaFactory.getBhava(BhavaNames.BHAVA3,RashiNames.ARIES,ariesGrahas));
