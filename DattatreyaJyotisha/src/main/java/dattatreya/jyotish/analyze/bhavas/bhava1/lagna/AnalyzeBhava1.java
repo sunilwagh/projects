@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.AnalyzeBhava;
+import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
 import dattatreya.jyotish.analyze.bhavas.HouseLordPlacedInBhava;
 import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
@@ -27,7 +28,6 @@ import dattatreya.jyotish.bhavas.Bhava9;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
 import dattatreya.jyotish.grahas.util.LordOfHouseUtil;
-import dattatreya.jyotish.horoscope.D1RashiChart;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.rashis.RashiUtil;
 import dattatreya.jyotish.util.GrahaNames;
@@ -47,7 +47,7 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 	@Qualifier("rashiInBhava1")
 	RashiInBhava rashiInBhava;
 
-	public String analyzeBhava(D1RashiChart horoscope) {
+	public String analyzeBhava(Chart horoscope) {
 
 		String infoAboutHouseLord = infoAboutHouseLord(horoscope);
 		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhava1());
@@ -56,7 +56,7 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 
 	}
 
-	private String infoAboutHouseLord(D1RashiChart horoscope) {
+	private String infoAboutHouseLord(Chart horoscope) {
 		 return LordOfHouseUtil.infoOnLordofFirstHouse(houseLordPlacedInBhava,horoscope);
 	}
 

@@ -1,37 +1,26 @@
-package dattatreya.jyotish;
+package dattatreya.jyotish.chart.processors;
 
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
 import dattatreya.jyotish.analyze.bhavas.AnalyzeBhava;
-import dattatreya.jyotish.analyze.bhavas.bhava1.lagna.AnalyzeBhava1;
-import dattatreya.jyotish.analyze.bhavas.bhava10.karma.AnalyzeBhava10;
-import dattatreya.jyotish.analyze.bhavas.bhava11.labha.AnalyzeBhava11;
-import dattatreya.jyotish.analyze.bhavas.bhava12.vyaha.AnalyzeBhava12;
-import dattatreya.jyotish.analyze.bhavas.bhava2.dhana.AnalyzeBhava2;
-import dattatreya.jyotish.analyze.bhavas.bhava3.sahaj.AnalyzeBhava3;
-import dattatreya.jyotish.analyze.bhavas.bhava4.sukha.AnalyzeBhava4;
-import dattatreya.jyotish.analyze.bhavas.bhava5.putra.AnalyzeBhava5;
-import dattatreya.jyotish.analyze.bhavas.bhava6.ari.AnalyzeBhava6;
-import dattatreya.jyotish.analyze.bhavas.bhava7.yuvati.AnalyzeBhava7;
-import dattatreya.jyotish.analyze.bhavas.bhava8.randhara.AnalyzeBhava8;
-import dattatreya.jyotish.analyze.bhavas.bhava9.dharma.AnalyzeBhava9;
+import dattatreya.jyotish.analyze.bhavas.Chart;
+import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.horoscope.D1RashiChart;
 
-@Component("horoscopeProcessor")
-public final class HoroscopeProcessor {
-	
+
+@Component("d1RashiChartProcessor")
+@Order(value=1)
+public final class D1RashiChartProcessor implements ChartProcessor{
 	
 	
 	@Autowired
-	public
-	D1RashiChart horoscope;
+	@Qualifier("d1RashiChart") 
+	Chart horoscope;
+
 	
 	@Autowired
 	@Qualifier("analyzeBhava1")
@@ -39,7 +28,7 @@ public final class HoroscopeProcessor {
 	
 	@Autowired
 	@Qualifier("analyzeBhava2")
-	AnalyzeBhava2 analyzeBhava2;
+	AnalyzeBhava analyzeBhava2;
 	
 	@Autowired
 	@Qualifier("analyzeBhava3")
@@ -165,9 +154,9 @@ public final class HoroscopeProcessor {
 	public class BhavaProcessingCallable implements Callable {
 
 		int i;
-		D1RashiChart horoscope;
+		Chart horoscope;
 
-		public BhavaProcessingCallable(D1RashiChart horoscope, int i) {
+		public BhavaProcessingCallable(Chart horoscope, int i) {
 			this.horoscope = horoscope;
 			this.i = i;
 		}
@@ -205,7 +194,7 @@ public final class HoroscopeProcessor {
 			}
 		}
 
-		public void parseHoroscope(D1RashiChart horoscope) {
+		public void parseHoroscope(Chart horoscope) {
 			StringBuffer readingForHoroscope = new StringBuffer();
 
 			readingForHoroscope.append(parseBhava2(horoscope));
@@ -222,7 +211,7 @@ public final class HoroscopeProcessor {
 
 		}
 
-		private String parseBhava1(D1RashiChart horoscope) {
+		private String parseBhava1(Chart horoscope) {
 
 			StringBuffer readingForBhava1 = new StringBuffer();
 			readingForBhava1.append(analyzeBhava1.analyzeBhava(horoscope));
@@ -230,81 +219,89 @@ public final class HoroscopeProcessor {
 
 		}
 
-		private String parseBhava2(D1RashiChart horoscope) {
+		private String parseBhava2(Chart horoscope) {
 
 			StringBuffer readingForBhava2 = new StringBuffer();
 			readingForBhava2.append(analyzeBhava2.analyzeBhava(horoscope));
 			return readingForBhava2.toString();
 		}
 
-		private String parseBhava3(D1RashiChart horoscope) {
+		private String parseBhava3(Chart horoscope) {
 
 			StringBuffer readingForBhava3 = new StringBuffer();
 			readingForBhava3.append(analyzeBhava3.analyzeBhava(horoscope));
 			return readingForBhava3.toString();
 		}
 
-		private String parseBhava4(D1RashiChart horoscope) {
+		private String parseBhava4(Chart horoscope) {
 
 			StringBuffer readingForBhava4 = new StringBuffer();
 			readingForBhava4.append(analyzeBhava4.analyzeBhava(horoscope));
 			return readingForBhava4.toString();
 		}
 
-		private String parseBhava5(D1RashiChart horoscope) {
+		private String parseBhava5(Chart horoscope) {
 
 			StringBuffer readingForBhava5 = new StringBuffer();
 			readingForBhava5.append(analyzeBhava5.analyzeBhava(horoscope));
 			return readingForBhava5.toString();
 		}
 
-		private String parseBhava6(D1RashiChart horoscope) {
+		private String parseBhava6(Chart horoscope) {
 
 			StringBuffer readingForBhava6 = new StringBuffer();
 			readingForBhava6.append(analyzeBhava6.analyzeBhava(horoscope));
 			return readingForBhava6.toString();
 		}
 
-		private String parseBhava7(D1RashiChart horoscope) {
+		private String parseBhava7(Chart horoscope) {
 
 			StringBuffer readingForBhava7 = new StringBuffer();
 			readingForBhava7.append(analyzeBhava7.analyzeBhava(horoscope));
 			return readingForBhava7.toString();
 		}
 
-		private String parseBhava8(D1RashiChart horoscope) {
+		private String parseBhava8(Chart horoscope) {
 
 			StringBuffer readingForBhava8 = new StringBuffer();
 			readingForBhava8.append(analyzeBhava8.analyzeBhava(horoscope));
 			return readingForBhava8.toString();
 		}
 
-		private String parseBhava9(D1RashiChart horoscope) {
+		private String parseBhava9(Chart horoscope) {
 
 			StringBuffer readingForBhava9 = new StringBuffer();
 			readingForBhava9.append(analyzeBhava9.analyzeBhava(horoscope));
 			return readingForBhava9.toString();
 		}
 
-		private String parseBhava10(D1RashiChart horoscope) {
+		private String parseBhava10(Chart horoscope) {
 
 			StringBuffer readingForBhava10 = new StringBuffer();
 			readingForBhava10.append(analyzeBhava10.analyzeBhava(horoscope));
 			return readingForBhava10.toString();
 		}
 
-		private String parseBhava11(D1RashiChart horoscope) {
+		private String parseBhava11(Chart horoscope) {
 
 			StringBuffer readingForBhava11 = new StringBuffer();
 			readingForBhava11.append(analyzeBhava11.analyzeBhava(horoscope));
 			return readingForBhava11.toString();
 		}
 
-		private String parseBhava12(D1RashiChart horoscope) {
+		private String parseBhava12(Chart horoscope) {
 
 			StringBuffer readingForBhava12 = new StringBuffer();
 			readingForBhava12.append(analyzeBhava12.analyzeBhava(horoscope));
 			return readingForBhava12.toString();
+		}
+
+		public Chart getHoroscope() {
+			return horoscope;
+		}
+
+		public void setHoroscope(Chart horoscope) {
+			this.horoscope = horoscope;
 		}
 
 		

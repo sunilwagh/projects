@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.AnalyzeBhava;
+import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
 import dattatreya.jyotish.analyze.bhavas.HouseLordPlacedInBhava;
 import dattatreya.jyotish.analyze.bhavas.RashiInBhava;
@@ -31,7 +32,7 @@ public class AnalyzeBhava12 implements AnalyzeBhava {
 	@Qualifier("rashiInBhava12")
 	RashiInBhava rashiInBhava;
 	
-	public String analyzeBhava(D1RashiChart horoscope) {
+	public String analyzeBhava(Chart horoscope) {
 
 		String infoAboutHouseLord = infoAboutHouseLord(horoscope);
 		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhava12());
@@ -40,7 +41,7 @@ public class AnalyzeBhava12 implements AnalyzeBhava {
 
 	}
 
-	private String infoAboutHouseLord(D1RashiChart horoscope) {
+	private String infoAboutHouseLord(Chart horoscope) {
 		 return LordOfHouseUtil.infoOnLordofTwelvethHouse(houseLordPlacedInBhava,horoscope);
 	}
 }

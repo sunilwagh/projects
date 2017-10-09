@@ -5,9 +5,13 @@ import java.util.ArrayList;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import dattatreya.jyotish.chart.processors.D1RashiChartProcessor;
+
+/**
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+**/
 
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
@@ -16,7 +20,7 @@ public class App {
 	public static void main(String[] args) {
 
             ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-            HoroscopeProcessor obj = (HoroscopeProcessor) context.getBean("horoscopeProcessor");
+            D1RashiChartProcessor obj = (D1RashiChartProcessor) context.getBean("d1RashiChartProcessor");
             
             Rashi ariesRashi = (Rashi) context.getBean("ariesRashi");
             Rashi taurusRashi = (Rashi) context.getBean("taurusRashi");
@@ -86,9 +90,9 @@ public class App {
         	scorpioRashi.setGrahas(scorpioGrahas);
         	capricornRashi.setGrahas(capricornGrahas);
         	
-        	
-        	
-        	obj.horoscope.getBhava1().setRashi(piscesRashi);
+        	/*
+        	obj.
+        	obj..getBhava1().setRashi(piscesRashi);
         	obj.horoscope.getBhava2().setRashi(ariesRashi);
             obj.horoscope.getBhava3().setRashi(taurusRashi);
             obj.horoscope.getBhava4().setRashi(geminiRashi);
@@ -100,6 +104,7 @@ public class App {
             obj.horoscope.getBhava10().setRashi(sagittariusRashi);
             obj.horoscope.getBhava11().setRashi(capricornRashi);
             obj.horoscope.getBhava12().setRashi(acquariusRashi);
+            */
             
             System.out.println(obj.processHoroscope());
             
