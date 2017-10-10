@@ -8,7 +8,7 @@ import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.bhavas.Bhava;
 
 @Component("d12DvadasamsaChart")
-@Order(value=8)
+@Order(value=12)
 public class D12DvadasamsaChart implements Chart{
 	
 	@Autowired
