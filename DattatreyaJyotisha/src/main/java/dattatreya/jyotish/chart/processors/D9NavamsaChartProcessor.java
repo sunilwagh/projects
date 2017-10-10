@@ -23,10 +23,9 @@ public class D9NavamsaChartProcessor implements ChartProcessor {
 		this.horoscope = horoscope;
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d9Chart) {
 		return null;
-
+		
 	}
 
 }

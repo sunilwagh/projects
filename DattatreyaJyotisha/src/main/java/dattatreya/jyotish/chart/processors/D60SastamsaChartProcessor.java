@@ -25,9 +25,8 @@ public class D60SastamsaChartProcessor implements ChartProcessor{
 		this.horoscope = horoscope;
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d60Chart) {
 		return null;
-
+		
 	}
 }

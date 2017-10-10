@@ -29,10 +29,9 @@ public final class D27BhamsaNaksatramsaChartProcessor implements ChartProcessor{
 		
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d27Chart) {
 		return null;
-
+		
 	}
 
 	

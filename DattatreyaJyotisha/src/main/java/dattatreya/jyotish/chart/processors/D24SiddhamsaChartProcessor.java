@@ -29,10 +29,9 @@ public final class D24SiddhamsaChartProcessor implements ChartProcessor{
 		
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d24Chart) {
 		return null;
-
+		
 	}
 
 	

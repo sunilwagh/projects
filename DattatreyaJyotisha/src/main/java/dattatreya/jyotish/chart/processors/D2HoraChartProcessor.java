@@ -30,4 +30,9 @@ public class D2HoraChartProcessor implements ChartProcessor{
 		return null;
 		
 	}
+	
+	public String processChart(Chart d1Chart,Chart d2Chart) {
+		return null;
+		
+	}
 }

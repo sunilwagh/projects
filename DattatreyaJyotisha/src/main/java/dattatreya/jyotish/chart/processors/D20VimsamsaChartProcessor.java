@@ -29,10 +29,9 @@ public final class D20VimsamsaChartProcessor implements ChartProcessor{
 		
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d20Chart) {
 		return null;
-
+		
 	}
 	
 

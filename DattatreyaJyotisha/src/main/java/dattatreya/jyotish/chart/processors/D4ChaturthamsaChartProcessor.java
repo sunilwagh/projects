@@ -23,10 +23,9 @@ public class D4ChaturthamsaChartProcessor implements ChartProcessor{
 		this.horoscope = horoscope;
 	}
 
-	public String processChart(Chart chart) {
-
+	public String processChart(Chart d1Chart,Chart d4Chart) {
 		return null;
-
+		
 	}
 
 	
