@@ -71,7 +71,7 @@ public final class D1RashiChartProcessor implements ChartProcessor{
 	AnalyzeBhava analyzeBhava12;
 	
 	
-	public String processHoroscope() {
+	public String processChart(Chart horoscope) {
 		
 		
 
@@ -313,6 +313,8 @@ public final class D1RashiChartProcessor implements ChartProcessor{
 		this.horoscope = horoscope;
 		
 	}
+
+	
 
 	
 

@@ -29,6 +29,12 @@ public final class D16SodasamsaChartProcessor implements ChartProcessor{
 		
 	}
 
+    public String processChart(Chart chart) {
+		
+		return null;
+		
+	}
+
 	
 
 	

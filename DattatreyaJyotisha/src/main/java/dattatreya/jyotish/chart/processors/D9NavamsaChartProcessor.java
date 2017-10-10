@@ -7,14 +7,12 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 
-
 @Component("d9NavamsaChartProcessor")
-@Order(value=6)
-public class D9NavamsaChartProcessor implements ChartProcessor{
-	
+@Order(value = 6)
+public class D9NavamsaChartProcessor implements ChartProcessor {
 
 	@Autowired
-	@Qualifier("d9NavamsaChart") 
+	@Qualifier("d9NavamsaChart")
 	Chart horoscope;
 
 	public Chart getHoroscope() {
@@ -23,6 +21,12 @@ public class D9NavamsaChartProcessor implements ChartProcessor{
 
 	public void setHoroscope(Chart horoscope) {
 		this.horoscope = horoscope;
+	}
+
+	public String processChart(Chart chart) {
+
+		return null;
+
 	}
 
 }

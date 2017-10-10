@@ -25,4 +25,10 @@ public class D3DrekannaChartProcessor implements ChartProcessor{
 		this.horoscope = horoscope;
 	}
 
+	public String processChart(Chart chart) {
+
+		return null;
+
+	}
+
 }

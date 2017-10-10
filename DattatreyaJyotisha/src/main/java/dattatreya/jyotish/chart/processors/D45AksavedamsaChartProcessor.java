@@ -10,11 +10,11 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
 @Component("d45AksavedamsaChartProcessor")
-@Order(value=15)
-public class D45AksavedamsaChartProcessor implements ChartProcessor{
-	
+@Order(value = 15)
+public class D45AksavedamsaChartProcessor implements ChartProcessor {
+
 	@Autowired
-	@Qualifier("d45AksavedamsaChart") 
+	@Qualifier("d45AksavedamsaChart")
 	Chart horoscope;
 
 	public Chart getHoroscope() {
@@ -23,5 +23,11 @@ public class D45AksavedamsaChartProcessor implements ChartProcessor{
 
 	public void setHoroscope(Chart horoscope) {
 		this.horoscope = horoscope;
+	}
+
+	public String processChart(Chart chart) {
+
+		return null;
+
 	}
 }

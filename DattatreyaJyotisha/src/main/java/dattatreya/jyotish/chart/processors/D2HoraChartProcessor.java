@@ -25,4 +25,9 @@ public class D2HoraChartProcessor implements ChartProcessor{
 	public void setHoroscope(Chart horoscope) {
 		this.horoscope = horoscope;
 	}
+
+	public String processChart(Chart chart) {
+		return null;
+		
+	}
 }

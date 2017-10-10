@@ -24,4 +24,10 @@ public class D7SaptamsaChartProcessor implements ChartProcessor{
 		this.horoscope = horoscope;
 	}
 
+	public String processChart(Chart chart) {
+
+		return null;
+
+	}
+
 }

@@ -29,6 +29,12 @@ public final class D30TrimsamsaChartProcessor implements ChartProcessor{
 		
 	}
 
+	public String processChart(Chart chart) {
+
+		return null;
+
+	}
+
 	
 
 	
