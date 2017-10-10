@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
-import dattatreya.jyotish.horoscope.D9NavamsaChart;
+
 
 @Component("d10DasamsaChartProcessor")
 @Order(value=7)
