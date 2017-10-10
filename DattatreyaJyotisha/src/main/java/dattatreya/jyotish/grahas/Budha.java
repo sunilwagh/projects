@@ -24,10 +24,14 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 public final class Budha implements Graha {
 
 	private final GrahaNames grahaName = GrahaNames.BUDHA;
-	private final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO;
-	private final RashiNames EXALTATION = RashiNames.VIRGO;
-	private final RashiNames DEBILITATION = RashiNames.PISCES;
-	private final RashiNames OWN = RashiNames.GEMINI;
+	
+	private final RashiNames EXALTATION = RashiNames.VIRGO;  // 100%
+	private final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO; //75%
+	private final RashiNames OWN = RashiNames.GEMINI;    //50%
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 3.25 TO 6.25
+	private final RashiNames DEBILITATION = RashiNames.PISCES; // 0%
 
 	private final Tattva TATTVA = Tattva.PRITHVI;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.BUDHA;
@@ -40,8 +44,7 @@ public final class Budha implements Graha {
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
 	private final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
 
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	
 	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
@@ -64,7 +67,32 @@ public final class Budha implements Graha {
 		addBhavasToWeak();
 		addBhavasToWeakest();
 		addKarakasInLifeForGraha();
+		addFriendSignsToGraha();
+		addEnemySignsToGraha();
+		addNuetralSignsToGraha();
 
+	}
+	
+	private void addNuetralSignsToGraha() {
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
+		
+		
+	}
+
+	private void addEnemySignsToGraha() {
+		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.CANCER);
+		
+		
+	}
+
+	private void addFriendSignsToGraha() {
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
+		
 	}
 
 	public void addKarakasInLifeForGraha() {
@@ -338,6 +366,10 @@ public final class Budha implements Graha {
 		return KARAKA_IN_LIFE;
 	}
 
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		return NUETRAL_SIGNS_TO_GRAHA;
+	}
+
 	public Set<BhavaNames> getSTRONGEST() {
 		// TODO Auto-generated method stub
 		return null;
@@ -362,6 +394,8 @@ public final class Budha implements Graha {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 	
 

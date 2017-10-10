@@ -34,10 +34,14 @@ public final class Chandra implements Graha{
 	private  final GrahaNames grahaName = GrahaNames.CHANDRA;
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.TAURUS;
 	private  final RashiNames EXALTATION = RashiNames.TAURUS;
-	private  final RashiNames DEBILITATION = RashiNames.SCORPIO;
 	private  final RashiNames OWN = RashiNames.CANCER;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private  final RashiNames DEBILITATION = RashiNames.SCORPIO;
+	
+	
+	
 	private  final Tattva TATTVA = Tattva.APA;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.KRISHNA;
 	private final Mahavidya mahaVidya = Mahavidya.BHUVANESHWARI;
@@ -67,7 +71,33 @@ public final class Chandra implements Graha{
 		addBhavasToNuetral();
 		addBhavasToWeak();
 		addBhavasToWeakest();
+		addFriendSignsToGraha();
+		addEnemySignsToGraha();
+		addNuetralSignsToGraha();
 
+	}
+
+	private void addNuetralSignsToGraha() {
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SAGITTAURIUS);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.PISCES);
+		
+		
+		
+	}
+
+	private void addEnemySignsToGraha() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void addFriendSignsToGraha() {
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
 	}
 
 	public  void addLordOfNakshatrasToGraha() {
@@ -321,6 +351,18 @@ public final class Chandra implements Graha{
 		return ENEMY_SIGNS_TO_GRAHA;
 	}
 
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		return NUETRAL_SIGNS_TO_GRAHA;
+	}
+
+	public VISHNU_AVATARS getVISHNU_AVATAR() {
+		return VISHNU_AVATAR;
+	}
+
+	public Mahavidya getMahaVidya() {
+		return mahaVidya;
+	}
+
 	public Set<BhavaNames> getSTRONGEST() {
 		// TODO Auto-generated method stub
 		return null;
@@ -345,6 +387,8 @@ public final class Chandra implements Graha{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 	
 	
 	
