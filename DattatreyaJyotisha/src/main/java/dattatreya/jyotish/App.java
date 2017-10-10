@@ -60,7 +60,8 @@ public class App {
 				mangal, RashiNames.VIRGO, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
 				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
 		Chart d1Chart = HoroscopeFactory.createHoroscope(ChartNames.D1RashiChart, d1RashiChartLagna, d1RashiChartMap);
-		//kundali.processD1(HoroscopeFactory.createHoroscope(ChartNames.D1RashiChart, d1RashiChartLagna, d1RashiChartMap));
+		String d1ChartAnalysis = kundali.processD1(d1Chart);
+		System.out.println(d1ChartAnalysis);
 
 		RashiNames d2HoraChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d2HoraChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,

@@ -31,7 +31,7 @@ public final class Chandra implements Graha{
 	Pada pada;
 	double degrees;
 	
-	private  final GrahaNames GRAHA_NAME = GrahaNames.CHANDRA;
+	private  final GrahaNames grahaName = GrahaNames.CHANDRA;
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.TAURUS;
 	private  final RashiNames EXALTATION = RashiNames.TAURUS;
 	private  final RashiNames DEBILITATION = RashiNames.SCORPIO;
@@ -168,9 +168,7 @@ public final class Chandra implements Graha{
 		this.degrees = degrees;
 	}
 
-	public GrahaNames getGRAHA_NAME() {
-		return GRAHA_NAME;
-	}
+	
 
 	public RashiNames getMOOLTRIKONARASHI() {
 		return MOOLTRIKONARASHI;

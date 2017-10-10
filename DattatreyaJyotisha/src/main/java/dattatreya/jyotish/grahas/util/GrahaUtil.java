@@ -111,25 +111,32 @@ public class GrahaUtil {
 
 	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava) {
 
-		System.out.println(lordOfRashi+"--"+bhava.getRashi().getNameOfRashi().toString());
+		
 		Rashi rashi = bhava.getRashi();
 		Graha grahaToBeAnalyzed = null;
 
 		ArrayList<Graha> grahas = (ArrayList<Graha>) rashi.getGrahas();
+		
+		
 
 		if (grahas != null & grahas.size() > 0) {
+			
 			for (int i = 0; i < grahas.size(); i++) {
-				if (lordOfRashi.equals(grahas.get(i).getGrahaName())) {
+				
+				GrahaNames grahaName = grahas.get(i).getGrahaName();
+				if (lordOfRashi == grahaName) {
+					
 					grahaToBeAnalyzed = grahas.get(i);
 					break;
 				}
+				
 			}
 		}
 
 		if (grahaToBeAnalyzed != null) {
 
-			sbAnalyzeBhava.append("Graha to be analyzed: " + grahaToBeAnalyzed.getGrahaName());
-			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getEXALTATION())) {
+			sbAnalyzeBhava.append("\n Graha to be analyzed: " + grahaToBeAnalyzed.getGrahaName());
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getEXALTATION()) {
 				sbAnalyzeBhava.append("\n Lord is Exalted");
 			}
 

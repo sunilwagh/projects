@@ -342,29 +342,43 @@ public class HoroscopeFactory {
 			ArrayList<Graha> leoGrahas, ArrayList<Graha> virgoGrahas, ArrayList<Graha> libraGrahas,
 			ArrayList<Graha> scorpioGrahas, ArrayList<Graha> sagittariusGrahas, ArrayList<Graha> capricornGrahas,
 			ArrayList<Graha> acquariusGrahas, ArrayList<Graha> piscesGrahas, Graha key) {
+		
+		System.out.println("key"+key);
 		if (RashiNames.ARIES == rashiChartMap.get(key)) {
+			System.out.println("in aries");
 			ariesGrahas.add(key);
 		} else if (RashiNames.TAURUS == rashiChartMap.get(key)) {
+			System.out.println("in taurus");
 			taurusGrahas.add(key);
 		} else if (RashiNames.GEMINI == rashiChartMap.get(key)) {
+			System.out.println("in gemini");
 			geminiGrahas.add(key);
 		} else if (RashiNames.CANCER == rashiChartMap.get(key)) {
+			System.out.println("in taurus");
 			cancerGrahas.add(key);
 		} else if (RashiNames.LEO == rashiChartMap.get(key)) {
+			System.out.println("in gemini");
 			leoGrahas.add(key);
 		} else if (RashiNames.VIRGO == rashiChartMap.get(key)) {
+			System.out.println("in virgo");
 			virgoGrahas.add(key);
 		} else if (RashiNames.LIBRA == rashiChartMap.get(key)) {
+			System.out.println("in libra");
 			libraGrahas.add(key);
 		} else if (RashiNames.SCORPIO == rashiChartMap.get(key)) {
+			System.out.println("in scorpio");
 			scorpioGrahas.add(key);
 		} else if (RashiNames.SAGITTAURIUS == rashiChartMap.get(key)) {
+			System.out.println("in sagittarius");
 			sagittariusGrahas.add(key);
 		} else if (RashiNames.CAPRICORN == rashiChartMap.get(key)) {
+			System.out.println("in capricorn");
 			capricornGrahas.add(key);
 		} else if (RashiNames.ACQUARIUS == rashiChartMap.get(key)) {
+			System.out.println("in acquarius");
 			acquariusGrahas.add(key);
 		} else if (RashiNames.PISCES == rashiChartMap.get(key)) {
+			System.out.println("in pisces");
 			piscesGrahas.add(key);
 		}
 	}

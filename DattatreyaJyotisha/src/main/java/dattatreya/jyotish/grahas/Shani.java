@@ -24,6 +24,7 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 @Order(value=7)
 public final class Shani implements Graha {
 
+	private final GrahaNames grahaName = GrahaNames.SHANI;
 	private final Set<RashiNames> LORDOFRASHIS = new HashSet<RashiNames>();
 	private final GrahaNames GRAHA_NAME = GrahaNames.SHANI;
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.ACQUARIUS;

@@ -24,7 +24,7 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 public class Ketu implements Graha {
 
 	
-
+	private final GrahaNames grahaName = GrahaNames.KETU;
 	Nakshatra nakshatra;
 	Pada pada;
 	double degrees;

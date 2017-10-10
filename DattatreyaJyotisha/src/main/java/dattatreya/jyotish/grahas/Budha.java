@@ -23,7 +23,7 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 @Order(value = 4)
 public final class Budha implements Graha {
 
-	private final GrahaNames GRAHA_NAME = GrahaNames.BUDHA;
+	private final GrahaNames grahaName = GrahaNames.BUDHA;
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO;
 	private final RashiNames EXALTATION = RashiNames.VIRGO;
 	private final RashiNames DEBILITATION = RashiNames.PISCES;
@@ -191,9 +191,7 @@ public final class Budha implements Graha {
 		return LORD_OF_RASHIS;
 	}
 
-	public GrahaNames getGrahaName() {
-		return GRAHA_NAME;
-	}
+	
 
 	public RashiNames getMooltrikonarashi() {
 		return MOOLTRIKONARASHI;
@@ -251,9 +249,6 @@ public final class Budha implements Graha {
 		return WEAKEST_IN_BHAVAS;
 	}
 
-	public GrahaNames getGRAHA_NAME() {
-		return GRAHA_NAME;
-	}
 
 	public RashiNames getMOOLTRIKONARASHI() {
 		return MOOLTRIKONARASHI;
@@ -327,6 +322,22 @@ public final class Budha implements Graha {
 		return WEAKEST_IN_BHAVAS;
 	}
 
+	public GrahaNames getGrahaName() {
+		return grahaName;
+	}
+
+	public VISHNU_AVATARS getVISHNU_AVATAR() {
+		return VISHNU_AVATAR;
+	}
+
+	public Mahavidya getMahaVidya() {
+		return mahaVidya;
+	}
+
+	public Set<String> getKARAKA_IN_LIFE() {
+		return KARAKA_IN_LIFE;
+	}
+
 	public Set<BhavaNames> getSTRONGEST() {
 		// TODO Auto-generated method stub
 		return null;
@@ -351,5 +362,7 @@ public final class Budha implements Graha {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 }
