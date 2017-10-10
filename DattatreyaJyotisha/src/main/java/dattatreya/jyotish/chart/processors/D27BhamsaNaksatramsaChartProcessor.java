@@ -9,13 +9,13 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 
 
 
-@Component("d27BhamsaNaksatramsaProcessor")
+@Component("d27BhamsaNaksatramsaChartProcessor")
 @Order(value=9)
-public final class D27BhamsaNaksatramsaProcessor implements ChartProcessor{
+public final class D27BhamsaNaksatramsaChartProcessor implements ChartProcessor{
 	
 	
 	@Autowired
-	@Qualifier("d16SodasamsaChart") 
+	@Qualifier("d27BhamsaNaksatramsaChart") 
 	Chart horoscope;
 
 	

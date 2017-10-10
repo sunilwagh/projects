@@ -1,11 +1,31 @@
 package dattatreya.jyotish;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import dattatreya.jyotish.analyze.bhavas.Chart;
+import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
+import dattatreya.jyotish.chart.processors.D10DasamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D12DvadasamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D16SodasamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D1RashiChartProcessor;
+import dattatreya.jyotish.chart.processors.D20VimsamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D24SiddhamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D27BhamsaNaksatramsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D2HoraChartProcessor;
+import dattatreya.jyotish.chart.processors.D30TrimsamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D3DrekannaChartProcessor;
+import dattatreya.jyotish.chart.processors.D40KhavedamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D45AksavedamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D4ChaturthamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D60SastamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D7SaptamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D9NavamsaChartProcessor;
 
 /**
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -15,121 +35,135 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
+import dattatreya.jyotish.util.ChartNames;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.RashiNames;
 
 public class App {
 	public static void main(String[] args) {
 
-            ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-            D1RashiChartProcessor d1RashiChartProcessor = (D1RashiChartProcessor) context.getBean("d1RashiChartProcessor");
-            
-         
-            
-            Rashi ariesRashi = (Rashi) context.getBean("ariesRashi");
-            Rashi taurusRashi = (Rashi) context.getBean("taurusRashi");
-            Rashi geminiRashi = (Rashi) context.getBean("geminiRashi");
-            Rashi cancerRashi = (Rashi) context.getBean("cancerRashi");
-            Rashi leoRashi = (Rashi) context.getBean("leoRashi");
-            Rashi virgoRashi = (Rashi) context.getBean("virgoRashi");
-            Rashi libraRashi = (Rashi) context.getBean("libraRashi");
-            Rashi scorpioRashi = (Rashi) context.getBean("scorpioRashi");
-            Rashi sagittariusRashi = (Rashi) context.getBean("sagittariusRashi");
-            Rashi capricornRashi = (Rashi) context.getBean("capricornRashi");
-            Rashi acquariusRashi = (Rashi) context.getBean("acquariusRashi");
-            Rashi piscesRashi = (Rashi) context.getBean("piscesRashi");
-            Graha surya = (Graha) context.getBean("surya");
-            Graha chandra = (Graha) context.getBean("chandra");
-            Graha mangal = (Graha) context.getBean("mangal");
-            Graha budha = (Graha) context.getBean("budha");
-            Graha guru = (Graha) context.getBean("guru");
-            Graha shukra = (Graha) context.getBean("shukra");
-            Graha shani = (Graha) context.getBean("shani");
-            Graha rahu = (Graha) context.getBean("rahu");
-            Graha ketu = (Graha) context.getBean("ketu");
-            
-            
-            
-            
-            
-            ArrayList<Graha> ariesGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> taurusGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> geminiGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> cancerGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> leoGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> virgoGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> libraGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> scorpioGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> sagittariusGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> capricornGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> acquariusGrahas = new ArrayList<Graha>();
-        	ArrayList<Graha> piscesGrahas = new ArrayList<Graha>();
-        	
-        	/*
-        	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SURYA, NAME_OF_NAKSHTRA.JYESTHA,new Pada4(),23.35));
-        	ariesGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.CHANDRA, NAME_OF_NAKSHTRA.BHARANI, new Pada4(),24.38));
-        	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.MANGAL, NAME_OF_NAKSHTRA.UTTAR_PHALGUNI,new Pada2(),3.12));
-        	scorpioGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.BUDHA, NAME_OF_NAKSHTRA.JYESTHA,new Pada4(),22.52));
-        	libraGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.GURU, NAME_OF_NAKSHTRA.SWATI,new Pada1(),8.45));
-        	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHUKRA, NAME_OF_NAKSHTRA.UTTAR_ASHADA,new Pada4(),6.43));
-        	virgoGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.SHANI, NAME_OF_NAKSHTRA.CHITRA,new Pada1(),26.18));
-        	cancerGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.RAHU, NAME_OF_NAKSHTRA.PUNARVASU,new Pada4(),0.48));
-        	capricornGrahas.add(GrahaFactory.getGraha(Name_Of_Graha.KETU, NAME_OF_NAKSHTRA.UTTAR_ASHADA,new Pada2(),0.48));
-        	*/
-        	
-        	
-        	ariesGrahas.add(chandra);
-        	cancerGrahas.add(rahu);
-        	virgoGrahas.add(shani);
-        	virgoGrahas.add(mangal);
-        	libraGrahas.add(guru);
-        	scorpioGrahas.add(surya);
-        	scorpioGrahas.add(budha);
-        	capricornGrahas.add(shukra);
-        	capricornGrahas.add(ketu);
-        	ariesRashi.setGrahas(ariesGrahas);
-        	virgoRashi.setGrahas(virgoGrahas);
-        	libraRashi.setGrahas(libraGrahas);
-        	cancerRashi.setGrahas(cancerGrahas);
-        	scorpioRashi.setGrahas(scorpioGrahas);
-        	capricornRashi.setGrahas(capricornGrahas);
-        	
-        	
-        	
-        	
-        	
-        	d1RashiChartProcessor.getHoroscope().getBhava1().setRashi(piscesRashi);
-        	d1RashiChartProcessor.getHoroscope().getBhava2().setRashi(ariesRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava3().setRashi(taurusRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava4().setRashi(geminiRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava5().setRashi(cancerRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava6().setRashi(leoRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava7().setRashi(virgoRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava8().setRashi(libraRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava9().setRashi(scorpioRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava10().setRashi(sagittariusRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava11().setRashi(capricornRashi);
-            d1RashiChartProcessor.getHoroscope().getBhava12().setRashi(acquariusRashi);
-        	/*
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-            */
-            
-            System.out.println(d1RashiChartProcessor.processHoroscope());
-            
-            /**
-            ObjectMapper mapper = new ObjectMapper();
-        	mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        	try {
-        		
-        		
-        		
-    			System.out.println(mapper.writeValueAsString(obj.horoscope));
-    		} catch (JsonProcessingException e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		}
-    		**/
-            
-            
-	    
+		Graha surya = (Graha) context.getBean("surya");
+		Graha chandra = (Graha) context.getBean("chandra");
+		Graha mangal = (Graha) context.getBean("mangal");
+		Graha budha = (Graha) context.getBean("budha");
+		Graha guru = (Graha) context.getBean("guru");
+		Graha shukra = (Graha) context.getBean("shukra");
+		Graha shani = (Graha) context.getBean("shani");
+		Graha rahu = (Graha) context.getBean("rahu");
+		Graha ketu = (Graha) context.getBean("ketu");
+
+		RashiNames d1RashiChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d1RashiChartMap = HoroscopeFactory.populateMap(surya, RashiNames.SCORPIO, chandra, RashiNames.ARIES,
+				mangal, RashiNames.VIRGO, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
+				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D1RashiChart, d1RashiChartLagna, d1RashiChartMap);
+
+		RashiNames d2HoraChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d2HoraChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
+				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D2HoraChart, d2HoraChartLagna, d2HoraChartMap);
+
+		RashiNames d3DrekannaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d3DrekannaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
+				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D3DrekannaChart, d3DrekannaChartLagna, d3DrekannaChartMap);
+
+		RashiNames d4ChaturthamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d4ChaturthamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra,
+				RashiNames.TAURUS, mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
+				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D4ChaturthamsaChart, d4ChaturthamsaChartLagna, d4ChaturthamsaChartMap);
+
+		RashiNames d7SaptamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d7SaptamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
+				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D7SaptamsaChart, d7SaptamsaChartLagna, d7SaptamsaChartMap);
+
+		RashiNames d9NavamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d9NavamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra, RashiNames.SCORPIO,
+				mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru, RashiNames.SAGITTAURIUS, shukra,
+				RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D9NavamsaChart, d9NavamsaChartLagna, d9NavamsaChartMap);
+
+		RashiNames d12DvadasamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d12DvadasamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D10DasamsaChart, d12DvadasamsaChartLagna, d12DvadasamsaChartMap);
+
+		RashiNames d10DasamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d10DasamsaChartMap =HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D12DvadasamsaChart, d10DasamsaChartLagna, d10DasamsaChartMap);
+
+		RashiNames d16SodasamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d16SodasamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D16SodasamsaChart, d16SodasamsaChartLagna, d16SodasamsaChartMap);
+
+		RashiNames d20VimsamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d20VimsamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D20VimsamsaChart, d20VimsamsaChartLagna, d20VimsamsaChartMap);
+
+		RashiNames d24SiddhamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d24SiddhamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D24SiddhasamsaChart, d24SiddhamsaChartLagna, d24SiddhamsaChartMap);
+
+		RashiNames d27BhamsaNakshatraChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d27BhamsaNakshatraChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D27BhamsaNakshatraChart, d27BhamsaNakshatraChartLagna, d27BhamsaNakshatraChartMap);
+
+		RashiNames d30TrimsamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d30TrimsamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D30TrimsamsaChart, d30TrimsamsaChartLagna, d30TrimsamsaChartMap);
+
+		RashiNames d40KhavedamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d40KhavedamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D40KhavedamsaChart, d40KhavedamsaChartLagna, d40KhavedamsaChartMap);
+
+		RashiNames d45AksavedamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d45AksavedamsaChartMap = new HashMap<Graha, RashiNames>();
+		d45AksavedamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra, RashiNames.SCORPIO, mangal,
+				RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru, RashiNames.SAGITTAURIUS, shukra,
+				RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D45AksavedamsaChart, d45AksavedamsaChartLagna, d45AksavedamsaChartMap);
+
+		RashiNames d60SastamsaChartLagna = RashiNames.PISCES;
+		Map<Graha, RashiNames> d60SastamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
+				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
+				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+				ketu, RashiNames.CAPRICORN);
+		HoroscopeFactory.createHoroscope(ChartNames.D60SastamsaChart, d60SastamsaChartLagna, d60SastamsaChartMap);
 
 	}
+
+	
+	
+
+	
 }

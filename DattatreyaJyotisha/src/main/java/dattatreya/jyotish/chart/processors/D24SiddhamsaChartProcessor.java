@@ -11,7 +11,7 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 
 @Component("d24SiddhamsaChartProcessor")
 @Order(value=11)
-public final class D24SiddhamsaChartProcessor3 implements ChartProcessor{
+public final class D24SiddhamsaChartProcessor implements ChartProcessor{
 	
 	
 	@Autowired

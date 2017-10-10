@@ -9,9 +9,9 @@ import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
-@Component("d40KhavedamsaCharttProcessor")
+@Component("d40KhavedamsaChartProcessor")
 @Order(value=14)
-public class D40KhavedamsaChartProcessor2 implements ChartProcessor{
+public class D40KhavedamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired
 	@Qualifier("d40KhavedamsaChart") 
