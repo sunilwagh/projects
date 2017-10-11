@@ -268,6 +268,11 @@ public final class Shukra implements Graha {
 		return ENEMY_SIGNS_TO_GRAHA;
 	}
 
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 
 	

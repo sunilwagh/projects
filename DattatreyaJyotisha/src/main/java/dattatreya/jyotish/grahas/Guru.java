@@ -32,10 +32,11 @@ public class Guru implements Graha {
 
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.SAGITTAURIUS;
 	private final RashiNames EXALTATION = RashiNames.CANCER;
-	private final RashiNames DEBILITATION = RashiNames.CAPRICORN;
 	private final RashiNames OWN = RashiNames.PISCES;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final RashiNames DEBILITATION = RashiNames.CAPRICORN;
 
 	private final Tattva TATTVA = Tattva.AKASH;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.VAMANA;
@@ -68,15 +69,20 @@ public class Guru implements Graha {
 		addBhavasToWeakest();
 		addFriendSigns();
 		addEnemySigns();
+		addNuetralSigns();
 
 	}
 
+	private void addNuetralSigns() {
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		
+	}
+
 	private void addEnemySigns() {
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		
 		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
 		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
+	    ENEMY_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
 
 	}
 
@@ -84,6 +90,8 @@ public class Guru implements Graha {
 		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
 		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
 		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
+		
 
 	}
 
@@ -271,6 +279,11 @@ public class Guru implements Graha {
 
 	public Set<BhavaNames> getWEAKEST() {
 		return WEAKEST;
+	}
+
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

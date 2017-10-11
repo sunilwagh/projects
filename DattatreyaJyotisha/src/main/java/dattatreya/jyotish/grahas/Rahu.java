@@ -235,6 +235,11 @@ public class Rahu implements Graha {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 

@@ -151,6 +151,10 @@ public class GrahaUtil {
 			if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
 				sbAnalyzeBhava.append("\n Lord is in friendly sign");
 			}
+			
+			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in nuetral sign");
+			}
 
 			if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
 				sbAnalyzeBhava.append("\n Lord is in enemy sign");

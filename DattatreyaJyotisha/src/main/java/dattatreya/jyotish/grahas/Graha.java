@@ -46,6 +46,8 @@ public interface Graha {
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA();
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA();
+	
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA();
 
 	public Tattva getTATTVA();
 

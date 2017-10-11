@@ -364,5 +364,10 @@ public final class Surya implements Graha {
 		return null;
 	}
 
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	
 }

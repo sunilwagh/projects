@@ -333,6 +333,11 @@ public final class Shani implements Graha {
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
 		return ENEMY_SIGNS_TO_GRAHA;
 	}
+
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
