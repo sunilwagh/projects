@@ -1,11 +1,18 @@
 package dattatreya.jyotish.chart.processors;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
+import dattatreya.jyotish.bhavas.Bhava;
+import dattatreya.jyotish.grahas.Graha;
+import dattatreya.jyotish.grahas.util.GrahaUtil;
+import dattatreya.jyotish.util.GrahaNames;
+import dattatreya.jyotish.util.PositiveStrengthOfGraha;
 
 @Component("d9NavamsaChartProcessor")
 @Order(value = 6)
@@ -24,45 +31,79 @@ public class D9NavamsaChartProcessor implements ChartProcessor {
 	}
 
 	public String processChart(Chart d1Chart,Chart d9Chart) {
-		return null;
+		
+		PositiveStrengthOfGraha ps= getLevelForSurya(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pc=getLevelForChandra(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pm=getLevelForMangal(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pb=getLevelForBudha(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pg=getLevelForGuru(d1Chart,d9Chart);
+		PositiveStrengthOfGraha psk=getLevelForShukra(d1Chart,d9Chart);
+		PositiveStrengthOfGraha psh=getLevelForShani(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pr=getLevelForRahu(d1Chart,d9Chart);
+		PositiveStrengthOfGraha pk=getLevelForKetu(d1Chart,d9Chart);
+		System.out.println(" surya "+ps.toString()+" chandra "+pc.toString()+" mangal "+pm+" budha "+pb+" guru "+pg+" shukra "+psk+" shani "+psh);
+		return ps.toString()+pc.toString();
 		
 		
 	}
 
-	public String getLevelForSurya(Chart d1Chart,Chart d9Chart){
-		return null;
+	public PositiveStrengthOfGraha getLevelForSurya(Chart d1Chart,Chart d9Chart){
+		
+		return getStrengthOfGraha(d9Chart,GrahaNames.SURYA);
+		
+	}
+
+	private PositiveStrengthOfGraha getStrengthOfGraha(Chart d9Chart, GrahaNames grahaName) {
+		Bhava[] bhavas = d9Chart.getBhavas();
+		PositiveStrengthOfGraha pg = null;
+		for(int i=0;i<bhavas.length;i++)
+		{
+			if (bhavas[i].getRashi().getGrahas()!=null)
+			{
+				ArrayList<Graha> grahas = (ArrayList<Graha>) bhavas[i].getRashi().getGrahas();
+				
+				for (Graha graha:grahas)
+				{
+					if (graha.getGrahaName() == grahaName)
+					{
+						pg = GrahaUtil.getGrahaStatus(bhavas[i],graha);
+				    }
+			    }
+		}
+		}
+		return pg;
 	}
 	
-	public String getLevelForChandra(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForChandra(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.CHANDRA);
 	}
 	
-	public String getLevelForMangal(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForMangal(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.MANGAL);
 	}
 	
-	public String getLevelForBudha(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForBudha(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.BUDHA);
 	}
 	
-	public String getLevelForGuru(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForGuru(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.GURU);
 	}
 	
-	public String getLevelForShukra(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForShukra(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.SHUKRA);
 	}
 	
-	public String getLevelForShani(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForShani(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.SHANI);
 	}
 	
-	public String getLevelForRahu(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForRahu(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.RAHU);
 	}
 	
-	public String getLevelForKetu(){
-		return null;
+	public PositiveStrengthOfGraha getLevelForKetu(Chart d1Chart,Chart d9Chart){
+		return getStrengthOfGraha(d9Chart,GrahaNames.KETU);
 	}
 	
 	
