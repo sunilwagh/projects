@@ -28,9 +28,11 @@ public final class Budha implements Graha {
 	private final RashiNames EXALTATION = RashiNames.VIRGO;  // 100%
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO; //75%
 	private final RashiNames OWN = RashiNames.GEMINI;    //50%
+	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
 	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 3.25 TO 6.25
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames DEBILITATION = RashiNames.PISCES; // 0%
 
 	private final Tattva TATTVA = Tattva.PRITHVI;
@@ -395,6 +397,14 @@ public final class Budha implements Graha {
 	public Set<BhavaNames> getWEAKEST() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+		return GREAT_ENEMY_SIGNS_TO_GRAHA;
 	}
 
 	

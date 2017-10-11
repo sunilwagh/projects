@@ -1,6 +1,7 @@
 package dattatreya.jyotish.grahas.util;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import dattatreya.jyotish.analyze.bhavas.GrahaInBhava;
 import dattatreya.jyotish.bhavas.Bhava;
@@ -112,14 +113,21 @@ public class GrahaUtil {
 
 	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava) {
 
+		Graha grahaToBeAnalyzed = getGrahaInformation(lordOfRashi, bhava);
+        System.out.println ("Graha Analysis"+grahaToBeAnalyzed);
 		
-		Rashi rashi = bhava.getRashi();
+		sbAnalyzeBhava.append("\n Lord is in it's "+ grahaToBeAnalyzed+ " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + bhava.getRashi().getNameOfRashi()+")");
+		
+
+		return sbAnalyzeBhava;
+	}
+
+	private static Graha getGrahaInformation(GrahaNames lordOfRashi, Bhava bhava) {
+		
+        Rashi rashi = bhava.getRashi();
+		List<Graha> grahas = (ArrayList<Graha>) rashi.getGrahas();
 		Graha grahaToBeAnalyzed = null;
-
-		ArrayList<Graha> grahas = (ArrayList<Graha>) rashi.getGrahas();
-		
-		
-
+		System.out.println(rashi.getNameOfRashi()+"->"+lordOfRashi);
 		if (grahas != null & grahas.size() > 0) {
 			
 			for (int i = 0; i < grahas.size(); i++) {
@@ -133,16 +141,12 @@ public class GrahaUtil {
 				
 			}
 		}
-
-		sbAnalyzeBhava.append("\n Lord is in it's "+ getGrahaStatus(rashi,grahaToBeAnalyzed)+ " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi()+")");
-		
-
-		return sbAnalyzeBhava;
+		return grahaToBeAnalyzed;
 	}
 	
-	public static PositiveStrengthOfGraha getGrahaStatus(Rashi rashi,Graha grahaToBeAnalyzed)
+	public static PositiveStrengthOfGraha getGrahaStatus(Bhava bhava,Graha grahaToBeAnalyzed)
 	{
-		
+		Rashi rashi = bhava.getRashi();
 		if (grahaToBeAnalyzed != null) {
 
 			
@@ -162,7 +166,7 @@ public class GrahaUtil {
 				return PositiveStrengthOfGraha.FRIENDS;
 			}
 			
-			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().size() >0 && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
 				return PositiveStrengthOfGraha.NUETRAL;
 			}
 
@@ -175,7 +179,7 @@ public class GrahaUtil {
 			}
 		
 	}
-		return null;
+		return PositiveStrengthOfGraha.DEBILITATION;
 
    }
 }

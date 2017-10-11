@@ -21,10 +21,6 @@ public interface Graha {
 
 	public void setNakshatra(Nakshatra nakshatra);
 
-	public Bhava getBhava();
-
-	public void setBhava(Bhava bhava);
-
 	public Pada getPada();
 
 	public void setPada(Pada pada);
@@ -65,13 +61,10 @@ public interface Graha {
 
 	public Set<GrahaNames> getNUETRAL_TO_GRAHA();
 
-	public Set<BhavaNames> getSTRONGEST();
 
-	public Set<BhavaNames> getSTRONG();
+	
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA();
 
-	public Set<BhavaNames> getNUETRAL();
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA();
 
-	public Set<BhavaNames> getWEAK();
-
-	public Set<BhavaNames> getWEAKEST();
 }

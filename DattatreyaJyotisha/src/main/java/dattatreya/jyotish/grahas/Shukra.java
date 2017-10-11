@@ -33,9 +33,11 @@ public final class Shukra implements Graha {
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.LIBRA;
 	private  final RashiNames EXALTATION = RashiNames.PISCES;
 	private  final RashiNames OWN = RashiNames.LIBRA;
+	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
@@ -299,6 +301,13 @@ public final class Shukra implements Graha {
 		return WEAKEST;
 	}
 
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+	}
 
 
 	

@@ -33,9 +33,11 @@ public class Guru implements Graha {
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.SAGITTAURIUS;
 	private final RashiNames EXALTATION = RashiNames.CANCER;
 	private final RashiNames OWN = RashiNames.PISCES;
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames DEBILITATION = RashiNames.CAPRICORN;
 
 	private final Tattva TATTVA = Tattva.AKASH;
@@ -287,7 +289,14 @@ public class Guru implements Graha {
 	}
 
 	
-	
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+	}
+
 	
 	
 

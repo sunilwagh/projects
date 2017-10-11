@@ -34,14 +34,19 @@ public class Rahu implements Graha {
 	private final Mahavidya mahaVidya = Mahavidya.CHINNAMASTA;
 	private final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES;
 	private final RashiNames EXALTATION = RashiNames.GEMINI;
+	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames DEBILITATION = RashiNames.CANCER;
 	private final Tattva tatva = Tattva.AGNI;
 	private final RashiNames moolTrikonaRashi = RashiNames.CANCER;
 	private final RashiNames OWN = RashiNames.GEMINI;
 	private final Tattva tattva = Tattva.PRITHVI;
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	
+	
 	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
 	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
@@ -241,6 +246,13 @@ public class Rahu implements Graha {
 		return null;
 	}
 	
-	
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+	}
+
 
 }

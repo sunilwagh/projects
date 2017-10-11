@@ -33,9 +33,12 @@ public final class Surya implements Graha {
 	private final RashiNames EXALTATION = RashiNames.ARIES;
 	private final RashiNames DEBILITATION = RashiNames.LIBRA;
 	private final RashiNames OWN = RashiNames.LEO;
+	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	// private final Tattva TATTVA = Tattva.AKASH;
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Tattva TATTVA = Tattva.AKASH;
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private final Guna GUNA = Guna.SATTVIC;
 	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
@@ -167,132 +170,16 @@ public final class Surya implements Graha {
 		this.degrees = degrees;
 	}
 
-	public Rashi getLagnaKundaliRashi() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setLagnaKundaliRashi(Rashi lagnaKundaliRashi) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public Bhava getBhava() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void setBhava(Bhava bhava) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public Set<RashiNames> getLORD_OF_RASHIS() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public GrahaNames getGrahaName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public RashiNames getMooltrikonarashi() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public RashiNames getExaltation() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public RashiNames getDebilitation() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public RashiNames getOwn() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Tattva getTattva() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<BhavaNames> getKaraka() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<GrahaNames> getEnemiesToGraha() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<GrahaNames> getFriendsToGraha() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Guna getGuna() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<BhavaNames> getStrongest() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<BhavaNames> getStrong() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<GrahaNames> getNuetralToGraha() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<BhavaNames> getWeak() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<BhavaNames> getWeakest() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
-	}
-
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
-	}
-
-	public Set<NakshatraNames> getLordOfNakshatras() {
-		return LORD_OF_NAKSHATRAS;
-	}
-
-	public Set<RashiNames> getLordOfRashis() {
-		return LORD_OF_RASHIS;
-	}
-
-	public Set<BhavaNames> getNuetral() {
-		return NUETRAL;
-	}
-
 	public VISHNU_AVATARS getVISHNU_AVATAR() {
 		return VISHNU_AVATAR;
 	}
 
 	public Mahavidya getMahaVidya() {
 		return mahaVidya;
+	}
+
+	public GrahaNames getGrahaName() {
+		return grahaName;
 	}
 
 	public RashiNames getMOOLTRIKONARASHI() {
@@ -311,12 +198,36 @@ public final class Surya implements Graha {
 		return OWN;
 	}
 
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+		return FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		return NUETRAL_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+		return ENEMY_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+	}
+
 	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
 		return LORD_OF_NAKSHATRAS;
 	}
 
 	public Guna getGUNA() {
 		return GUNA;
+	}
+
+	public Set<RashiNames> getLORD_OF_RASHIS() {
+		return LORD_OF_RASHIS;
 	}
 
 	public Set<BhavaNames> getKARAKA() {
@@ -360,14 +271,12 @@ public final class Surya implements Graha {
 	}
 
 	public Tattva getTATTVA() {
-		// TODO Auto-generated method stub
-		return null;
+		return TATTVA;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+
+	
 
 	
 }
