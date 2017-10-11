@@ -78,90 +78,90 @@ public class Kundali {
 
 	}
 
-	public String processD2(Chart d1Chart,Chart d2Chart) {
+	public String processD2(Chart d1Chart, Chart d2Chart) {
 
-		return d2HoraChartProcessor.processChart(d1Chart,d2Chart);
+		return d2HoraChartProcessor.processChart(d1Chart, d2Chart);
 	}
 
-	public String processD3(Chart d1Chart,Chart d3Chart) {
+	public String processD3(Chart d1Chart, Chart d3Chart) {
 
-		return d3DrekannaChartProcessor.processChart(d1Chart,d3Chart);
+		return d3DrekannaChartProcessor.processChart(d1Chart, d3Chart);
 	}
 
-	public String processD4(Chart d1Chart,Chart d4Chart) {
+	public String processD4(Chart d1Chart, Chart d4Chart) {
 
-		return d4ChaturthamsaChartProcessor.processChart(d1Chart,d4Chart);
-
-	}
-
-	public String processD7(Chart d1Chart,Chart d7Chart) {
-
-		return d7SaptamsaChartProcessor.processChart(d1Chart,d7Chart);
+		return d4ChaturthamsaChartProcessor.processChart(d1Chart, d4Chart);
 
 	}
 
-	public String processD9(Chart d1Chart,Chart d9Chart) {
+	public String processD7(Chart d1Chart, Chart d7Chart) {
 
-		return d9NavamsaChartProcessor.processChart(d1Chart,d9Chart);
-
-	}
-
-	public String processD10(Chart d1Chart,Chart d10Chart) {
-
-		return d10DasamsaChartProcessor.processChart(d1Chart,d10Chart);
+		return d7SaptamsaChartProcessor.processChart(d1Chart, d7Chart);
 
 	}
 
-	public String processD12(Chart d1Chart,Chart d12Chart) {
+	public String processD9(Chart d1Chart, Chart d9Chart) {
 
-		return d12DvadasamsaChartProcessor.processChart(d1Chart,d12Chart);
-
-	}
-
-	public String processD16(Chart d1Chart,Chart d16Chart) {
-
-		return d16SodasamsaChartProcessor.processChart(d1Chart,d16Chart);
+		return d9NavamsaChartProcessor.processChart(d1Chart, d9Chart);
 
 	}
 
-	public String processD20(Chart d1Chart,Chart d20Chart) {
+	public String processD10(Chart d1Chart, Chart d10Chart) {
 
-		return d20VimsamsaChartProcessor.processChart(d1Chart,d20Chart);
-
-	}
-
-	public String processD24(Chart d1Chart,Chart d24Chart) {
-
-		return d24SiddhamsaChartProcessor.processChart(d1Chart,d24Chart);
+		return d10DasamsaChartProcessor.processChart(d1Chart, d10Chart);
 
 	}
 
-	public String processD27(Chart d1Chart,Chart d27Chart) {
+	public String processD12(Chart d1Chart, Chart d12Chart) {
 
-		return d24SiddhamsaChartProcessor.processChart(d1Chart,d27Chart);
-
-	}
-
-	public String processD30(Chart d1Chart,Chart d27Chart) {
-
-		return d30TrimsamsaChartProcessor.processChart(d1Chart,d27Chart);
+		return d12DvadasamsaChartProcessor.processChart(d1Chart, d12Chart);
 
 	}
 
-	public String processD40(Chart d1Chart,Chart d40Chart) {
+	public String processD16(Chart d1Chart, Chart d16Chart) {
 
-		return d40KhavedamsaChartProcessor.processChart(d1Chart,d40Chart);
+		return d16SodasamsaChartProcessor.processChart(d1Chart, d16Chart);
 
 	}
 
-	public String processD45(Chart d1Chart,Chart d45Chart) {
+	public String processD20(Chart d1Chart, Chart d20Chart) {
 
-		return d45AksavedamsaChartProcessor.processChart(d1Chart,d45Chart);
+		return d20VimsamsaChartProcessor.processChart(d1Chart, d20Chart);
+
 	}
 
-	public String processD60(Chart d1Chart,Chart d60Chart) {
+	public String processD24(Chart d1Chart, Chart d24Chart) {
 
-		return d60SastamsaChartProcessor.processChart(d1Chart,d60Chart);
+		return d24SiddhamsaChartProcessor.processChart(d1Chart, d24Chart);
+
+	}
+
+	public String processD27(Chart d1Chart, Chart d27Chart) {
+
+		return d24SiddhamsaChartProcessor.processChart(d1Chart, d27Chart);
+
+	}
+
+	public String processD30(Chart d1Chart, Chart d27Chart) {
+
+		return d30TrimsamsaChartProcessor.processChart(d1Chart, d27Chart);
+
+	}
+
+	public String processD40(Chart d1Chart, Chart d40Chart) {
+
+		return d40KhavedamsaChartProcessor.processChart(d1Chart, d40Chart);
+
+	}
+
+	public String processD45(Chart d1Chart, Chart d45Chart) {
+
+		return d45AksavedamsaChartProcessor.processChart(d1Chart, d45Chart);
+	}
+
+	public String processD60(Chart d1Chart, Chart d60Chart) {
+
+		return d60SastamsaChartProcessor.processChart(d1Chart, d60Chart);
 
 	}
 

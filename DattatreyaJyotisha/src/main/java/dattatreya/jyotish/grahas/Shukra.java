@@ -33,9 +33,10 @@ public final class Shukra implements Graha {
 	private  final RashiNames MOOLTRIKONARASHI = RashiNames.LIBRA;
 	private  final RashiNames EXALTATION = RashiNames.PISCES;
 	private  final RashiNames OWN = RashiNames.LIBRA;
-	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
+	private  final RashiNames DEBILITATION = RashiNames.VIRGO;
 	private  final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
 	private  final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
 	private  final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
@@ -66,7 +67,33 @@ public final class Shukra implements Graha {
 		addBhavasToNuetral();
 		addBhavasToWeak();
 		addBhavasToWeakest();
+		addFriendSignsToGraha();
+		addEnemySignsToGraha();
+		addNuetralSignsToGraha();
 
+	}
+	
+	private void addFriendSignsToGraha() {
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.SAGITTAURIUS);
+		
+	}
+	
+	private void addNuetralSignsToGraha() {
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
+	
+		
+		
+	}
+
+	private void addEnemySignsToGraha() {
+		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.CANCER);
+		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		
+		
 	}
 
 	public void addLordOfNakshatrasToGraha() {
@@ -176,8 +203,28 @@ public final class Shukra implements Graha {
 		return VISHNU_AVATAR;
 	}
 
+	public Bhava getBhava() {
+		return bhava;
+	}
+
+	public void setBhava(Bhava bhava) {
+		this.bhava = bhava;
+	}
+
+	public GrahaNames getGrahaName() {
+		return grahaName;
+	}
+
 	public Mahavidya getMahaVidya() {
 		return mahaVidya;
+	}
+
+	public Guna getGUNA() {
+		return GUNA;
+	}
+
+	public Tattva getTATTVA() {
+		return TATTVA;
 	}
 
 	public RashiNames getMOOLTRIKONARASHI() {
@@ -188,24 +235,28 @@ public final class Shukra implements Graha {
 		return EXALTATION;
 	}
 
-	public RashiNames getDEBILITATION() {
-		return DEBILITATION;
-	}
-
 	public RashiNames getOWN() {
 		return OWN;
 	}
 
-	public Tattva getTATTVA() {
-		return TATTVA;
+	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+		return FRIEND_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		return NUETRAL_SIGNS_TO_GRAHA;
+	}
+
+	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+		return ENEMY_SIGNS_TO_GRAHA;
+	}
+
+	public RashiNames getDEBILITATION() {
+		return DEBILITATION;
 	}
 
 	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
 		return LORD_OF_NAKSHATRAS;
-	}
-
-	public Guna getGUNA() {
-		return GUNA;
 	}
 
 	public Set<RashiNames> getLORD_OF_RASHIS() {
@@ -248,30 +299,7 @@ public final class Shukra implements Graha {
 		return WEAKEST;
 	}
 
-	public Bhava getBhava() {
-		return bhava;
-	}
 
-	public void setBhava(Bhava bhava) {
-		this.bhava = bhava;
-	}
-
-	public GrahaNames getGrahaName() {
-		return grahaName;
-	}
-
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
-	}
-
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
-	}
-
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	
 

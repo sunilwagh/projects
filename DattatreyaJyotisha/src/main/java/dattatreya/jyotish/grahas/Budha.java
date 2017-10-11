@@ -73,6 +73,13 @@ public final class Budha implements Graha {
 
 	}
 	
+	private void addFriendSignsToGraha() {
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
+		
+	}
+	
 	private void addNuetralSignsToGraha() {
 		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
 		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
@@ -88,12 +95,7 @@ public final class Budha implements Graha {
 		
 	}
 
-	private void addFriendSignsToGraha() {
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
-		
-	}
+	
 
 	public void addKarakasInLifeForGraha() {
 		KARAKA_IN_LIFE.add("Intellect");

@@ -135,33 +135,33 @@ public class GrahaUtil {
 
 		if (grahaToBeAnalyzed != null) {
 
-			sbAnalyzeBhava.append("\n Graha to be analyzed: " + grahaToBeAnalyzed.getGrahaName());
+			sbAnalyzeBhava.append("\n Lord : " + grahaToBeAnalyzed.getGrahaName());
 			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getEXALTATION()) {
-				sbAnalyzeBhava.append("\n Lord is Exalted");
+				sbAnalyzeBhava.append("\n Lord is Exalted: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 
-			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getMOOLTRIKONARASHI())) {
-				sbAnalyzeBhava.append("\n Lord is in it's Mooltrikona");
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getMOOLTRIKONARASHI()) {
+				sbAnalyzeBhava.append("\n Lord is in it's Mooltrikona: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 
-			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getOWN())) {
-				sbAnalyzeBhava.append("\n Lord is in it's Own Rashi");
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getOWN()) {
+				sbAnalyzeBhava.append("\n Lord is in it's Own Rashi: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 
-			if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-				sbAnalyzeBhava.append("\n Lord is in friendly sign");
+			if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in friendly sign: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 			
-			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-				sbAnalyzeBhava.append("\n Lord is in nuetral sign");
+			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in nuetral sign: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 
-			if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
-				sbAnalyzeBhava.append("\n Lord is in enemy sign");
+			if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+				sbAnalyzeBhava.append("\n Lord is in enemy sign: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 
-			if (rashi.getNameOfRashi().equals(grahaToBeAnalyzed.getDEBILITATION())) {
-				sbAnalyzeBhava.append("\n Lord is debilitated");
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getDEBILITATION()) {
+				sbAnalyzeBhava.append("\n Lord is debilitated: "+ grahaToBeAnalyzed.getGrahaName()+ "->" + rashi.getNameOfRashi());
 			}
 		}
 
