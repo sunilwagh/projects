@@ -41,7 +41,7 @@ public class D9NavamsaChartProcessor implements ChartProcessor {
 		PositiveStrengthOfGraha psh=getLevelForShani(d1Chart,d9Chart);
 		PositiveStrengthOfGraha pr=getLevelForRahu(d1Chart,d9Chart);
 		PositiveStrengthOfGraha pk=getLevelForKetu(d1Chart,d9Chart);
-		System.out.println(" surya "+ps.toString()+" chandra "+pc.toString()+" mangal "+pm+" budha "+pb+" guru "+pg+" shukra "+psk+" shani "+psh);
+		System.out.println(" surya "+ps.toString()+" chandra "+pc.toString()+" mangal "+pm+" budha "+pb+" guru "+pg+" shukra "+psk+" shani "+psh + " rahu " + pr + " ketu " + pk);
 		return ps.toString()+pc.toString();
 		
 		

@@ -34,11 +34,15 @@ public class Ketu implements Graha {
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.KALKI;
 	private final Mahavidya mahaVidya = Mahavidya.BHAIRAVI;
 
+	private final RashiNames EXALTATION = RashiNames.SCORPIO;  // 100%
+	private final RashiNames MOOLTRIKONARASHI = RashiNames.VIRGO; //75%
+	private final RashiNames OWN = RashiNames.GEMINI;    //50%
 	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
 	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
 	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final RashiNames DEBILITATION = RashiNames.PISCES; // 0%
 
 	private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
@@ -54,7 +58,34 @@ public class Ketu implements Graha {
 		addBhavasToWeak();
 		addBhavasToWeakest();
 		addNotes();
+		addFriendSignsToGraha();
+		addEnemySignsToGraha();
+		addNuetralSignsToGraha();
 
+	}
+	
+	private void addFriendSignsToGraha() {
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.SAGITTAURIUS);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
+		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.PISCES);
+		
+	}
+	
+	private void addNuetralSignsToGraha() {
+				
+		
+	}
+
+	private void addEnemySignsToGraha() {
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.CANCER);
+		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		
+		
 	}
 
 	private void addNotes() {
