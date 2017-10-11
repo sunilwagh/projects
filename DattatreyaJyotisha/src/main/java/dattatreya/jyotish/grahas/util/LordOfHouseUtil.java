@@ -22,18 +22,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofFirstHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava1 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava1.getRashi()));
 
@@ -127,18 +127,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofSecondHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
         StringBuilder sbAnalyzeBhava2 = new StringBuilder();
 		
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava2.getRashi()));
 
@@ -232,18 +232,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofThirdHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava3 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava3.getRashi()));
 
@@ -338,18 +338,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofFourthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava4 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava4.getRashi()));
 
@@ -443,18 +443,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofFifthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava5 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava5.getRashi()));
 
@@ -550,18 +550,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofSixthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava6 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava6.getRashi()));
 
@@ -655,18 +655,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofSeventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava7 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava7.getRashi()));
 
@@ -763,18 +763,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofEightHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava8 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava8.getRashi()));
 
@@ -868,18 +868,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofNinthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava9 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava9.getRashi()));
 
@@ -974,18 +974,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofTenthHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava10 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava10.getRashi()));
 
@@ -1081,18 +1081,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofEleventhHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava11 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava11.getRashi()));
 
@@ -1187,18 +1187,18 @@ public class LordOfHouseUtil {
 	public static String infoOnLordofTwelvethHouse(HouseLordPlacedInBhava houseLordPlacedInBhava, Chart horoscope) {
 		StringBuilder sbAnalyzeBhava12 = new StringBuilder();
 
-		Bhava1 bhava1 = (Bhava1) horoscope.getBhava1();
-		Bhava2 bhava2 = (Bhava2) horoscope.getBhava2();
-		Bhava3 bhava3 = (Bhava3) horoscope.getBhava3();
-		Bhava4 bhava4 = (Bhava4) horoscope.getBhava4();
-		Bhava5 bhava5 = (Bhava5) horoscope.getBhava5();
-		Bhava6 bhava6 = (Bhava6) horoscope.getBhava6();
-		Bhava7 bhava7 = (Bhava7) horoscope.getBhava7();
-		Bhava8 bhava8 = (Bhava8) horoscope.getBhava8();
-		Bhava9 bhava9 = (Bhava9) horoscope.getBhava9();
-		Bhava10 bhava10 = (Bhava10) horoscope.getBhava10();
-		Bhava11 bhava11 = (Bhava11) horoscope.getBhava11();
-		Bhava12 bhava12 = (Bhava12) horoscope.getBhava12();
+		Bhava1 bhava1 = (Bhava1) horoscope.getBhavas()[0];
+		Bhava2 bhava2 = (Bhava2) horoscope.getBhavas()[1];
+		Bhava3 bhava3 = (Bhava3) horoscope.getBhavas()[2];
+		Bhava4 bhava4 = (Bhava4) horoscope.getBhavas()[3];
+		Bhava5 bhava5 = (Bhava5) horoscope.getBhavas()[4];
+		Bhava6 bhava6 = (Bhava6) horoscope.getBhavas()[5];
+		Bhava7 bhava7 = (Bhava7) horoscope.getBhavas()[6];
+		Bhava8 bhava8 = (Bhava8) horoscope.getBhavas()[7];
+		Bhava9 bhava9 = (Bhava9) horoscope.getBhavas()[8];
+		Bhava10 bhava10 = (Bhava10) horoscope.getBhavas()[9];
+		Bhava11 bhava11 = (Bhava11) horoscope.getBhavas()[10];
+		Bhava12 bhava12 = (Bhava12) horoscope.getBhavas()[11];
 
 		GrahaNames lordOfRashi = RashiUtil.getRashiLordMap().get(RashiUtil.findRashiInBhava(bhava12.getRashi()));
 

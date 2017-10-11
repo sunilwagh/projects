@@ -45,8 +45,8 @@ public class AnalyzeBhava6 implements AnalyzeBhava{
 	public String analyzeBhava(Chart horoscope) {
 
 		String infoAboutHouseLord = infoAboutHouseLord(horoscope);
-		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhava6());
-		String infoAboutRashiInHouse = RashiUtil.infoAboutRashiInHouse(rashiInBhava,horoscope.getBhava6());
+		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhavas()[5]);
+		String infoAboutRashiInHouse = RashiUtil.infoAboutRashiInHouse(rashiInBhava,horoscope.getBhavas()[5]);
 		return infoAboutHouseLord + "\n" + infoAboutGrahasInHouse + "\n" + infoAboutRashiInHouse;
 
 	}

@@ -26,6 +26,44 @@ public class D9NavamsaChartProcessor implements ChartProcessor {
 	public String processChart(Chart d1Chart,Chart d9Chart) {
 		return null;
 		
+		
 	}
 
+	public String getLevelForSurya(Chart d1Chart,Chart d9Chart){
+		return null;
+	}
+	
+	public String getLevelForChandra(){
+		return null;
+	}
+	
+	public String getLevelForMangal(){
+		return null;
+	}
+	
+	public String getLevelForBudha(){
+		return null;
+	}
+	
+	public String getLevelForGuru(){
+		return null;
+	}
+	
+	public String getLevelForShukra(){
+		return null;
+	}
+	
+	public String getLevelForShani(){
+		return null;
+	}
+	
+	public String getLevelForRahu(){
+		return null;
+	}
+	
+	public String getLevelForKetu(){
+		return null;
+	}
+	
+	
 }
