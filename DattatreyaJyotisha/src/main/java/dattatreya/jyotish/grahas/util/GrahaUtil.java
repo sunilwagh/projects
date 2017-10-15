@@ -114,11 +114,7 @@ public class GrahaUtil {
 	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava) {
 
 		Graha grahaToBeAnalyzed = getGrahaInformation(lordOfRashi, bhava);
-        System.out.println ("Graha Analysis"+grahaToBeAnalyzed);
-		
-		sbAnalyzeBhava.append("\n Lord is in it's "+ grahaToBeAnalyzed+ " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + bhava.getRashi().getNameOfRashi()+")");
-		
-
+        sbAnalyzeBhava.append("\n Lord is in it's "+ grahaToBeAnalyzed+ " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + bhava.getRashi().getNameOfRashi()+")");
 		return sbAnalyzeBhava;
 	}
 
@@ -127,7 +123,7 @@ public class GrahaUtil {
         Rashi rashi = bhava.getRashi();
 		List<Graha> grahas = (ArrayList<Graha>) rashi.getGrahas();
 		Graha grahaToBeAnalyzed = null;
-		System.out.println(rashi.getNameOfRashi()+"->"+lordOfRashi);
+		
 		if (grahas != null & grahas.size() > 0) {
 			
 			for (int i = 0; i < grahas.size(); i++) {
