@@ -114,7 +114,7 @@ public class GrahaUtil {
 	public static StringBuilder analyzeHouseLord(GrahaNames lordOfRashi, Bhava bhava, StringBuilder sbAnalyzeBhava) {
 
 		Graha grahaToBeAnalyzed = getGrahaInformation(lordOfRashi, bhava);
-        sbAnalyzeBhava.append("\n Lord is in it's "+ grahaToBeAnalyzed.getGrahaName()+ " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + bhava.getRashi().getNameOfRashi()+")");
+        sbAnalyzeBhava.append("\nLord is in it's "+ getGrahaStatus(bhava,grahaToBeAnalyzed) + " sign ("+ grahaToBeAnalyzed.getGrahaName()+ "->" + bhava.getRashi().getNameOfRashi()+")");
 		return sbAnalyzeBhava;
 	}
 

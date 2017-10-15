@@ -10,7 +10,7 @@ public final class GuruInBhava4 implements GuruInBhava {
 	public String getInfoAboutGuruInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("\n Guru in 4th House: \n");
-		sb.append("\n \n");
+		sb.append("\nHave little knowledge but will advise eveyrbody.\n");
 		return sb.toString();
 	}
 
