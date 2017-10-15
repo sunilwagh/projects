@@ -130,7 +130,7 @@ public final class D1RashiChartProcessor implements ChartProcessor{
 				System.err.println("cancel non-finished tasks");
 			}
 			executor.shutdownNow();
-			System.out.println("shutdown finished");
+			//System.out.println("shutdown finished");
 		}
 
 		processHoroscopeSb.append("\n*************Report**************** \n" 
