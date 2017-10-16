@@ -91,7 +91,7 @@ public class KundaliImpl implements Kundali{
 
 	public String processD1(Chart chart) {
 
-		return d1RashiChartProcessor.processChart(chart);
+		return d1RashiChartProcessor.processChart(chart,null);
 
 	}
 

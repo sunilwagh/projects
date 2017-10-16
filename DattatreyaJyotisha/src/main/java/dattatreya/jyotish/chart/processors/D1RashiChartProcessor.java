@@ -71,7 +71,7 @@ public final class D1RashiChartProcessor implements ChartProcessor{
 	AnalyzeBhava analyzeBhava12;
 	
 	
-	public String processChart(Chart horoscope) {
+	public String processChart(Chart horoscope,Chart horoscope1) {
 		
 		
 
