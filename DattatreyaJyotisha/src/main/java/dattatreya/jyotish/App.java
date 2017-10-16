@@ -23,7 +23,7 @@ public class App {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		Kundali kundali = (Kundali) context.getBean("kundali");
+		KundaliImpl kundali = (KundaliImpl) context.getBean("kundali");
 		Graha surya = (Graha) context.getBean("surya");
 		Graha chandra = (Graha) context.getBean("chandra");
 		Graha mangal = (Graha) context.getBean("mangal");

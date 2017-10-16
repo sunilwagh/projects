@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.Chart;
+import dattatreya.jyotish.analyze.bhavas.Kundali;
 import dattatreya.jyotish.chart.processors.D10DasamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D11RudramshaChartProcessor;
 import dattatreya.jyotish.chart.processors.D12DvadasamsaChartProcessor;
@@ -26,7 +27,7 @@ import dattatreya.jyotish.chart.processors.D8AshtamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D9NavamsaChartProcessor;
 
 @Component("kundali")
-public class Kundali {
+public class KundaliImpl implements Kundali{
 
 	@Autowired
 	D1RashiChartProcessor d1RashiChartProcessor;
