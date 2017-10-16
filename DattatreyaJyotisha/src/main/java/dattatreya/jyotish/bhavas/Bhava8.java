@@ -39,4 +39,14 @@ public class Bhava8 implements Bhava {
 		this.rashi = rashi;
 	}
 
+	public BhavaNames getName() {
+		return name;
+	}
+
+	public Set<String> getSignificators() {
+		return significators;
+	}
+	
+	
+
 }
