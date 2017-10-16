@@ -319,7 +319,7 @@ public class App {
 		 */
 		RashiNames d27BhamsaNakshatraChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d27BhamsaNakshatraChartMap = HoroscopeFactory.populateMap
-				(surya, RashiNames.GEMINI, 
+				       (surya, RashiNames.GEMINI, 
 						chandra, RashiNames.TAURUS,
 						mangal, RashiNames.PISCES,
 						budha, RashiNames.SCORPIO,
@@ -355,7 +355,7 @@ public class App {
 		 */
 		RashiNames d40KhavedamsaChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d40KhavedamsaChartMap = HoroscopeFactory.populateMap
-				(surya, RashiNames.GEMINI, 
+				       (surya, RashiNames.GEMINI, 
 						chandra, RashiNames.TAURUS,
 						mangal, RashiNames.PISCES,
 						budha, RashiNames.SCORPIO,
@@ -374,7 +374,7 @@ public class App {
 		RashiNames d45AksavedamsaChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d45AksavedamsaChartMap = new HashMap<Graha, RashiNames>();
 		d45AksavedamsaChartMap = HoroscopeFactory.populateMap
-				(surya, RashiNames.GEMINI, 
+				       (surya, RashiNames.GEMINI, 
 						chandra, RashiNames.TAURUS,
 						mangal, RashiNames.PISCES,
 						budha, RashiNames.SCORPIO,
@@ -392,7 +392,7 @@ public class App {
 		 */
 		RashiNames d60SastamsaChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d60SastamsaChartMap = HoroscopeFactory.populateMap
-				(surya, RashiNames.GEMINI, 
+				       (surya, RashiNames.GEMINI, 
 						chandra, RashiNames.TAURUS,
 						mangal, RashiNames.PISCES,
 						budha, RashiNames.SCORPIO,
