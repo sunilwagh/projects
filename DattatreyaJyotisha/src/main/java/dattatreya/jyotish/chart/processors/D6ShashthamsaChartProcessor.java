@@ -10,12 +10,12 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.bhavas.util.LagnaUtil;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
-@Component("d6SashthamsaChartProcessor")
+@Component("d6ShashthamsaChartProcessor")
 @Order(value=6)
-public class D6SashthamsaChartProcessor implements ChartProcessor{
+public class D6ShashthamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired
-	@Qualifier("d5PanchamshaChart") 
+	@Qualifier("d6ShasthamsaChart") 
 	Chart horoscope;
 
 	public Chart getHoroscope() {

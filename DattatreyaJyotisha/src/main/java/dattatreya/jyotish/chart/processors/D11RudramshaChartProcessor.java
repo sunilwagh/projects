@@ -15,7 +15,7 @@ import dattatreya.jyotish.horoscope.D9NavamsaChart;
 public class D11RudramshaChartProcessor implements ChartProcessor{
 	
 	@Autowired
-	@Qualifier("d5PanchamshaChart") 
+	@Qualifier("d11RudramsaChart") 
 	Chart horoscope;
 
 	public Chart getHoroscope() {

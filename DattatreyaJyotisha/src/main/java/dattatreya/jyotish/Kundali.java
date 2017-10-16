@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.chart.processors.D10DasamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D11RudramshaChartProcessor;
 import dattatreya.jyotish.chart.processors.D12DvadasamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D16SodasamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D1RashiChartProcessor;
@@ -17,8 +18,11 @@ import dattatreya.jyotish.chart.processors.D3DrekannaChartProcessor;
 import dattatreya.jyotish.chart.processors.D40KhavedamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D45AksavedamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D4ChaturthamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D5PanchamshaChartProcessor;
 import dattatreya.jyotish.chart.processors.D60SastamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D6ShashthamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D7SaptamsaChartProcessor;
+import dattatreya.jyotish.chart.processors.D8AshtamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D9NavamsaChartProcessor;
 
 @Component("kundali")
@@ -37,13 +41,25 @@ public class Kundali {
 	D4ChaturthamsaChartProcessor d4ChaturthamsaChartProcessor;
 
 	@Autowired
+	D5PanchamshaChartProcessor d5PanchamshaChartProcessor;
+
+	@Autowired
+	D6ShashthamsaChartProcessor d6ShashthamsaChartProcessor;
+
+	@Autowired
 	D7SaptamsaChartProcessor d7SaptamsaChartProcessor;
+	
+	@Autowired
+	D8AshtamsaChartProcessor d8AshtamsaChartProcessor;
 
 	@Autowired
 	D9NavamsaChartProcessor d9NavamsaChartProcessor;
 
 	@Autowired
 	D10DasamsaChartProcessor d10DasamsaChartProcessor;
+	
+	@Autowired
+	D11RudramshaChartProcessor d11RudramshaChartProcessor;
 
 	@Autowired
 	D12DvadasamsaChartProcessor d12DvadasamsaChartProcessor;
@@ -96,25 +112,25 @@ public class Kundali {
 
 	public String processD5(Chart d1Chart, Chart d5Chart) {
 
-		return d7SaptamsaChartProcessor.processChart(d1Chart, d5Chart);
+		return d5PanchamshaChartProcessor.processChart(d1Chart, d5Chart);
 
 	}
-	
+
 	public String processD6(Chart d1Chart, Chart d6Chart) {
 
-		return d7SaptamsaChartProcessor.processChart(d1Chart, d6Chart);
+		return d6ShashthamsaChartProcessor.processChart(d1Chart, d6Chart);
 
 	}
-	
+
 	public String processD7(Chart d1Chart, Chart d7Chart) {
 
 		return d7SaptamsaChartProcessor.processChart(d1Chart, d7Chart);
 
 	}
-	
+
 	public String processD8(Chart d1Chart, Chart d8Chart) {
 
-		return d7SaptamsaChartProcessor.processChart(d1Chart, d8Chart);
+		return d8AshtamsaChartProcessor.processChart(d1Chart, d8Chart);
 
 	}
 
@@ -129,10 +145,10 @@ public class Kundali {
 		return d10DasamsaChartProcessor.processChart(d1Chart, d10Chart);
 
 	}
-	
+
 	public String processD11(Chart d1Chart, Chart d11Chart) {
 
-		return d10DasamsaChartProcessor.processChart(d1Chart, d11Chart);
+		return d11RudramshaChartProcessor.processChart(d1Chart, d11Chart);
 
 	}
 

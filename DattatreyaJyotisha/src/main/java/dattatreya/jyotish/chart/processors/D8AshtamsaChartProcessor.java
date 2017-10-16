@@ -8,14 +8,14 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.bhavas.util.LagnaUtil;
-import dattatreya.jyotish.horoscope.D9NavamsaChart;
+
 
 @Component("d8AshtamsaChartProcessor")
 @Order(value=8)
 public class D8AshtamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired
-	@Qualifier("d5PanchamshaChart") 
+	@Qualifier("d8AshtamsaChart") 
 	Chart horoscope;
 
 	public Chart getHoroscope() {
