@@ -10,7 +10,7 @@ public final class ChandraInBhava4 implements ChandraInBhava {
 	public String getInfoAboutChandraInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("\n Chandra in 4th House: \n");
-		sb.append("\n \n");
+		sb.append("\n One of the child will settle abroad \n");
 		return sb.toString();
 	}
 
