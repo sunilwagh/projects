@@ -3,7 +3,7 @@ package dattatreya.jyotish.rashis;
 import java.util.ArrayList;
 
 import dattatreya.jyotish.grahas.Graha;
-import dattatreya.jyotish.rashis.aquarius.Acquarius;
+import dattatreya.jyotish.rashis.aquarius.Aquarius;
 import dattatreya.jyotish.rashis.aries.Aries;
 import dattatreya.jyotish.rashis.cancer.Cancer;
 import dattatreya.jyotish.rashis.capricorn.Capricorn;
@@ -132,7 +132,7 @@ public final class RashiFactory {
 	}
 	
 	private static Rashi createAcquariusRashi(ArrayList<Graha> grahas) {
-		Acquarius acquarius = new Acquarius();
+		Aquarius acquarius = new Aquarius();
 		acquarius.setGrahas(grahas);
 		return  acquarius;
 

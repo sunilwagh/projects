@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
+import dattatreya.jyotish.util.EvenOdd;
 import dattatreya.jyotish.util.Goals;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;
@@ -17,7 +18,7 @@ import dattatreya.jyotish.util.Tattva;
 
 @Component("acquariusRashi")
 @Order(value=11)
-public final class Acquarius implements Rashi {
+public final class Aquarius implements Rashi {
 
 	private final RashiNames nameOfRashi = RashiNames.ACQUARIUS;
 	private final MobilityOfRashi mobility = MobilityOfRashi.STHIRA;
@@ -26,6 +27,8 @@ public final class Acquarius implements Rashi {
 	private final Direction direction = Direction.WEST;
 	private final GenderOfRashi gender = GenderOfRashi.MALE;
 	private List<Graha> grahas;
+	private final EvenOdd evenOddSign = EvenOdd.ODD;
+	
 	public List<Graha> getGrahas() {
 		return grahas;
 	}
@@ -50,6 +53,11 @@ public final class Acquarius implements Rashi {
 	public GenderOfRashi getGender() {
 		return gender;
 	}
+	public EvenOdd getEvenOddSign() {
+		return evenOddSign;
+	}
+	
+	
 	
 	
 

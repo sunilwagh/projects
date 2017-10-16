@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
+import dattatreya.jyotish.util.EvenOdd;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;
 import dattatreya.jyotish.util.RashiNames;
@@ -21,8 +22,10 @@ public final class Cancer implements Rashi{
 	private final RashiNames nameOfRashi = RashiNames.CANCER;
 	private final MobilityOfRashi mobility=MobilityOfRashi.CHARA;
 	private final GenderOfRashi gender=GenderOfRashi.FEMALE;
+	private final EvenOdd evenOddSign = EvenOdd.EVEN;
 	private final Tattva tattva=Tattva.APA;
 	private final Direction direction=Direction.NORTH;
+
 	private List<Graha> grahas;
 	
 	
@@ -48,6 +51,12 @@ public final class Cancer implements Rashi{
 	public void setGrahas(List<Graha> grahas) {
 		this.grahas = grahas;
 	}
+	public EvenOdd getEvenOddSign() {
+		return evenOddSign;
+	}
+	
+	
+	
 	
 	
 	

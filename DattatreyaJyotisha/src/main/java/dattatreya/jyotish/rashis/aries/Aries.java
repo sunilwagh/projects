@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
+import dattatreya.jyotish.util.EvenOdd;
 import dattatreya.jyotish.util.Goals;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;
@@ -23,6 +24,7 @@ public final class Aries implements Rashi {
 	private final Goals goals = Goals.DHARMA;
 	private final MobilityOfRashi mobility = MobilityOfRashi.CHARA;
 	private final GenderOfRashi gender = GenderOfRashi.MALE;
+	private final EvenOdd evenOddSign = EvenOdd.ODD;
 	private final Tattva tattva = Tattva.AGNI;
 	private final Direction direction = Direction.EAST;
 	private List<Graha> grahas;
@@ -62,6 +64,12 @@ public final class Aries implements Rashi {
 	public Direction getDirection() {
 		return direction;
 	}
+
+	public EvenOdd getEvenOddSign() {
+		return evenOddSign;
+	}
+	
+	
 	
 	
 

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Direction;
+import dattatreya.jyotish.util.EvenOdd;
 import dattatreya.jyotish.util.GenderOfRashi;
 import dattatreya.jyotish.util.MobilityOfRashi;
 import dattatreya.jyotish.util.RashiNames;
@@ -24,6 +25,7 @@ public final class Pisces implements Rashi {
 	private final Tattva tattva = Tattva.APA;
 	private final Direction direction = Direction.NORTH;
 	private List<Graha> grahas;
+	private final EvenOdd evenOddSign = EvenOdd.EVEN;
 	
 	public List<Graha> getGrahas() {
 		return grahas;
@@ -46,6 +48,11 @@ public final class Pisces implements Rashi {
 	public Direction getDirection() {
 		return direction;
 	}
+	public EvenOdd getEvenOddSign() {
+		return evenOddSign;
+	}
+	
+	
 
 	
 

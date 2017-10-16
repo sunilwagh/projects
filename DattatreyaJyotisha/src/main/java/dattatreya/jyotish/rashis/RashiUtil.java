@@ -10,7 +10,7 @@ import dattatreya.jyotish.bhavas.Bhava;
 import dattatreya.jyotish.bhavas.Bhava10;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
-import dattatreya.jyotish.rashis.aquarius.Acquarius;
+import dattatreya.jyotish.rashis.aquarius.Aquarius;
 import dattatreya.jyotish.rashis.aries.Aries;
 import dattatreya.jyotish.rashis.cancer.Cancer;
 import dattatreya.jyotish.rashis.capricorn.Capricorn;
@@ -96,7 +96,7 @@ public class RashiUtil {
 			return RashiNames.CAPRICORN;
 		}
 
-		if (rashi instanceof Acquarius) {
+		if (rashi instanceof Aquarius) {
 			return RashiNames.ACQUARIUS;
 		}
 
@@ -184,8 +184,8 @@ public class RashiUtil {
             return grahaNameList;
 		}
 
-		if (rashi instanceof Acquarius) {
-			Acquarius acquariusRashi = (Acquarius) rashi;
+		if (rashi instanceof Aquarius) {
+			Aquarius acquariusRashi = (Aquarius) rashi;
 			ArrayList<Graha> grahaList = (ArrayList<Graha>) acquariusRashi.getGrahas();
 			addGrahasToList(grahaNameList, grahaList);
 			return grahaNameList;
