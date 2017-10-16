@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
+import dattatreya.jyotish.bhavas.util.LagnaUtil;
 
 
 @Component("d3DrekannaChartProcessor")
@@ -26,6 +27,16 @@ public class D3DrekannaChartProcessor implements ChartProcessor{
 	}
 
 	public String processChart(Chart d1Chart,Chart d3Chart) {
+		
+		if (LagnaUtil.isLagnaAquarius(d3Chart))
+		{
+			System.out.println ("Some sacrifice in ..");
+		}
+		
+		if (LagnaUtil.isLagnaScorpio(d3Chart))
+		{
+			System.out.println (".. feel like a burden");
+		}
 		return null;
 		
 	}

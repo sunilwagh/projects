@@ -6,6 +6,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
+import dattatreya.jyotish.bhavas.util.LagnaUtil;
 
 @Component("d4ChaturthamsaChartProcessor")
 @Order(value=4)
@@ -24,6 +25,15 @@ public class D4ChaturthamsaChartProcessor implements ChartProcessor{
 	}
 
 	public String processChart(Chart d1Chart,Chart d4Chart) {
+		if (LagnaUtil.isLagnaAquarius(d4Chart))
+		{
+			System.out.println ("Some sacrifice in ..");
+		}
+		
+		if (LagnaUtil.isLagnaScorpio(d4Chart))
+		{
+			System.out.println (".. feel like a burden");
+		}
 		return null;
 		
 	}
