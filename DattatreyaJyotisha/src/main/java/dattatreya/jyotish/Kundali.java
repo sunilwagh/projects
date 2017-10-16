@@ -94,9 +94,27 @@ public class Kundali {
 
 	}
 
+	public String processD5(Chart d1Chart, Chart d5Chart) {
+
+		return d7SaptamsaChartProcessor.processChart(d1Chart, d5Chart);
+
+	}
+	
+	public String processD6(Chart d1Chart, Chart d6Chart) {
+
+		return d7SaptamsaChartProcessor.processChart(d1Chart, d6Chart);
+
+	}
+	
 	public String processD7(Chart d1Chart, Chart d7Chart) {
 
 		return d7SaptamsaChartProcessor.processChart(d1Chart, d7Chart);
+
+	}
+	
+	public String processD8(Chart d1Chart, Chart d8Chart) {
+
+		return d7SaptamsaChartProcessor.processChart(d1Chart, d8Chart);
 
 	}
 
@@ -109,6 +127,12 @@ public class Kundali {
 	public String processD10(Chart d1Chart, Chart d10Chart) {
 
 		return d10DasamsaChartProcessor.processChart(d1Chart, d10Chart);
+
+	}
+	
+	public String processD11(Chart d1Chart, Chart d11Chart) {
+
+		return d10DasamsaChartProcessor.processChart(d1Chart, d11Chart);
 
 	}
 
