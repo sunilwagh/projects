@@ -32,7 +32,7 @@ public final class Chandra implements Graha{
 	double degrees;
 	
 	private  final GrahaNames grahaName = GrahaNames.CHANDRA;
-	private  final RashiNames MOOLTRIKONARASHI = RashiNames.TAURUS;
+	private  final RashiNames MOOLTRIKONARASHI = RashiNames.TAURUS; //0-3 degrees
 	private  final RashiNames EXALTATION = RashiNames.TAURUS;
 	private  final RashiNames OWN = RashiNames.CANCER;
 	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%

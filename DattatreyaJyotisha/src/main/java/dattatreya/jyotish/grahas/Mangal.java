@@ -29,7 +29,7 @@ public final class Mangal implements Graha {
 	private final GrahaNames grahaName = GrahaNames.MANGAL;
 	
 	private final RashiNames EXALTATION = RashiNames.CAPRICORN;
-	private final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES;
+	private final RashiNames MOOLTRIKONARASHI = RashiNames.ARIES; // 0-12 degrees
     private final RashiNames OWN = RashiNames.SCORPIO;
 	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
