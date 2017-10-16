@@ -16,32 +16,32 @@ public class LagnaUtil {
 		return isLagna(chart,RashiNames.TAURUS);
 	}
 	
-	public boolean isLagnaGemini(Chart chart)
+	public static boolean isLagnaGemini(Chart chart)
 	{
 		return isLagna(chart,RashiNames.GEMINI);
 	}
 	
-	public boolean isLagnaCancer(Chart chart)
+	public static boolean isLagnaCancer(Chart chart)
 	{
 		return isLagna(chart,RashiNames.CANCER);
 	}
 	
-	public boolean isLagnaLeo(Chart chart)
+	public static boolean isLagnaLeo(Chart chart)
 	{
 		return isLagna(chart,RashiNames.LEO);
 	}
 	
-	public boolean isLagnaVirgo(Chart chart)
+	public static boolean isLagnaVirgo(Chart chart)
 	{
 		return isLagna(chart,RashiNames.VIRGO);
 	}
 	
-	public boolean isLagnaLibra(Chart chart)
+	public static boolean isLagnaLibra(Chart chart)
 	{
 		return isLagna(chart,RashiNames.LIBRA);
 	}
 	
-	public boolean isLagnaScorpio(Chart chart)
+	public static boolean isLagnaScorpio(Chart chart)
 	{
 		return isLagna(chart,RashiNames.SCORPIO);
 	}

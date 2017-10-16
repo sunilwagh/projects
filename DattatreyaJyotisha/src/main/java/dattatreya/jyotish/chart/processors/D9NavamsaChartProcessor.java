@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import dattatreya.jyotish.analyze.bhavas.Chart;
 import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.bhavas.Bhava;
+import dattatreya.jyotish.bhavas.util.LagnaUtil;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
 import dattatreya.jyotish.util.GrahaNames;
@@ -32,6 +33,15 @@ public class D9NavamsaChartProcessor implements ChartProcessor {
 
 	public String processChart(Chart d1Chart,Chart d9Chart) {
 		
+		if (LagnaUtil.isLagnaAquarius(d9Chart))
+		{
+			System.out.println ("Some sacrifice in marriage");
+		}
+		
+		if (LagnaUtil.isLagnaScorpio(d9Chart))
+		{
+			System.out.println ("Marriage feel like a burden");
+		}
 		PositiveStrengthOfGraha ps= getLevelForSurya(d1Chart,d9Chart);
 		PositiveStrengthOfGraha pc=getLevelForChandra(d1Chart,d9Chart);
 		PositiveStrengthOfGraha pm=getLevelForMangal(d1Chart,d9Chart);
