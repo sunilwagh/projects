@@ -25,6 +25,7 @@ import dattatreya.jyotish.bhavas.Bhava6;
 import dattatreya.jyotish.bhavas.Bhava7;
 import dattatreya.jyotish.bhavas.Bhava8;
 import dattatreya.jyotish.bhavas.Bhava9;
+import dattatreya.jyotish.bhavas.util.BhavasUtil;
 import dattatreya.jyotish.grahas.Graha;
 import dattatreya.jyotish.grahas.util.GrahaUtil;
 import dattatreya.jyotish.grahas.util.LordOfHouseUtil;
@@ -50,6 +51,8 @@ public class AnalyzeBhava1 implements AnalyzeBhava {
 	public String analyzeBhava(Chart horoscope) {
 
 		String infoAboutHouseLord = infoAboutHouseLord(horoscope);
+		//System.out.println("****"+BhavasUtil.secondBhavaFrom(horoscope.getBhavas()[9],horoscope).getName());
+		//System.out.println("****"+BhavasUtil.twelvethBhavaFrom(horoscope.getBhavas()[9],horoscope).getName());
 		String infoAboutGrahasInHouse = GrahaUtil.infoAboutGrahasInHouse(grahaInBhava,horoscope.getBhavas()[0]);
 		String infoAboutRashiInHouse = RashiUtil.infoAboutRashiInHouse(rashiInBhava,horoscope.getBhavas()[0]);
 		return infoAboutHouseLord + "\n" + infoAboutGrahasInHouse + "\n" + infoAboutRashiInHouse;
