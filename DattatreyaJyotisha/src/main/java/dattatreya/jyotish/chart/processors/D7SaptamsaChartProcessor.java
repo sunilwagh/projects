@@ -9,7 +9,7 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 
 
 @Component("d7SaptamsaChartProcessor")
-@Order(value=5)
+@Order(value=7)
 public class D7SaptamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired

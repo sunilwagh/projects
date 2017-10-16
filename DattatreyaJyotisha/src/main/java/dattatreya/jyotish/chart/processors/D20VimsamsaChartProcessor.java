@@ -11,7 +11,7 @@ import dattatreya.jyotish.bhavas.util.LagnaUtil;
 
 
 @Component("d20VimsamsaChartProcessor")
-@Order(value=10)
+@Order(value=14)
 public final class D20VimsamsaChartProcessor implements ChartProcessor{
 	
 	

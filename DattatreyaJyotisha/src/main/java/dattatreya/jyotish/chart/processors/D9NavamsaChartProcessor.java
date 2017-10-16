@@ -16,7 +16,7 @@ import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.PositiveStrengthOfGraha;
 
 @Component("d9NavamsaChartProcessor")
-@Order(value = 6)
+@Order(value = 9)
 public class D9NavamsaChartProcessor implements ChartProcessor {
 
 	@Autowired

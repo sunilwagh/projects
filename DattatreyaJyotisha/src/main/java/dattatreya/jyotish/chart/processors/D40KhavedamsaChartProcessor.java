@@ -11,7 +11,7 @@ import dattatreya.jyotish.bhavas.util.LagnaUtil;
 import dattatreya.jyotish.horoscope.D9NavamsaChart;
 
 @Component("d40KhavedamsaChartProcessor")
-@Order(value=14)
+@Order(value=17)
 public class D40KhavedamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired

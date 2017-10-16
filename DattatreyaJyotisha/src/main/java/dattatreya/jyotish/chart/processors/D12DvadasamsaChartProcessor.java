@@ -9,7 +9,7 @@ import dattatreya.jyotish.analyze.bhavas.ChartProcessor;
 import dattatreya.jyotish.bhavas.util.LagnaUtil;
 
 @Component("d12DvadasamsaChartProcessor")
-@Order(value = 8)
+@Order(value = 12)
 public final class D12DvadasamsaChartProcessor implements ChartProcessor {
 
 	@Autowired

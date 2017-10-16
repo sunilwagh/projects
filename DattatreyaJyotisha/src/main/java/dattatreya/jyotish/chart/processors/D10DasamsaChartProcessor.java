@@ -11,7 +11,7 @@ import dattatreya.jyotish.bhavas.util.LagnaUtil;
 
 
 @Component("d10DasamsaChartProcessor")
-@Order(value=7)
+@Order(value=10)
 public class D10DasamsaChartProcessor implements ChartProcessor{
 	
 	@Autowired
