@@ -10,7 +10,7 @@ public class ShaniInBhava12 implements ShaniInBhava {
 	public String getInfoAboutShaniInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("\n Shani in 12th House: \n");
-		sb.append("");
+		sb.append("\n Delay in all the work \n");
 		return sb.toString();
 	}
 
