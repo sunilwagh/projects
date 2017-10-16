@@ -167,9 +167,16 @@ public class App {
 		 *  D7 Chart
 		 */
 		RashiNames d7SaptamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d7SaptamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,
-				mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
-				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d7SaptamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+				chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES, 
+				budha, RashiNames.SCORPIO, 
+				guru, RashiNames.LIBRA, 
+				shukra,RashiNames.CAPRICORN, 
+				shani, RashiNames.VIRGO, 
+				rahu, RashiNames.CANCER, 
+				ketu, RashiNames.CAPRICORN);
 		Chart d7Chart = HoroscopeFactory.createHoroscope(ChartNames.D7SaptamsaChart, d7SaptamsaChartLagna, d7SaptamsaChartMap);
 		String d7ChartAnalysis= kundali.processD6(d1Chart,d7Chart);
 		System.out.println(d7ChartAnalysis);
@@ -179,9 +186,16 @@ public class App {
 		 *  D8 Chart
 		 */
 		RashiNames d8SaptamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d8SaptamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.GEMINI, chandra, RashiNames.TAURUS,
-				mangal, RashiNames.PISCES, budha, RashiNames.SCORPIO, guru, RashiNames.LIBRA, shukra,
-				RashiNames.CAPRICORN, shani, RashiNames.VIRGO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d8SaptamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+				chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES,
+				budha, RashiNames.SCORPIO,
+				guru, RashiNames.LIBRA,
+				shukra,RashiNames.CAPRICORN, 
+				shani, RashiNames.VIRGO, 
+				rahu, RashiNames.CANCER, 
+				ketu, RashiNames.CAPRICORN);
 		Chart d8Chart = HoroscopeFactory.createHoroscope(ChartNames.D8AshtamsaChart, d8SaptamsaChartLagna, d8SaptamsaChartMap);
 		String d8ChartAnalysis= kundali.processD4(d1Chart,d8Chart);
 		System.out.println(d8ChartAnalysis);
@@ -191,10 +205,16 @@ public class App {
 		 *  D10 Chart
 		 */
 		RashiNames d10DasamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d10DasamsaChartMap =HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d10DasamsaChartMap =HoroscopeFactory.populateMap
+				        (surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d10Chart = HoroscopeFactory.createHoroscope(ChartNames.D12DvadasamsaChart, d10DasamsaChartLagna, d10DasamsaChartMap);
 		String d10ChartAnalysis= kundali.processD4(d1Chart,d10Chart);
 		System.out.println(d10ChartAnalysis);
@@ -203,10 +223,16 @@ public class App {
 		 *  D11 Chart
 		 */
 		RashiNames d11RudramsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d11RudramsaChartMap =HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d11RudramsaChartMap =HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d11Chart = HoroscopeFactory.createHoroscope(ChartNames.D11RudramsaChart, d11RudramsaChartLagna, d11RudramsaChartMap);
 		String d11ChartAnalysis= kundali.processD11(d1Chart,d11Chart);
 		System.out.println(d11ChartAnalysis);
@@ -216,10 +242,16 @@ public class App {
 		 *  D12 Chart
 		 */
 		RashiNames d12DvadasamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d12DvadasamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d12DvadasamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d12Chart = HoroscopeFactory.createHoroscope(ChartNames.D12DvadasamsaChart, d12DvadasamsaChartLagna, d12DvadasamsaChartMap);
 		String d12ChartAnalysis= kundali.processD12(d1Chart,d12Chart);
 		System.out.println(d12ChartAnalysis);
@@ -229,10 +261,16 @@ public class App {
 		 *  D16 Chart
 		 */
 		RashiNames d16SodasamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d16SodasamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d16SodasamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d16Chart = HoroscopeFactory.createHoroscope(ChartNames.D16SodasamsaChart, d16SodasamsaChartLagna, d16SodasamsaChartMap);
 		String d16ChartAnalysis= kundali.processD16(d1Chart,d16Chart);
 		System.out.println(d16ChartAnalysis);
@@ -242,10 +280,16 @@ public class App {
 		 *  D20 Chart
 		 */
 		RashiNames d20VimsamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d20VimsamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d20VimsamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d20Chart = HoroscopeFactory.createHoroscope(ChartNames.D20VimsamsaChart, d20VimsamsaChartLagna, d20VimsamsaChartMap);
 		String d20ChartAnalysis= kundali.processD20(d1Chart,d20Chart);
 		System.out.println(d20ChartAnalysis);
@@ -255,10 +299,16 @@ public class App {
 		 *  D24 Chart
 		 */
 		RashiNames d24SiddhamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d24SiddhamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d24SiddhamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d24Chart = HoroscopeFactory.createHoroscope(ChartNames.D24SiddhasamsaChart, d24SiddhamsaChartLagna, d24SiddhamsaChartMap);
 		String d24ChartAnalysis= kundali.processD24(d1Chart,d24Chart);
 		System.out.println(d24ChartAnalysis);
@@ -268,10 +318,16 @@ public class App {
 		 *  D27 Chart
 		 */
 		RashiNames d27BhamsaNakshatraChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d27BhamsaNakshatraChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d27BhamsaNakshatraChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d27Chart = HoroscopeFactory.createHoroscope(ChartNames.D27BhamsaNakshatraChart, d27BhamsaNakshatraChartLagna, d27BhamsaNakshatraChartMap);
 		String d27ChartAnalysis= kundali.processD27(d1Chart,d27Chart);
 		System.out.println(d27ChartAnalysis);
@@ -280,9 +336,15 @@ public class App {
 		 *  D30 Chart
 		 */
 		RashiNames d30TrimsamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d30TrimsamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
+		Map<Graha, RashiNames> d30TrimsamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+				chandra, RashiNames.TAURUS,
+				mangal, RashiNames.PISCES,
+				budha, RashiNames.SCORPIO,
+				guru, RashiNames.LIBRA,
+				shukra,RashiNames.CAPRICORN, 
+				shani, RashiNames.VIRGO, 
+				rahu, RashiNames.CANCER, 
 				ketu, RashiNames.CAPRICORN);
 		Chart d30Chart = HoroscopeFactory.createHoroscope(ChartNames.D30TrimsamsaChart, d30TrimsamsaChartLagna, d30TrimsamsaChartMap);
 		String d30ChartAnalysis= kundali.processD30(d1Chart,d30Chart);
@@ -292,10 +354,16 @@ public class App {
 		 *  D40 Chart
 		 */
 		RashiNames d40KhavedamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d40KhavedamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d40KhavedamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d40Chart = HoroscopeFactory.createHoroscope(ChartNames.D40KhavedamsaChart, d40KhavedamsaChartLagna, d40KhavedamsaChartMap);
 		String d40ChartAnalysis= kundali.processD40(d1Chart,d40Chart);
 		System.out.println(d40ChartAnalysis);
@@ -305,9 +373,16 @@ public class App {
 		 */
 		RashiNames d45AksavedamsaChartLagna = RashiNames.PISCES;
 		Map<Graha, RashiNames> d45AksavedamsaChartMap = new HashMap<Graha, RashiNames>();
-		d45AksavedamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra, RashiNames.SCORPIO, mangal,
-				RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru, RashiNames.SAGITTAURIUS, shukra,
-				RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER, ketu, RashiNames.CAPRICORN);
+		d45AksavedamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d45Chart = HoroscopeFactory.createHoroscope(ChartNames.D45AksavedamsaChart, d45AksavedamsaChartLagna, d45AksavedamsaChartMap);
 		String d45ChartAnalysis= kundali.processD45(d1Chart,d45Chart);
 		System.out.println(d45ChartAnalysis);
@@ -316,10 +391,16 @@ public class App {
 		 *  D60 Chart
 		 */
 		RashiNames d60SastamsaChartLagna = RashiNames.PISCES;
-		Map<Graha, RashiNames> d60SastamsaChartMap = HoroscopeFactory.populateMap(surya, RashiNames.ACQUARIUS, chandra,
-				RashiNames.SCORPIO, mangal, RashiNames.CAPRICORN, budha, RashiNames.CAPRICORN, guru,
-				RashiNames.SAGITTAURIUS, shukra, RashiNames.PISCES, shani, RashiNames.LEO, rahu, RashiNames.CANCER,
-				ketu, RashiNames.CAPRICORN);
+		Map<Graha, RashiNames> d60SastamsaChartMap = HoroscopeFactory.populateMap
+				(surya, RashiNames.GEMINI, 
+						chandra, RashiNames.TAURUS,
+						mangal, RashiNames.PISCES,
+						budha, RashiNames.SCORPIO,
+						guru, RashiNames.LIBRA,
+						shukra,RashiNames.CAPRICORN, 
+						shani, RashiNames.VIRGO, 
+						rahu, RashiNames.CANCER, 
+						ketu, RashiNames.CAPRICORN);
 		Chart d60Chart = HoroscopeFactory.createHoroscope(ChartNames.D60SastamsaChart, d60SastamsaChartLagna, d60SastamsaChartMap);
 		String d60ChartAnalysis= kundali.processD60(d1Chart,d60Chart);
 		System.out.println(d60ChartAnalysis);
