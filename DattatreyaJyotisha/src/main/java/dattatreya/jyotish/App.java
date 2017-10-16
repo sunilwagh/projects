@@ -7,6 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import dattatreya.jyotish.analyze.bhavas.Chart;
+import dattatreya.jyotish.analyze.bhavas.Kundali;
 
 /**
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -23,7 +24,7 @@ public class App {
 
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		KundaliImpl kundali = (KundaliImpl) context.getBean("kundali");
+		Kundali kundali = (Kundali) context.getBean("kundaliImpl");
 		Graha surya = (Graha) context.getBean("surya");
 		Graha chandra = (Graha) context.getBean("chandra");
 		Graha mangal = (Graha) context.getBean("mangal");

@@ -26,7 +26,7 @@ import dattatreya.jyotish.chart.processors.D7SaptamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D8AshtamsaChartProcessor;
 import dattatreya.jyotish.chart.processors.D9NavamsaChartProcessor;
 
-@Component("kundali")
+@Component("kundaliImpl")
 public class KundaliImpl implements Kundali{
 
 	@Autowired
