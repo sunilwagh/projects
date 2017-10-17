@@ -12,6 +12,8 @@ import dattatreya.jyotish.util.Guna;
 import dattatreya.jyotish.util.Mahavidya;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.Colors;
+import dattatreya.jyotish.util.Direction;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
 import dattatreya.jyotish.util.Tattva;
@@ -43,6 +45,8 @@ public class Guru implements Graha {
 	private final Tattva TATTVA = Tattva.AKASH;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.VAMANA;
 	private final Mahavidya mahaVidya = Mahavidya.UGRATARA_NEELATARA;
+	private final Colors color = Colors.YELLOW;
+	private final Direction direction = Direction.NORTH_EAST;
 	
 	
 	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
