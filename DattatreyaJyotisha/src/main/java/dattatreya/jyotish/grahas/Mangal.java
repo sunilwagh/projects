@@ -12,8 +12,10 @@ import dattatreya.jyotish.panchang.nakshatras.padas.Pada;
 import dattatreya.jyotish.rashis.Rashi;
 import dattatreya.jyotish.util.Guna;
 import dattatreya.jyotish.util.Mahavidya;
+import dattatreya.jyotish.util.Metal;
 import dattatreya.jyotish.util.NakshatraNames;
 import dattatreya.jyotish.util.BhavaNames;
+import dattatreya.jyotish.util.Colors;
 import dattatreya.jyotish.util.GenderOfGraha;
 import dattatreya.jyotish.util.GrahaNames;
 import dattatreya.jyotish.util.RashiNames;
@@ -61,7 +63,9 @@ public final class Mangal implements Graha {
 	private final GenderOfGraha GENDER_OF_GRAHA = GenderOfGraha.MALE;
 	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.NARASIMHA;
 	private final Mahavidya mahaVidya = Mahavidya.BAGALAMUKHI;
-	// Male
+	private final Colors color = Colors.RED;
+	private final Metal metal = Metal.COPPER;
+	
 
 	Nakshatra nakshatra;
 	Pada pada;
@@ -104,10 +108,24 @@ public final class Mangal implements Graha {
 		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.PISCES);
 		
 	}
+	
+	
 
 	public void addKarakasInLifeForGraha() {
 		KARAKA_IN_LIFE.add("Brothers");
 		KARAKA_IN_LIFE.add("Courage");
+		KARAKA_IN_LIFE.add("Energy");
+		KARAKA_IN_LIFE.add("Armed Forces");
+		KARAKA_IN_LIFE.add("Police Forces");
+		KARAKA_IN_LIFE.add("Commanders");
+		KARAKA_IN_LIFE.add("Administrators");
+		KARAKA_IN_LIFE.add("men in high position");
+	    KARAKA_IN_LIFE.add("land");
+		KARAKA_IN_LIFE.add("engineering");
+		KARAKA_IN_LIFE.add("metals");
+		KARAKA_IN_LIFE.add("real estate agents");
+		KARAKA_IN_LIFE.add("surgery."); 
+		
 	}
 
 	public void addLordOfNakshatrasToGraha() {
