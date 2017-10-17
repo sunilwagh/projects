@@ -10,7 +10,7 @@ public class ShukraInBhava5 implements ShukraInBhava {
 	public String getInfoAboutShukraInBhava() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("\n Shukra in 5th House: \n");
-		sb.append("");
+		sb.append("\n  \n");
 		return sb.toString();
 	}
 
