@@ -44,8 +44,11 @@ public class Rahu implements Graha {
 	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
 	
-	private final Tattva tatva = Tattva.AGNI;
+	private final Guna guna = Guna.TAMASIC;
+	private final Tattva tattva = Tattva.AGNI;
 	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
+	private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
+    private final Set<String> karakaInLife = new HashSet<String>();
 	private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
 	private final Set<GrahaNames> enemiesToGraha = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
@@ -181,23 +184,23 @@ public class Rahu implements Graha {
 		return ownRashi;
 	}
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getEnemySignsToGraha() {
 		return enemySignsToGraha;
 	}
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
 		return greatEnemySignsToGraha;
 	}
 
@@ -205,9 +208,7 @@ public class Rahu implements Graha {
 		return debilitationRashi;
 	}
 
-	public Tattva getTatva() {
-		return tatva;
-	}
+	
 
 	public Set<NakshatraNames> getLordOfNakshatras() {
 		return lordOfNakshatras;
@@ -248,6 +249,24 @@ public class Rahu implements Graha {
 	public Set<BhavaNames> getWeakestInBhavas() {
 		return weakestInBhavas;
 	}
+
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
+	}
+
+	public Set<String> getKarakaInLife() {
+		return karakaInLife;
+	}
+
+	public Guna getGuna() {
+		return guna;
+	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	
 
 	
 

@@ -46,8 +46,9 @@ public final class Shani implements Graha {
 	private final Direction direction = Direction.WEST;
 	
 	
-
-	private final Set<NakshatraNames> lordOfNakshatra = new HashSet<NakshatraNames>();
+	private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
+	
+	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
 	private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
 	private final Set<String> karakaInLife = new HashSet<String>();
 	
@@ -122,9 +123,9 @@ public final class Shani implements Graha {
 	}
 
 	public void addLordOfNakshatrasToGraha() {
-		lordOfNakshatra.add(NakshatraNames.PUSHYA);
-		lordOfNakshatra.add(NakshatraNames.ANURADHA);
-		lordOfNakshatra.add(NakshatraNames.UTTAR_BHADRAPADA);
+		lordOfNakshatras.add(NakshatraNames.PUSHYA);
+		lordOfNakshatras.add(NakshatraNames.ANURADHA);
+		lordOfNakshatras.add(NakshatraNames.UTTAR_BHADRAPADA);
 	}
 
 	private void addLordOfRashisToGraha() {
@@ -280,31 +281,31 @@ public final class Shani implements Graha {
 
 
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
 
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
 
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
 
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getEnemySignsToGraha() {
 		return enemySignsToGraha;
 	}
 
 
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
 		return greatEnemySignsToGraha;
 	}
 
@@ -353,7 +354,7 @@ public final class Shani implements Graha {
 
 
 	public Set<NakshatraNames> getLordOfNakshatra() {
-		return lordOfNakshatra;
+		return lordOfNakshatras;
 	}
 
 
@@ -415,6 +416,20 @@ public final class Shani implements Graha {
 	public Set<BhavaNames> getWeakestInBhavas() {
 		return weakestInBhavas;
 	}
+
+
+
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
+	}
+
+
+
+	public Set<NakshatraNames> getLordOfNakshatras() {
+		return lordOfNakshatras;
+	}
+
+	
 	
 	
 	

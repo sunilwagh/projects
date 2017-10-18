@@ -232,23 +232,23 @@ public final class Mangal implements Graha {
 		return ownRashi;
 	}
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getEnemySignsToGraha() {
 		return enemySignsToGraha;
 	}
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
 		return greatEnemySignsToGraha;
 	}
 
@@ -331,6 +331,8 @@ public final class Mangal implements Graha {
 	public Metal getMetal() {
 		return metal;
 	}
+
+	
 
 	
 

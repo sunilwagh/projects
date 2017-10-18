@@ -43,7 +43,18 @@ public class Ketu implements Graha {
 	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>();  // 6.25 %
 	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
+	
+	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
+	private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
+	private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
+	private final Set<String> karakaInLife = new HashSet<String>();
+	
+	private final Tattva tattva = Tattva.APA;
+	private final Guna guna = Guna.SATTVIC;
 
+	private final Set<GrahaNames> enemiesToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> nuetralToGraha = new HashSet<GrahaNames>();
 	private final Set<BhavaNames> strongestInBhavas = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> strongInBhavas = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> nuetralInBhavas = new HashSet<BhavaNames>();
@@ -177,28 +188,40 @@ public class Ketu implements Graha {
 		return ownRashi;
 	}
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getEnemySignsToGraha() {
 		return enemySignsToGraha;
 	}
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
 		return greatEnemySignsToGraha;
 	}
 
 	public RashiNames getDebilitationRashi() {
 		return debilitationRashi;
+	}
+
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
+	}
+
+	public Set<BhavaNames> getKarakaForBhavas() {
+		return karakaForBhavas;
+	}
+
+	public Set<String> getKarakaInLife() {
+		return karakaInLife;
 	}
 
 	public Set<BhavaNames> getStrongestInBhavas() {
@@ -220,6 +243,32 @@ public class Ketu implements Graha {
 	public Set<BhavaNames> getWeakestInBhavas() {
 		return weakestInBhavas;
 	}
+
+	public Tattva getTattva() {
+		return tattva;
+	}
+
+	public Guna getGuna() {
+		return guna;
+	}
+
+	public Set<GrahaNames> getEnemiesToGraha() {
+		return enemiesToGraha;
+	}
+
+	public Set<GrahaNames> getFriendsToGraha() {
+		return friendsToGraha;
+	}
+
+	public Set<GrahaNames> getNuetralToGraha() {
+		return nuetralToGraha;
+	}
+
+	public Set<NakshatraNames> getLordOfNakshatras() {
+		return lordOfNakshatras;
+	}
+
+	
 
 	
 

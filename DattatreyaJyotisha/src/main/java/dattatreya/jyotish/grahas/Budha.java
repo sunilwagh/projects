@@ -35,8 +35,8 @@ public final class Budha implements Graha {
 	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>(); // 25 TO 37.5%
 	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); //12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
-	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
 
 	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
@@ -89,7 +89,7 @@ public final class Budha implements Graha {
 	}
 
 	private void addEnemySignsToGraha() {
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.CANCER);
+		enemySignsToGraha.add(RashiNames.CANCER);
 		
 		
 	}
@@ -257,24 +257,24 @@ public final class Budha implements Graha {
 		return ownRashi;
 	}
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
+	public Set<RashiNames> getEnemySignsToGraha() {
+		return enemySignsToGraha;
 	}
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
-		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
+		return greatEnemySignsToGraha;
 	}
 
 	public RashiNames getDebilitationRashi() {
@@ -329,6 +329,7 @@ public final class Budha implements Graha {
 		return weakestInBhavas;
 	}
 
+	
 	
 
 	

@@ -50,6 +50,7 @@ public final class Chandra implements Graha {
 	private final Guna guna = Guna.SATTVIC;
 	private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
 	private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
+	private final Set<String> karakaInLife = new HashSet<String>();
 	private final Set<GrahaNames> enemiesToGraha = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> nuetralToGraha = new HashSet<GrahaNames>();
@@ -216,23 +217,23 @@ public final class Chandra implements Graha {
 		return ownRashi;
 	}
 
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatFriendSignsToGraha() {
 		return greatFriendSignsToGraha;
 	}
 
-	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getFriendSignsToGraha() {
 		return friendSignsToGraha;
 	}
 
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getNuetralSignsToGraha() {
 		return nuetralSignsToGraha;
 	}
 
-	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getEnemySignsToGraha() {
 		return enemySignsToGraha;
 	}
 
-	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
+	public Set<RashiNames> getGreatEnemySignsToGraha() {
 		return greatEnemySignsToGraha;
 	}
 
@@ -299,6 +300,13 @@ public final class Chandra implements Graha {
 	public Set<BhavaNames> getWeakestInBhavas() {
 		return weakestInBhavas;
 	}
+
+	public Set<String> getKarakaInLife() {
+		return karakaInLife;
+	}
+	
+	
+
 	
 	
 
