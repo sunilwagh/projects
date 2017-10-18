@@ -13,6 +13,7 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 
 public interface Graha {
 
+	public double getDegrees();
 	public void setDegrees(double degrees) ;
     public GrahaNames getGrahaName() ;
     public VISHNU_AVATARS getVishnuAvatar() ;

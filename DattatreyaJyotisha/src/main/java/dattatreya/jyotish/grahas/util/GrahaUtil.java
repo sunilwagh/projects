@@ -158,15 +158,15 @@ public class GrahaUtil {
 				return PositiveStrengthOfGraha.OWN_SIGN;
 			}
 
-			if (grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getFRIEND_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+			if (grahaToBeAnalyzed.getFriendSignsToGraha() != null && grahaToBeAnalyzed.getFriendSignsToGraha().contains(rashi.getNameOfRashi())) {
 				return PositiveStrengthOfGraha.FRIENDS;
 			}
 			
-			if (grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().size() >0 && grahaToBeAnalyzed.getNUETRAL_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+			if (grahaToBeAnalyzed.getNuetralSignsToGraha() != null && grahaToBeAnalyzed.getNuetralSignsToGraha().size() >0 && grahaToBeAnalyzed.getNuetralSignsToGraha().contains(rashi.getNameOfRashi())) {
 				return PositiveStrengthOfGraha.NUETRAL;
 			}
 
-			if (grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA() != null && grahaToBeAnalyzed.getENEMY_SIGNS_TO_GRAHA().contains(rashi.getNameOfRashi())) {
+			if (grahaToBeAnalyzed.getEnemySignsToGraha() != null && grahaToBeAnalyzed.getEnemySignsToGraha().contains(rashi.getNameOfRashi())) {
 				return PositiveStrengthOfGraha.ENEMY;
 			}
 
