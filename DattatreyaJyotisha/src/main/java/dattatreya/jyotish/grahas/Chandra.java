@@ -35,11 +35,11 @@ public final class Chandra implements Graha {
 	private final RashiNames mooltrikonaRashi = RashiNames.TAURUS; // 0-3 degrees
 	private final RashiNames exaltationRashi = RashiNames.TAURUS;
 	private final RashiNames ownRashi = RashiNames.CANCER;
-	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 6.25 %
-	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>(); // 25 TO 37.5%
+	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); // 12.5 %
+	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>(); // 6.25 %
+	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.SCORPIO;
 
 	private final Tattva tattva = Tattva.APA;
@@ -77,12 +77,12 @@ public final class Chandra implements Graha {
 	}
 
 	private void addNuetralSignsToGraha() {
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SAGITTAURIUS);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.PISCES);
+		nuetralSignsToGraha.add(RashiNames.ARIES);
+		nuetralSignsToGraha.add(RashiNames.LIBRA);
+		nuetralSignsToGraha.add(RashiNames.SAGITTAURIUS);
+		nuetralSignsToGraha.add(RashiNames.CAPRICORN);
+		nuetralSignsToGraha.add(RashiNames.ACQUARIUS);
+		nuetralSignsToGraha.add(RashiNames.PISCES);
 
 	}
 
@@ -92,9 +92,9 @@ public final class Chandra implements Graha {
 	}
 
 	private void addFriendSignsToGraha() {
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
+		friendSignsToGraha.add(RashiNames.GEMINI);
+		friendSignsToGraha.add(RashiNames.LEO);
+		friendSignsToGraha.add(RashiNames.VIRGO);
 	}
 
 	public void addLordOfNakshatrasToGraha() {
@@ -217,23 +217,23 @@ public final class Chandra implements Graha {
 	}
 
 	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+		return greatFriendSignsToGraha;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
+		return friendSignsToGraha;
 	}
 
 	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		return NUETRAL_SIGNS_TO_GRAHA;
+		return nuetralSignsToGraha;
 	}
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
+		return enemySignsToGraha;
 	}
 
 	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
-		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+		return greatEnemySignsToGraha;
 	}
 
 	public RashiNames getDebilitationRashi() {

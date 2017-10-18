@@ -32,9 +32,9 @@ public final class Budha implements Graha {
 	private final RashiNames exaltationRashi = RashiNames.VIRGO;  // 100%
 	private final RashiNames mooltrikonaRashi = RashiNames.VIRGO; //75%
 	private final RashiNames ownRashi = RashiNames.GEMINI;    //50%
-	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>(); // 25 TO 37.5%
+	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); //12.5 %
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
 	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
@@ -73,17 +73,17 @@ public final class Budha implements Graha {
 	}
 	
 	private void addFriendSignsToGraha() {
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
+		friendSignsToGraha.add(RashiNames.TAURUS);
+		friendSignsToGraha.add(RashiNames.LEO);
+		friendSignsToGraha.add(RashiNames.LIBRA);
 		
 	}
 	
 	private void addNuetralSignsToGraha() {
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
+		nuetralSignsToGraha.add(RashiNames.SCORPIO);
+		nuetralSignsToGraha.add(RashiNames.ARIES);
+		nuetralSignsToGraha.add(RashiNames.ACQUARIUS);
+		nuetralSignsToGraha.add(RashiNames.CAPRICORN);
 		
 		
 	}
@@ -258,15 +258,15 @@ public final class Budha implements Graha {
 	}
 
 	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+		return greatFriendSignsToGraha;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
+		return friendSignsToGraha;
 	}
 
 	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		return NUETRAL_SIGNS_TO_GRAHA;
+		return nuetralSignsToGraha;
 	}
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {

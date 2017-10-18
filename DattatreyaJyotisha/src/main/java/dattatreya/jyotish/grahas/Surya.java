@@ -33,11 +33,11 @@ public final class Surya implements Graha {
 	private final RashiNames exaltationRashi = RashiNames.ARIES;
 	private final RashiNames debilitationRashi = RashiNames.LIBRA;
 	private final RashiNames ownRashi = RashiNames.LEO;
-	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
-	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>();
+	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final Tattva tattva = Tattva.AKASH;
 	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
 	private final Guna guna = Guna.SATTVIC;
@@ -199,23 +199,23 @@ public final class Surya implements Graha {
 	}
 
 	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+		return greatFriendSignsToGraha;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
+		return friendSignsToGraha;
 	}
 
 	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		return NUETRAL_SIGNS_TO_GRAHA;
+		return nuetralSignsToGraha;
 	}
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
+		return enemySignsToGraha;
 	}
 
 	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
-		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+		return greatEnemySignsToGraha;
 	}
 
 	public Tattva getTattva() {
