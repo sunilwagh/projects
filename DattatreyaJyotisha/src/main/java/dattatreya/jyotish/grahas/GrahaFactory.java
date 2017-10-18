@@ -42,8 +42,7 @@ public final class GrahaFactory {
 
 	public static Graha createSuryaGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Surya surya = new Surya();
-		surya.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		surya.setPada(pada);
+		
 		return surya;
 
 	}
@@ -51,48 +50,42 @@ public final class GrahaFactory {
 	public static Graha createChandraGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		
 		Chandra chandra = new Chandra();
-		chandra.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		chandra.setPada(pada);
+		
 		return chandra;
 
 	}
 	
 	public static Graha createMangalGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Mangal mangal = new Mangal();
-		mangal.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		mangal.setPada(pada);
+		
 		return mangal;
 
 	}
 	
 	public static Graha createBudhaGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Budha budha = new Budha();
-		budha.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		budha.setPada(pada);
+		
 		return budha;
 
 	}
 	
 	public static Graha createGuruGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Guru guru = new Guru();
-		guru.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		guru.setPada(pada);
+		
 		return guru;
 
 	}
 	
 	public static Graha createShukraGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Shukra shukra = new Shukra();
-		shukra.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		shukra.setPada(pada);
+		
 		return shukra;
 
 	}
 	
 	public static Graha createShaniGraha(NakshatraNames nakshatra,Pada pada,double degrees) {
 		Shani shani = new Shani();
-		//shani.setNakshatra(NakshatraFactory.getNakshatra(nakshatra));
-		//shani.setPada(pada);
+		
 		return shani;
 
 	}

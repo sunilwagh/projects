@@ -146,15 +146,15 @@ public class GrahaUtil {
 		if (grahaToBeAnalyzed != null) {
 
 			
-			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getEXALTATION()) {
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getExaltationRashi()) {
 				return PositiveStrengthOfGraha.EXALTATION;
 			}
 
-			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getMOOLTRIKONARASHI()) {
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getMooltrikonaRashi()) {
 				return PositiveStrengthOfGraha.MOOLTRIKONA;
 			}
 
-			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getOWN()) {
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getOwnRashi()) {
 				return PositiveStrengthOfGraha.OWN_SIGN;
 			}
 
@@ -170,7 +170,7 @@ public class GrahaUtil {
 				return PositiveStrengthOfGraha.ENEMY;
 			}
 
-			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getDEBILITATION()) {
+			if (rashi.getNameOfRashi() == grahaToBeAnalyzed.getDebilitationRashi()) {
 				return PositiveStrengthOfGraha.DEBILITATION;
 			}
 		

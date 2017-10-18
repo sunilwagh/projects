@@ -2,6 +2,6 @@ package dattatreya.jyotish.util;
 
 public enum Colors {
 	
-	YELLOW,GREEN,RED
+	YELLOW,GREEN,RED,BLUE
 
 }

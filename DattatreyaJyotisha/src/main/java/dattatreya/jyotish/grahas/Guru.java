@@ -23,7 +23,6 @@ import dattatreya.jyotish.util.VISHNU_AVATARS;
 @Order(value = 5)
 public class Guru implements Graha {
 
-	// Male
 	Rashi lagnaKundaliRashi;
 	Nakshatra nakshatra;
 	Bhava bhava;
@@ -31,36 +30,37 @@ public class Guru implements Graha {
 	double degrees;
 
 	private final GrahaNames grahaName = GrahaNames.GURU;
+	private final Tattva tattva = Tattva.AKASH;
+	private final VISHNU_AVATARS vishnuAvatar = VISHNU_AVATARS.VAMANA;
+	private final Mahavidya mahaVidya = Mahavidya.UGRATARA_NEELATARA;
+	private final Colors color = Colors.YELLOW;
+	private final Direction direction = Direction.NORTH_EAST;
+	private final Guna guna = Guna.SATTVIC;
 
-	private final RashiNames MOOLTRIKONARASHI = RashiNames.SAGITTAURIUS;
-	private final RashiNames EXALTATION = RashiNames.CANCER;
-	private final RashiNames OWN = RashiNames.PISCES;
+	private final RashiNames mooltrikonaRashi = RashiNames.SAGITTAURIUS;
+	private final RashiNames exaltationRashi = RashiNames.CANCER;
+	private final RashiNames ownRashi = RashiNames.PISCES;
 	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
 	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
 	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
 	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
 	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
-	private final RashiNames DEBILITATION = RashiNames.CAPRICORN;
-
-	private final Tattva TATTVA = Tattva.AKASH;
-	private final VISHNU_AVATARS VISHNU_AVATAR = VISHNU_AVATARS.VAMANA;
-	private final Mahavidya mahaVidya = Mahavidya.UGRATARA_NEELATARA;
-	private final Colors color = Colors.YELLOW;
-	private final Direction direction = Direction.NORTH_EAST;
+	private final RashiNames debilitationRashi = RashiNames.CAPRICORN;
+    
+	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
+	private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
 	
+	private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
 	
-	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-	private final Guna GUNA = Guna.SATTVIC;
-	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
-	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Set<BhavaNames> STRONGEST = new HashSet<BhavaNames>();
-	private final Set<BhavaNames> STRONG = new HashSet<BhavaNames>();
-	private final Set<BhavaNames> NUETRAL = new HashSet<BhavaNames>();
-	private final Set<BhavaNames> WEAK = new HashSet<BhavaNames>();
-	private final Set<BhavaNames> WEAKEST = new HashSet<BhavaNames>();
+	private final Set<GrahaNames> enemiesToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> nuetralToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
+	
+	private final Set<BhavaNames> strongestInBhavas = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> strongInBhavas = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> nuetralInBhavas = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> weakInBhavas = new HashSet<BhavaNames>();
+	private final Set<BhavaNames> weakestInBhavas = new HashSet<BhavaNames>();
 
 	public Guru() {
 		addFriendsToGraha();
@@ -102,65 +102,65 @@ public class Guru implements Graha {
 	}
 
 	public void addLordOfNakshatrasToGraha() {
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.PUNARVASU);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.VISHAKA);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.PURVA_BHADRAPADA);
+		lordOfNakshatras.add(NakshatraNames.PUNARVASU);
+		lordOfNakshatras.add(NakshatraNames.VISHAKA);
+		lordOfNakshatras.add(NakshatraNames.PURVA_BHADRAPADA);
 	}
 
 	private void addLordOfRashisToGraha() {
-		LORD_OF_RASHIS.add(RashiNames.PISCES);
-		LORD_OF_RASHIS.add(RashiNames.SAGITTAURIUS);
+		lordOfRashis.add(RashiNames.PISCES);
+		lordOfRashis.add(RashiNames.SAGITTAURIUS);
 
 	}
 
 	public void addKarakasToGraha() {
-		KARAKA.add(BhavaNames.BHAVA4);
-		KARAKA.add(BhavaNames.BHAVA10);
+		karakaForBhavas.add(BhavaNames.BHAVA4);
+		karakaForBhavas.add(BhavaNames.BHAVA10);
 
 	}
 
 	public void addEnemiesToGraha() {
-		ENEMIES_TO_GRAHA.add(GrahaNames.BUDHA);
-		ENEMIES_TO_GRAHA.add(GrahaNames.SHUKRA);
+		enemiesToGraha.add(GrahaNames.BUDHA);
+		enemiesToGraha.add(GrahaNames.SHUKRA);
 	}
 
 	public void addFriendsToGraha() {
-		FRIENDS_TO_GRAHA.add(GrahaNames.SURYA);
-		FRIENDS_TO_GRAHA.add(GrahaNames.CHANDRA);
-		FRIENDS_TO_GRAHA.add(GrahaNames.MANGAL);
+		friendsToGraha.add(GrahaNames.SURYA);
+		friendsToGraha.add(GrahaNames.CHANDRA);
+		friendsToGraha.add(GrahaNames.MANGAL);
 
 	}
 
 	public void addNuetralToGraha() {
 
-		NUETRAL_TO_GRAHA.add(GrahaNames.SHANI);
+		nuetralToGraha.add(GrahaNames.SHANI);
 
 	}
 
 	public void addBhavasToStrongest() {
-		STRONGEST.add(BhavaNames.BHAVA1);
+		strongestInBhavas.add(BhavaNames.BHAVA1);
 	}
 
 	public void addBhavasToStrong() {
-		STRONG.add(BhavaNames.BHAVA5);
-		STRONG.add(BhavaNames.BHAVA9);
-		STRONG.add(BhavaNames.BHAVA10);
-		STRONG.add(BhavaNames.BHAVA11);
+		strongInBhavas.add(BhavaNames.BHAVA5);
+		strongInBhavas.add(BhavaNames.BHAVA9);
+		strongInBhavas.add(BhavaNames.BHAVA10);
+		strongInBhavas.add(BhavaNames.BHAVA11);
 
 	}
 
 	public void addBhavasToNuetral() {
-		NUETRAL.add(BhavaNames.BHAVA2);
-		NUETRAL.add(BhavaNames.BHAVA3);
-		NUETRAL.add(BhavaNames.BHAVA4);
-		NUETRAL.add(BhavaNames.BHAVA6);
-		NUETRAL.add(BhavaNames.BHAVA8);
-		NUETRAL.add(BhavaNames.BHAVA12);
+		nuetralInBhavas.add(BhavaNames.BHAVA2);
+		nuetralInBhavas.add(BhavaNames.BHAVA3);
+		nuetralInBhavas.add(BhavaNames.BHAVA4);
+		nuetralInBhavas.add(BhavaNames.BHAVA6);
+		nuetralInBhavas.add(BhavaNames.BHAVA8);
+		nuetralInBhavas.add(BhavaNames.BHAVA12);
 
 	}
 
 	public void addBhavasToWeak() {
-		WEAK.add(BhavaNames.BHAVA7);
+		weakInBhavas.add(BhavaNames.BHAVA7);
 	}
 
 	public void addBhavasToWeakest() {
@@ -211,95 +211,111 @@ public class Guru implements Graha {
 		return grahaName;
 	}
 
-	public RashiNames getMOOLTRIKONARASHI() {
-		return MOOLTRIKONARASHI;
+	public Tattva getTattva() {
+		return tattva;
 	}
 
-	public RashiNames getEXALTATION() {
-		return EXALTATION;
+	public VISHNU_AVATARS getVishnuAvatar() {
+		return vishnuAvatar;
 	}
 
-	public RashiNames getDEBILITATION() {
-		return DEBILITATION;
+	public Mahavidya getMahaVidya() {
+		return mahaVidya;
 	}
 
-	public RashiNames getOWN() {
-		return OWN;
+	public Colors getColor() {
+		return color;
+	}
+
+	public Direction getDirection() {
+		return direction;
+	}
+
+	public Guna getGuna() {
+		return guna;
+	}
+
+	public RashiNames getMooltrikonaRashi() {
+		return mooltrikonaRashi;
+	}
+
+	public RashiNames getExaltationRashi() {
+		return exaltationRashi;
+	}
+
+	public RashiNames getOwnRashi() {
+		return ownRashi;
+	}
+
+	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
+		return GREAT_FRIEND_SIGNS_TO_GRAHA;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
 		return FRIEND_SIGNS_TO_GRAHA;
 	}
 
+	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
+		return NUETRAL_SIGNS_TO_GRAHA;
+	}
+
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
 		return ENEMY_SIGNS_TO_GRAHA;
-	}
-
-	public Tattva getTATTVA() {
-		return TATTVA;
-	}
-
-	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
-		return LORD_OF_NAKSHATRAS;
-	}
-
-	public Guna getGUNA() {
-		return GUNA;
-	}
-
-	public Set<RashiNames> getLORD_OF_RASHIS() {
-		return LORD_OF_RASHIS;
-	}
-
-	public Set<BhavaNames> getKARAKA() {
-		return KARAKA;
-	}
-
-	public Set<GrahaNames> getENEMIES_TO_GRAHA() {
-		return ENEMIES_TO_GRAHA;
-	}
-
-	public Set<GrahaNames> getFRIENDS_TO_GRAHA() {
-		return FRIENDS_TO_GRAHA;
-	}
-
-	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
-		return NUETRAL_TO_GRAHA;
-	}
-
-	public Set<BhavaNames> getSTRONGEST() {
-		return STRONGEST;
-	}
-
-	public Set<BhavaNames> getSTRONG() {
-		return STRONG;
-	}
-
-	public Set<BhavaNames> getNUETRAL() {
-		return NUETRAL;
-	}
-
-	public Set<BhavaNames> getWEAK() {
-		return WEAK;
-	}
-
-	public Set<BhavaNames> getWEAKEST() {
-		return WEAKEST;
-	}
-
-	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
-	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
 	}
 
 	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
 		return GREAT_ENEMY_SIGNS_TO_GRAHA;
 	}
+
+	public RashiNames getDebilitationRashi() {
+		return debilitationRashi;
+	}
+
+	public Set<NakshatraNames> getLordOfNakshatras() {
+		return lordOfNakshatras;
+	}
+
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
+	}
+
+	public Set<BhavaNames> getKarakaForBhavas() {
+		return karakaForBhavas;
+	}
+
+	public Set<GrahaNames> getEnemiesToGraha() {
+		return enemiesToGraha;
+	}
+
+	public Set<GrahaNames> getNuetralToGraha() {
+		return nuetralToGraha;
+	}
+
+	public Set<GrahaNames> getFriendsToGraha() {
+		return friendsToGraha;
+	}
+
+	public Set<BhavaNames> getStrongestInBhavas() {
+		return strongestInBhavas;
+	}
+
+	public Set<BhavaNames> getStrongInBhavas() {
+		return strongInBhavas;
+	}
+
+	public Set<BhavaNames> getNuetralInBhavas() {
+		return nuetralInBhavas;
+	}
+
+	public Set<BhavaNames> getWeakInBhavas() {
+		return weakInBhavas;
+	}
+
+	public Set<BhavaNames> getWeakestInBhavas() {
+		return weakestInBhavas;
+	}
+
+	
 
 	
 	
