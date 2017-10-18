@@ -41,16 +41,14 @@ public final class Mangal implements Graha {
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
 	
 
-	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
+	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
+    private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
+    private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
+	private final Set<String> karakaInLife = new HashSet<String>();
 
-	private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
-
-	private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
-
-	private final Set<GrahaNames> FRIENDS_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Set<GrahaNames> ENEMIES_TO_GRAHA = new HashSet<GrahaNames>();
-	private final Set<GrahaNames> NUETRAL_TO_GRAHA = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> enemiesToGraha = new HashSet<GrahaNames>();
+	private final Set<GrahaNames> nuetralToGraha = new HashSet<GrahaNames>();
 
 	private final Set<BhavaNames> strongestInBhavas = new HashSet<BhavaNames>();
 	private final Set<BhavaNames> strongInBhavas = new HashSet<BhavaNames>();
@@ -112,55 +110,55 @@ public final class Mangal implements Graha {
 	
 
 	public void addKarakasInLifeForGraha() {
-		KARAKA_IN_LIFE.add("Brothers");
-		KARAKA_IN_LIFE.add("Courage");
-		KARAKA_IN_LIFE.add("Energy");
-		KARAKA_IN_LIFE.add("Armed Forces");
-		KARAKA_IN_LIFE.add("Police Forces");
-		KARAKA_IN_LIFE.add("Commanders");
-		KARAKA_IN_LIFE.add("Administrators");
-		KARAKA_IN_LIFE.add("men in high position");
-	    KARAKA_IN_LIFE.add("land");
-		KARAKA_IN_LIFE.add("engineering");
-		KARAKA_IN_LIFE.add("metals");
-		KARAKA_IN_LIFE.add("real estate agents");
-		KARAKA_IN_LIFE.add("surgery."); 
+		karakaInLife.add("Brothers");
+		karakaInLife.add("Courage");
+		karakaInLife.add("Energy");
+		karakaInLife.add("Armed Forces");
+		karakaInLife.add("Police Forces");
+		karakaInLife.add("Commanders");
+		karakaInLife.add("Administrators");
+		karakaInLife.add("men in high position");
+	    karakaInLife.add("land");
+		karakaInLife.add("engineering");
+		karakaInLife.add("metals");
+		karakaInLife.add("real estate agents");
+		karakaInLife.add("surgery."); 
 		
 	}
 
 	public void addLordOfNakshatrasToGraha() {
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.MRIGASHIRSHA);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.CHITRA);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.DHANISHTA);
+		lordOfNakshatras.add(NakshatraNames.MRIGASHIRSHA);
+		lordOfNakshatras.add(NakshatraNames.CHITRA);
+		lordOfNakshatras.add(NakshatraNames.DHANISHTA);
 	}
 
 	private void addLordOfRashisToGraha() {
-		LORD_OF_RASHIS.add(RashiNames.ARIES);
-		LORD_OF_RASHIS.add(RashiNames.SCORPIO);
+		lordOfRashis.add(RashiNames.ARIES);
+		lordOfRashis.add(RashiNames.SCORPIO);
 
 	}
 
 	public void addKarakasToGraha() {
-		KARAKA.add(BhavaNames.BHAVA4);
-		KARAKA.add(BhavaNames.BHAVA10);
+		karakaForBhavas.add(BhavaNames.BHAVA4);
+		karakaForBhavas.add(BhavaNames.BHAVA10);
 
 	}
 
 	public void addEnemiesToGraha() {
-		ENEMIES_TO_GRAHA.add(GrahaNames.BUDHA);
+		enemiesToGraha.add(GrahaNames.BUDHA);
 
 	}
 
 	public void addFriendsToGraha() {
-		FRIENDS_TO_GRAHA.add(GrahaNames.SURYA);
-		FRIENDS_TO_GRAHA.add(GrahaNames.CHANDRA);
-		FRIENDS_TO_GRAHA.add(GrahaNames.GURU);
+		friendsToGraha.add(GrahaNames.SURYA);
+		friendsToGraha.add(GrahaNames.CHANDRA);
+		friendsToGraha.add(GrahaNames.GURU);
 
 	}
 
 	public void addNuetralToGraha() {
-		NUETRAL_TO_GRAHA.add(GrahaNames.SHUKRA);
-		NUETRAL_TO_GRAHA.add(GrahaNames.SHANI);
+		nuetralToGraha.add(GrahaNames.SHUKRA);
+		nuetralToGraha.add(GrahaNames.SHANI);
 
 	}
 
@@ -258,32 +256,32 @@ public final class Mangal implements Graha {
 		return debilitationRashi;
 	}
 
-	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
-		return LORD_OF_NAKSHATRAS;
+	public Set<NakshatraNames> getLordOfNakshatras() {
+		return lordOfNakshatras;
 	}
 
-	public Set<RashiNames> getLORD_OF_RASHIS() {
-		return LORD_OF_RASHIS;
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
 	}
 
-	public Set<BhavaNames> getKARAKA() {
-		return KARAKA;
+	public Set<BhavaNames> getKarakaForBhavas() {
+		return karakaForBhavas;
 	}
 
-	public Set<String> getKARAKA_IN_LIFE() {
-		return KARAKA_IN_LIFE;
+	public Set<String> getKarakaInLife() {
+		return karakaInLife;
 	}
 
-	public Set<GrahaNames> getFRIENDS_TO_GRAHA() {
-		return FRIENDS_TO_GRAHA;
+	public Set<GrahaNames> getFriendsToGraha() {
+		return friendsToGraha;
 	}
 
-	public Set<GrahaNames> getENEMIES_TO_GRAHA() {
-		return ENEMIES_TO_GRAHA;
+	public Set<GrahaNames> getEnemiesToGraha() {
+		return enemiesToGraha;
 	}
 
-	public Set<GrahaNames> getNUETRAL_TO_GRAHA() {
-		return NUETRAL_TO_GRAHA;
+	public Set<GrahaNames> getNuetralToGraha() {
+		return nuetralToGraha;
 	}
 
 	public Set<BhavaNames> getStrongestInBhavas() {
@@ -333,6 +331,8 @@ public final class Mangal implements Graha {
 	public Metal getMetal() {
 		return metal;
 	}
+
+	
 
 	
 
