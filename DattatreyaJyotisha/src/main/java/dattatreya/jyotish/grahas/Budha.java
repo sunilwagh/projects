@@ -39,10 +39,10 @@ public final class Budha implements Graha {
 	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.PISCES; // 0%
 
-	private final Set<NakshatraNames> LORD_OF_NAKSHATRAS = new HashSet<NakshatraNames>();
-    private final Set<RashiNames> LORD_OF_RASHIS = new HashSet<RashiNames>();
-    private final Set<BhavaNames> KARAKA = new HashSet<BhavaNames>();
-	private final Set<String> KARAKA_IN_LIFE = new HashSet<String>();
+	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
+    private final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
+    private final Set<BhavaNames> karakaForBhavas = new HashSet<BhavaNames>();
+	private final Set<String> karakaInLife = new HashSet<String>();
 
 	private final Set<GrahaNames> friendsToGraha = new HashSet<GrahaNames>();
 	private final Set<GrahaNames> nuetralToGraha = new HashSet<GrahaNames>();
@@ -97,36 +97,36 @@ public final class Budha implements Graha {
 	
 
 	public void addKarakasInLifeForGraha() {
-		KARAKA_IN_LIFE.add("Intellect");
-		KARAKA_IN_LIFE.add("Childhood");
-		KARAKA_IN_LIFE.add("Speech");
-		KARAKA_IN_LIFE.add("Maternal Uncle");
-		KARAKA_IN_LIFE.add("Short Journeys");
-		KARAKA_IN_LIFE.add("Medical Profession");
-		KARAKA_IN_LIFE.add("Trade");
-		KARAKA_IN_LIFE.add("Computer and Internet");
-		KARAKA_IN_LIFE.add("Knowledge of Shashtras");
-		KARAKA_IN_LIFE.add("Accounts");
-		KARAKA_IN_LIFE.add("Mathematics");
-		KARAKA_IN_LIFE.add("Journalism");
-		KARAKA_IN_LIFE.add("Printing and Publishing");
+		karakaInLife.add("Intellect");
+		karakaInLife.add("Childhood");
+		karakaInLife.add("Speech");
+		karakaInLife.add("Maternal Uncle");
+		karakaInLife.add("Short Journeys");
+		karakaInLife.add("Medical Profession");
+		karakaInLife.add("Trade");
+		karakaInLife.add("Computer and Internet");
+		karakaInLife.add("Knowledge of Shashtras");
+		karakaInLife.add("Accounts");
+		karakaInLife.add("Mathematics");
+		karakaInLife.add("Journalism");
+		karakaInLife.add("Printing and Publishing");
 	}
 
 	public void addLordOfNakshatrasToGraha() {
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.ASHLESHA);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.JYESTHA);
-		LORD_OF_NAKSHATRAS.add(NakshatraNames.REVATI);
+		lordOfNakshatras.add(NakshatraNames.ASHLESHA);
+		lordOfNakshatras.add(NakshatraNames.JYESTHA);
+		lordOfNakshatras.add(NakshatraNames.REVATI);
 	}
 
 	private void addLordOfRashisToGraha() {
-		LORD_OF_RASHIS.add(RashiNames.VIRGO);
-		LORD_OF_RASHIS.add(RashiNames.GEMINI);
+		lordOfRashis.add(RashiNames.VIRGO);
+		lordOfRashis.add(RashiNames.GEMINI);
 
 	}
 
 	public void addKarakasToGraha() {
-		KARAKA.add(BhavaNames.BHAVA4);
-		KARAKA.add(BhavaNames.BHAVA10);
+		karakaForBhavas.add(BhavaNames.BHAVA4);
+		karakaForBhavas.add(BhavaNames.BHAVA10);
 
 	}
 
@@ -281,20 +281,20 @@ public final class Budha implements Graha {
 		return debilitationRashi;
 	}
 
-	public Set<NakshatraNames> getLORD_OF_NAKSHATRAS() {
-		return LORD_OF_NAKSHATRAS;
+	public Set<NakshatraNames> getLordOfNakshatras() {
+		return lordOfNakshatras;
 	}
 
-	public Set<RashiNames> getLORD_OF_RASHIS() {
-		return LORD_OF_RASHIS;
+	public Set<RashiNames> getLordOfRashis() {
+		return lordOfRashis;
 	}
 
-	public Set<BhavaNames> getKARAKA() {
-		return KARAKA;
+	public Set<BhavaNames> getKarakaForBhavas() {
+		return karakaForBhavas;
 	}
 
-	public Set<String> getKARAKA_IN_LIFE() {
-		return KARAKA_IN_LIFE;
+	public Set<String> getKarakaInLife() {
+		return karakaInLife;
 	}
 
 	public Set<GrahaNames> getFriendsToGraha() {
