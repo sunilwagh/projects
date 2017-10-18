@@ -40,11 +40,11 @@ public class Guru implements Graha {
 	private final RashiNames mooltrikonaRashi = RashiNames.SAGITTAURIUS;
 	private final RashiNames exaltationRashi = RashiNames.CANCER;
 	private final RashiNames ownRashi = RashiNames.PISCES;
-	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 25 TO 37.5%
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
-	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>(); // 25 TO 37.5%
+	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private final RashiNames debilitationRashi = RashiNames.CAPRICORN;
     
 	private final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
@@ -80,23 +80,23 @@ public class Guru implements Graha {
 	}
 
 	private void addNuetralSigns() {
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
+		nuetralSignsToGraha.add(RashiNames.ACQUARIUS);
 		
 	}
 
 	private void addEnemySigns() {
 		
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.TAURUS);
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.LIBRA);
-	    ENEMY_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
+		enemySignsToGraha.add(RashiNames.TAURUS);
+		enemySignsToGraha.add(RashiNames.LIBRA);
+	    enemySignsToGraha.add(RashiNames.GEMINI);
 
 	}
 
 	private void addFriendSigns() {
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.LEO);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.VIRGO);
+		friendSignsToGraha.add(RashiNames.ARIES);
+		friendSignsToGraha.add(RashiNames.LEO);
+		friendSignsToGraha.add(RashiNames.SCORPIO);
+		friendSignsToGraha.add(RashiNames.VIRGO);
 		
 
 	}
@@ -248,23 +248,23 @@ public class Guru implements Graha {
 	}
 
 	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+		return greatFriendSignsToGraha;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
+		return friendSignsToGraha;
 	}
 
 	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		return NUETRAL_SIGNS_TO_GRAHA;
+		return nuetralSignsToGraha;
 	}
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
+		return enemySignsToGraha;
 	}
 
 	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
-		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+		return greatEnemySignsToGraha;
 	}
 
 	public RashiNames getDebilitationRashi() {

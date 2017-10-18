@@ -33,11 +33,11 @@ public final class Shukra implements Graha {
     private  final RashiNames exaltationRashi = RashiNames.PISCES;
 	private  final RashiNames mooltrikonaRashi = RashiNames.LIBRA;
 	private  final RashiNames ownRashi = RashiNames.LIBRA;
-	private final Set<RashiNames> GREAT_FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 37.5%
-	private final Set<RashiNames> FRIEND_SIGNS_TO_GRAHA = new HashSet<RashiNames>();
-	private final Set<RashiNames> NUETRAL_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); //12.5 %
-	private final Set<RashiNames> ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>();  // 6.25 %
-	private final Set<RashiNames> GREAT_ENEMY_SIGNS_TO_GRAHA = new HashSet<RashiNames>(); // 3.25 %
+	private final Set<RashiNames> greatFriendSignsToGraha = new HashSet<RashiNames>(); // 37.5%
+	private final Set<RashiNames> friendSignsToGraha = new HashSet<RashiNames>();
+	private final Set<RashiNames> nuetralSignsToGraha = new HashSet<RashiNames>(); //12.5 %
+	private final Set<RashiNames> enemySignsToGraha = new HashSet<RashiNames>();  // 6.25 %
+	private final Set<RashiNames> greatEnemySignsToGraha = new HashSet<RashiNames>(); // 3.25 %
 	private  final RashiNames debilitationRashi = RashiNames.VIRGO;
     private  final Set<NakshatraNames> lordOfNakshatras = new HashSet<NakshatraNames>();
 	private  final Set<RashiNames> lordOfRashis = new HashSet<RashiNames>();
@@ -77,24 +77,24 @@ public final class Shukra implements Graha {
 	}
 	
 	private void addFriendSignsToGraha() {
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.GEMINI);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.ACQUARIUS);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.CAPRICORN);
-		FRIEND_SIGNS_TO_GRAHA.add(RashiNames.SAGITTAURIUS);
+		friendSignsToGraha.add(RashiNames.GEMINI);
+		friendSignsToGraha.add(RashiNames.ACQUARIUS);
+		friendSignsToGraha.add(RashiNames.CAPRICORN);
+		friendSignsToGraha.add(RashiNames.SAGITTAURIUS);
 		
 	}
 	
 	private void addNuetralSignsToGraha() {
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.SCORPIO);
-		NUETRAL_SIGNS_TO_GRAHA.add(RashiNames.ARIES);
+		nuetralSignsToGraha.add(RashiNames.SCORPIO);
+		nuetralSignsToGraha.add(RashiNames.ARIES);
 	
 		
 		
 	}
 
 	private void addEnemySignsToGraha() {
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.CANCER);
-		ENEMY_SIGNS_TO_GRAHA.add(RashiNames.LEO);
+		enemySignsToGraha.add(RashiNames.CANCER);
+		enemySignsToGraha.add(RashiNames.LEO);
 		
 		
 	}
@@ -241,23 +241,23 @@ public final class Shukra implements Graha {
 	}
 
 	public Set<RashiNames> getGREAT_FRIEND_SIGNS_TO_GRAHA() {
-		return GREAT_FRIEND_SIGNS_TO_GRAHA;
+		return greatFriendSignsToGraha;
 	}
 
 	public Set<RashiNames> getFRIEND_SIGNS_TO_GRAHA() {
-		return FRIEND_SIGNS_TO_GRAHA;
+		return friendSignsToGraha;
 	}
 
 	public Set<RashiNames> getNUETRAL_SIGNS_TO_GRAHA() {
-		return NUETRAL_SIGNS_TO_GRAHA;
+		return nuetralSignsToGraha;
 	}
 
 	public Set<RashiNames> getENEMY_SIGNS_TO_GRAHA() {
-		return ENEMY_SIGNS_TO_GRAHA;
+		return enemySignsToGraha;
 	}
 
 	public Set<RashiNames> getGREAT_ENEMY_SIGNS_TO_GRAHA() {
-		return GREAT_ENEMY_SIGNS_TO_GRAHA;
+		return greatEnemySignsToGraha;
 	}
 
 	public RashiNames getDebilitationRashi() {
